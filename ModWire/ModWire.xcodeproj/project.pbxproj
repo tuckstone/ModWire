@@ -15,6 +15,9 @@
 		C85EFCBD1510173D002CB299 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C85EFCBC1510173D002CB299 /* AppDelegate.m */; };
 		C85EFCC01510173D002CB299 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C85EFCBF1510173D002CB299 /* ViewController.m */; };
 		C85EFCC31510173D002CB299 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C85EFCC11510173D002CB299 /* ViewController.xib */; };
+		C88296951518CE1E00B74829 /* IconControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = C88296941518CE1E00B74829 /* IconControlView.m */; };
+		C882969B1518D3B600B74829 /* ScrollPaletteView.m in Sources */ = {isa = PBXBuildFile; fileRef = C882969A1518D3B600B74829 /* ScrollPaletteView.m */; };
+		C882969E1518D60400B74829 /* EditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C882969D1518D60400B74829 /* EditorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,12 @@
 		C85EFCBE1510173D002CB299 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C85EFCBF1510173D002CB299 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C85EFCC21510173D002CB299 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		C88296931518CE1E00B74829 /* IconControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconControlView.h; sourceTree = "<group>"; };
+		C88296941518CE1E00B74829 /* IconControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconControlView.m; sourceTree = "<group>"; };
+		C88296991518D3B600B74829 /* ScrollPaletteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollPaletteView.h; sourceTree = "<group>"; };
+		C882969A1518D3B600B74829 /* ScrollPaletteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollPaletteView.m; sourceTree = "<group>"; };
+		C882969C1518D60400B74829 /* EditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorView.h; sourceTree = "<group>"; };
+		C882969D1518D60400B74829 /* EditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +91,12 @@
 				C85EFCBE1510173D002CB299 /* ViewController.h */,
 				C85EFCBF1510173D002CB299 /* ViewController.m */,
 				C85EFCC11510173D002CB299 /* ViewController.xib */,
+				C882969C1518D60400B74829 /* EditorView.h */,
+				C882969D1518D60400B74829 /* EditorView.m */,
+				C88296991518D3B600B74829 /* ScrollPaletteView.h */,
+				C882969A1518D3B600B74829 /* ScrollPaletteView.m */,
+				C88296931518CE1E00B74829 /* IconControlView.h */,
+				C88296941518CE1E00B74829 /* IconControlView.m */,
 				C85EFCB31510173D002CB299 /* Supporting Files */,
 			);
 			path = ModWire;
@@ -163,6 +178,9 @@
 				C85EFCB91510173D002CB299 /* main.m in Sources */,
 				C85EFCBD1510173D002CB299 /* AppDelegate.m in Sources */,
 				C85EFCC01510173D002CB299 /* ViewController.m in Sources */,
+				C88296951518CE1E00B74829 /* IconControlView.m in Sources */,
+				C882969B1518D3B600B74829 /* ScrollPaletteView.m in Sources */,
+				C882969E1518D60400B74829 /* EditorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +294,7 @@
 				C85EFCC81510173D002CB299 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
