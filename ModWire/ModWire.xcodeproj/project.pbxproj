@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C858EFEE151CCD1D007DBEA8 /* iconList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C858EFED151CCD1D007DBEA8 /* iconList.plist */; };
 		C85EFCAD1510173D002CB299 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C85EFCAC1510173D002CB299 /* UIKit.framework */; };
 		C85EFCAF1510173D002CB299 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C85EFCAE1510173D002CB299 /* Foundation.framework */; };
 		C85EFCB11510173D002CB299 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C85EFCB01510173D002CB299 /* CoreGraphics.framework */; };
@@ -16,11 +17,11 @@
 		C85EFCC01510173D002CB299 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C85EFCBF1510173D002CB299 /* ViewController.m */; };
 		C85EFCC31510173D002CB299 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C85EFCC11510173D002CB299 /* ViewController.xib */; };
 		C88296951518CE1E00B74829 /* IconControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = C88296941518CE1E00B74829 /* IconControlView.m */; };
-		C882969B1518D3B600B74829 /* ScrollPaletteView.m in Sources */ = {isa = PBXBuildFile; fileRef = C882969A1518D3B600B74829 /* ScrollPaletteView.m */; };
 		C882969E1518D60400B74829 /* EditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C882969D1518D60400B74829 /* EditorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C858EFED151CCD1D007DBEA8 /* iconList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iconList.plist; sourceTree = "<group>"; };
 		C85EFCA81510173D002CB299 /* ModWire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModWire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85EFCAC1510173D002CB299 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C85EFCAE1510173D002CB299 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,8 +37,6 @@
 		C85EFCC21510173D002CB299 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		C88296931518CE1E00B74829 /* IconControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconControlView.h; sourceTree = "<group>"; };
 		C88296941518CE1E00B74829 /* IconControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconControlView.m; sourceTree = "<group>"; };
-		C88296991518D3B600B74829 /* ScrollPaletteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollPaletteView.h; sourceTree = "<group>"; };
-		C882969A1518D3B600B74829 /* ScrollPaletteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollPaletteView.m; sourceTree = "<group>"; };
 		C882969C1518D60400B74829 /* EditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorView.h; sourceTree = "<group>"; };
 		C882969D1518D60400B74829 /* EditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,11 +89,10 @@
 				C85EFCBC1510173D002CB299 /* AppDelegate.m */,
 				C85EFCBE1510173D002CB299 /* ViewController.h */,
 				C85EFCBF1510173D002CB299 /* ViewController.m */,
+				C858EFED151CCD1D007DBEA8 /* iconList.plist */,
 				C85EFCC11510173D002CB299 /* ViewController.xib */,
 				C882969C1518D60400B74829 /* EditorView.h */,
 				C882969D1518D60400B74829 /* EditorView.m */,
-				C88296991518D3B600B74829 /* ScrollPaletteView.h */,
-				C882969A1518D3B600B74829 /* ScrollPaletteView.m */,
 				C88296931518CE1E00B74829 /* IconControlView.h */,
 				C88296941518CE1E00B74829 /* IconControlView.m */,
 				C85EFCB31510173D002CB299 /* Supporting Files */,
@@ -165,6 +163,7 @@
 			files = (
 				C85EFCB71510173D002CB299 /* InfoPlist.strings in Resources */,
 				C85EFCC31510173D002CB299 /* ViewController.xib in Resources */,
+				C858EFEE151CCD1D007DBEA8 /* iconList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +178,6 @@
 				C85EFCBD1510173D002CB299 /* AppDelegate.m in Sources */,
 				C85EFCC01510173D002CB299 /* ViewController.m in Sources */,
 				C88296951518CE1E00B74829 /* IconControlView.m in Sources */,
-				C882969B1518D3B600B74829 /* ScrollPaletteView.m in Sources */,
 				C882969E1518D60400B74829 /* EditorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

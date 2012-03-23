@@ -9,6 +9,22 @@
 #import "ViewController.h"
 
 @implementation ViewController
+@synthesize paletteTable;
+
+-(UITableViewCell*) tableView:(UITableView *)paletteView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
+-(NSInteger) numberOfSectionsInTableView:(UITableView *)paletteView
+{
+    return paletteTable.numberOfSections;
+}
+
+-(NSInteger) numberOfRowsInSection
+{
+    return 0;
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -21,7 +37,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	paletteTable = [[UITableView alloc]init];
 }
 
 - (void)viewDidUnload
