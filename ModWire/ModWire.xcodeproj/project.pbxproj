@@ -18,6 +18,12 @@
 		C85EFCC31510173D002CB299 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C85EFCC11510173D002CB299 /* ViewController.xib */; };
 		C88296951518CE1E00B74829 /* IconControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = C88296941518CE1E00B74829 /* IconControlView.m */; };
 		C882969E1518D60400B74829 /* EditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C882969D1518D60400B74829 /* EditorView.m */; };
+		C8DA89FA15210AB1002F0D08 /* KeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DA89F915210AB1002F0D08 /* KeyboardView.m */; };
+		C8DA89FF15210D66002F0D08 /* KeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DA89FC15210D65002F0D08 /* KeyView.m */; };
+		C8DA8A0015210D66002F0D08 /* OctaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DA89FE15210D65002F0D08 /* OctaveView.m */; };
+		C8DA8A0515210DFA002F0D08 /* BlackKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DA8A0215210DFA002F0D08 /* BlackKeyView.m */; };
+		C8DA8A0615210DFA002F0D08 /* WhiteKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DA8A0415210DFA002F0D08 /* WhiteKeyView.m */; };
+		C8DA8A091521101C002F0D08 /* TouchForwardingUIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DA8A081521101C002F0D08 /* TouchForwardingUIScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +45,18 @@
 		C88296941518CE1E00B74829 /* IconControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconControlView.m; sourceTree = "<group>"; };
 		C882969C1518D60400B74829 /* EditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorView.h; sourceTree = "<group>"; };
 		C882969D1518D60400B74829 /* EditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorView.m; sourceTree = "<group>"; };
+		C8DA89F815210AB1002F0D08 /* KeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardView.h; sourceTree = "<group>"; };
+		C8DA89F915210AB1002F0D08 /* KeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardView.m; sourceTree = "<group>"; };
+		C8DA89FB15210D65002F0D08 /* KeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyView.h; sourceTree = "<group>"; };
+		C8DA89FC15210D65002F0D08 /* KeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyView.m; sourceTree = "<group>"; };
+		C8DA89FD15210D65002F0D08 /* OctaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OctaveView.h; sourceTree = "<group>"; };
+		C8DA89FE15210D65002F0D08 /* OctaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OctaveView.m; sourceTree = "<group>"; };
+		C8DA8A0115210DFA002F0D08 /* BlackKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackKeyView.h; sourceTree = "<group>"; };
+		C8DA8A0215210DFA002F0D08 /* BlackKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlackKeyView.m; sourceTree = "<group>"; };
+		C8DA8A0315210DFA002F0D08 /* WhiteKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteKeyView.h; sourceTree = "<group>"; };
+		C8DA8A0415210DFA002F0D08 /* WhiteKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteKeyView.m; sourceTree = "<group>"; };
+		C8DA8A071521101C002F0D08 /* TouchForwardingUIScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchForwardingUIScrollView.h; sourceTree = "<group>"; };
+		C8DA8A081521101C002F0D08 /* TouchForwardingUIScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchForwardingUIScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,10 @@
 		C85EFC9D1510173D002CB299 = {
 			isa = PBXGroup;
 			children = (
+				C8DA8A071521101C002F0D08 /* TouchForwardingUIScrollView.h */,
+				C8DA8A081521101C002F0D08 /* TouchForwardingUIScrollView.m */,
+				C8DA89F815210AB1002F0D08 /* KeyboardView.h */,
+				C8DA89F915210AB1002F0D08 /* KeyboardView.m */,
 				C85EFCB21510173D002CB299 /* ModWire */,
 				C85EFCAB1510173D002CB299 /* Frameworks */,
 				C85EFCA91510173D002CB299 /* Products */,
@@ -91,6 +113,14 @@
 				C85EFCBF1510173D002CB299 /* ViewController.m */,
 				C858EFED151CCD1D007DBEA8 /* iconList.plist */,
 				C85EFCC11510173D002CB299 /* ViewController.xib */,
+				C8DA8A0115210DFA002F0D08 /* BlackKeyView.h */,
+				C8DA8A0215210DFA002F0D08 /* BlackKeyView.m */,
+				C8DA8A0315210DFA002F0D08 /* WhiteKeyView.h */,
+				C8DA8A0415210DFA002F0D08 /* WhiteKeyView.m */,
+				C8DA89FB15210D65002F0D08 /* KeyView.h */,
+				C8DA89FC15210D65002F0D08 /* KeyView.m */,
+				C8DA89FD15210D65002F0D08 /* OctaveView.h */,
+				C8DA89FE15210D65002F0D08 /* OctaveView.m */,
 				C882969C1518D60400B74829 /* EditorView.h */,
 				C882969D1518D60400B74829 /* EditorView.m */,
 				C88296931518CE1E00B74829 /* IconControlView.h */,
@@ -179,6 +209,12 @@
 				C85EFCC01510173D002CB299 /* ViewController.m in Sources */,
 				C88296951518CE1E00B74829 /* IconControlView.m in Sources */,
 				C882969E1518D60400B74829 /* EditorView.m in Sources */,
+				C8DA89FA15210AB1002F0D08 /* KeyboardView.m in Sources */,
+				C8DA89FF15210D66002F0D08 /* KeyView.m in Sources */,
+				C8DA8A0015210D66002F0D08 /* OctaveView.m in Sources */,
+				C8DA8A0515210DFA002F0D08 /* BlackKeyView.m in Sources */,
+				C8DA8A0615210DFA002F0D08 /* WhiteKeyView.m in Sources */,
+				C8DA8A091521101C002F0D08 /* TouchForwardingUIScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "KeyboardView.h"
+#import "TouchForwardingUIScrollView.h"
 
 @implementation ViewController
-@synthesize paletteTable;
+@synthesize paletteTable, keyboardScrollView;
 
 -(UITableViewCell*) tableView:(UITableView *)paletteView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -38,6 +40,22 @@
 {
     [super viewDidLoad];
 	paletteTable = [[UITableView alloc]init];
+    
+    CGRect keyboardViewFrame;
+    keyboardViewFrame.origin.x = 0;
+    keyboardViewFrame.origin.y = 0;
+    keyboardViewFrame.size.width = 800;
+    // Leave some empty space for scrolling
+    keyboardViewFrame.size.height = keyboardScrollView.frame.size.height - 20;
+    keyboardView = [[KeyboardView alloc] initWithFrame:keyboardViewFrame
+                                       withOctaveCount:2];
+    [keyboardView setKeyboardDelegate:self];
+    [keyboardScrollView addSubview:keyboardView];  
+    [keyboardScrollView setContentSize:keyboardView.frame.size];
+    [keyboardScrollView setScrollEnabled:YES];
+    
+    // Forward touch events to the keyboard
+    [keyboardScrollView setTouchView:keyboardView];
 }
 
 - (void)viewDidUnload

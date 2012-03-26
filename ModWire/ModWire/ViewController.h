@@ -7,10 +7,41 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KeyboardView.h"
+
+
+@class TouchForwardingUIScrollView;
 
 @interface ViewController : UIViewController <UITableViewDataSource>
+{
+
+@private
+    TouchForwardingUIScrollView* keyboardScrollView;
+    KeyboardView* keyboardView;
+
+/* UIScrollView* controlScrollView;
+UIPageControl* controlPageControl;
+
+OscillatorView* oscillatorView;
+OscillatorDetailView* oscillatorDetailView;
+ModulationView* modulationView;
+FilterView* filterView;
+EnvelopeView* envelopeView;
+EnvelopeView* filterEnvelopeView;
+ArpeggioView* arpeggioView;
+
+// Synthesizer components
+AudioOutput* output;
+synth::Controller* controller_;
+
+AudioStreamBasicDescription outputFormat;
+ */
+}
+
+
 
 @property (strong, nonatomic) UITableView *paletteTable;
 
+@property (nonatomic, retain) IBOutlet UIScrollView *keyboardScrollView;
 
 @end

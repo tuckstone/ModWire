@@ -14,6 +14,7 @@
 			<string>IBUIButton</string>
 			<string>IBUITableView</string>
 			<string>IBUIView</string>
+			<string>IBUIScrollView</string>
 			<string>IBProxyObject</string>
 		</array>
 		<array key="IBDocument.PluginDependencies">
@@ -103,7 +104,7 @@
 								<string key="NSFrame">{{28, 169}, {68, 63}}</string>
 								<reference key="NSSuperview" ref="28882050"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="824726301"/>
+								<reference key="NSNextKeyView" ref="281416852"/>
 								<string key="NSReuseIdentifierKey">_NS:241</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -118,6 +119,18 @@
 								<reference key="IBUINormalTitleShadowColor" ref="572815255"/>
 								<reference key="IBUIFontDescription" ref="20000322"/>
 								<reference key="IBUIFont" ref="52669330"/>
+							</object>
+							<object class="IBUIScrollView" id="281416852">
+								<reference key="NSNextResponder" ref="28882050"/>
+								<int key="NSvFlags">268</int>
+								<string key="NSFrame">{{153, 20}, {668, 213}}</string>
+								<reference key="NSSuperview" ref="28882050"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="824726301"/>
+								<string key="NSReuseIdentifierKey">_NS:206</string>
+								<bool key="IBUIClipsSubviews">YES</bool>
+								<bool key="IBUIMultipleTouchEnabled">YES</bool>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 							</object>
 						</array>
 						<string key="NSFrame">{{0, 502}, {841, 253}}</string>
@@ -197,6 +210,14 @@
 					</object>
 					<int key="connectionID">3</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">keyboardScrollView</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="281416852"/>
+					</object>
+					<int key="connectionID">15</int>
+				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<array key="orderedObjects">
@@ -234,6 +255,7 @@
 							<reference ref="442242791"/>
 							<reference ref="119398365"/>
 							<reference ref="352432248"/>
+							<reference ref="281416852"/>
 						</array>
 						<reference key="parent" ref="766721923"/>
 					</object>
@@ -262,6 +284,11 @@
 						<reference key="object" ref="824726301"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">13</int>
+						<reference key="object" ref="281416852"/>
+						<reference key="parent" ref="28882050"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -272,6 +299,7 @@
 				<string key="10.CustomClassName">EditorView</string>
 				<string key="10.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="11.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="13.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<reference key="2.IBUserGuides" ref="0"/>
 				<string key="5.CustomClassName">IconControlView</string>
@@ -284,7 +312,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">11</int>
+			<int key="maxID">15</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -307,6 +335,17 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">ViewController</string>
 					<string key="superclassName">UIViewController</string>
+					<object class="NSMutableDictionary" key="outlets">
+						<string key="NS.key.0">keyboardScrollView</string>
+						<string key="NS.object.0">UIScrollView</string>
+					</object>
+					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<string key="NS.key.0">keyboardScrollView</string>
+						<object class="IBToOneOutletInfo" key="NS.object.0">
+							<string key="name">keyboardScrollView</string>
+							<string key="candidateClassName">UIScrollView</string>
+						</object>
+					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/ViewController.h</string>
