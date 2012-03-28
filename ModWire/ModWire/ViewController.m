@@ -65,11 +65,11 @@
     CGRect keyboardViewFrame;
     keyboardViewFrame.origin.x = 0;
     keyboardViewFrame.origin.y = 0;
-    keyboardViewFrame.size.width = 800;
+    keyboardViewFrame.size.width = 3200;
     // Leave some empty space for scrolling
     keyboardViewFrame.size.height = keyboardScrollView.frame.size.height - 20;
     keyboardView = [[KeyboardView alloc] initWithFrame:keyboardViewFrame
-                                       withOctaveCount:2];
+                                       withOctaveCount:8];
     [keyboardView setKeyboardDelegate:self];
     [keyboardScrollView addSubview:keyboardView];  
     [keyboardScrollView setContentSize:keyboardView.frame.size];
@@ -77,6 +77,25 @@
     
     // Forward touch events to the keyboard
     //[keyboardScrollView setTouchView:keyboardView];
+    
+    self.paletteTable = [[UITableView alloc]init];
+    
+    // Set up data source for table
+    self.paletteTable.dataSource = self;
+    
+    // Add delegate to handle cell events
+    self.paletteTable.delegate = self;
+    
+    // Initialize tweets array
+    icons = [[NSMutableArray alloc] init];
+    
+    
+    
+}
+
+-(IBAction)buttonPressed:(id)sender
+{
+    
 }
 
 - (void)viewDidUnload

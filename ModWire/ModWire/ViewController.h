@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "KeyboardView.h"
+#import "icon.h"
 
 
 @class TouchForwardingUIScrollView;
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {
+    
     NSMutableArray *icons;
 @private
     TouchForwardingUIScrollView* keyboardScrollView;
@@ -38,11 +40,11 @@ AudioStreamBasicDescription outputFormat;
  */
 }
 
-
-
 @property (strong, nonatomic) IBOutlet UITableView *paletteTable;
 
 @property (nonatomic, retain) IBOutlet UIScrollView *keyboardScrollView;
+
+- (IBAction)buttonPressed:(id)sender;
 
 - (void)noteOn:(int)note;
 - (void)noteOff:(int)note;
