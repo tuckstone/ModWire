@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="8.00">
 	<data>
-		<int key="IBDocument.SystemTarget">1280</int>
+		<int key="IBDocument.SystemTarget">1296</int>
 		<string key="IBDocument.SystemVersion">11D50</string>
-		<string key="IBDocument.InterfaceBuilderVersion">1938</string>
+		<string key="IBDocument.InterfaceBuilderVersion">2182</string>
 		<string key="IBDocument.AppKitVersion">1138.32</string>
 		<string key="IBDocument.HIToolboxVersion">568.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">933</string>
+			<string key="NS.object.0">1181</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>IBUIButton</string>
@@ -44,7 +44,7 @@
 							<object class="IBUIButton" id="442242791">
 								<reference key="NSNextResponder" ref="28882050"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{28, 12}, {68, 63}}</string>
+								<string key="NSFrame">{{10, 20}, {68, 63}}</string>
 								<reference key="NSSuperview" ref="28882050"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="119398365"/>
@@ -79,7 +79,7 @@
 							<object class="IBUIButton" id="119398365">
 								<reference key="NSNextResponder" ref="28882050"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{28, 91}, {68, 63}}</string>
+								<string key="NSFrame">{{10, 95}, {68, 63}}</string>
 								<reference key="NSSuperview" ref="28882050"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="352432248"/>
@@ -101,7 +101,7 @@
 							<object class="IBUIButton" id="352432248">
 								<reference key="NSNextResponder" ref="28882050"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{28, 169}, {68, 63}}</string>
+								<string key="NSFrame">{{10, 170}, {68, 63}}</string>
 								<reference key="NSSuperview" ref="28882050"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="281416852"/>
@@ -123,7 +123,7 @@
 							<object class="IBUIScrollView" id="281416852">
 								<reference key="NSNextResponder" ref="28882050"/>
 								<int key="NSvFlags">268</int>
-								<string key="NSFrame">{{153, 20}, {668, 213}}</string>
+								<string key="NSFrame">{{86, 20}, {802, 213}}</string>
 								<reference key="NSSuperview" ref="28882050"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="824726301"/>
@@ -133,7 +133,7 @@
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 							</object>
 						</array>
-						<string key="NSFrame">{{0, 502}, {841, 253}}</string>
+						<string key="NSFrame">{{0, 502}, {888, 253}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="442242791"/>
@@ -144,7 +144,7 @@
 					<object class="IBUIView" id="210206952">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrameSize">{841, 501}</string>
+						<string key="NSFrameSize">{888, 501}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="28882050"/>
@@ -158,10 +158,9 @@
 					<object class="IBUITableView" id="824726301">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{840, 0}, {184, 748}}</string>
+						<string key="NSFrame">{{888, 0}, {136, 748}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:408</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
@@ -218,6 +217,14 @@
 					</object>
 					<int key="connectionID">15</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">paletteTable</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="824726301"/>
+					</object>
+					<int key="connectionID">16</int>
+				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<array key="orderedObjects">
@@ -252,10 +259,10 @@
 						<int key="objectID">5</int>
 						<reference key="object" ref="28882050"/>
 						<array class="NSMutableArray" key="children">
+							<reference ref="281416852"/>
 							<reference ref="442242791"/>
 							<reference ref="119398365"/>
 							<reference ref="352432248"/>
-							<reference ref="281416852"/>
 						</array>
 						<reference key="parent" ref="766721923"/>
 					</object>
@@ -312,7 +319,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">15</int>
+			<int key="maxID">16</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -335,17 +342,20 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">ViewController</string>
 					<string key="superclassName">UIViewController</string>
-					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">keyboardScrollView</string>
-						<string key="NS.object.0">UIScrollView</string>
-					</object>
-					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">keyboardScrollView</string>
-						<object class="IBToOneOutletInfo" key="NS.object.0">
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="keyboardScrollView">UIScrollView</string>
+						<string key="paletteTable">UITableView</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="keyboardScrollView">
 							<string key="name">keyboardScrollView</string>
 							<string key="candidateClassName">UIScrollView</string>
 						</object>
-					</object>
+						<object class="IBToOneOutletInfo" key="paletteTable">
+							<string key="name">paletteTable</string>
+							<string key="candidateClassName">UITableView</string>
+						</object>
+					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/ViewController.h</string>
@@ -355,8 +365,12 @@
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBIPadFramework</string>
+		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
+			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.iPhoneOS</string>
+			<real value="1296" key="NS.object.0"/>
+		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<string key="IBCocoaTouchPluginVersion">933</string>
+		<string key="IBCocoaTouchPluginVersion">1181</string>
 	</data>
 </archive>

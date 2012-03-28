@@ -11,11 +11,19 @@
 #import "TouchForwardingUIScrollView.h"
 
 @implementation ViewController
-@synthesize paletteTable, keyboardScrollView;
+@synthesize paletteTable;
 
 -(UITableViewCell*) tableView:(UITableView *)paletteView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+}
+
+- (void)noteOn:(int)note {
+    NSLog(@"NOTE ON %d",note);
+}
+
+- (void)noteOff:(int)note {
+    NSLog(@"NOTE OFF %d",note);
 }
 
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)paletteView
@@ -39,7 +47,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	paletteTable = [[UITableView alloc]init];
+    
+    self.paletteTable = [[UITableView alloc]init];
+    
+    [self.view addSubview:self.paletteTable];
+    
+    // Set up data source for table
+    self.paletteTable.dataSource = self;
+    
+    // Add delegate to handle cell events
+    self.paletteTable.delegate = self;
+    
+    // Initialize tweets array
+    icons = [[NSMutableArray alloc] init];
+    
     
     CGRect keyboardViewFrame;
     keyboardViewFrame.origin.x = 0;
@@ -55,7 +76,7 @@
     [keyboardScrollView setScrollEnabled:YES];
     
     // Forward touch events to the keyboard
-    [keyboardScrollView setTouchView:keyboardView];
+    //[keyboardScrollView setTouchView:keyboardView];
 }
 
 - (void)viewDidUnload

@@ -54,9 +54,6 @@ static const int kLowC = 16;
   return self;
 }
 
-- (void)dealloc {
-}
-
 - (KeyDownInfo*)findKey:(UITouch*)touch {
   NSArray* keyDownArray = [keyDownSet allObjects];
   for (int i = 0; i < [keyDownArray count]; ++i) {
