@@ -11,7 +11,7 @@
 #import "TouchForwardingUIScrollView.h"
 
 @implementation ViewController
-@synthesize paletteTable;
+@synthesize paletteTable, optionView;
 
 -(UITableViewCell*) tableView:(UITableView *)paletteView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -58,7 +58,7 @@
     // Add delegate to handle cell events
     self.paletteTable.delegate = self;
     
-    // Initialize tweets array
+    // Initialize array
     icons = [[NSMutableArray alloc] init];
     
     
@@ -95,7 +95,16 @@
 
 -(IBAction)buttonPressed:(id)sender
 {
-    
+   // if (currButton.currentImage == keyboard ){
+        
+        if (keyboardScrollView.isHidden == TRUE)
+        {
+            [keyboardScrollView setHidden:false];
+        }else {
+            [keyboardScrollView setHidden:TRUE];
+        }
+   // }
+
 }
 
 - (void)viewDidUnload

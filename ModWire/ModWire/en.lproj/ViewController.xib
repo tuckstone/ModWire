@@ -2,7 +2,7 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1296</int>
-		<string key="IBDocument.SystemVersion">11D50</string>
+		<string key="IBDocument.SystemVersion">11D50d</string>
 		<string key="IBDocument.InterfaceBuilderVersion">2182</string>
 		<string key="IBDocument.AppKitVersion">1138.32</string>
 		<string key="IBDocument.HIToolboxVersion">568.00</string>
@@ -62,10 +62,7 @@
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MQA</bytes>
 								</object>
-								<object class="NSColor" key="IBUINormalTitleColor">
-									<int key="NSColorSpace">1</int>
-									<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-								</object>
+								<reference key="IBUINormalTitleColor" ref="637227525"/>
 								<object class="NSColor" key="IBUINormalTitleShadowColor" id="572815255">
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MC41AA</bytes>
@@ -76,11 +73,11 @@
 								</object>
 								<object class="IBUIFontDescription" key="IBUIFontDescription">
 									<int key="type">2</int>
-									<double key="pointSize">12</double>
+									<double key="pointSize">1</double>
 								</object>
 								<object class="NSFont" key="IBUIFont">
 									<string key="NSName">Helvetica-Bold</string>
-									<double key="NSSize">12</double>
+									<double key="NSSize">1</double>
 									<int key="NSfFlags">16</int>
 								</object>
 							</object>
@@ -103,6 +100,10 @@
 									<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 								</object>
 								<reference key="IBUINormalTitleShadowColor" ref="572815255"/>
+								<object class="NSCustomResource" key="IBUINormalImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">options.png</string>
+								</object>
 								<object class="IBUIFontDescription" key="IBUIFontDescription" id="20000322">
 									<int key="type">2</int>
 									<double key="pointSize">15</double>
@@ -305,8 +306,8 @@
 						<array class="NSMutableArray" key="children">
 							<reference ref="281416852"/>
 							<reference ref="442242791"/>
-							<reference ref="119398365"/>
 							<reference ref="352432248"/>
+							<reference ref="119398365"/>
 						</array>
 						<reference key="parent" ref="766721923"/>
 					</object>
@@ -314,6 +315,7 @@
 						<int key="objectID">7</int>
 						<reference key="object" ref="442242791"/>
 						<reference key="parent" ref="28882050"/>
+						<string key="objectName">keyboard</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">8</int>
@@ -364,7 +366,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">27</int>
+			<int key="maxID">28</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -400,12 +402,17 @@
 					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="keyboardScrollView">UIScrollView</string>
+						<string key="optionView">UIView</string>
 						<string key="paletteTable">UITableView</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="keyboardScrollView">
 							<string key="name">keyboardScrollView</string>
 							<string key="candidateClassName">UIScrollView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="optionView">
+							<string key="name">optionView</string>
+							<string key="candidateClassName">UIView</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="paletteTable">
 							<string key="name">paletteTable</string>
@@ -427,10 +434,10 @@
 		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">keyboard.png</string>
-			<string key="NS.object.0">{48, 48}</string>
-		</object>
+		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="keyboard.png">{48, 48}</string>
+			<string key="options.png">{63, 58}</string>
+		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">1181</string>
 	</data>
 </archive>

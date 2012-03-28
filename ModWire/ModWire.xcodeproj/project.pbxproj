@@ -25,6 +25,7 @@
 		C8DA8A0015210D66002F0D08 /* OctaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DA89FE15210D65002F0D08 /* OctaveView.m */; };
 		C8DA8A0515210DFA002F0D08 /* BlackKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DA8A0215210DFA002F0D08 /* BlackKeyView.m */; };
 		C8DA8A0615210DFA002F0D08 /* WhiteKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DA8A0415210DFA002F0D08 /* WhiteKeyView.m */; };
+		CE4169BC1522B26F00E967DE /* options.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4169BB1522B26F00E967DE /* options.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		C8DA8A0215210DFA002F0D08 /* BlackKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlackKeyView.m; sourceTree = "<group>"; };
 		C8DA8A0315210DFA002F0D08 /* WhiteKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteKeyView.h; sourceTree = "<group>"; };
 		C8DA8A0415210DFA002F0D08 /* WhiteKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteKeyView.m; sourceTree = "<group>"; };
+		CE4169BB1522B26F00E967DE /* options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = options.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				C85EFCBE1510173D002CB299 /* ViewController.h */,
 				C85EFCBF1510173D002CB299 /* ViewController.m */,
 				C85EFCC11510173D002CB299 /* ViewController.xib */,
+				CE4169BB1522B26F00E967DE /* options.png */,
 				C8AB348115229864000EAB9A /* icon.h */,
 				C8AB348215229864000EAB9A /* icon.m */,
 				C8DA8A0115210DFA002F0D08 /* BlackKeyView.h */,
@@ -199,6 +202,7 @@
 				C85EFCB71510173D002CB299 /* InfoPlist.strings in Resources */,
 				C85EFCC31510173D002CB299 /* ViewController.xib in Resources */,
 				C8AB347C1522939E000EAB9A /* keyboard.png in Resources */,
+				CE4169BC1522B26F00E967DE /* options.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

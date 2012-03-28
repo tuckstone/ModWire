@@ -44,6 +44,8 @@ AudioStreamBasicDescription outputFormat;
 
 @property (nonatomic, retain) IBOutlet UIScrollView *keyboardScrollView;
 
+@property (nonatomic, retain) IBOutlet UIView *optionView;
+
 - (IBAction)buttonPressed:(id)sender;
 
 - (void)noteOn:(int)note;
