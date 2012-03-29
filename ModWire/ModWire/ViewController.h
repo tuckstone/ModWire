@@ -24,6 +24,7 @@
     KeyboardView* keyboardView;
     NSMutableArray *icons;
     UITableView *paletteTable;
+    NSUInteger i;
 
 /* UIScrollView* controlScrollView;
 UIPageControl* controlPageControl;
@@ -44,7 +45,7 @@ AudioStreamBasicDescription outputFormat;
  */
 }
 
-@property (strong, nonatomic) UITableView *paletteTable;
+@property (strong, nonatomic) IBOutlet UITableView *paletteTable;
 
 @property (nonatomic, retain) IBOutlet UIScrollView *keyboardScrollView;
 

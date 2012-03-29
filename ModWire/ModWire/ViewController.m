@@ -49,7 +49,7 @@ int lastKeyPressed = 0;
 
 -(NSInteger) tableView: (UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return [icons count];
 }
 
 - (void)didReceiveMemoryWarning
@@ -73,22 +73,47 @@ int lastKeyPressed = 0;
         exit(0);
     }
     
-    icons = [[NSMutableArray alloc]init];
+    //set up icon palette
     
-    [self defineIconDictionary];
-    
-    CGRect paletteRect = CGRectMake(888.0f, 0.0f, 146.0f, 748.0f);
+    //create table sidebar for icons
+    CGRect paletteRect = CGRectMake(934.0f, 0.0f, 100.0f, 748.0f);
     self.paletteTable = [[UITableView alloc]initWithFrame:paletteRect style:UITableViewStylePlain];
-    paletteTable.rowHeight = 100;
-    paletteTable.backgroundColor = [UIColor blueColor];
-    paletteTable.userInteractionEnabled = YES;
+    //self.paletteTable = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    
+    //add icon palette subview to view
+    [self.view addSubview:self.paletteTable];
     
     // Set up data source for table
     self.paletteTable.dataSource = self;
     
     // Add delegate to handle cell events
     self.paletteTable.delegate = self;
-    [self.view addSubview:self.paletteTable];
+    
+    //Visible parameters of table
+    paletteTable.rowHeight = 100;
+    paletteTable.backgroundColor = [UIColor whiteColor];
+    
+    // Ensure that the table autoresizes correctly
+    self.paletteTable.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    
+    icons = [[NSMutableArray alloc]init];    //Create array for icon classes
+    [self defineIconDictionary];    // define icon classes in array
+    
+    //access one cell in palette table
+    UITableViewCell *cell;
+    
+    //NSLog(@"count: %d ",[icons count]);
+    
+    /*
+    for (i = 0; i < [icons count]; i++)
+    {
+        NSLog(@"hi! we're making cell number: %d ",i);
+        
+        NSIndexPath *thisIndex = [[NSIndexPath alloc]initWithIndex:i];
+        cell = [self tableView:paletteTable cellForRowAtIndexPath:thisIndex];
+    }
+    i = [icons count] - 1;
+    */
     
     CGRect keyboardViewFrame;
     keyboardViewFrame.origin.x = 0;
@@ -106,40 +131,25 @@ int lastKeyPressed = 0;
     // Forward touch events to the keyboard
     //[keyboardScrollView setTouchView:keyboardView];
     
-    UITableViewCell *cell;
-    
-    //NSLog(@"count: %d ",[icons count]);
-    
-    for (NSUInteger i = 0; i < [icons count]; i++)
-    {
-        //NSLog(@"hi!");
-        NSIndexPath *thisIndex = [[NSIndexPath alloc]initWithIndex:i];
-        cell = [self tableView:paletteTable cellForRowAtIndexPath:thisIndex];
-        //UIImageView *lpf = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"lowPassFilter.png"]];
-        //cell.imageView.image = [[UIImage alloc]initWithContentsOfFile:[[icons objectAtIndex:i]imageName]];
-        [cell.imageView sizeToFit];
-        cell.imageView.image = [UIImage imageNamed:@"lowPassFilter.png"];
-        cell.textLabel.text = [[icons objectAtIndex:i]title];
-        
-        NSLog(@"%@",cell.textLabel.text);
-    }
-    
-    [self.paletteTable reloadData];
-    
 }
 
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"cell number: %d ",indexPath.row);
     static NSString *cellIdentifier = @"Icon";
     UITableViewCell *cell = nil;
     if ([tableView isEqual:self.paletteTable]) {
-        
         // Set up cell
         cell = [paletteTable cellForRowAtIndexPath:indexPath];
         if (!cell) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-            cell.textLabel.text = cellIdentifier;
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
+            NSLog(@"Created a cell");
+            cell.imageView.image = [UIImage imageNamed:[[icons objectAtIndex:indexPath.row] imageName]];
+            //cell.imageView.image = [UIImage imageNamed:@"lowPassFilter.png"];
+            NSLog(@"Added image to cell");
+        
+            
         }
     }
     return cell;
@@ -149,6 +159,8 @@ int lastKeyPressed = 0;
 -(void)tableView:(UITableView *)paletteTable didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //make icon appear in editorView
+    
+    NSLog(@"cell clicked %d",indexPath.row);
 }
 
 -(IBAction)buttonPressed:(id)sender
@@ -212,10 +224,19 @@ int lastKeyPressed = 0;
 
 -(void)defineIconDictionary
 {
-    icon *lowPass = [[icon alloc] initWithTitle:@"Low Pass Filter" andImage:@"lowPassFilter.png"];
-    [icons addObject:lowPass];
-    icon *LFO = [[icon alloc] initWithTitle:@"LFO" andImage:@"LFO.png"];
+    icon *LFO = [[icon alloc] initWithTitle:@"LFO" andImage:@"lfo.png"];
     [icons addObject:LFO];
+    icon *delay = [[icon alloc] initWithTitle:@"Delay" andImage:@"delay.png.png"];
+    [icons addObject:delay];
+    icon *filter = [[icon alloc] initWithTitle:@"Filter" andImage:@"filter.png"];
+    [icons addObject:filter];
+    icon *modulator = [[icon alloc] initWithTitle:@"Modulator" andImage:@"modulator.png"];
+    [icons addObject:modulator];
+    icon *oscillator = [[icon alloc] initWithTitle:@"Oscillator" andImage:@"oscillator.png"];
+    [icons addObject:oscillator];
+    icon *waveshaper = [[icon alloc] initWithTitle:@"Waveshaper" andImage:@"waveshaper.png"];
+    [icons addObject:waveshaper];
+    
 }
 
 @end

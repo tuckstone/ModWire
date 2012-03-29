@@ -22,6 +22,16 @@
 		C860683E152397F8005C8DDB /* lowPassFilter.png in Resources */ = {isa = PBXBuildFile; fileRef = C860683D152397F8005C8DDB /* lowPassFilter.png */; };
 		C88296951518CE1E00B74829 /* IconControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = C88296941518CE1E00B74829 /* IconControlView.m */; };
 		C882969E1518D60400B74829 /* EditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C882969D1518D60400B74829 /* EditorView.m */; };
+		C882DBDC1524C76200BD79BB /* audio-in.png in Resources */ = {isa = PBXBuildFile; fileRef = C882DBD31524C76100BD79BB /* audio-in.png */; };
+		C882DBDD1524C76200BD79BB /* delay.png in Resources */ = {isa = PBXBuildFile; fileRef = C882DBD41524C76100BD79BB /* delay.png */; };
+		C882DBDE1524C76200BD79BB /* filter.png in Resources */ = {isa = PBXBuildFile; fileRef = C882DBD51524C76100BD79BB /* filter.png */; };
+		C882DBDF1524C76200BD79BB /* lfo.png in Resources */ = {isa = PBXBuildFile; fileRef = C882DBD61524C76100BD79BB /* lfo.png */; };
+		C882DBE01524C76200BD79BB /* modulator.png in Resources */ = {isa = PBXBuildFile; fileRef = C882DBD71524C76100BD79BB /* modulator.png */; };
+		C882DBE11524C76200BD79BB /* oscillator.png in Resources */ = {isa = PBXBuildFile; fileRef = C882DBD81524C76100BD79BB /* oscillator.png */; };
+		C882DBE21524C76200BD79BB /* output.png in Resources */ = {isa = PBXBuildFile; fileRef = C882DBD91524C76200BD79BB /* output.png */; };
+		C882DBE31524C76200BD79BB /* sampler.png in Resources */ = {isa = PBXBuildFile; fileRef = C882DBDA1524C76200BD79BB /* sampler.png */; };
+		C882DBE41524C76200BD79BB /* waveshaper.png in Resources */ = {isa = PBXBuildFile; fileRef = C882DBDB1524C76200BD79BB /* waveshaper.png */; };
+		C882DBE61524CD3B00BD79BB /* Synth_background_flat.png in Resources */ = {isa = PBXBuildFile; fileRef = C882DBE51524CD3A00BD79BB /* Synth_background_flat.png */; };
 		C8AB34751522891C000EAB9A /* KeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8AB34721522891B000EAB9A /* KeyboardView.m */; };
 		C8AB34761522891C000EAB9A /* TouchForwardingUIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8AB34741522891B000EAB9A /* TouchForwardingUIScrollView.m */; };
 		C8AB347C1522939E000EAB9A /* keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = C8AB347B1522939D000EAB9A /* keyboard.png */; };
@@ -74,6 +84,16 @@
 		C88296941518CE1E00B74829 /* IconControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconControlView.m; sourceTree = "<group>"; };
 		C882969C1518D60400B74829 /* EditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorView.h; sourceTree = "<group>"; };
 		C882969D1518D60400B74829 /* EditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorView.m; sourceTree = "<group>"; };
+		C882DBD31524C76100BD79BB /* audio-in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "audio-in.png"; sourceTree = "<group>"; };
+		C882DBD41524C76100BD79BB /* delay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delay.png; sourceTree = "<group>"; };
+		C882DBD51524C76100BD79BB /* filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter.png; sourceTree = "<group>"; };
+		C882DBD61524C76100BD79BB /* lfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lfo.png; sourceTree = "<group>"; };
+		C882DBD71524C76100BD79BB /* modulator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = modulator.png; sourceTree = "<group>"; };
+		C882DBD81524C76100BD79BB /* oscillator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oscillator.png; sourceTree = "<group>"; };
+		C882DBD91524C76200BD79BB /* output.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = output.png; sourceTree = "<group>"; };
+		C882DBDA1524C76200BD79BB /* sampler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampler.png; sourceTree = "<group>"; };
+		C882DBDB1524C76200BD79BB /* waveshaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waveshaper.png; sourceTree = "<group>"; };
+		C882DBE51524CD3A00BD79BB /* Synth_background_flat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Synth_background_flat.png; sourceTree = "<group>"; };
 		C8AB34711522891B000EAB9A /* KeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardView.h; sourceTree = "<group>"; };
 		C8AB34721522891B000EAB9A /* KeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardView.m; sourceTree = "<group>"; };
 		C8AB34731522891B000EAB9A /* TouchForwardingUIScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchForwardingUIScrollView.h; sourceTree = "<group>"; };
@@ -152,9 +172,19 @@
 		C85EFCB21510173D002CB299 /* ModWire */ = {
 			isa = PBXGroup;
 			children = (
+				C882DBD31524C76100BD79BB /* audio-in.png */,
+				C882DBD41524C76100BD79BB /* delay.png */,
+				C882DBD51524C76100BD79BB /* filter.png */,
+				C882DBD61524C76100BD79BB /* lfo.png */,
+				C882DBD71524C76100BD79BB /* modulator.png */,
+				C882DBD81524C76100BD79BB /* oscillator.png */,
+				C882DBD91524C76200BD79BB /* output.png */,
+				C882DBDA1524C76200BD79BB /* sampler.png */,
+				C882DBDB1524C76200BD79BB /* waveshaper.png */,
 				C860683D152397F8005C8DDB /* lowPassFilter.png */,
 				C8AB349115235A69000EAB9A /* ModWire logo.png */,
 				C8AB347B1522939D000EAB9A /* keyboard.png */,
+				CE4169BB1522B26F00E967DE /* options.png */,
 				C8AB34711522891B000EAB9A /* KeyboardView.h */,
 				C8AB34721522891B000EAB9A /* KeyboardView.m */,
 				C8AB34731522891B000EAB9A /* TouchForwardingUIScrollView.h */,
@@ -164,7 +194,7 @@
 				C85EFCBE1510173D002CB299 /* ViewController.h */,
 				C85EFCBF1510173D002CB299 /* ViewController.m */,
 				C85EFCC11510173D002CB299 /* ViewController.xib */,
-				CE4169BB1522B26F00E967DE /* options.png */,
+				C882DBE51524CD3A00BD79BB /* Synth_background_flat.png */,
 				C8AB348115229864000EAB9A /* icon.h */,
 				C8AB348215229864000EAB9A /* icon.m */,
 				C8DA8A0115210DFA002F0D08 /* BlackKeyView.h */,
@@ -269,6 +299,16 @@
 				C8AB349215235A69000EAB9A /* ModWire logo.png in Resources */,
 				C860683E152397F8005C8DDB /* lowPassFilter.png in Resources */,
 				2716635515240FD900A46F78 /* synth_engine.pd in Resources */,
+				C882DBDC1524C76200BD79BB /* audio-in.png in Resources */,
+				C882DBDD1524C76200BD79BB /* delay.png in Resources */,
+				C882DBDE1524C76200BD79BB /* filter.png in Resources */,
+				C882DBDF1524C76200BD79BB /* lfo.png in Resources */,
+				C882DBE01524C76200BD79BB /* modulator.png in Resources */,
+				C882DBE11524C76200BD79BB /* oscillator.png in Resources */,
+				C882DBE21524C76200BD79BB /* output.png in Resources */,
+				C882DBE31524C76200BD79BB /* sampler.png in Resources */,
+				C882DBE41524C76200BD79BB /* waveshaper.png in Resources */,
+				C882DBE61524CD3B00BD79BB /* Synth_background_flat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
