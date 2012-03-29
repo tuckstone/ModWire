@@ -11,6 +11,7 @@
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>ModWire logo.png</string>
+		<string>Default-Landscape~ipad.png</string>
 	</array>
 	<key>CFBundleIcons</key>
 	<dict>
@@ -19,6 +20,7 @@
 			<key>CFBundleIconFiles</key>
 			<array>
 				<string>ModWire logo.png</string>
+				<string>Default-Landscape~ipad.png</string>
 			</array>
 		</dict>
 	</dict>
