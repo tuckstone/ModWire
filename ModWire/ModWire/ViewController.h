@@ -9,13 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "KeyboardView.h"
 #import "icon.h"
+#import "PdDispatcher.h"
 
 
 @class TouchForwardingUIScrollView;
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {
-  
+    PdDispatcher *dispatcher;
+    void *patch;
+    
 @private
     TouchForwardingUIScrollView* keyboardScrollView;
     KeyboardView* keyboardView;
@@ -53,7 +56,8 @@ AudioStreamBasicDescription outputFormat;
 
 - (void)noteOn:(int)note;
 - (void)noteOff:(int)note;
-
+- (IBAction)setFilterCutoffFreq:(id)sender;
+- (IBAction)setOscDetune:(id)sender;
 - (void) defineIconDictionary;
 
 @end

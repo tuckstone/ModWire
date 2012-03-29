@@ -12,14 +12,34 @@
 #import "icon.h"
 
 @implementation ViewController
-@synthesize paletteTable, optionView, currButton;
+@synthesize paletteTable, optionView, currButton, keyboardScrollView;
+int lastKeyPressed = 0;
 
 - (void)noteOn:(int)note {
+    note = note - 4;
     NSLog(@"NOTE ON %d",note);
+    lastKeyPressed = note;
+    [PdBase sendFloat:note toReceiver:@"startnote"];
 }
 
 - (void)noteOff:(int)note {
+    note = note - 4;
     NSLog(@"NOTE OFF %d",note);
+    if (note == lastKeyPressed) {
+        [PdBase sendFloat:note toReceiver:@"stopnote"];
+    }
+}
+
+- (IBAction)setFilterCutoffFreq:(id)sender
+{
+    [PdBase sendFloat:[(UISlider *) sender value] toReceiver:@"filtnum"];
+}
+
+- (IBAction)setOscDetune:(id)sender
+{
+    int tuneInt = (int) [(UISlider *) sender value];
+    NSLog(@"%d",tuneInt);
+    [PdBase sendFloat:[(UISlider *) sender value] toReceiver:@"detune"];
 }
 
 -(NSInteger) tableView: (UITableView *)tableView numberOfSectionsInTableView:(UITableView *)paletteView
@@ -43,6 +63,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //setup synth engine
+    dispatcher = [[PdDispatcher alloc] init];
+    [PdBase setDelegate:dispatcher];
+    patch = [PdBase openFile:@"synth_engine.pd" path:[[NSBundle mainBundle] resourcePath]];
+    if (!patch) {
+        NSLog(@"failed to load synth engine, will quit now");
+        exit(0);
+    }
+    
     icons = [[NSMutableArray alloc]init];
     
     [self defineIconDictionary];
@@ -138,6 +168,11 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+
+    //unload synth engine
+    [PdBase closeFile:patch];
+    [PdBase setDelegate:nil];
+    
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }

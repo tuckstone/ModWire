@@ -14,9 +14,17 @@
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
+@synthesize audioController = _audioController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //audio controller setup
+    _audioController = [[PdAudioController alloc] init];
+    if ([self.audioController configureAmbientWithSampleRate:44100 numberChannels:2 mixingEnabled:YES] != PdAudioOK) {
+        NSLog(@"Failed to initialize audio components, will quit now");
+        exit(0);
+    }
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
@@ -27,6 +35,9 @@
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
+    //this will turn off sound in the event of an interuption like a phone call
+    self.audioController.active = NO;
+    
     /*
      Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
      Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -50,6 +61,8 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
+    //restart sound
+    self.audioController.active = YES;
     /*
      Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
      */

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2716635515240FD900A46F78 /* synth_engine.pd in Resources */ = {isa = PBXBuildFile; fileRef = 2716635415240FD900A46F78 /* synth_engine.pd */; };
+		27D1BCD91523F2BE0051BE34 /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D1BCD51523F2090051BE34 /* libpd-ios.a */; };
+		27D1BCDB1523F2CE0051BE34 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D1BCDA1523F2CE0051BE34 /* AudioToolbox.framework */; };
+		27D1BCDD1523F2D70051BE34 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D1BCDC1523F2D70051BE34 /* AVFoundation.framework */; };
 		C85EFCAD1510173D002CB299 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C85EFCAC1510173D002CB299 /* UIKit.framework */; };
 		C85EFCAF1510173D002CB299 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C85EFCAE1510173D002CB299 /* Foundation.framework */; };
 		C85EFCB11510173D002CB299 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C85EFCB01510173D002CB299 /* CoreGraphics.framework */; };
@@ -30,7 +34,28 @@
 		CE4169BC1522B26F00E967DE /* options.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4169BB1522B26F00E967DE /* options.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		27D1BCD41523F2090051BE34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27D1BCCD1523F2080051BE34 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+		27D1BCD71523F2AE0051BE34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27D1BCCD1523F2080051BE34 /* libpd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2716635415240FD900A46F78 /* synth_engine.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = synth_engine.pd; sourceTree = "<group>"; };
+		27D1BCCD1523F2080051BE34 /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = libpd/libpd.xcodeproj; sourceTree = SOURCE_ROOT; };
+		27D1BCDA1523F2CE0051BE34 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		27D1BCDC1523F2D70051BE34 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C85EFCA81510173D002CB299 /* ModWire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModWire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85EFCAC1510173D002CB299 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C85EFCAE1510173D002CB299 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,6 +98,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D1BCDD1523F2D70051BE34 /* AVFoundation.framework in Frameworks */,
+				27D1BCDB1523F2CE0051BE34 /* AudioToolbox.framework in Frameworks */,
+				27D1BCD91523F2BE0051BE34 /* libpd-ios.a in Frameworks */,
 				C85EFCAD1510173D002CB299 /* UIKit.framework in Frameworks */,
 				C85EFCAF1510173D002CB299 /* Foundation.framework in Frameworks */,
 				C85EFCB11510173D002CB299 /* CoreGraphics.framework in Frameworks */,
@@ -82,9 +110,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27D1BCCE1523F2080051BE34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27D1BCD51523F2090051BE34 /* libpd-ios.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C85EFC9D1510173D002CB299 = {
 			isa = PBXGroup;
 			children = (
+				2716635415240FD900A46F78 /* synth_engine.pd */,
+				27D1BCDC1523F2D70051BE34 /* AVFoundation.framework */,
+				27D1BCDA1523F2CE0051BE34 /* AudioToolbox.framework */,
+				27D1BCCD1523F2080051BE34 /* libpd.xcodeproj */,
 				C85EFCB21510173D002CB299 /* ModWire */,
 				C85EFCAB1510173D002CB299 /* Frameworks */,
 				C85EFCA91510173D002CB299 /* Products */,
@@ -169,6 +209,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				27D1BCD81523F2AE0051BE34 /* PBXTargetDependency */,
 			);
 			name = ModWire;
 			productName = ModWire;
@@ -181,7 +222,7 @@
 		C85EFC9F1510173D002CB299 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = C85EFCA21510173D002CB299 /* Build configuration list for PBXProject "ModWire" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -193,12 +234,28 @@
 			mainGroup = C85EFC9D1510173D002CB299;
 			productRefGroup = C85EFCA91510173D002CB299 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 27D1BCCE1523F2080051BE34 /* Products */;
+					ProjectRef = 27D1BCCD1523F2080051BE34 /* libpd.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C85EFCA71510173D002CB299 /* ModWire */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		27D1BCD51523F2090051BE34 /* libpd-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-ios.a";
+			remoteRef = 27D1BCD41523F2090051BE34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C85EFCA61510173D002CB299 /* Resources */ = {
@@ -211,6 +268,7 @@
 				CE4169BC1522B26F00E967DE /* options.png in Resources */,
 				C8AB349215235A69000EAB9A /* ModWire logo.png in Resources */,
 				C860683E152397F8005C8DDB /* lowPassFilter.png in Resources */,
+				2716635515240FD900A46F78 /* synth_engine.pd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +295,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27D1BCD81523F2AE0051BE34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libpd-ios";
+			targetProxy = 27D1BCD71523F2AE0051BE34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C85EFCB51510173D002CB299 /* InfoPlist.strings */ = {
@@ -312,6 +378,7 @@
 				GCC_PREFIX_HEADER = "ModWire/ModWire-Prefix.pch";
 				INFOPLIST_FILE = "ModWire/ModWire-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/libpd/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -323,6 +390,7 @@
 				GCC_PREFIX_HEADER = "ModWire/ModWire-Prefix.pch";
 				INFOPLIST_FILE = "ModWire/ModWire-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/libpd/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
