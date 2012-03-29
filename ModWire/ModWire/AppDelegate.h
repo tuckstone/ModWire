@@ -10,12 +10,18 @@
 #import "PdAudioController.h"
 
 @class ViewController;
+@class PGMidi;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : NSObject <UIApplicationDelegate>
+{
+    UIWindow *window;
+    PGMidi *midi;
+    ViewController *viewController;
+}
 
-@property (strong, nonatomic) UIWindow *window;
+@property (retain, nonatomic) IBOutlet UIWindow *window;
 
-@property (strong, nonatomic) ViewController *viewController;
+@property (retain, nonatomic) IBOutlet ViewController *viewController;
 
 @property (strong, nonatomic, readonly) PdAudioController *audioController;
 

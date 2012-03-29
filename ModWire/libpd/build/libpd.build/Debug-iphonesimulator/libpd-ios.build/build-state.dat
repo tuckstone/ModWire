@@ -2,8 +2,8 @@ Tlibpd-ios
 v5
 r1
 cCheck dependencies
-cCpHeader objc/PdBase.h build/Debug-iphonesimulator/usr/local/include/PdBase.h
 cCpHeader objc/PdAudio.h build/Debug-iphonesimulator/usr/local/include/PdAudio.h
+cCpHeader objc/PdBase.h build/Debug-iphonesimulator/usr/local/include/PdBase.h
 cCpHeader objc/PdDispatcher.h build/Debug-iphonesimulator/usr/local/include/PdDispatcher.h
 cCpHeader objc/PdFile.h build/Debug-iphonesimulator/usr/local/include/PdFile.h
 cCompileC build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/d_arithmetic.o /Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/d_arithmetic.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
@@ -97,811 +97,811 @@ t1332771116
 s3487792
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/Debug-iphonesimulator/libpd-ios.a
-t1332992132
+t1333042154
 s2759984
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/Debug-iphonesimulator/usr/local/include/PdAudio.h
-t1332992126
+t1333042154
 s4671
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/Debug-iphonesimulator/usr/local/include/PdBase.h
-t1332992126
+t1333042154
 s4724
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/Debug-iphonesimulator/usr/local/include/PdDispatcher.h
-t1332992126
+t1333042154
 s1476
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/Debug-iphonesimulator/usr/local/include/PdFile.h
-t1332992126
+t1333042154
 s957
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/AudioHelpers.o
-t1332992131
+t1333042154
 s9264
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/PdAudio.o
-t1332992131
+t1333042154
 s37936
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/PdAudioController.o
-t1332992131
+t1333042154
 s33720
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/PdAudioUnit.o
-t1332992131
+t1333042154
 s28508
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/PdBase.o
-t1332992131
+t1333042154
 s54472
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/PdDispatcher.o
-t1332992131
+t1333042154
 s25768
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/PdFile.o
-t1332992131
+t1333042154
 s13240
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/d_arithmetic.o
-t1332992127
+t1333042154
 s49016
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/d_array.o
-t1332992127
+t1333042154
 s45880
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/d_ctl.o
-t1332992127
+t1333042154
 s36136
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/d_dac.o
-t1332992127
+t1333042154
 s14136
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/d_delay.o
-t1332992127
+t1333042154
 s17252
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/d_fft.o
-t1332992127
+t1333042154
 s20148
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/d_fft_mayer.o
-t1332992127
+t1333042154
 s11748
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/d_fftroutine.o
-t1332992127
+t1333042154
 s21736
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/d_filter.o
-t1332992127
+t1333042154
 s51892
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/d_global.o
-t1332992127
+t1333042154
 s19952
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/d_math.o
-t1332992127
+t1333042154
 s43624
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/d_misc.o
-t1332992127
+t1333042154
 s10608
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/d_osc.o
-t1332992127
+t1333042154
 s22408
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/d_resample.o
-t1332992127
+t1333042154
 s9108
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/d_soundfile.o
-t1332992127
+t1333042154
 s83756
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/d_ugen.o
-t1332992127
+t1333042154
 s43468
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_all_guis.o
-t1332992127
+t1333042154
 s38116
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_array.o
-t1332992127
+t1333042154
 s74632
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_bang.o
-t1332992128
+t1333042154
 s43796
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_canvas.o
-t1332992128
+t1333042154
 s81048
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_editor.o
-t1332992128
+t1333042154
 s117956
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_graph.o
-t1332992128
+t1333042154
 s50884
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_guiconnect.o
-t1332992128
+t1333042154
 s11816
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_hdial.o
-t1332992128
+t1333042154
 s51164
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_hslider.o
-t1332992128
+t1333042154
 s47772
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_io.o
-t1332992128
+t1333042154
 s31672
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_mycanvas.o
-t1332992128
+t1333042154
 s33904
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_numbox.o
-t1332992128
+t1333042154
 s55104
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_readwrite.o
-t1332992128
+t1333042154
 s37916
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_rtext.o
-t1332992128
+t1333042154
 s29272
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_scalar.o
-t1332992128
+t1333042154
 s30428
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_template.o
-t1332992128
+t1333042154
 s100208
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_text.o
-t1332992128
+t1333042154
 s75780
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_toggle.o
-t1332992129
+t1333042154
 s41952
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_traversal.o
-t1332992129
+t1333042154
 s47504
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_vdial.o
-t1332992129
+t1333042154
 s50956
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_vslider.o
-t1332992129
+t1333042154
 s46836
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/g_vumeter.o
-t1332992129
+t1333042154
 s48708
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/m_atom.o
-t1332992129
+t1333042154
 s11864
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/m_binbuf.o
-t1332992129
+t1333042154
 s65520
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/m_class.o
-t1332992129
+t1333042154
 s37236
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/m_conf.o
-t1332992129
+t1333042154
 s3908
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/m_glob.o
-t1332992129
+t1333042154
 s15340
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/m_memory.o
-t1332992129
+t1333042154
 s5576
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/m_obj.o
-t1332992129
+t1333042154
 s35792
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/m_pd.o
-t1332992129
+t1333042154
 s19536
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/m_sched.o
-t1332992129
+t1333042154
 s25788
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/pd-ios.LinkFileList
-c000000004F73D87E0000000000002AAD
-t1332992126
+c000000004F749BEA0000000000002AAD
+t1333042154
 s10925
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/ringbuffer.o
-t1332992131
+t1333042154
 s6496
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/s_audio.o
-t1332992129
+t1333042154
 s33756
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/s_audio_dummy.o
-t1332992129
+t1333042154
 s1732
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/s_file.o
-t1332992129
+t1333042154
 s22916
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/s_inter.o
-t1332992130
+t1333042154
 s55656
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/s_libpdmidi.o
-t1332992130
+t1333042154
 s12512
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/s_loader.o
-t1332992129
+t1333042154
 s15116
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/s_main.o
-t1332992130
+t1333042154
 s46804
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/s_path.o
-t1332992130
+t1333042154
 s37392
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/s_print.o
-t1332992130
+t1333042154
 s19888
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/s_utf8.o
-t1332992130
+t1333042154
 s9748
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/x_acoustics.o
-t1332992130
+t1333042154
 s13392
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/x_arithmetic.o
-t1332992130
+t1333042154
 s52404
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/x_connective.o
-t1332992130
+t1333042154
 s71604
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/x_gui.o
-t1332992130
+t1333042154
 s24832
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/x_interface.o
-t1332992130
+t1333042154
 s10580
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/x_libpdreceive.o
-t1332992130
+t1333042154
 s9636
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/x_list.o
-t1332992130
+t1333042154
 s27540
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/x_midi.o
-t1332992130
+t1333042154
 s65392
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/x_misc.o
-t1332992130
+t1333042154
 s17492
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/x_net.o
-t1332992130
+t1333042154
 s20004
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/x_qlist.o
-t1332992130
+t1333042154
 s21168
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/x_time.o
-t1332992130
+t1333042154
 s28472
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/z_libpd.o
-t1332992131
+t1333042154
 s32360
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/libpd_wrapper/s_libpdmidi.c
-c000000004F71DCE60000000000000966
-t1332862182
+c000000004F749BEA0000000000000966
+t1333042154
 s2406
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/libpd_wrapper/x_libpdreceive.c
-c000000004F71DCE600000000000007C6
-t1332862182
+c000000004F749BEA00000000000007C6
+t1333042154
 s1990
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/libpd_wrapper/x_libpdreceive.h
-c000000004F71DCE6000000000000016C
-t1332862182
+c000000004F749BEA000000000000016C
+t1333042154
 s364
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/libpd_wrapper/z_libpd.c
-c000000004F71DCE600000000000022DA
-t1332862182
+c000000004F749BEA00000000000022DA
+t1333042154
 s8922
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/libpd_wrapper/z_libpd.h
-c000000004F71DCE6000000000000102C
-t1332862182
+c000000004F749BEA000000000000102C
+t1333042154
 s4140
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/objc/AudioHelpers.h
-c000000004F71DCE60000000000000767
-t1332862182
+c000000004F749BEA0000000000000767
+t1333042154
 s1895
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/objc/AudioHelpers.m
-c000000004F71DCE60000000000000D39
-t1332862182
+c000000004F749BEA0000000000000D39
+t1333042154
 s3385
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/objc/PdAudio.h
-c000000004F71DCE6000000000000123F
-t1332862182
+c000000004F749BEA000000000000123F
+t1333042154
 s4671
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/objc/PdAudio.m
-c000000004F71DCE60000000000004B57
-t1332862182
+c000000004F749BEA0000000000004B57
+t1333042154
 s19287
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/objc/PdAudioController.h
-c000000004F71DCE60000000000000BF7
-t1332862182
+c000000004F749BEA0000000000000BF7
+t1333042154
 s3063
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/objc/PdAudioController.m
-c000000004F71DCE600000000000023D3
-t1332862182
+c000000004F749BEA00000000000023D3
+t1333042154
 s9171
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/objc/PdAudioUnit.h
-c000000004F71DCE60000000000000571
-t1332862182
+c000000004F749BEA0000000000000571
+t1333042154
 s1393
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/objc/PdAudioUnit.m
-c000000004F71DCE60000000000002545
-t1332862182
+c000000004F749BEA0000000000002545
+t1333042154
 s9541
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/objc/PdBase.h
-c000000004F71DCE60000000000001274
-t1332862182
+c000000004F749BEA0000000000001274
+t1333042154
 s4724
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/objc/PdBase.m
-c000000004F71DCE60000000000003C67
-t1332862182
+c000000004F749BEA0000000000003C67
+t1333042154
 s15463
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/objc/PdDispatcher.h
-c000000004F71DCE600000000000005C4
-t1332862182
+c000000004F749BEA00000000000005C4
+t1333042154
 s1476
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/objc/PdDispatcher.m
-c000000004F71DCE60000000000001488
-t1332862182
+c000000004F749BEA0000000000001488
+t1333042154
 s5256
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/objc/PdFile.h
-c000000004F71DCE600000000000003BD
-t1332862182
+c000000004F749BEA00000000000003BD
+t1333042154
 s957
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/objc/PdFile.m
-c000000004F71DCE6000000000000075A
-t1332862182
+c000000004F749BEA000000000000075A
+t1333042154
 s1882
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/objc/ringbuffer.c
-c000000004F71DCE60000000000000913
-t1332862182
+c000000004F749BEA0000000000000913
+t1333042154
 s2323
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/objc/ringbuffer.h
-c000000004F71DCE6000000000000030F
-t1332862182
+c000000004F749BEA000000000000030F
+t1333042154
 s783
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/d_arithmetic.c
-c000000004F71DCE60000000000005FF6
-t1332862182
+c000000004F749BEA0000000000005FF6
+t1333042154
 s24566
 i"m_pd.h"
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/d_array.c
-c000000004F71DCE60000000000006B78
-t1332862182
+c000000004F749BEA0000000000006B78
+t1333042154
 s27512
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/d_ctl.c
-c000000004F71DCE60000000000005D9F
-t1332862182
+c000000004F749BEA0000000000005D9F
+t1333042154
 s23967
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/d_dac.c
-c000000004F71DCE600000000000011F1
-t1332862182
+c000000004F749BEA00000000000011F1
+t1333042154
 s4593
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/d_delay.c
-c000000004F71DCE60000000000002671
-t1332862182
+c000000004F749BEA0000000000002671
+t1333042154
 s9841
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/d_fft.c
-c000000004F71DCE60000000000002551
-t1332862182
+c000000004F749BEA0000000000002551
+t1333042154
 s9553
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/d_fft_mayer.c
-c000000004F71DCE60000000000003D31
-t1332862182
+c000000004F749BEA0000000000003D31
+t1333042154
 s15665
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/d_fftroutine.c
-c000000004F71DCE60000000000009494
-t1332862182
+c000000004F749BEA0000000000009494
+t1333042154
 s38036
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/d_filter.c
-c000000004F71DCE60000000000006D3D
-t1332862182
+c000000004F749BEA0000000000006D3D
+t1333042154
 s27965
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/d_global.c
-c000000004F71DCE6000000000000247C
-t1332862182
+c000000004F749BEA000000000000247C
+t1333042154
 s9340
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/d_math.c
-c000000004F71DCE60000000000004CAB
-t1332862182
+c000000004F749BEA0000000000004CAB
+t1333042154
 s19627
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/d_misc.c
-c000000004F71DCE60000000000000B66
-t1332862182
+c000000004F749BEA0000000000000B66
+t1333042154
 s2918
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/d_osc.c
-c000000004F71DCE6000000000000359E
-t1332862182
+c000000004F749BEA000000000000359E
+t1333042154
 s13726
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/d_resample.c
-c000000004F71DCE6000000000000144F
-t1332862182
+c000000004F749BEA000000000000144F
+t1333042154
 s5199
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/d_soundfile.c
-c000000004F71DCE60000000000016BFE
-t1332862182
+c000000004F749BEA0000000000016BFE
+t1333042154
 s93182
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/d_ugen.c
-c000000004F71DCE60000000000009412
-t1332862182
+c000000004F749BEA0000000000009412
+t1333042154
 s37906
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_all_guis.c
-c000000004F71DCE600000000000049D6
-t1332862182
+c000000004F749BEA00000000000049D6
+t1333042154
 s18902
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_all_guis.h
-c000000004F71DCE600000000000029DC
-t1332862182
+c000000004F749BEA00000000000029DC
+t1333042154
 s10716
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_array.c
-c000000004F71DCE6000000000000C529
-t1332862182
+c000000004F749BEA000000000000C529
+t1333042154
 s50473
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_bang.c
-c000000004F71DCE60000000000004CCA
-t1332862182
+c000000004F749BEA0000000000004CCA
+t1333042154
 s19658
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_canvas.c
-c000000004F71DCE6000000000000C109
-t1332862182
+c000000004F749BEA000000000000C109
+t1333042154
 s49417
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_canvas.h
-c000000004F71DCE60000000000006A62
-t1332862182
+c000000004F749BEA0000000000006A62
+t1333042154
 s27234
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_editor.c
-c000000004F71DCE60000000000015CE7
-t1332862182
+c000000004F749BEA0000000000015CE7
+t1333042154
 s89319
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_graph.c
-c000000004F71DCE60000000000008B62
-t1332862182
+c000000004F749BEA0000000000008B62
+t1333042154
 s35682
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_guiconnect.c
-c000000004F71DCE60000000000000A13
-t1332862182
+c000000004F749BEA0000000000000A13
+t1333042154
 s2579
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_hdial.c
-c000000004F71DCE600000000000069C9
-t1332862182
+c000000004F749BEA00000000000069C9
+t1333042154
 s27081
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_hslider.c
-c000000004F71DCE60000000000005B8D
-t1332862182
+c000000004F749BEA0000000000005B8D
+t1333042154
 s23437
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_io.c
-c000000004F71DCE60000000000004C7C
-t1332862182
+c000000004F749BEA0000000000004C7C
+t1333042154
 s19580
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_mycanvas.c
-c000000004F71DCE600000000000037B3
-t1332862182
+c000000004F749BEA00000000000037B3
+t1333042154
 s14259
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_numbox.c
-c000000004F71DCE600000000000075C6
-t1332862182
+c000000004F749BEA00000000000075C6
+t1333042154
 s30150
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_readwrite.c
-c000000004F71DCE60000000000006353
-t1332862182
+c000000004F749BEA0000000000006353
+t1333042154
 s25427
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_rtext.c
-c000000004F71DCE600000000000051EC
-t1332862182
+c000000004F749BEA00000000000051EC
+t1333042154
 s20972
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_scalar.c
-c000000004F71DCE600000000000034AD
-t1332862182
+c000000004F749BEA00000000000034AD
+t1333042154
 s13485
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_template.c
-c000000004F71DCE600000000000135E0
-t1332862182
+c000000004F749BEA00000000000135E0
+t1333042154
 s79328
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_text.c
-c000000004F71DCE6000000000000B3D1
-t1332862182
+c000000004F749BEA000000000000B3D1
+t1333042154
 s46033
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_toggle.c
-c000000004F71DCE600000000000048B5
-t1332862182
+c000000004F749BEA00000000000048B5
+t1333042154
 s18613
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_traversal.c
-c000000004F71DCE60000000000007D8B
-t1332862182
+c000000004F749BEA0000000000007D8B
+t1333042154
 s32139
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_vdial.c
-c000000004F71DCE600000000000068A2
-t1332862182
+c000000004F749BEA00000000000068A2
+t1333042154
 s26786
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_vslider.c
-c000000004F71DCE60000000000005873
-t1332862182
+c000000004F749BEA0000000000005873
+t1333042154
 s22643
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/g_vumeter.c
-c000000004F71DCE60000000000006793
-t1332862182
+c000000004F749BEA0000000000006793
+t1333042154
 s26515
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/m_atom.c
-c000000004F71DCE60000000000000EAC
-t1332862182
+c000000004F749BEA0000000000000EAC
+t1333042154
 s3756
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/m_binbuf.c
-c000000004F71DCE6000000000000CFB4
-t1332862182
+c000000004F749BEA000000000000CFB4
+t1333042154
 s53172
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/m_class.c
-c000000004F71DCE6000000000000636A
-t1332862182
+c000000004F749BEA000000000000636A
+t1333042154
 s25450
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/m_conf.c
-c000000004F71DCE6000000000000097C
-t1332862182
+c000000004F749BEA000000000000097C
+t1333042154
 s2428
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/m_glob.c
-c000000004F71DCE600000000000017A5
-t1332862182
+c000000004F749BEA00000000000017A5
+t1333042154
 s6053
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/m_imp.h
-c000000004F71DCE60000000000000DEE
-t1332862182
+c000000004F749BEA0000000000000DEE
+t1333042154
 s3566
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/m_memory.c
-c000000004F71DCE6000000000000079D
-t1332862182
+c000000004F749BEA000000000000079D
+t1333042154
 s1949
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/m_obj.c
-c000000004F71DCE60000000000004843
-t1332862182
+c000000004F749BEA0000000000004843
+t1333042154
 s18499
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/m_pd.c
-c000000004F71DCE60000000000001CAF
-t1332862182
+c000000004F749BEA0000000000001CAF
+t1333042154
 s7343
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/m_pd.h
-c000000004F71DCE60000000000005F90
-t1332862182
+c000000004F749BEA0000000000005F90
+t1333042154
 s24464
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/m_sched.c
-c000000004F71DCE60000000000004048
-t1332862182
+c000000004F749BEA0000000000004048
+t1333042154
 s16456
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/s_audio.c
-c000000004F71DCE60000000000007A1A
-t1332862182
+c000000004F749BEA0000000000007A1A
+t1333042154
 s31258
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/s_audio_dummy.c
-c000000004F71DCE600000000000002BB
-t1332862182
+c000000004F749BEA00000000000002BB
+t1333042154
 s699
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/s_file.c
-c000000004F71DCE60000000000003CED
-t1332862182
+c000000004F749BEA0000000000003CED
+t1333042154
 s15597
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/s_inter.c
-c000000004F71DCE6000000000000943D
-t1332862182
+c000000004F749BEA000000000000943D
+t1333042154
 s37949
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/s_loader.c
-c000000004F71DCE600000000000025A6
-t1332862182
+c000000004F749BEA00000000000025A6
+t1333042154
 s9638
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/s_main.c
-c000000004F71DCE60000000000007D12
-t1332862182
+c000000004F749BEA0000000000007D12
+t1333042154
 s32018
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/s_path.c
-c000000004F71DCE60000000000004C2E
-t1332862182
+c000000004F749BEA0000000000004C2E
+t1333042154
 s19502
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/s_print.c
-c000000004F71DCE60000000000001AAA
-t1332862182
+c000000004F749BEA0000000000001AAA
+t1333042154
 s6826
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/s_stuff.h
-c000000004F71DCE60000000000003578
-t1332862182
+c000000004F749BEA0000000000003578
+t1333042154
 s13688
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/s_utf8.c
-c000000004F71DCE60000000000001D77
-t1332862182
+c000000004F749BEA0000000000001D77
+t1333042154
 s7543
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/s_utf8.h
-c000000004F71DCE60000000000000879
-t1332862182
+c000000004F749BEA0000000000000879
+t1333042154
 s2169
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/x_acoustics.c
-c000000004F71DCE60000000000001021
-t1332862182
+c000000004F749BEA0000000000001021
+t1333042154
 s4129
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/x_arithmetic.c
-c000000004F71DCE60000000000006117
-t1332862182
+c000000004F749BEA0000000000006117
+t1333042154
 s24855
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/x_connective.c
-c000000004F71DCE60000000000009D5D
-t1332862182
+c000000004F749BEA0000000000009D5D
+t1333042154
 s40285
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/x_gui.c
-c000000004F71DCE60000000000002A56
-t1332862182
+c000000004F749BEA0000000000002A56
+t1333042154
 s10838
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/x_interface.c
-c000000004F71DCE60000000000000A33
-t1332862182
+c000000004F749BEA0000000000000A33
+t1333042154
 s2611
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/x_list.c
-c000000004F71DCE600000000000039F8
-t1332862182
+c000000004F749BEA00000000000039F8
+t1333042154
 s14840
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/x_midi.c
-c000000004F71DCE600000000000086F2
-t1332862182
+c000000004F749BEA00000000000086F2
+t1333042154
 s34546
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/x_misc.c
-c000000004F71DCE60000000000001F79
-t1332862182
+c000000004F749BEA0000000000001F79
+t1333042154
 s8057
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/x_net.c
-c000000004F71DCE60000000000002864
-t1332862182
+c000000004F749BEA0000000000002864
+t1333042154
 s10340
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/x_qlist.c
-c000000004F71DCE6000000000000270B
-t1332862182
+c000000004F749BEA000000000000270B
+t1333042154
 s9995
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/pure-data/src/x_time.c
-c000000004F71DCE600000000000036AC
-t1332862182
+c000000004F749BEA00000000000036AC
+t1333042154
 s13996
 
 CBuild AST from /Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/libpd_wrapper/s_libpdmidi.c
@@ -1140,7 +1140,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies2c7e1b5e1024b541^8e5b245e1024b541^---0#1#0#--18"Check dependencies36"6885200A-B224-42BE-8D15-CEA1E91A8A7F-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies5bcecd2ff524b541^9f005a30f524b541^---0#1#0#--18"Check dependencies36"2FFBA659-D8CA-4447-84D0-9AFA0E1EA360-
 
 CCompileC build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/AudioHelpers.o /Users/mike/Documents/COMP-150/ModWire/ModWire/libpd/objc/AudioHelpers.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s354684931.614789

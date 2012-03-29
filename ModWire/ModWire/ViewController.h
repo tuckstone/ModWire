@@ -13,11 +13,13 @@
 
 
 @class TouchForwardingUIScrollView;
+@class PGMidi;
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {
     PdDispatcher *dispatcher;
     void *patch;
+    PGMidi *midi;
     
 @private
     TouchForwardingUIScrollView* keyboardScrollView;
@@ -62,6 +64,8 @@ AudioStreamBasicDescription outputFormat;
 @property (nonatomic, retain) IBOutlet UISlider *slider1;
 
 @property (nonatomic, retain) IBOutlet UISlider *slider2;
+
+@property (nonatomic, strong) PGMidi *midi;
 
 - (IBAction)buttonPressed:(id)sender;
 

@@ -9,11 +9,14 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+#import "PGMidi.h"
+#import "iOSVersionDetection.h"
+#import "PGArc.h"
 
 @implementation AppDelegate
 
-@synthesize window = _window;
-@synthesize viewController = _viewController;
+@synthesize window;
+@synthesize viewController;
 @synthesize audioController = _audioController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -30,6 +33,14 @@
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+    //check if midi is supported and set it up
+    if (kCFCoreFoundationVersionNumber >= kCFCoreFoundationVersionNumber_iPhoneOS_4_2)
+    {
+        midi = [[PGMidi alloc] init];
+        [midi enableNetwork:YES];
+        viewController.midi = midi;
+    }
     return YES;
 }
 
