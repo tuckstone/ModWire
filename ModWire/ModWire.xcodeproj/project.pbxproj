@@ -41,6 +41,8 @@
 		C8DA8A0015210D66002F0D08 /* OctaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DA89FE15210D65002F0D08 /* OctaveView.m */; };
 		C8DA8A0515210DFA002F0D08 /* BlackKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DA8A0215210DFA002F0D08 /* BlackKeyView.m */; };
 		C8DA8A0615210DFA002F0D08 /* WhiteKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DA8A0415210DFA002F0D08 /* WhiteKeyView.m */; };
+		CE20C5DB1524F03700BE5D73 /* Default~Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = CE20C5DA1524F03700BE5D73 /* Default~Landscape~ipad.png */; };
+		CE20C5DD1524F10D00BE5D73 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = CE20C5DC1524F10D00BE5D73 /* Default-Landscape~ipad.png */; };
 		CE4169BC1522B26F00E967DE /* options.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4169BB1522B26F00E967DE /* options.png */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +112,8 @@
 		C8DA8A0215210DFA002F0D08 /* BlackKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlackKeyView.m; sourceTree = "<group>"; };
 		C8DA8A0315210DFA002F0D08 /* WhiteKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteKeyView.h; sourceTree = "<group>"; };
 		C8DA8A0415210DFA002F0D08 /* WhiteKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteKeyView.m; sourceTree = "<group>"; };
+		CE20C5DA1524F03700BE5D73 /* Default~Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~Landscape~ipad.png"; sourceTree = "<group>"; };
+		CE20C5DC1524F10D00BE5D73 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		CE4169BB1522B26F00E967DE /* options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = options.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +145,8 @@
 		C85EFC9D1510173D002CB299 = {
 			isa = PBXGroup;
 			children = (
+				CE20C5DC1524F10D00BE5D73 /* Default-Landscape~ipad.png */,
+				CE20C5DA1524F03700BE5D73 /* Default~Landscape~ipad.png */,
 				2716635415240FD900A46F78 /* synth_engine.pd */,
 				27D1BCDC1523F2D70051BE34 /* AVFoundation.framework */,
 				27D1BCDA1523F2CE0051BE34 /* AudioToolbox.framework */,
@@ -309,6 +315,8 @@
 				C882DBE31524C76200BD79BB /* sampler.png in Resources */,
 				C882DBE41524C76200BD79BB /* waveshaper.png in Resources */,
 				C882DBE61524CD3B00BD79BB /* Synth_background_flat.png in Resources */,
+				CE20C5DB1524F03700BE5D73 /* Default~Landscape~ipad.png in Resources */,
+				CE20C5DD1524F10D00BE5D73 /* Default-Landscape~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
