@@ -13,4 +13,6 @@
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSString *imageName;
 
+-(id) initWithTitle:(NSString *)thisTitle andImage:(NSString *)thisImageName;
+
 @end

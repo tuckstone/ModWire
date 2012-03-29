@@ -15,11 +15,12 @@
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {
-    
-    NSMutableArray *icons;
+  
 @private
     TouchForwardingUIScrollView* keyboardScrollView;
     KeyboardView* keyboardView;
+    NSMutableArray *icons;
+    UITableView *paletteTable;
 
 /* UIScrollView* controlScrollView;
 UIPageControl* controlPageControl;
@@ -40,15 +41,19 @@ AudioStreamBasicDescription outputFormat;
  */
 }
 
-@property (strong, nonatomic) IBOutlet UITableView *paletteTable;
+@property (strong, nonatomic) UITableView *paletteTable;
 
 @property (nonatomic, retain) IBOutlet UIScrollView *keyboardScrollView;
 
 @property (nonatomic, retain) IBOutlet UIView *optionView;
 
+@property (nonatomic, retain) UIButton *currButton;
+
 - (IBAction)buttonPressed:(id)sender;
 
 - (void)noteOn:(int)note;
 - (void)noteOff:(int)note;
+
+- (void) defineIconDictionary;
 
 @end

@@ -12,4 +12,13 @@
 
 @synthesize title, imageName;
 
+-(id) initWithTitle:(NSString *)thisTitle andImage:(NSString *)thisImageName
+{
+    self = [super init];
+    self.title = thisTitle;
+    self.imageName = thisImageName;
+    return self;
+}
+
+
 @end

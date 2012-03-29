@@ -9,14 +9,10 @@
 #import "ViewController.h"
 #import "KeyboardView.h"
 #import "TouchForwardingUIScrollView.h"
+#import "icon.h"
 
 @implementation ViewController
-@synthesize paletteTable, optionView;
-
--(UITableViewCell*) tableView:(UITableView *)paletteView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-}
+@synthesize paletteTable, optionView, currButton;
 
 - (void)noteOn:(int)note {
     NSLog(@"NOTE ON %d",note);
@@ -26,12 +22,12 @@
     NSLog(@"NOTE OFF %d",note);
 }
 
--(NSInteger) numberOfSectionsInTableView:(UITableView *)paletteView
+-(NSInteger) tableView: (UITableView *)tableView numberOfSectionsInTableView:(UITableView *)paletteView
 {
     return paletteTable.numberOfSections;
 }
 
--(NSInteger) numberOfRowsInSection
+-(NSInteger) tableView: (UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 0;
 }
@@ -47,20 +43,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    icons = [[NSMutableArray alloc]init];
     
-    self.paletteTable = [[UITableView alloc]init];
+    [self defineIconDictionary];
     
-    [self.view addSubview:self.paletteTable];
+    CGRect paletteRect = CGRectMake(888.0f, 0.0f, 146.0f, 748.0f);
+    self.paletteTable = [[UITableView alloc]initWithFrame:paletteRect style:UITableViewStylePlain];
+    paletteTable.rowHeight = 100;
+    paletteTable.backgroundColor = [UIColor blueColor];
+    paletteTable.userInteractionEnabled = YES;
     
     // Set up data source for table
     self.paletteTable.dataSource = self;
     
     // Add delegate to handle cell events
     self.paletteTable.delegate = self;
-    
-    // Initialize array
-    icons = [[NSMutableArray alloc] init];
-    
+    [self.view addSubview:self.paletteTable];
     
     CGRect keyboardViewFrame;
     keyboardViewFrame.origin.x = 0;
@@ -78,32 +76,62 @@
     // Forward touch events to the keyboard
     //[keyboardScrollView setTouchView:keyboardView];
     
-    self.paletteTable = [[UITableView alloc]init];
+    UITableViewCell *cell;
     
-    // Set up data source for table
-    self.paletteTable.dataSource = self;
+    //NSLog(@"count: %d ",[icons count]);
     
-    // Add delegate to handle cell events
-    self.paletteTable.delegate = self;
+    for (NSUInteger i = 0; i < [icons count]; i++)
+    {
+        //NSLog(@"hi!");
+        NSIndexPath *thisIndex = [[NSIndexPath alloc]initWithIndex:i];
+        cell = [self tableView:paletteTable cellForRowAtIndexPath:thisIndex];
+        //UIImageView *lpf = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"lowPassFilter.png"]];
+        //cell.imageView.image = [[UIImage alloc]initWithContentsOfFile:[[icons objectAtIndex:i]imageName]];
+        [cell.imageView sizeToFit];
+        cell.imageView.image = [UIImage imageNamed:@"lowPassFilter.png"];
+        cell.textLabel.text = [[icons objectAtIndex:i]title];
+        
+        NSLog(@"%@",cell.textLabel.text);
+    }
     
-    // Initialize tweets array
-    icons = [[NSMutableArray alloc] init];
+    [self.paletteTable reloadData];
     
-    
-    
+}
+
+
+- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellIdentifier = @"Icon";
+    UITableViewCell *cell = nil;
+    if ([tableView isEqual:self.paletteTable]) {
+        
+        // Set up cell
+        cell = [paletteTable cellForRowAtIndexPath:indexPath];
+        if (!cell) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+            cell.textLabel.text = cellIdentifier;
+        }
+    }
+    return cell;
+}
+
+
+-(void)tableView:(UITableView *)paletteTable didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //make icon appear in editorView
 }
 
 -(IBAction)buttonPressed:(id)sender
 {
-   // if (currButton.currentImage == keyboard ){
-        
+    currButton = (UIButton *)sender;
+    if ([currButton.currentTitle isEqualToString: @"1"]){
         if (keyboardScrollView.isHidden == TRUE)
         {
-            [keyboardScrollView setHidden:false];
+            [keyboardScrollView setHidden:FALSE];
         }else {
             [keyboardScrollView setHidden:TRUE];
         }
-   // }
+   }
 
 }
 
@@ -145,6 +173,14 @@
     else {
         return YES;
     }
+}
+
+-(void)defineIconDictionary
+{
+    icon *lowPass = [[icon alloc] initWithTitle:@"Low Pass Filter" andImage:@"lowPassFilter.png"];
+    [icons addObject:lowPass];
+    icon *LFO = [[icon alloc] initWithTitle:@"LFO" andImage:@"LFO.png"];
+    [icons addObject:LFO];
 }
 
 @end

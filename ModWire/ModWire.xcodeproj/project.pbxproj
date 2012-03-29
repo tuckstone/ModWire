@@ -15,6 +15,7 @@
 		C85EFCBD1510173D002CB299 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C85EFCBC1510173D002CB299 /* AppDelegate.m */; };
 		C85EFCC01510173D002CB299 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C85EFCBF1510173D002CB299 /* ViewController.m */; };
 		C85EFCC31510173D002CB299 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C85EFCC11510173D002CB299 /* ViewController.xib */; };
+		C860683E152397F8005C8DDB /* lowPassFilter.png in Resources */ = {isa = PBXBuildFile; fileRef = C860683D152397F8005C8DDB /* lowPassFilter.png */; };
 		C88296951518CE1E00B74829 /* IconControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = C88296941518CE1E00B74829 /* IconControlView.m */; };
 		C882969E1518D60400B74829 /* EditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C882969D1518D60400B74829 /* EditorView.m */; };
 		C8AB34751522891C000EAB9A /* KeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8AB34721522891B000EAB9A /* KeyboardView.m */; };
@@ -43,6 +44,7 @@
 		C85EFCBE1510173D002CB299 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C85EFCBF1510173D002CB299 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C85EFCC21510173D002CB299 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		C860683D152397F8005C8DDB /* lowPassFilter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lowPassFilter.png; sourceTree = "<group>"; };
 		C88296931518CE1E00B74829 /* IconControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconControlView.h; sourceTree = "<group>"; };
 		C88296941518CE1E00B74829 /* IconControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconControlView.m; sourceTree = "<group>"; };
 		C882969C1518D60400B74829 /* EditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorView.h; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		C85EFCB21510173D002CB299 /* ModWire */ = {
 			isa = PBXGroup;
 			children = (
+				C860683D152397F8005C8DDB /* lowPassFilter.png */,
 				C8AB349115235A69000EAB9A /* ModWire logo.png */,
 				C8AB347B1522939D000EAB9A /* keyboard.png */,
 				C8AB34711522891B000EAB9A /* KeyboardView.h */,
@@ -207,6 +210,7 @@
 				C8AB347C1522939E000EAB9A /* keyboard.png in Resources */,
 				CE4169BC1522B26F00E967DE /* options.png in Resources */,
 				C8AB349215235A69000EAB9A /* ModWire logo.png in Resources */,
+				C860683E152397F8005C8DDB /* lowPassFilter.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
