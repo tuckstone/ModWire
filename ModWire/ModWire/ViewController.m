@@ -12,7 +12,7 @@
 #import "icon.h"
 
 @implementation ViewController
-@synthesize paletteTable, optionView, currButton, keyboardScrollView;
+@synthesize paletteTable, optionView, currButton, keyboardScrollView, label1, label2, slider1, slider2, iconButton;
 int lastKeyPressed = 0;
 
 - (void)noteOn:(int)note {
@@ -170,11 +170,35 @@ int lastKeyPressed = 0;
         if (keyboardScrollView.isHidden == TRUE)
         {
             [keyboardScrollView setHidden:FALSE];
+            [label1 setHidden:TRUE];
+            [label2 setHidden:TRUE];
+            [slider1 setHidden:TRUE];
+            [slider2 setHidden:TRUE];
         }else {
             [keyboardScrollView setHidden:TRUE];
+            
         }
    }
+    if ([currButton.currentTitle isEqualToString: @"2"]){
+            [keyboardScrollView setHidden:TRUE];
+            [label1 setHidden:FALSE];
+            [label2 setHidden:FALSE];
+            [slider1 setHidden:FALSE];
+            [slider2 setHidden:FALSE];
+    }
+}
 
+-(IBAction)iconPressed:(id)sender
+{
+    iconButton = (UIButton *)sender;
+    if(label1.isHidden == TRUE)
+    {
+        [keyboardScrollView setHidden:TRUE];
+        [label1 setHidden:FALSE];
+        [label2 setHidden:FALSE];
+        [slider1 setHidden:FALSE];
+        [slider2 setHidden:FALSE];
+    }
 }
 
 - (void)viewDidUnload

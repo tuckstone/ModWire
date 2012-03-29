@@ -53,7 +53,19 @@ AudioStreamBasicDescription outputFormat;
 
 @property (nonatomic, retain) UIButton *currButton;
 
+@property (nonatomic, retain) UIButton *iconButton;
+
+@property (nonatomic, retain) IBOutlet UILabel *label1;
+
+@property (nonatomic, retain) IBOutlet UILabel *label2;
+
+@property (nonatomic, retain) IBOutlet UISlider *slider1;
+
+@property (nonatomic, retain) IBOutlet UISlider *slider2;
+
 - (IBAction)buttonPressed:(id)sender;
+
+- (IBAction)iconPressed:(id)sender;
 
 - (void)noteOn:(int)note;
 - (void)noteOff:(int)note;
