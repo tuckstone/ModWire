@@ -20,6 +20,9 @@
 		CE46F0551528DB8300B15801 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE46F0361528DB8300B15801 /* Foundation.framework */; };
 		CE46F05D1528DB8400B15801 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE46F05B1528DB8400B15801 /* InfoPlist.strings */; };
 		CE46F0601528DB8400B15801 /* ModWireTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE46F05F1528DB8400B15801 /* ModWireTests.m */; };
+		CE5A7D751528E130009CD2E1 /* keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5A7D741528E130009CD2E1 /* keyboard.png */; };
+		CE5A7D781528E137009CD2E1 /* ModWire logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5A7D771528E137009CD2E1 /* ModWire logo.png */; };
+		CE5A7D7A1528E13D009CD2E1 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5A7D791528E13D009CD2E1 /* Default-Landscape~ipad.png */; };
 		CE6309511528DC2C0056B744 /* audio-in.png in Resources */ = {isa = PBXBuildFile; fileRef = CE63094B1528DC2C0056B744 /* audio-in.png */; };
 		CE6309521528DC2C0056B744 /* BlackKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE63094D1528DC2C0056B744 /* BlackKeyView.m */; };
 		CE6309531528DC2C0056B744 /* delay.png in Resources */ = {isa = PBXBuildFile; fileRef = CE63094E1528DC2C0056B744 /* delay.png */; };
@@ -74,6 +77,9 @@
 		CE46F05C1528DB8400B15801 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE46F05E1528DB8400B15801 /* ModWireTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModWireTests.h; sourceTree = "<group>"; };
 		CE46F05F1528DB8400B15801 /* ModWireTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModWireTests.m; sourceTree = "<group>"; };
+		CE5A7D741528E130009CD2E1 /* keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard.png; sourceTree = "<group>"; };
+		CE5A7D771528E137009CD2E1 /* ModWire logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ModWire logo.png"; sourceTree = "<group>"; };
+		CE5A7D791528E13D009CD2E1 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		CE63094B1528DC2C0056B744 /* audio-in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "audio-in.png"; sourceTree = "<group>"; };
 		CE63094C1528DC2C0056B744 /* BlackKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackKeyView.h; sourceTree = "<group>"; };
 		CE63094D1528DC2C0056B744 /* BlackKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlackKeyView.m; sourceTree = "<group>"; };
@@ -164,6 +170,9 @@
 		CE46F03A1528DB8300B15801 /* ModWire */ = {
 			isa = PBXGroup;
 			children = (
+				CE5A7D791528E13D009CD2E1 /* Default-Landscape~ipad.png */,
+				CE5A7D771528E137009CD2E1 /* ModWire logo.png */,
+				CE5A7D741528E130009CD2E1 /* keyboard.png */,
 				CEA65A2D1528DD8300B1985E /* waveshaper.png */,
 				CEA65A2E1528DD8300B1985E /* WhiteKeyView.h */,
 				CEA65A2F1528DD8300B1985E /* WhiteKeyView.m */,
@@ -320,6 +329,9 @@
 				CEA65A271528DD6500B1985E /* Synth_background_flat.png in Resources */,
 				CEA65A2B1528DD7A00B1985E /* synth_engine.pd in Resources */,
 				CEA65A301528DD8300B1985E /* waveshaper.png in Resources */,
+				CE5A7D751528E130009CD2E1 /* keyboard.png in Resources */,
+				CE5A7D781528E137009CD2E1 /* ModWire logo.png in Resources */,
+				CE5A7D7A1528E13D009CD2E1 /* Default-Landscape~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
