@@ -10,9 +10,16 @@
 #import "KeyboardView.h"
 #import "TouchForwardingUIScrollView.h"
 #import "icon.h"
+#import "CoreMidi/CoreMidi.h"
+#import "PGMidi.h"
+#import "iOSVersionDetection.h"
+
+@interface ViewController () <PGMidiDelegate, PGMidiSourceDelegate>
+//nothing here
+@end
 
 @implementation ViewController
-@synthesize paletteTable, optionView, currButton, keyboardScrollView, label1, label2, slider1, slider2, iconButton;
+@synthesize paletteTable, optionView, currButton, keyboardScrollView, label1, label2, slider1, slider2, iconButton, midi;
 int lastKeyPressed = 0;
 
 - (void)noteOn:(int)note {
@@ -56,6 +63,82 @@ int lastKeyPressed = 0;
 {
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
+}
+
+- (void) attachToAllExistingSources
+{
+    for (PGMidiSource *source in midi.sources)
+    {
+        source.delegate = self;
+    }
+}
+
+- (void) setMidi:(PGMidi*)m
+{
+    midi.delegate = nil;
+    midi = m;
+    midi.delegate = self;
+    
+    [self attachToAllExistingSources];
+    NSLog(@"Set Midi");
+}
+
+
+- (void) midi:(PGMidi*)midi sourceAdded:(PGMidiSource *)source
+{
+    NSLog(@"Source Added");
+}
+
+- (void) midi:(PGMidi*)midi sourceRemoved:(PGMidiSource *)source
+{
+    NSLog(@"Source Removed");
+}
+
+- (void) midi:(PGMidi*)midi destinationAdded:(PGMidiDestination *)destination
+{
+    NSLog(@"Destination Added");
+}
+
+- (void) midi:(PGMidi*)midi destinationRemoved:(PGMidiDestination *)destination
+{
+    NSLog(@"Destination Removed");
+}
+
+- (void) midiSource:(PGMidiSource*)midi midiReceived:(const MIDIPacketList *)packetList
+{
+    
+    NSLog(@"Midi Received");
+    
+    const MIDIPacket *packet = &packetList->packet[0];
+    uint8_t byte1 = (packet->length > 0) ? packet->data[0]:0;
+    uint8_t byte2 = (packet->length > 0) ? packet->data[1]:0;
+    NSLog(@"MIDI = %d,%d",byte1,byte2);
+    
+    
+    if (byte1 == 144) { //note on
+        NSNumber *tmpNumber = [[NSNumber alloc] initWithInt:byte2];
+        
+        [self performSelectorOnMainThread:@selector(handleMidiNoteOn:) withObject:tmpNumber waitUntilDone:NO];
+    }
+    if (byte1 == 128) { //note off
+        NSNumber *tmpNumber = [[NSNumber alloc] initWithInt:byte2];
+        
+        [self performSelectorOnMainThread:@selector(handleMidiNoteOff:) withObject:tmpNumber waitUntilDone:NO];
+    }
+    
+    packet = MIDIPacketNext(packet);
+}
+
+-(void) handleMidiNoteOn:(NSNumber *) noteNumber
+{
+    int note = [noteNumber intValue] + 4;
+    [self noteOn:note];
+}
+
+-(void) handleMidiNoteOff:(NSNumber *) noteNumber
+{
+    int note = [noteNumber intValue] + 4;
+    [self noteOff:note];
 }
 
 #pragma mark - View lifecycle

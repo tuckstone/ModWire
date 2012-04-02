@@ -13,11 +13,13 @@
 
 
 @class TouchForwardingUIScrollView;
+@class PGMidi;
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {
     PdDispatcher *dispatcher;
     void *patch;
+    PGMidi *midi;
     
 @private
     TouchForwardingUIScrollView* keyboardScrollView;
@@ -25,24 +27,6 @@
     NSMutableArray *icons;
     UITableView *paletteTable;
     NSUInteger i;
-    
-    /* UIScrollView* controlScrollView;
-     UIPageControl* controlPageControl;
-     
-     OscillatorView* oscillatorView;
-     OscillatorDetailView* oscillatorDetailView;
-     ModulationView* modulationView;
-     FilterView* filterView;
-     EnvelopeView* envelopeView;
-     EnvelopeView* filterEnvelopeView;
-     ArpeggioView* arpeggioView;
-     
-     // Synthesizer components
-     AudioOutput* output;
-     synth::Controller* controller_;
-     
-     AudioStreamBasicDescription outputFormat;
-     */
 }
 
 @property (strong, nonatomic) IBOutlet UITableView *paletteTable;
@@ -62,6 +46,8 @@
 @property (nonatomic, retain) IBOutlet UISlider *slider1;
 
 @property (nonatomic, retain) IBOutlet UISlider *slider2;
+
+@property (nonatomic, strong) PGMidi *midi;
 
 - (IBAction)buttonPressed:(id)sender;
 
