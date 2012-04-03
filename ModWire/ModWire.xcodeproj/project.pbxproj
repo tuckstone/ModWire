@@ -52,6 +52,7 @@
 		CEA65A2C1528DD7A00B1985E /* TouchForwardingUIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA65A2A1528DD7A00B1985E /* TouchForwardingUIScrollView.m */; };
 		CEA65A301528DD8300B1985E /* waveshaper.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA65A2D1528DD8300B1985E /* waveshaper.png */; };
 		CEA65A311528DD8300B1985E /* WhiteKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA65A2F1528DD8300B1985E /* WhiteKeyView.m */; };
+		CEE96F3D152A79DF0060C3AA /* DraggableIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE96F3C152A79DF0060C3AA /* DraggableIcon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -804,6 +805,8 @@
 		CEA65A2D1528DD8300B1985E /* waveshaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waveshaper.png; sourceTree = "<group>"; };
 		CEA65A2E1528DD8300B1985E /* WhiteKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteKeyView.h; sourceTree = "<group>"; };
 		CEA65A2F1528DD8300B1985E /* WhiteKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteKeyView.m; sourceTree = "<group>"; };
+		CEE96F3B152A79DF0060C3AA /* DraggableIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableIcon.h; sourceTree = "<group>"; };
+		CEE96F3C152A79DF0060C3AA /* DraggableIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableIcon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1979,6 +1982,8 @@
 				CE46F0471528DB8300B15801 /* ViewController.m */,
 				CE46F0491528DB8300B15801 /* ViewController.xib */,
 				CE46F03B1528DB8300B15801 /* Supporting Files */,
+				CEE96F3B152A79DF0060C3AA /* DraggableIcon.h */,
+				CEE96F3C152A79DF0060C3AA /* DraggableIcon.m */,
 			);
 			path = ModWire;
 			sourceTree = "<group>";
@@ -2167,6 +2172,7 @@
 				274BEE8E1529237600EC0E1F /* PGMidi.mm in Sources */,
 				274BEE8F1529237600EC0E1F /* PGMidiAllSources.mm in Sources */,
 				274BEE901529237600EC0E1F /* PGMidiFind.mm in Sources */,
+				CEE96F3D152A79DF0060C3AA /* DraggableIcon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
