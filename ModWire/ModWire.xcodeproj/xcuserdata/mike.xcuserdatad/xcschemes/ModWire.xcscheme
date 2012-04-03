@@ -13,7 +13,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C85EFCA71510173D002CB299"
+               BlueprintIdentifier = "CE46F02F1528DB8300B15801"
                BuildableName = "ModWire.app"
                BlueprintName = "ModWire"
                ReferencedContainer = "container:ModWire.xcodeproj">
@@ -27,11 +27,21 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CE46F0501528DB8300B15801"
+               BuildableName = "ModWireTests.octest"
+               BlueprintName = "ModWireTests"
+               ReferencedContainer = "container:ModWire.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C85EFCA71510173D002CB299"
+            BlueprintIdentifier = "CE46F02F1528DB8300B15801"
             BuildableName = "ModWire.app"
             BlueprintName = "ModWire"
             ReferencedContainer = "container:ModWire.xcodeproj">
@@ -50,7 +60,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C85EFCA71510173D002CB299"
+            BlueprintIdentifier = "CE46F02F1528DB8300B15801"
             BuildableName = "ModWire.app"
             BlueprintName = "ModWire"
             ReferencedContainer = "container:ModWire.xcodeproj">
@@ -68,7 +78,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C85EFCA71510173D002CB299"
+            BlueprintIdentifier = "CE46F02F1528DB8300B15801"
             BuildableName = "ModWire.app"
             BlueprintName = "ModWire"
             ReferencedContainer = "container:ModWire.xcodeproj">

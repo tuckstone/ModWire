@@ -10,13 +10,12 @@
 #import "KeyboardView.h"
 #import "TouchForwardingUIScrollView.h"
 #import "icon.h"
-#import "CoreMIDI/CoreMIDI.h"
+#import "CoreMidi/CoreMidi.h"
 #import "PGMidi.h"
 #import "iOSVersionDetection.h"
 
-
 @interface ViewController () <PGMidiDelegate, PGMidiSourceDelegate>
-//nothing in here
+//nothing here
 @end
 
 @implementation ViewController
@@ -126,7 +125,7 @@ int lastKeyPressed = 0;
         
         [self performSelectorOnMainThread:@selector(handleMidiNoteOff:) withObject:tmpNumber waitUntilDone:NO];
     }
-     
+    
     packet = MIDIPacketNext(packet);
 }
 
@@ -189,15 +188,15 @@ int lastKeyPressed = 0;
     //NSLog(@"count: %d ",[icons count]);
     
     /*
-    for (i = 0; i < [icons count]; i++)
-    {
-        NSLog(@"hi! we're making cell number: %d ",i);
-        
-        NSIndexPath *thisIndex = [[NSIndexPath alloc]initWithIndex:i];
-        cell = [self tableView:paletteTable cellForRowAtIndexPath:thisIndex];
-    }
-    i = [icons count] - 1;
-    */
+     for (i = 0; i < [icons count]; i++)
+     {
+     NSLog(@"hi! we're making cell number: %d ",i);
+     
+     NSIndexPath *thisIndex = [[NSIndexPath alloc]initWithIndex:i];
+     cell = [self tableView:paletteTable cellForRowAtIndexPath:thisIndex];
+     }
+     i = [icons count] - 1;
+     */
     
     CGRect keyboardViewFrame;
     keyboardViewFrame.origin.x = 0;
@@ -232,7 +231,7 @@ int lastKeyPressed = 0;
             cell.imageView.image = [UIImage imageNamed:[[icons objectAtIndex:indexPath.row] imageName]];
             //cell.imageView.image = [UIImage imageNamed:@"lowPassFilter.png"];
             NSLog(@"Added image to cell");
-        
+            
             
         }
     }
@@ -262,13 +261,13 @@ int lastKeyPressed = 0;
             [keyboardScrollView setHidden:TRUE];
             
         }
-   }
+    }
     if ([currButton.currentTitle isEqualToString: @"2"]){
-            [keyboardScrollView setHidden:TRUE];
-            [label1 setHidden:FALSE];
-            [label2 setHidden:FALSE];
-            [slider1 setHidden:FALSE];
-            [slider2 setHidden:FALSE];
+        [keyboardScrollView setHidden:TRUE];
+        [label1 setHidden:FALSE];
+        [label2 setHidden:FALSE];
+        [slider1 setHidden:FALSE];
+        [slider2 setHidden:FALSE];
     }
 }
 
@@ -288,7 +287,7 @@ int lastKeyPressed = 0;
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-
+    
     //unload synth engine
     [PdBase closeFile:patch];
     [PdBase setDelegate:nil];

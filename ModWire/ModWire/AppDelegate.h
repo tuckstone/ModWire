@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  ModWire
 //
-//  Created by Jessica Noble on 3/13/12.
+//  Created by Lion User on 01/04/2012.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
@@ -19,9 +19,9 @@
     ViewController *viewController;
 }
 
-@property (retain, nonatomic) IBOutlet UIWindow *window;
+@property (strong, nonatomic) IBOutlet UIWindow *window;
 
-@property (retain, nonatomic) IBOutlet ViewController *viewController;
+@property (strong, nonatomic) IBOutlet ViewController *viewController;
 
 @property (strong, nonatomic, readonly) PdAudioController *audioController;
 

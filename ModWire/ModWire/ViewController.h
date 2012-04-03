@@ -27,24 +27,6 @@
     NSMutableArray *icons;
     UITableView *paletteTable;
     NSUInteger i;
-
-/* UIScrollView* controlScrollView;
-UIPageControl* controlPageControl;
-
-OscillatorView* oscillatorView;
-OscillatorDetailView* oscillatorDetailView;
-ModulationView* modulationView;
-FilterView* filterView;
-EnvelopeView* envelopeView;
-EnvelopeView* filterEnvelopeView;
-ArpeggioView* arpeggioView;
-
-// Synthesizer components
-AudioOutput* output;
-synth::Controller* controller_;
-
-AudioStreamBasicDescription outputFormat;
- */
 }
 
 @property (strong, nonatomic) IBOutlet UITableView *paletteTable;
