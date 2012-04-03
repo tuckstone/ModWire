@@ -11,6 +11,12 @@
 @implementation DraggableIcon
 @synthesize startPoint;
 
+-(void)setImage:(NSString *)imagename{
+    UIColor *image = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:imagename]];
+    self.backgroundColor = image;
+}
+
+
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     startPoint = [[touches anyObject] locationInView:self];
 }
