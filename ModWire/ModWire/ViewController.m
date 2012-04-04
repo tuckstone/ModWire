@@ -242,7 +242,11 @@ int lastKeyPressed = 0;
 -(void)tableView:(UITableView *)paletteTable didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //make icon appear in editorView
-    
+    CGRect bounds = CGRectMake(100, 100, 70, 70);
+    DraggableIcon *testDrag = [[DraggableIcon alloc] initWithFrame:bounds];
+    //TEMP NAME -> needs to access the cell's image name and find appropriate image
+    [testDrag setImage:@"lfo.png"];
+    [self.view addSubview:testDrag];
     NSLog(@"cell clicked %d",indexPath.row);
 }
 

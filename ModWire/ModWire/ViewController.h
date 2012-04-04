@@ -10,7 +10,7 @@
 #import "KeyboardView.h"
 #import "icon.h"
 #import "PdDispatcher.h"
-
+#import "DraggableIcon.h"
 
 @class TouchForwardingUIScrollView;
 @class PGMidi;

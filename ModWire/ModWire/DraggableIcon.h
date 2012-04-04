@@ -12,4 +12,6 @@
 
 @property (nonatomic) CGPoint startPoint;
 
+-(void)setImage:(NSString *)imagename;
+
 @end
