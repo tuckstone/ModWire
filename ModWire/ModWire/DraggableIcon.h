@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface DraggableIcon : UIView
-
+ 
 @property (nonatomic) CGPoint startPoint;
+
 
 -(void)setImage:(NSString *)imagename;
 
