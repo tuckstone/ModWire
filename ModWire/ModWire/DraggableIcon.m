@@ -9,7 +9,7 @@
 #import "DraggableIcon.h"
 
 @implementation DraggableIcon
-@synthesize startPoint, x, y, ismovable, background;
+@synthesize startPoint, x, y, ismovable, background, connectedTo, connectedFrom;
 
 -(void)setImage:(NSString *)imagename{
     UIColor *image = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:imagename]];
@@ -23,6 +23,7 @@
         //If view is immovable, don't move it
     }else {
     startPoint = [[touches anyObject] locationInView:self];
+        self.alpha = 0.5;
     }
 }
 
@@ -39,6 +40,13 @@
         self.y = movePoint.y;
         [self setFrame:movFrame];  
     }  
+    /*
+     The following is code to add "Highlight" shadows.  Not sure where to implement.
+     [[self layer] setShadowColor:[UIColor greenColor].CGColor];
+     [[self layer] setShadowOpacity:1.0f];
+     [[self layer] setShadowRadius:6.0f];
+     [[self layer] setShadowOffset:CGSizeMake(0, 3)];
+     */
 }
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
@@ -46,6 +54,7 @@
     if (self.y >= 429 || self.x >= 862) {
         [self removeFromSuperview];
     }
+    self.alpha = 1.0;
 }
 
 
@@ -57,14 +66,5 @@
     }
     return self;
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end
