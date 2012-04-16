@@ -259,9 +259,6 @@ int lastKeyPressed = 0;
             [label2 setHidden:TRUE];
             [slider1 setHidden:TRUE];
             [slider2 setHidden:TRUE];
-        }else {
-            [keyboardScrollView setHidden:TRUE];
-            
         }
     }
     if ([currButton.currentTitle isEqualToString: @"2"]){
