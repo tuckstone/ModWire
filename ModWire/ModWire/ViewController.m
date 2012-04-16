@@ -181,23 +181,7 @@ int lastKeyPressed = 0;
     
     icons = [[NSMutableArray alloc]init];    //Create array for icon classes
     [self defineIconDictionary];    // define icon classes in array
-    
-    //access one cell in palette table
-    UITableViewCell *cell;
-    
-    //NSLog(@"count: %d ",[icons count]);
-    
-    /*
-     for (i = 0; i < [icons count]; i++)
-     {
-     NSLog(@"hi! we're making cell number: %d ",i);
-     
-     NSIndexPath *thisIndex = [[NSIndexPath alloc]initWithIndex:i];
-     cell = [self tableView:paletteTable cellForRowAtIndexPath:thisIndex];
-     }
-     i = [icons count] - 1;
-     */
-    
+        
     CGRect keyboardViewFrame;
     keyboardViewFrame.origin.x = 0;
     keyboardViewFrame.origin.y = 0;
@@ -210,6 +194,19 @@ int lastKeyPressed = 0;
     [keyboardScrollView addSubview:keyboardView];  
     [keyboardScrollView setContentSize:keyboardView.frame.size];
     [keyboardScrollView setScrollEnabled:YES];
+    
+    //Code to make 2 static Icons
+    CGRect bounds = CGRectMake(50, 250, 72, 72);
+    DraggableIcon *soundStart = [[DraggableIcon alloc] initWithFrame:bounds];
+    soundStart.ismovable = NO;
+    [soundStart setImage:@"audio-in.png"];
+    [self.view addSubview:soundStart];
+    
+    CGRect bounds2 = CGRectMake(850, 250, 72, 72);
+    DraggableIcon *soundEnd = [[DraggableIcon alloc] initWithFrame:bounds2];
+    soundEnd.ismovable = NO;
+    [soundEnd setImage:@"audio-in.png"];
+    [self.view addSubview:soundStart];
     
     // Forward touch events to the keyboard
     //[keyboardScrollView setTouchView:keyboardView];
@@ -246,6 +243,7 @@ int lastKeyPressed = 0;
     DraggableIcon *testDrag = [[DraggableIcon alloc] initWithFrame:bounds];
     //TEMP NAME -> needs to access the cell's image name and find appropriate image
     [testDrag setImage:[[icons objectAtIndex:indexPath.row] imageName]];
+    testDrag.ismovable = YES;
     [self.view addSubview:testDrag];
     NSLog(@"cell clicked %d",indexPath.row);
 }

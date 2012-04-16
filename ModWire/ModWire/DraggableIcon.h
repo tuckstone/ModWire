@@ -11,7 +11,10 @@
 @interface DraggableIcon : UIView
  
 @property (nonatomic) CGPoint startPoint;
-
+@property (nonatomic) UIColor *background;
+@property NSInteger x;
+@property NSInteger y;
+@property BOOL ismovable;
 
 -(void)setImage:(NSString *)imagename;
 

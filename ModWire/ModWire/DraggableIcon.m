@@ -9,27 +9,45 @@
 #import "DraggableIcon.h"
 
 @implementation DraggableIcon
-@synthesize startPoint;
+@synthesize startPoint, x, y, ismovable, background;
 
 -(void)setImage:(NSString *)imagename{
     UIColor *image = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:imagename]];
+    self.background = image;
     self.backgroundColor = image;
 }
 
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    if (!ismovable) {
+        //If view is immovable, don't move it
+    }else {
     startPoint = [[touches anyObject] locationInView:self];
+    }
 }
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
-    CGPoint movePoint = [[touches anyObject] locationInView:self.superview];
-    movePoint.x -= startPoint.x;
-    movePoint.y -= startPoint.y;
-    CGRect movFrame = [self frame];
-    movFrame.origin = movePoint;
-    [self setFrame:movFrame];
-    
+    if (!ismovable) {
+        //If view is immovable, don't move it
+    }else {
+        CGPoint movePoint = [[touches anyObject] locationInView:self.superview];
+        movePoint.x -= startPoint.x;
+        movePoint.y -= startPoint.y;
+        CGRect movFrame = [self frame];
+        movFrame.origin = movePoint;
+        self.x = movePoint.x;
+        self.y = movePoint.y;
+        [self setFrame:movFrame];  
+    }  
 }
+
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    if (self.y >= 429 || self.x >= 862) {
+        [self removeFromSuperview];
+    }
+}
+
 
 - (id)initWithFrame:(CGRect)frame
 {
