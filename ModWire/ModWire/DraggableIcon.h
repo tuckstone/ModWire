@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface DraggableIcon : UIView
  
@@ -15,6 +16,8 @@
 @property NSInteger x;
 @property NSInteger y;
 @property BOOL ismovable;
+@property BOOL inbounds;
+@property (nonatomic) BOOL ishighlighted;
 @property (nonatomic) DraggableIcon *connectedFrom;
 @property (nonatomic) DraggableIcon *connectedTo;
 

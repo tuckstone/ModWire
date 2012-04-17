@@ -202,13 +202,15 @@ int lastKeyPressed = 0;
     CGRect bounds = CGRectMake(50, 250, 72, 72);
     DraggableIcon *soundStart = [[DraggableIcon alloc] initWithFrame:bounds];
     soundStart.ismovable = NO;
+    soundStart.inbounds = YES;
     [soundStart setImage:@"audio-in.png"];
     [self.view addSubview:soundStart];
     
-    CGRect bounds2 = CGRectMake(850, 250, 72, 72);
+    CGRect bounds2 = CGRectMake(750, 250, 72, 72);
     DraggableIcon *soundEnd = [[DraggableIcon alloc] initWithFrame:bounds2];
     soundEnd.ismovable = NO;
-    [soundEnd setImage:@"audio-in.png"];
+    soundEnd.inbounds = YES;
+    [soundEnd setImage:@"output.png"];
     [self.view addSubview:soundStart];
     
     // Forward touch events to the keyboard
@@ -247,6 +249,7 @@ int lastKeyPressed = 0;
     //TEMP NAME -> needs to access the cell's image name and find appropriate image
     [testDrag setImage:[[icons objectAtIndex:indexPath.row] imageName]];
     testDrag.ismovable = YES;
+    testDrag.inbounds = YES;
     [self.view addSubview:testDrag];
     [currIcons addObject:testDrag];
     NSLog(@"cell clicked %d",indexPath.row);
