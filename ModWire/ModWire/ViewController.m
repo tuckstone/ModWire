@@ -20,6 +20,7 @@
 
 @implementation ViewController
 @synthesize paletteTable, optionView, currButton, keyboardScrollView, label1, label2, slider1, slider2, iconButton, midi;
+@synthesize currIcons;
 int lastKeyPressed = 0;
 
 - (void)noteOn:(int)note {
@@ -156,6 +157,8 @@ int lastKeyPressed = 0;
         exit(0);
     }
     
+    currIcons = [[NSMutableSet alloc] init];
+    
     //set up icon palette
     
     //create table sidebar for icons
@@ -245,6 +248,7 @@ int lastKeyPressed = 0;
     [testDrag setImage:[[icons objectAtIndex:indexPath.row] imageName]];
     testDrag.ismovable = YES;
     [self.view addSubview:testDrag];
+    [currIcons addObject:testDrag];
     NSLog(@"cell clicked %d",indexPath.row);
 }
 

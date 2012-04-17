@@ -49,6 +49,8 @@
 
 @property (nonatomic, strong) PGMidi *midi;
 
+@property (nonatomic) NSMutableSet *currIcons;
+
 - (IBAction)buttonPressed:(id)sender;
 
 - (IBAction)iconPressed:(id)sender;
