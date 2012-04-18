@@ -25,4 +25,6 @@
 
 -(void)setImage:(NSString *)imagename;
 
+-(void)highlighter:(BOOL) state;
+
 @end

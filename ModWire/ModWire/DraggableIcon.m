@@ -18,22 +18,16 @@
     self.backgroundColor = image;
 }
 
-/*-(void)setIshighlighted:(BOOL)state{
-    if (state == YES) {
-        //BREAKS THE PROGRAM RIGHT NOW ARGH
-        [[self layer] setShadowColor:[UIColor greenColor].CGColor];
-        [[self layer] setShadowOpacity:1.0f];
-        [[self layer] setShadowRadius:6.0f];
-        [[self layer] setShadowOffset:CGSizeMake(0, 3)];    
-        self.ishighlighted = YES;
+-(void)highlighter:(BOOL)state
+{
+    if (state == TRUE) {
+        self.alpha = 0.5;
+        self.ishighlighted = TRUE;
     }else {
-        [[self layer] setShadowColor:[UIColor clearColor].CGColor];
-        [[self layer] setShadowOpacity:0.0f];
-        [[self layer] setShadowRadius:0.0f];
-        [[self layer] setShadowOffset:CGSizeMake(0,0)];
-        self.ishighlighted = NO;
+        self.alpha = 1.0;
+        self.ishighlighted = FALSE;
     }
-}*/
+}
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     if (!ismovable) {
@@ -46,10 +40,10 @@
     for (DraggableIcon *curricon in self.otherIcons) {
         if (curricon.ishighlighted == YES)
         {
-            //[curricon setIshighlighted:NO];
+            [curricon highlighter:FALSE];
         }
     }
-    //[self setIshighlighted:YES];
+    [self highlighter:TRUE];
 }
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
@@ -74,7 +68,6 @@
         [self.otherIcons removeObject:self];
         self.inbounds = NO;
     }
-    self.alpha = 1.0;
 }
 
 
