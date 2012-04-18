@@ -21,6 +21,8 @@
 @property (nonatomic) DraggableIcon *connectedFrom;
 @property (nonatomic) DraggableIcon *connectedTo;
 
+@property (nonatomic) NSMutableSet *otherIcons;
+
 -(void)setImage:(NSString *)imagename;
 
 @end

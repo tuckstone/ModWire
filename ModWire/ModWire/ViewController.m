@@ -203,6 +203,8 @@ int lastKeyPressed = 0;
     DraggableIcon *soundStart = [[DraggableIcon alloc] initWithFrame:bounds];
     soundStart.ismovable = NO;
     soundStart.inbounds = YES;
+    soundStart.ishighlighted = NO;
+    soundStart.otherIcons = currIcons;
     [soundStart setImage:@"audio-in.png"];
     [self.view addSubview:soundStart];
     
@@ -210,8 +212,10 @@ int lastKeyPressed = 0;
     DraggableIcon *soundEnd = [[DraggableIcon alloc] initWithFrame:bounds2];
     soundEnd.ismovable = NO;
     soundEnd.inbounds = YES;
+    soundEnd.ishighlighted = NO;
+    soundEnd.otherIcons = currIcons;
     [soundEnd setImage:@"output.png"];
-    [self.view addSubview:soundStart];
+    [self.view addSubview:soundEnd];
     
     // Forward touch events to the keyboard
     //[keyboardScrollView setTouchView:keyboardView];
@@ -250,6 +254,8 @@ int lastKeyPressed = 0;
     [testDrag setImage:[[icons objectAtIndex:indexPath.row] imageName]];
     testDrag.ismovable = YES;
     testDrag.inbounds = YES;
+    testDrag.ishighlighted = NO;
+    testDrag.otherIcons = currIcons;
     [self.view addSubview:testDrag];
     [currIcons addObject:testDrag];
     NSLog(@"cell clicked %d",indexPath.row);

@@ -10,7 +10,7 @@
 
 @implementation DraggableIcon
 @synthesize startPoint, x, y, ismovable, background, connectedTo, connectedFrom;
-@synthesize ishighlighted, inbounds;
+@synthesize ishighlighted, inbounds, otherIcons;
 
 -(void)setImage:(NSString *)imagename{
     UIColor *image = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:imagename]];
@@ -18,13 +18,22 @@
     self.backgroundColor = image;
 }
 
--(void)setIshighlighted:(BOOL)state{
+/*-(void)setIshighlighted:(BOOL)state{
     if (state == YES) {
-    [[self layer] setShadowColor:[UIColor greenColor].CGColor];
-    [[self layer] setShadowOpacity:1.0f];
-    [[self layer] setShadowRadius:6.0f];
-    [[self layer] setShadowOffset:CGSizeMake(0, 3)];    }
-}
+        //BREAKS THE PROGRAM RIGHT NOW ARGH
+        [[self layer] setShadowColor:[UIColor greenColor].CGColor];
+        [[self layer] setShadowOpacity:1.0f];
+        [[self layer] setShadowRadius:6.0f];
+        [[self layer] setShadowOffset:CGSizeMake(0, 3)];    
+        self.ishighlighted = YES;
+    }else {
+        [[self layer] setShadowColor:[UIColor clearColor].CGColor];
+        [[self layer] setShadowOpacity:0.0f];
+        [[self layer] setShadowRadius:0.0f];
+        [[self layer] setShadowOffset:CGSizeMake(0,0)];
+        self.ishighlighted = NO;
+    }
+}*/
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     if (!ismovable) {
@@ -34,6 +43,13 @@
         startPoint = [[touches anyObject] locationInView:self];
         self.alpha = 0.5;
     }
+    for (DraggableIcon *curricon in self.otherIcons) {
+        if (curricon.ishighlighted == YES)
+        {
+            //[curricon setIshighlighted:NO];
+        }
+    }
+    //[self setIshighlighted:YES];
 }
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
@@ -55,6 +71,7 @@
 {
     if (self.y >= 429 || self.x >= 862) {
         [self removeFromSuperview];
+        [self.otherIcons removeObject:self];
         self.inbounds = NO;
     }
     self.alpha = 1.0;
