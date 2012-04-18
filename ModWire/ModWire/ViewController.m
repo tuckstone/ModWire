@@ -358,4 +358,24 @@ int lastKeyPressed = 0;
     
 }
 
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    if ([touches count] == 2) {
+        CALayer *layer = [[CALayer alloc]init];
+        CGFloat width = 1.0;
+        setLayerToLineFromAToB(layer, [[[touches allObjects] objectAtIndex:0] locationInView:self.view], [[[touches allObjects] objectAtIndex:1] locationInView:self.view], width);
+    }
+}
+
+void setLayerToLineFromAToB(CALayer *layer, CGPoint a, CGPoint b, CGFloat lineWidth)
+{
+    CGPoint center = { 0.5 * (a.x + b.x), 0.5 * (a.y + b.y) };
+    CGFloat length = sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y));
+    CGFloat angle = atan2(a.y - b.y, a.x - b.x);
+    
+    layer.position = center;
+    layer.bounds = (CGRect) { {0, 0}, { length + lineWidth, lineWidth } };
+    layer.transform = CATransform3DMakeRotation(angle, 0, 0, 1);
+}
+
 @end
