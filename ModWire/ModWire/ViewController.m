@@ -210,6 +210,7 @@ int lastKeyPressed = 0;
     [keyboardScrollView addSubview:keyboardView];  
     [keyboardScrollView setContentSize:keyboardView.frame.size];
     [keyboardScrollView setScrollEnabled:YES];
+    [keyboardScrollView TouchForwardingUIScrollView
     
     // Forward touch events to the keyboard
     //[keyboardScrollView setTouchView:keyboardView];
