@@ -51,6 +51,8 @@
 
 @property (nonatomic) NSMutableSet *currIcons;
 
+@property (nonatomic) NSMutableSet *currPaths;
+
 - (IBAction)buttonPressed:(id)sender;
 
 - (IBAction)iconPressed:(id)sender;
@@ -60,5 +62,6 @@
 - (IBAction)setFilterCutoffFreq:(id)sender;
 - (IBAction)setOscDetune:(id)sender;
 - (void) defineIconDictionary;
+//- (UIView *) hitTest:(CGPoint)point withEvent:(UIEvent *)event;
 
 @end

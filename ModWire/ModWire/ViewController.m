@@ -20,7 +20,7 @@
 
 @implementation ViewController
 @synthesize paletteTable, optionView, currButton, keyboardScrollView, label1, label2, slider1, slider2, iconButton, midi;
-@synthesize currIcons;
+@synthesize currIcons, currPaths;
 int lastKeyPressed = 0;
 
 - (void)noteOn:(int)note {
@@ -364,25 +364,29 @@ int lastKeyPressed = 0;
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     if ([touches count] == 2) {
-        CALayer *layer = [[CALayer alloc]init];
-        CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-        CGFloat components[4] = {0.0f, 0.0f, 0.0f, 1.0f};
-        CGColorRef blackColor = CGColorCreate(colorSpace, components);
-        layer.backgroundColor = blackColor;
-        CGFloat width = 1.0;
-        setLayerToLineFromAToB(layer, [[[touches allObjects] objectAtIndex:0] locationInView:self.view], [[[touches allObjects] objectAtIndex:1] locationInView:self.view], width);
+        BOOL first = FALSE;
+        BOOL second = FALSE;
+        CGPoint firstlocationpoint = [[[touches allObjects] objectAtIndex:0]locationInView:self.view];
+        UIView *firstIconTouched = [self.view hitTest:firstlocationpoint withEvent:event];
+        CGPoint secondlocationpoint = [[[touches allObjects] objectAtIndex:1]locationInView:self.view];
+        UIView *secondIconTouched = [self.view hitTest:secondlocationpoint withEvent:event];
+        for(DraggableIcon *check in currIcons)
+        {
+            if(check == firstIconTouched)
+            {
+                first = TRUE;
+            }
+            if(check == secondIconTouched)
+            {
+                second = TRUE;
+            }
+        }
+        if(first && second)
+        {
+            UIBezierPath *myPath=[[UIBezierPath alloc]init];
+            myPath.lineWidth=10;
+        }
     }
-}
-
-void setLayerToLineFromAToB(CALayer *layer, CGPoint a, CGPoint b, CGFloat lineWidth)
-{
-    CGPoint center = { 0.5 * (a.x + b.x), 0.5 * (a.y + b.y) };
-    CGFloat length = sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y));
-    CGFloat angle = atan2(a.y - b.y, a.x - b.x);
-    
-    layer.position = center;
-    layer.bounds = (CGRect) { {0, 0}, { length + lineWidth, lineWidth } };
-    layer.transform = CATransform3DMakeRotation(angle, 0, 0, 1);
 }
 
 @end
