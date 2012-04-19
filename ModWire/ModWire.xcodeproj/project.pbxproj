@@ -53,6 +53,7 @@
 		CEA65A301528DD8300B1985E /* waveshaper.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA65A2D1528DD8300B1985E /* waveshaper.png */; };
 		CEA65A311528DD8300B1985E /* WhiteKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA65A2F1528DD8300B1985E /* WhiteKeyView.m */; };
 		CEE96F3D152A79DF0060C3AA /* DraggableIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE96F3C152A79DF0060C3AA /* DraggableIcon.m */; };
+		CEF37E0C153DBE33001C5C21 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF37E0B153DBE33001C5C21 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -807,6 +808,7 @@
 		CEA65A2F1528DD8300B1985E /* WhiteKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteKeyView.m; sourceTree = "<group>"; };
 		CEE96F3B152A79DF0060C3AA /* DraggableIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableIcon.h; sourceTree = "<group>"; };
 		CEE96F3C152A79DF0060C3AA /* DraggableIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableIcon.m; sourceTree = "<group>"; };
+		CEF37E0B153DBE33001C5C21 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -814,6 +816,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF37E0C153DBE33001C5C21 /* QuartzCore.framework in Frameworks */,
 				274BEE9D15292D3300EC0E1F /* libpd-ios.a in Frameworks */,
 				274BEE921529239400EC0E1F /* CoreMIDI.framework in Frameworks */,
 				274BEE841529226E00EC0E1F /* AVFoundation.framework in Frameworks */,
@@ -1907,6 +1910,7 @@
 		CE46F0251528DB8300B15801 = {
 			isa = PBXGroup;
 			children = (
+				CEF37E0B153DBE33001C5C21 /* QuartzCore.framework */,
 				274BEE911529239400EC0E1F /* CoreMIDI.framework */,
 				274BEE831529226E00EC0E1F /* AVFoundation.framework */,
 				274BEE811529226300EC0E1F /* AudioToolbox.framework */,

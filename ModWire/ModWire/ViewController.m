@@ -20,6 +20,7 @@
 
 @implementation ViewController
 @synthesize paletteTable, optionView, currButton, keyboardScrollView, label1, label2, slider1, slider2, iconButton, midi;
+@synthesize currIcons;
 int lastKeyPressed = 0;
 
 - (void)noteOn:(int)note {
@@ -156,6 +157,8 @@ int lastKeyPressed = 0;
         exit(0);
     }
     
+    currIcons = [[NSMutableSet alloc] init];
+    
     //set up icon palette
     
     //create table sidebar for icons
@@ -181,23 +184,7 @@ int lastKeyPressed = 0;
     
     icons = [[NSMutableArray alloc]init];    //Create array for icon classes
     [self defineIconDictionary];    // define icon classes in array
-    
-    //access one cell in palette table
-    UITableViewCell *cell;
-    
-    //NSLog(@"count: %d ",[icons count]);
-    
-    /*
-     for (i = 0; i < [icons count]; i++)
-     {
-     NSLog(@"hi! we're making cell number: %d ",i);
-     
-     NSIndexPath *thisIndex = [[NSIndexPath alloc]initWithIndex:i];
-     cell = [self tableView:paletteTable cellForRowAtIndexPath:thisIndex];
-     }
-     i = [icons count] - 1;
-     */
-    
+        
     CGRect keyboardViewFrame;
     keyboardViewFrame.origin.x = 0;
     keyboardViewFrame.origin.y = 0;
@@ -211,6 +198,28 @@ int lastKeyPressed = 0;
     [keyboardScrollView setContentSize:keyboardView.frame.size];
     [keyboardScrollView setScrollEnabled:YES];
     [keyboardScrollView TouchForwardingUIScrollView
+    
+    //Code to make 2 static Icons
+    CGRect bounds = CGRectMake(50, 250, 72, 72);
+    DraggableIcon *soundStart = [[DraggableIcon alloc] initWithFrame:bounds];
+    soundStart.ismovable = NO;
+    soundStart.inbounds = YES;
+    soundStart.ishighlighted = NO;
+    soundStart.otherIcons = currIcons;
+    [soundStart setImage:@"audio-in.png"];
+    [self.view addSubview:soundStart];
+    
+    CGRect bounds2 = CGRectMake(750, 250, 72, 72);
+    DraggableIcon *soundEnd = [[DraggableIcon alloc] initWithFrame:bounds2];
+    soundEnd.ismovable = NO;
+    soundEnd.inbounds = YES;
+    soundEnd.ishighlighted = NO;
+    soundEnd.otherIcons = currIcons;
+    [soundEnd setImage:@"output.png"];
+    [self.view addSubview:soundEnd];
+    
+    [currIcons addObject:soundEnd];
+    [currIcons addObject:soundStart];
     
     // Forward touch events to the keyboard
     //[keyboardScrollView setTouchView:keyboardView];
@@ -247,7 +256,12 @@ int lastKeyPressed = 0;
     DraggableIcon *testDrag = [[DraggableIcon alloc] initWithFrame:bounds];
     //TEMP NAME -> needs to access the cell's image name and find appropriate image
     [testDrag setImage:[[icons objectAtIndex:indexPath.row] imageName]];
+    testDrag.ismovable = YES;
+    testDrag.inbounds = YES;
+    testDrag.ishighlighted = NO;
+    testDrag.otherIcons = currIcons;
     [self.view addSubview:testDrag];
+    [currIcons addObject:testDrag];
     NSLog(@"cell clicked %d",indexPath.row);
 }
 
@@ -262,9 +276,6 @@ int lastKeyPressed = 0;
             [label2 setHidden:TRUE];
             [slider1 setHidden:TRUE];
             [slider2 setHidden:TRUE];
-        }else {
-            [keyboardScrollView setHidden:TRUE];
-            
         }
     }
     if ([currButton.currentTitle isEqualToString: @"2"]){
@@ -349,6 +360,30 @@ int lastKeyPressed = 0;
     icon *waveshaper = [[icon alloc] initWithTitle:@"Waveshaper" andImage:@"waveshaper.png"];
     [icons addObject:waveshaper];
     
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    if ([touches count] == 2) {
+        CALayer *layer = [[CALayer alloc]init];
+        CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+        CGFloat components[4] = {0.0f, 0.0f, 0.0f, 1.0f};
+        CGColorRef blackColor = CGColorCreate(colorSpace, components);
+        layer.backgroundColor = blackColor;
+        CGFloat width = 1.0;
+        setLayerToLineFromAToB(layer, [[[touches allObjects] objectAtIndex:0] locationInView:self.view], [[[touches allObjects] objectAtIndex:1] locationInView:self.view], width);
+    }
+}
+
+void setLayerToLineFromAToB(CALayer *layer, CGPoint a, CGPoint b, CGFloat lineWidth)
+{
+    CGPoint center = { 0.5 * (a.x + b.x), 0.5 * (a.y + b.y) };
+    CGFloat length = sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y));
+    CGFloat angle = atan2(a.y - b.y, a.x - b.x);
+    
+    layer.position = center;
+    layer.bounds = (CGRect) { {0, 0}, { length + lineWidth, lineWidth } };
+    layer.transform = CATransform3DMakeRotation(angle, 0, 0, 1);
 }
 
 @end
