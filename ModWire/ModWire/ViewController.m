@@ -217,6 +217,9 @@ int lastKeyPressed = 0;
     [soundEnd setImage:@"output.png"];
     [self.view addSubview:soundEnd];
     
+    [currIcons addObject:soundEnd];
+    [currIcons addObject:soundStart];
+    
     // Forward touch events to the keyboard
     //[keyboardScrollView setTouchView:keyboardView];
     
@@ -362,6 +365,10 @@ int lastKeyPressed = 0;
 {
     if ([touches count] == 2) {
         CALayer *layer = [[CALayer alloc]init];
+        CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+        CGFloat components[4] = {0.0f, 0.0f, 0.0f, 1.0f};
+        CGColorRef blackColor = CGColorCreate(colorSpace, components);
+        layer.backgroundColor = blackColor;
         CGFloat width = 1.0;
         setLayerToLineFromAToB(layer, [[[touches allObjects] objectAtIndex:0] locationInView:self.view], [[[touches allObjects] objectAtIndex:1] locationInView:self.view], width);
     }
