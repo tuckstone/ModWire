@@ -366,25 +366,35 @@ int lastKeyPressed = 0;
     if ([touches count] == 2) {
         BOOL first = FALSE;
         BOOL second = FALSE;
+        DraggableIcon *firstIconTouched;
+        DraggableIcon *secondIconTouched;
         CGPoint firstlocationpoint = [[[touches allObjects] objectAtIndex:0]locationInView:self.view];
-        UIView *firstIconTouched = [self.view hitTest:firstlocationpoint withEvent:event];
         CGPoint secondlocationpoint = [[[touches allObjects] objectAtIndex:1]locationInView:self.view];
-        UIView *secondIconTouched = [self.view hitTest:secondlocationpoint withEvent:event];
         for(DraggableIcon *check in currIcons)
         {
-            if(check == firstIconTouched)
+            if(firstlocationpoint.x > check.x && firstlocationpoint.x < (check.x +72))
             {
-                first = TRUE;
+                if(firstlocationpoint.y >check.y && firstlocationpoint.y < (check.y +72))
+                {
+                    first = TRUE;
+                    firstIconTouched = check;
+                }
             }
-            if(check == secondIconTouched)
+            if(secondlocationpoint.x > check.x && secondlocationpoint.x < (check.x +72))
             {
-                second = TRUE;
+                if(secondlocationpoint.y >check.y && secondlocationpoint.y < (check.y +72))
+                {
+                    second = TRUE;
+                    secondIconTouched = check;
+                }
             }
         }
         if(first && second)
         {
             UIBezierPath *myPath=[[UIBezierPath alloc]init];
             myPath.lineWidth=10;
+            [myPath addLineToPoint:CGPointMake(firstIconTouched.x, firstIconTouched.y)];
+            [myPath addLineToPoint:CGPointMake(secondIconTouched.x, secondIconTouched.y)];
         }
     }
 }
