@@ -53,6 +53,8 @@
 
 @property (nonatomic) NSMutableSet *currPaths;
 
+@property (nonatomic) IBOutlet UIView * workView;
+
 - (IBAction)buttonPressed:(id)sender;
 
 - (IBAction)iconPressed:(id)sender;

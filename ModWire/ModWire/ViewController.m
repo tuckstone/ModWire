@@ -20,7 +20,7 @@
 
 @implementation ViewController
 @synthesize paletteTable, optionView, currButton, keyboardScrollView, label1, label2, slider1, slider2, iconButton, midi;
-@synthesize currIcons, currPaths;
+@synthesize currIcons, currPaths, workView;
 int lastKeyPressed = 0;
 
 - (void)noteOn:(int)note {
@@ -199,7 +199,8 @@ int lastKeyPressed = 0;
     [keyboardScrollView setScrollEnabled:YES];
     
     //Code to make 2 static Icons
-    CGRect bounds = CGRectMake(50, 250, 72, 72);
+    self.workView.backgroundColor = [UIColor lightGrayColor];
+    CGRect bounds = CGRectMake(50, 220, 72, 72);
     DraggableIcon *soundStart = [[DraggableIcon alloc] initWithFrame:bounds];
     soundStart.ismovable = NO;
     soundStart.inbounds = YES;
@@ -208,7 +209,7 @@ int lastKeyPressed = 0;
     [soundStart setImage:@"audio-in.png"];
     [self.view addSubview:soundStart];
     
-    CGRect bounds2 = CGRectMake(750, 250, 72, 72);
+    CGRect bounds2 = CGRectMake(750, 220, 72, 72);
     DraggableIcon *soundEnd = [[DraggableIcon alloc] initWithFrame:bounds2];
     soundEnd.ismovable = NO;
     soundEnd.inbounds = YES;
@@ -363,7 +364,11 @@ int lastKeyPressed = 0;
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    if ([touches count] == 2) {
+    UIBezierPath *lolPath=[[UIBezierPath alloc]init];
+    lolPath.lineWidth=10;
+    [lolPath addLineToPoint:CGPointMake(100, 100)];
+    [lolPath addLineToPoint:CGPointMake(200, 200)];
+    if ([touches count] > 1) {
         BOOL first = FALSE;
         BOOL second = FALSE;
         DraggableIcon *firstIconTouched;

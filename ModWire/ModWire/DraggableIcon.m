@@ -9,10 +9,11 @@
 #import "DraggableIcon.h"
 
 @implementation DraggableIcon
-@synthesize startPoint, x, y, ismovable, background, connectedTo, connectedFrom;
+@synthesize myName, startPoint, x, y, ismovable, background, connectedTo, connectedFrom;
 @synthesize ishighlighted, inbounds, otherIcons;
 
 -(void)setImage:(NSString *)imagename{
+    myName = imagename;
     UIColor *image = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:imagename]];
     self.background = image;
     self.backgroundColor = image;
