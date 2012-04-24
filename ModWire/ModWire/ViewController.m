@@ -20,7 +20,7 @@
 
 @implementation ViewController
 @synthesize paletteTable, optionView, currButton, keyboardScrollView, label1, label2, slider1, slider2, iconButton, midi;
-@synthesize currIcons;
+@synthesize currIcons, currPaths, workView, soundStart, soundEnd;
 int lastKeyPressed = 0;
 
 - (void)noteOn:(int)note {
@@ -185,6 +185,13 @@ int lastKeyPressed = 0;
     icons = [[NSMutableArray alloc]init];    //Create array for icon classes
     [self defineIconDictionary];    // define icon classes in array
         
+    
+    //Add Gesture Recognition to working View
+    UITapGestureRecognizer *twoFingersOneTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(twoFingersOneTap)];
+    twoFingersOneTap.numberOfTouchesRequired = 2;
+    [self.workView addGestureRecognizer:twoFingersOneTap];
+    
+    
     CGRect keyboardViewFrame;
     keyboardViewFrame.origin.x = 0;
     keyboardViewFrame.origin.y = 0;
@@ -199,8 +206,14 @@ int lastKeyPressed = 0;
     [keyboardScrollView setScrollEnabled:YES];
     
     //Code to make 2 static Icons
+<<<<<<< HEAD
     CGRect bounds = CGRectMake(50.0, 250.0, 72.0, 72.0);
     DraggableIcon *soundStart = [[DraggableIcon alloc] initWithFrame:bounds];
+=======
+    self.workView.backgroundColor = [UIColor lightGrayColor];
+    CGRect bounds = CGRectMake(50, 220, 72, 72);
+    soundStart = [[DraggableIcon alloc] initWithFrame:bounds];
+>>>>>>> fea7af368aa7c65334a793f7fcf1ea0a42a03932
     soundStart.ismovable = NO;
     soundStart.inbounds = YES;
     soundStart.ishighlighted = NO;
@@ -208,17 +221,16 @@ int lastKeyPressed = 0;
     [soundStart setImage:@"audio-in.png"];
     [self.view addSubview:soundStart];
     
-    CGRect bounds2 = CGRectMake(750, 250, 72, 72);
-    DraggableIcon *soundEnd = [[DraggableIcon alloc] initWithFrame:bounds2];
+    CGRect bounds2 = CGRectMake(750, 220, 72, 72);
+    soundEnd = [[DraggableIcon alloc] initWithFrame:bounds2];
     soundEnd.ismovable = NO;
     soundEnd.inbounds = YES;
     soundEnd.ishighlighted = NO;
     soundEnd.otherIcons = currIcons;
     [soundEnd setImage:@"output.png"];
     [self.view addSubview:soundEnd];
-    
-    [currIcons addObject:soundEnd];
     [currIcons addObject:soundStart];
+    [currIcons addObject:soundEnd];
     
     // Forward touch events to the keyboard
     //[keyboardScrollView setTouchView:keyboardView];
@@ -363,26 +375,75 @@ int lastKeyPressed = 0;
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    if ([touches count] == 2) {
-        CALayer *layer = [[CALayer alloc]init];
-        CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-        CGFloat components[4] = {0.0f, 0.0f, 0.0f, 1.0f};
-        CGColorRef blackColor = CGColorCreate(colorSpace, components);
-        layer.backgroundColor = blackColor;
-        CGFloat width = 1.0;
-        setLayerToLineFromAToB(layer, [[[touches allObjects] objectAtIndex:0] locationInView:self.view], [[[touches allObjects] objectAtIndex:1] locationInView:self.view], width);
+    NSLog(@"LOL");
+    if ([touches count] > 1) {
+        BOOL first = FALSE;
+        BOOL second = FALSE;
+        DraggableIcon *firstIconTouched;
+        DraggableIcon *secondIconTouched;
+        CGPoint firstlocationpoint = [[[touches allObjects] objectAtIndex:0]locationInView:self.view];
+        CGPoint secondlocationpoint = [[[touches allObjects] objectAtIndex:1]locationInView:self.view];
+        for(DraggableIcon *check in currIcons)
+        {
+            if(firstlocationpoint.x > check.x && firstlocationpoint.x < (check.x +72))
+            {
+                if(firstlocationpoint.y >check.y && firstlocationpoint.y < (check.y +72))
+                {
+                    first = TRUE;
+                    firstIconTouched = check;
+                }
+            }
+            if(secondlocationpoint.x > check.x && secondlocationpoint.x < (check.x +72))
+            {
+                if(secondlocationpoint.y >check.y && secondlocationpoint.y < (check.y +72))
+                {
+                    second = TRUE;
+                    secondIconTouched = check;
+                }
+            }
+        }
+        if(first && second)
+        {
+            UIBezierPath *myPath=[[UIBezierPath alloc]init];
+            myPath.lineWidth=10;
+            [myPath addLineToPoint:CGPointMake(firstIconTouched.x, firstIconTouched.y)];
+            [myPath addLineToPoint:CGPointMake(secondIconTouched.x, secondIconTouched.y)];
+        }
     }
 }
 
-void setLayerToLineFromAToB(CALayer *layer, CGPoint a, CGPoint b, CGFloat lineWidth)
+-(IBAction)buildSound:(id)sender
 {
-    CGPoint center = { 0.5 * (a.x + b.x), 0.5 * (a.y + b.y) };
-    CGFloat length = sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y));
-    CGFloat angle = atan2(a.y - b.y, a.x - b.x);
+    DraggableIcon *programTraverser = soundStart;
+    BOOL didFindError = FALSE;
+    while (programTraverser != soundEnd && !didFindError) {
+        //This is where mike will take all the datas from the views
+        
+        //yup, right there
+        
+        
+        if (programTraverser.connectedTo == NULL) {
+            //panic! those motherfuckers DONE GOOFED
+            UIAlertView *badView = [[UIAlertView alloc]initWithTitle:@"Error"
+                                                          message:@"You have a wiring error.  Please re-evaluate your program!"
+                                                         delegate:self
+                                                cancelButtonTitle:@"Sorry :("
+                                                otherButtonTitles:nil,
+                                 nil];
+            [badView show];
+            didFindError = TRUE;
+        }
+        if (!didFindError) {
+            programTraverser = programTraverser.connectedTo;
+        }
+    }
     
-    layer.position = center;
-    layer.bounds = (CGRect) { {0, 0}, { length + lineWidth, lineWidth } };
-    layer.transform = CATransform3DMakeRotation(angle, 0, 0, 1);
+    //programTraverser should now be soundEnd.  If all went well.  I hope.
+}
+
+-(void)twoFingersOneTap
+{
+    NSLog(@"HELLO");
 }
 
 @end

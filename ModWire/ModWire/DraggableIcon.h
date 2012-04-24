@@ -10,7 +10,8 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface DraggableIcon : UIView
- 
+
+@property (nonatomic) NSString *myName;
 @property (nonatomic) CGPoint startPoint;
 @property (nonatomic) UIColor *background;
 @property NSInteger x;
