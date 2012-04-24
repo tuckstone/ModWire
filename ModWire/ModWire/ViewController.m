@@ -200,7 +200,7 @@ int lastKeyPressed = 0;
     
     
     //Makes 2 static icons
-    CGRect bounds = CGRectMake(50.0, 250.0, 72.0, 72.0);
+    CGRect bounds = CGRectMake(50.0, 220.0, 72.0, 72.0);
     soundStart = [[DraggableIcon alloc] initWithFrame:bounds];
     soundStart.ismovable = NO;
     soundStart.inbounds = YES;

@@ -1988,9 +1988,9 @@
 				CE46F0461528DB8300B15801 /* ViewController.h */,
 				CE46F0471528DB8300B15801 /* ViewController.m */,
 				CE46F0491528DB8300B15801 /* ViewController.xib */,
-				CEE96F3B152A79DF0060C3AA /* DraggableIcon.h */,
 				C84F5C851546F2C00024C6CB /* Control.h */,
 				C84F5C861546F2C00024C6CB /* Control.m */,
+				CEE96F3B152A79DF0060C3AA /* DraggableIcon.h */,
 				CEE96F3C152A79DF0060C3AA /* DraggableIcon.m */,
 				CE46F03B1528DB8300B15801 /* Supporting Files */,
 			);

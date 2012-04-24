@@ -94,10 +94,23 @@
 
 -(void)connectFrom:(DraggableIcon *)fromThis toThis:(DraggableIcon *)toThis
 {
-    //MAKIN DA LINES OH YEHZ
-    UIBezierPath *myPath=[[UIBezierPath alloc]init];
-    myPath.lineWidth=10;
+    [self drawRect:CGRectMake(fromThis.x, fromThis.y, toThis.x, toThis.y)];
+}
 
+-(void)drawRect:(CGRect)rect
+{
+    /*[self setNeedsDisplay];
+    //MAKIN DA LINES OH YEHZ
+    [[UIColor blackColor] setFill];
+    [[UIColor grayColor] setStroke];
+    UIBezierPath *myPath=[[UIBezierPath alloc]init];
+    [myPath moveToPoint:CGPointMake(self.x, self.y)];
+    [myPath addLineToPoint:CGPointMake(rect.size.width, rect.size.height)];
+    [myPath closePath];
+    
+    myPath.lineWidth=2;
+    [myPath fill];
+    [myPath stroke];*/
 }
 
 @end

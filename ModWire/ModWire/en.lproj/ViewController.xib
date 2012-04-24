@@ -253,7 +253,7 @@
 						<string key="NSReuseIdentifierKey">_NS:212</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC42NjU5MzA3MDY1IDAuMDkzNTI5NjIzOTEgMCAwLjYzAA</bytes>
+							<bytes key="NSRGB">MC42NjU5MzA3MDY1IDAuMDkzNTI5NjIzOTEgMAA</bytes>
 						</object>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 					</object>
@@ -349,7 +349,7 @@
 								<string key="NSReuseIdentifierKey">_NS:241</string>
 								<object class="NSColor" key="IBUIBackgroundColor">
 									<int key="NSColorSpace">1</int>
-									<bytes key="NSRGB">MC44MTgwMTk3MDExIDAuMDE5MjgzNzY3NTQgMAA</bytes>
+									<bytes key="NSRGB">MC4wMDE1ODQ1MjcyNDggMC40NDAxMjY2NDAzIDAuNzQyMDM4ODkyNyAwLjY3AA</bytes>
 								</object>
 								<bool key="IBUIOpaque">NO</bool>
 								<object class="IBUIAccessibilityConfiguration" key="IBUIAccessibilityConfiguration">
