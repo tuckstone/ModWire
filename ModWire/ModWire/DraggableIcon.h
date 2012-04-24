@@ -24,6 +24,8 @@
 
 @property (nonatomic) NSMutableSet *otherIcons;
 
+@property(nonatomic) NSMutableArray *controls;
+
 -(void)setImage:(NSString *)imagename;
 
 -(void)highlighter:(BOOL) state;
