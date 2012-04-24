@@ -184,14 +184,7 @@ int lastKeyPressed = 0;
     
     icons = [[NSMutableArray alloc]init];    //Create array for icon classes
     [self defineIconDictionary];    // define icon classes in array
-        
-    
-    //Add Gesture Recognition to working View
-    UITapGestureRecognizer *twoFingersOneTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(twoFingersOneTap)];
-    twoFingersOneTap.numberOfTouchesRequired = 2;
-    [self.workView addGestureRecognizer:twoFingersOneTap];
-    
-    
+            
     CGRect keyboardViewFrame;
     keyboardViewFrame.origin.x = 0;
     keyboardViewFrame.origin.y = 0;
@@ -206,7 +199,6 @@ int lastKeyPressed = 0;
     [keyboardScrollView setScrollEnabled:YES];
     
     //Code to make 2 static Icons
-    self.workView.backgroundColor = [UIColor lightGrayColor];
     CGRect bounds = CGRectMake(50, 220, 72, 72);
     soundStart = [[DraggableIcon alloc] initWithFrame:bounds];
     soundStart.ismovable = NO;
@@ -368,44 +360,6 @@ int lastKeyPressed = 0;
     
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    NSLog(@"LOL");
-    if ([touches count] > 1) {
-        BOOL first = FALSE;
-        BOOL second = FALSE;
-        DraggableIcon *firstIconTouched;
-        DraggableIcon *secondIconTouched;
-        CGPoint firstlocationpoint = [[[touches allObjects] objectAtIndex:0]locationInView:self.view];
-        CGPoint secondlocationpoint = [[[touches allObjects] objectAtIndex:1]locationInView:self.view];
-        for(DraggableIcon *check in currIcons)
-        {
-            if(firstlocationpoint.x > check.x && firstlocationpoint.x < (check.x +72))
-            {
-                if(firstlocationpoint.y >check.y && firstlocationpoint.y < (check.y +72))
-                {
-                    first = TRUE;
-                    firstIconTouched = check;
-                }
-            }
-            if(secondlocationpoint.x > check.x && secondlocationpoint.x < (check.x +72))
-            {
-                if(secondlocationpoint.y >check.y && secondlocationpoint.y < (check.y +72))
-                {
-                    second = TRUE;
-                    secondIconTouched = check;
-                }
-            }
-        }
-        if(first && second)
-        {
-            UIBezierPath *myPath=[[UIBezierPath alloc]init];
-            myPath.lineWidth=10;
-            [myPath addLineToPoint:CGPointMake(firstIconTouched.x, firstIconTouched.y)];
-            [myPath addLineToPoint:CGPointMake(secondIconTouched.x, secondIconTouched.y)];
-        }
-    }
-}
 
 -(IBAction)buildSound:(id)sender
 {
@@ -436,9 +390,5 @@ int lastKeyPressed = 0;
     //programTraverser should now be soundEnd.  If all went well.  I hope.
 }
 
--(void)twoFingersOneTap
-{
-    NSLog(@"HELLO");
-}
 
 @end

@@ -251,7 +251,10 @@
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="442242791"/>
 						<string key="NSReuseIdentifierKey">_NS:212</string>
-						<reference key="IBUIBackgroundColor" ref="572815255"/>
+						<object class="NSColor" key="IBUIBackgroundColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MC42NjU5MzA3MDY1IDAuMDkzNTI5NjIzOTEgMCAwLjYzAA</bytes>
+						</object>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 					</object>
 					<object class="IBUIView" id="210206952">
@@ -266,6 +269,10 @@
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="504199710"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
+								<object class="NSColor" key="IBUIBackgroundColor">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MC4wMDE1ODQ1MjcyNDggMC40NDAxMjY2NDAzIDAuNzQyMDM4ODkyNyAwLjY3AA</bytes>
+								</object>
 								<array key="IBUIGestureRecognizers" id="0"/>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -772,7 +779,6 @@
 						<string key="iconPressed:">id</string>
 						<string key="setFilterCutoffFreq:">id</string>
 						<string key="setOscDetune:">id</string>
-						<string key="workTouch:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
 						<object class="IBActionInfo" key="buildSound:">
@@ -793,10 +799,6 @@
 						</object>
 						<object class="IBActionInfo" key="setOscDetune:">
 							<string key="name">setOscDetune:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="workTouch:">
-							<string key="name">workTouch:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 					</dictionary>

@@ -18,6 +18,7 @@
 @property NSInteger y;
 @property BOOL ismovable;
 @property BOOL inbounds;
+@property BOOL isTouched;
 @property (nonatomic) BOOL ishighlighted;
 @property (nonatomic) DraggableIcon *connectedFrom;
 @property (nonatomic) DraggableIcon *connectedTo;
@@ -27,5 +28,7 @@
 -(void)setImage:(NSString *)imagename;
 
 -(void)highlighter:(BOOL) state;
+
+-(void)connectFrom:(DraggableIcon*)fromThis toThis:(DraggableIcon *)toThis;
 
 @end
