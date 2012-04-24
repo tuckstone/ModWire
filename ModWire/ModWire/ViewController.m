@@ -197,10 +197,9 @@ int lastKeyPressed = 0;
     [keyboardScrollView addSubview:keyboardView];  
     [keyboardScrollView setContentSize:keyboardView.frame.size];
     [keyboardScrollView setScrollEnabled:YES];
-    [keyboardScrollView TouchForwardingUIScrollView
     
     //Code to make 2 static Icons
-    CGRect bounds = CGRectMake(50, 250, 72, 72);
+    CGRect bounds = CGRectMake(50.0, 250.0, 72.0, 72.0);
     DraggableIcon *soundStart = [[DraggableIcon alloc] initWithFrame:bounds];
     soundStart.ismovable = NO;
     soundStart.inbounds = YES;
