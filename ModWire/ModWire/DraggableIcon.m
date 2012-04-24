@@ -10,7 +10,7 @@
 
 @implementation DraggableIcon
 @synthesize myName, startPoint, x, y, ismovable, background, connectedTo, connectedFrom;
-@synthesize ishighlighted, inbounds, otherIcons, isTouched;
+@synthesize ishighlighted, inbounds, otherIcons, controls, isTouched;
 
 -(void)setImage:(NSString *)imagename{
     myName = imagename;

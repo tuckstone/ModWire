@@ -198,8 +198,9 @@ int lastKeyPressed = 0;
     [keyboardScrollView setContentSize:keyboardView.frame.size];
     [keyboardScrollView setScrollEnabled:YES];
     
-    //Code to make 2 static Icons
-    CGRect bounds = CGRectMake(50, 220, 72, 72);
+    
+    //Makes 2 static icons
+    CGRect bounds = CGRectMake(50.0, 250.0, 72.0, 72.0);
     soundStart = [[DraggableIcon alloc] initWithFrame:bounds];
     soundStart.ismovable = NO;
     soundStart.inbounds = YES;

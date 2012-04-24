@@ -14,6 +14,7 @@
 		274BEE901529237600EC0E1F /* PGMidiFind.mm in Sources */ = {isa = PBXBuildFile; fileRef = 274BEE8D1529237600EC0E1F /* PGMidiFind.mm */; };
 		274BEE921529239400EC0E1F /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274BEE911529239400EC0E1F /* CoreMIDI.framework */; };
 		274BEE9D15292D3300EC0E1F /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 274BEE7E152921AD00EC0E1F /* libpd-ios.a */; };
+		C84F5C871546F2C00024C6CB /* Control.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F5C861546F2C00024C6CB /* Control.m */; };
 		CE46F0351528DB8300B15801 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE46F0341528DB8300B15801 /* UIKit.framework */; };
 		CE46F0371528DB8300B15801 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE46F0361528DB8300B15801 /* Foundation.framework */; };
 		CE46F0391528DB8300B15801 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE46F0381528DB8300B15801 /* CoreGraphics.framework */; };
@@ -753,6 +754,8 @@
 		274BEE8C1529237600EC0E1F /* PGMidiFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiFind.h; sourceTree = "<group>"; };
 		274BEE8D1529237600EC0E1F /* PGMidiFind.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiFind.mm; sourceTree = "<group>"; };
 		274BEE911529239400EC0E1F /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		C84F5C851546F2C00024C6CB /* Control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Control.h; sourceTree = "<group>"; };
+		C84F5C861546F2C00024C6CB /* Control.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Control.m; sourceTree = "<group>"; };
 		CE46F0301528DB8300B15801 /* ModWire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModWire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE46F0341528DB8300B15801 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE46F0361528DB8300B15801 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -1986,6 +1989,8 @@
 				CE46F0471528DB8300B15801 /* ViewController.m */,
 				CE46F0491528DB8300B15801 /* ViewController.xib */,
 				CEE96F3B152A79DF0060C3AA /* DraggableIcon.h */,
+				C84F5C851546F2C00024C6CB /* Control.h */,
+				C84F5C861546F2C00024C6CB /* Control.m */,
 				CEE96F3C152A79DF0060C3AA /* DraggableIcon.m */,
 				CE46F03B1528DB8300B15801 /* Supporting Files */,
 			);
@@ -2177,6 +2182,7 @@
 				274BEE8F1529237600EC0E1F /* PGMidiAllSources.mm in Sources */,
 				274BEE901529237600EC0E1F /* PGMidiFind.mm in Sources */,
 				CEE96F3D152A79DF0060C3AA /* DraggableIcon.m in Sources */,
+				C84F5C871546F2C00024C6CB /* Control.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
