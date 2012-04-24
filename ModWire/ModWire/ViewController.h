@@ -55,15 +55,19 @@
 
 @property (nonatomic) IBOutlet UIView * workView;
 
+@property (nonatomic) DraggableIcon *soundStart;
+
+@property (nonatomic) DraggableIcon *soundEnd;
+
 - (IBAction)buttonPressed:(id)sender;
 
 - (IBAction)iconPressed:(id)sender;
+
+-(IBAction)buildSound:(id)sender;
 
 - (void)noteOn:(int)note;
 - (void)noteOff:(int)note;
 - (IBAction)setFilterCutoffFreq:(id)sender;
 - (IBAction)setOscDetune:(id)sender;
 - (void) defineIconDictionary;
-//- (UIView *) hitTest:(CGPoint)point withEvent:(UIEvent *)event;
-
 @end

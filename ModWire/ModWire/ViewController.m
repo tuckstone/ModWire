@@ -20,7 +20,7 @@
 
 @implementation ViewController
 @synthesize paletteTable, optionView, currButton, keyboardScrollView, label1, label2, slider1, slider2, iconButton, midi;
-@synthesize currIcons, currPaths, workView;
+@synthesize currIcons, currPaths, workView, soundStart, soundEnd;
 int lastKeyPressed = 0;
 
 - (void)noteOn:(int)note {
@@ -185,6 +185,13 @@ int lastKeyPressed = 0;
     icons = [[NSMutableArray alloc]init];    //Create array for icon classes
     [self defineIconDictionary];    // define icon classes in array
         
+    
+    //Add Gesture Recognition to working View
+    UITapGestureRecognizer *twoFingersOneTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(twoFingersOneTap)];
+    twoFingersOneTap.numberOfTouchesRequired = 2;
+    [self.workView addGestureRecognizer:twoFingersOneTap];
+    
+    
     CGRect keyboardViewFrame;
     keyboardViewFrame.origin.x = 0;
     keyboardViewFrame.origin.y = 0;
@@ -201,7 +208,7 @@ int lastKeyPressed = 0;
     //Code to make 2 static Icons
     self.workView.backgroundColor = [UIColor lightGrayColor];
     CGRect bounds = CGRectMake(50, 220, 72, 72);
-    DraggableIcon *soundStart = [[DraggableIcon alloc] initWithFrame:bounds];
+    soundStart = [[DraggableIcon alloc] initWithFrame:bounds];
     soundStart.ismovable = NO;
     soundStart.inbounds = YES;
     soundStart.ishighlighted = NO;
@@ -210,16 +217,15 @@ int lastKeyPressed = 0;
     [self.view addSubview:soundStart];
     
     CGRect bounds2 = CGRectMake(750, 220, 72, 72);
-    DraggableIcon *soundEnd = [[DraggableIcon alloc] initWithFrame:bounds2];
+    soundEnd = [[DraggableIcon alloc] initWithFrame:bounds2];
     soundEnd.ismovable = NO;
     soundEnd.inbounds = YES;
     soundEnd.ishighlighted = NO;
     soundEnd.otherIcons = currIcons;
     [soundEnd setImage:@"output.png"];
     [self.view addSubview:soundEnd];
-    
-    [currIcons addObject:soundEnd];
     [currIcons addObject:soundStart];
+    [currIcons addObject:soundEnd];
     
     // Forward touch events to the keyboard
     //[keyboardScrollView setTouchView:keyboardView];
@@ -364,10 +370,7 @@ int lastKeyPressed = 0;
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    UIBezierPath *lolPath=[[UIBezierPath alloc]init];
-    lolPath.lineWidth=10;
-    [lolPath addLineToPoint:CGPointMake(100, 100)];
-    [lolPath addLineToPoint:CGPointMake(200, 200)];
+    NSLog(@"LOL");
     if ([touches count] > 1) {
         BOOL first = FALSE;
         BOOL second = FALSE;
@@ -402,6 +405,40 @@ int lastKeyPressed = 0;
             [myPath addLineToPoint:CGPointMake(secondIconTouched.x, secondIconTouched.y)];
         }
     }
+}
+
+-(IBAction)buildSound:(id)sender
+{
+    DraggableIcon *programTraverser = soundStart;
+    BOOL didFindError = FALSE;
+    while (programTraverser != soundEnd && !didFindError) {
+        //This is where mike will take all the datas from the views
+        
+        //yup, right there
+        
+        
+        if (programTraverser.connectedTo == NULL) {
+            //panic! those motherfuckers DONE GOOFED
+            UIAlertView *badView = [[UIAlertView alloc]initWithTitle:@"Error"
+                                                          message:@"You have a wiring error.  Please re-evaluate your program!"
+                                                         delegate:self
+                                                cancelButtonTitle:@"Sorry :("
+                                                otherButtonTitles:nil,
+                                 nil];
+            [badView show];
+            didFindError = TRUE;
+        }
+        if (!didFindError) {
+            programTraverser = programTraverser.connectedTo;
+        }
+    }
+    
+    //programTraverser should now be soundEnd.  If all went well.  I hope.
+}
+
+-(void)twoFingersOneTap
+{
+    NSLog(@"HELLO");
 }
 
 @end
