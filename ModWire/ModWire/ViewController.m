@@ -13,12 +13,10 @@
 #import "CoreMidi/CoreMidi.h"
 #import "PGMidi.h"
 #import "iOSVersionDetection.h"
-<<<<<<< HEAD
 #import "Control.h"
 #import "DraggableIcon.h"
-=======
 #import "PathView.h"
->>>>>>> 643272e910946a17501037695a0fb3a1f19b6bd2
+
 
 @interface ViewController () <PGMidiDelegate, PGMidiSourceDelegate>
 //nothing here
@@ -26,11 +24,8 @@
 
 @implementation ViewController
 @synthesize paletteTable, optionView, currButton, keyboardScrollView, label1, label2, slider1, slider2, iconButton, midi;
-<<<<<<< HEAD
-@synthesize currIcons, currPaths, workView, soundStart, soundEnd, selectedIcon;
-=======
-@synthesize currIcons, currPaths, workView, soundStart, soundEnd, clearView;
->>>>>>> 643272e910946a17501037695a0fb3a1f19b6bd2
+@synthesize currIcons, currPaths, workView, soundStart, soundEnd, selectedIcon, clearView;
+
 int lastKeyPressed = 0;
 
 - (void)noteOn:(int)note {
@@ -215,15 +210,12 @@ int lastKeyPressed = 0;
     [keyboardScrollView setContentSize:keyboardView.frame.size];
     [keyboardScrollView setScrollEnabled:YES];
     
-<<<<<<< HEAD
     //Code to make 2 static Icons
     self.workView.backgroundColor = [UIColor lightGrayColor];
-    CGRect bounds = CGRectMake(50, 220, 72, 72);
-=======
     
     //Makes 2 static icons
     CGRect bounds = CGRectMake(50.0, 220.0, 72.0, 72.0);
->>>>>>> 643272e910946a17501037695a0fb3a1f19b6bd2
+
     soundStart = [[DraggableIcon alloc] initWithFrame:bounds];
     soundStart.ismovable = NO;
     soundStart.inbounds = YES;
@@ -396,7 +388,6 @@ int lastKeyPressed = 0;
     
 }
 
-<<<<<<< HEAD
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     NSLog(@"LOL");
@@ -466,8 +457,6 @@ int lastKeyPressed = 0;
         }
     }
 }
-=======
->>>>>>> 643272e910946a17501037695a0fb3a1f19b6bd2
 
 -(IBAction)buildSound:(id)sender
 {
