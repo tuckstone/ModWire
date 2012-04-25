@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
+#import "PathView.h"
 
 @interface DraggableIcon : UIView
 
@@ -26,6 +27,8 @@
 @property (nonatomic) NSMutableSet *otherIcons;
 
 @property(nonatomic) NSMutableArray *controls;
+
+@property (nonatomic) PathView *clearParentView;
 
 -(void)setImage:(NSString *)imagename;
 

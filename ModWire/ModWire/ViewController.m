@@ -13,6 +13,7 @@
 #import "CoreMidi/CoreMidi.h"
 #import "PGMidi.h"
 #import "iOSVersionDetection.h"
+#import "PathView.h"
 
 @interface ViewController () <PGMidiDelegate, PGMidiSourceDelegate>
 //nothing here
@@ -20,7 +21,7 @@
 
 @implementation ViewController
 @synthesize paletteTable, optionView, currButton, keyboardScrollView, label1, label2, slider1, slider2, iconButton, midi;
-@synthesize currIcons, currPaths, workView, soundStart, soundEnd;
+@synthesize currIcons, currPaths, workView, soundStart, soundEnd, clearView;
 int lastKeyPressed = 0;
 
 - (void)noteOn:(int)note {
@@ -220,6 +221,17 @@ int lastKeyPressed = 0;
     [currIcons addObject:soundStart];
     [currIcons addObject:soundEnd];
     
+    
+    //Make Clear View for path drawing
+    CGRect bounds3 = CGRectMake(0, 0, 934, 501);
+    clearView = [[PathView alloc] initWithFrame:bounds3];
+    clearView.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:clearView];
+    
+    soundStart.clearParentView = clearView;
+    soundEnd.clearParentView = clearView;
+    
+    
     // Forward touch events to the keyboard
     //[keyboardScrollView setTouchView:keyboardView];
     
@@ -259,6 +271,7 @@ int lastKeyPressed = 0;
     testDrag.inbounds = YES;
     testDrag.ishighlighted = NO;
     testDrag.otherIcons = currIcons;
+    testDrag.clearParentView = clearView;
     [self.view addSubview:testDrag];
     [currIcons addObject:testDrag];
     NSLog(@"cell clicked %d",indexPath.row);

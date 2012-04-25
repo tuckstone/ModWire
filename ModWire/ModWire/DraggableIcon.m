@@ -10,7 +10,7 @@
 
 @implementation DraggableIcon
 @synthesize myName, startPoint, x, y, ismovable, background, connectedTo, connectedFrom;
-@synthesize ishighlighted, inbounds, otherIcons, controls, isTouched;
+@synthesize ishighlighted, inbounds, otherIcons, controls, isTouched, clearParentView;
 
 -(void)setImage:(NSString *)imagename{
     myName = imagename;
@@ -94,23 +94,9 @@
 
 -(void)connectFrom:(DraggableIcon *)fromThis toThis:(DraggableIcon *)toThis
 {
-    [self drawRect:CGRectMake(fromThis.x, fromThis.y, toThis.x, toThis.y)];
-}
-
--(void)drawRect:(CGRect)rect
-{
-    /*[self setNeedsDisplay];
-    //MAKIN DA LINES OH YEHZ
-    [[UIColor blackColor] setFill];
-    [[UIColor grayColor] setStroke];
-    UIBezierPath *myPath=[[UIBezierPath alloc]init];
-    [myPath moveToPoint:CGPointMake(self.x, self.y)];
-    [myPath addLineToPoint:CGPointMake(rect.size.width, rect.size.height)];
-    [myPath closePath];
-    
-    myPath.lineWidth=2;
-    [myPath fill];
-    [myPath stroke];*/
+    self.connectedTo = toThis;
+    toThis.connectedFrom = self;
+    [self.clearParentView beginDrawFrom:fromThis To:toThis];
 }
 
 @end

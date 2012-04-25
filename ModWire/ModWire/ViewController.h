@@ -11,6 +11,7 @@
 #import "icon.h"
 #import "PdDispatcher.h"
 #import "DraggableIcon.h"
+#import "PathView.h"
 
 @class TouchForwardingUIScrollView;
 @class PGMidi;
@@ -58,6 +59,8 @@
 @property (nonatomic) DraggableIcon *soundStart;
 
 @property (nonatomic) DraggableIcon *soundEnd;
+
+@property (nonatomic) PathView *clearView;
 
 - (IBAction)buttonPressed:(id)sender;
 
