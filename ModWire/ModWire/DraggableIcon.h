@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
+#import "PathView.h"
 
 @interface DraggableIcon : UIView
 
@@ -18,6 +19,7 @@
 @property NSInteger y;
 @property BOOL ismovable;
 @property BOOL inbounds;
+@property BOOL isTouched;
 @property (nonatomic) BOOL ishighlighted;
 @property (nonatomic) DraggableIcon *connectedFrom;
 @property (nonatomic) DraggableIcon *connectedTo;
@@ -26,8 +28,12 @@
 
 @property(nonatomic) NSMutableArray *controls;
 
+@property (nonatomic) PathView *clearParentView;
+
 -(void)setImage:(NSString *)imagename;
 
 -(void)highlighter:(BOOL) state;
+
+-(void)connectFrom:(DraggableIcon*)fromThis toThis:(DraggableIcon *)toThis;
 
 @end

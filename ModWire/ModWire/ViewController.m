@@ -13,8 +13,12 @@
 #import "CoreMidi/CoreMidi.h"
 #import "PGMidi.h"
 #import "iOSVersionDetection.h"
+<<<<<<< HEAD
 #import "Control.h"
 #import "DraggableIcon.h"
+=======
+#import "PathView.h"
+>>>>>>> 643272e910946a17501037695a0fb3a1f19b6bd2
 
 @interface ViewController () <PGMidiDelegate, PGMidiSourceDelegate>
 //nothing here
@@ -22,7 +26,11 @@
 
 @implementation ViewController
 @synthesize paletteTable, optionView, currButton, keyboardScrollView, label1, label2, slider1, slider2, iconButton, midi;
+<<<<<<< HEAD
 @synthesize currIcons, currPaths, workView, soundStart, soundEnd, selectedIcon;
+=======
+@synthesize currIcons, currPaths, workView, soundStart, soundEnd, clearView;
+>>>>>>> 643272e910946a17501037695a0fb3a1f19b6bd2
 int lastKeyPressed = 0;
 
 - (void)noteOn:(int)note {
@@ -193,14 +201,7 @@ int lastKeyPressed = 0;
     
     icons = [[NSMutableArray alloc]init];    //Create array for icon classes
     [self defineIconDictionary];    // define icon classes in array
-        
-    
-    //Add Gesture Recognition to working View
-    UITapGestureRecognizer *twoFingersOneTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(twoFingersOneTap)];
-    twoFingersOneTap.numberOfTouchesRequired = 2;
-    [self.workView addGestureRecognizer:twoFingersOneTap];
-    
-    
+            
     CGRect keyboardViewFrame;
     keyboardViewFrame.origin.x = 0;
     keyboardViewFrame.origin.y = 0;
@@ -214,9 +215,15 @@ int lastKeyPressed = 0;
     [keyboardScrollView setContentSize:keyboardView.frame.size];
     [keyboardScrollView setScrollEnabled:YES];
     
+<<<<<<< HEAD
     //Code to make 2 static Icons
     self.workView.backgroundColor = [UIColor lightGrayColor];
     CGRect bounds = CGRectMake(50, 220, 72, 72);
+=======
+    
+    //Makes 2 static icons
+    CGRect bounds = CGRectMake(50.0, 220.0, 72.0, 72.0);
+>>>>>>> 643272e910946a17501037695a0fb3a1f19b6bd2
     soundStart = [[DraggableIcon alloc] initWithFrame:bounds];
     soundStart.ismovable = NO;
     soundStart.inbounds = YES;
@@ -235,6 +242,17 @@ int lastKeyPressed = 0;
     [self.view addSubview:soundEnd];
     [currIcons addObject:soundStart];
     [currIcons addObject:soundEnd];
+    
+    
+    //Make Clear View for path drawing
+    CGRect bounds3 = CGRectMake(0, 0, 934, 501);
+    clearView = [[PathView alloc] initWithFrame:bounds3];
+    clearView.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:clearView];
+    
+    soundStart.clearParentView = clearView;
+    soundEnd.clearParentView = clearView;
+    
     
     // Forward touch events to the keyboard
     //[keyboardScrollView setTouchView:keyboardView];
@@ -275,6 +293,7 @@ int lastKeyPressed = 0;
     testDrag.inbounds = YES;
     testDrag.ishighlighted = NO;
     testDrag.otherIcons = currIcons;
+    testDrag.clearParentView = clearView;
     [self.view addSubview:testDrag];
     [currIcons addObject:testDrag];
     NSLog(@"cell clicked %d",indexPath.row);
@@ -377,6 +396,7 @@ int lastKeyPressed = 0;
     
 }
 
+<<<<<<< HEAD
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     NSLog(@"LOL");
@@ -446,6 +466,8 @@ int lastKeyPressed = 0;
         }
     }
 }
+=======
+>>>>>>> 643272e910946a17501037695a0fb3a1f19b6bd2
 
 -(IBAction)buildSound:(id)sender
 {
@@ -476,10 +498,6 @@ int lastKeyPressed = 0;
     //programTraverser should now be soundEnd.  If all went well.  I hope.
 }
 
--(void)twoFingersOneTap
-{
-    NSLog(@"HELLO");
-}
 
 - (void) loadIconToolbar:(DraggableIcon*)touchedIcon
 {

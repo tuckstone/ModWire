@@ -53,6 +53,7 @@
 		CEA65A2C1528DD7A00B1985E /* TouchForwardingUIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA65A2A1528DD7A00B1985E /* TouchForwardingUIScrollView.m */; };
 		CEA65A301528DD8300B1985E /* waveshaper.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA65A2D1528DD8300B1985E /* waveshaper.png */; };
 		CEA65A311528DD8300B1985E /* WhiteKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA65A2F1528DD8300B1985E /* WhiteKeyView.m */; };
+		CEE7A9C615475324001CDE14 /* PathView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE7A9C515475324001CDE14 /* PathView.m */; };
 		CEE96F3D152A79DF0060C3AA /* DraggableIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE96F3C152A79DF0060C3AA /* DraggableIcon.m */; };
 		CEF37E0C153DBE33001C5C21 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF37E0B153DBE33001C5C21 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
@@ -809,6 +810,8 @@
 		CEA65A2D1528DD8300B1985E /* waveshaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waveshaper.png; sourceTree = "<group>"; };
 		CEA65A2E1528DD8300B1985E /* WhiteKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteKeyView.h; sourceTree = "<group>"; };
 		CEA65A2F1528DD8300B1985E /* WhiteKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteKeyView.m; sourceTree = "<group>"; };
+		CEE7A9C415475324001CDE14 /* PathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathView.h; sourceTree = "<group>"; };
+		CEE7A9C515475324001CDE14 /* PathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathView.m; sourceTree = "<group>"; };
 		CEE96F3B152A79DF0060C3AA /* DraggableIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableIcon.h; sourceTree = "<group>"; };
 		CEE96F3C152A79DF0060C3AA /* DraggableIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableIcon.m; sourceTree = "<group>"; };
 		CEF37E0B153DBE33001C5C21 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -1988,10 +1991,19 @@
 				CE46F0461528DB8300B15801 /* ViewController.h */,
 				CE46F0471528DB8300B15801 /* ViewController.m */,
 				CE46F0491528DB8300B15801 /* ViewController.xib */,
+<<<<<<< HEAD
 				CEE96F3B152A79DF0060C3AA /* DraggableIcon.h */,
 				CEE96F3C152A79DF0060C3AA /* DraggableIcon.m */,
 				C84F5C851546F2C00024C6CB /* Control.h */,
 				C84F5C861546F2C00024C6CB /* Control.m */,
+=======
+				C84F5C851546F2C00024C6CB /* Control.h */,
+				C84F5C861546F2C00024C6CB /* Control.m */,
+				CEE96F3B152A79DF0060C3AA /* DraggableIcon.h */,
+				CEE96F3C152A79DF0060C3AA /* DraggableIcon.m */,
+				CEE7A9C415475324001CDE14 /* PathView.h */,
+				CEE7A9C515475324001CDE14 /* PathView.m */,
+>>>>>>> 643272e910946a17501037695a0fb3a1f19b6bd2
 				CE46F03B1528DB8300B15801 /* Supporting Files */,
 			);
 			path = ModWire;
@@ -2183,6 +2195,7 @@
 				274BEE901529237600EC0E1F /* PGMidiFind.mm in Sources */,
 				CEE96F3D152A79DF0060C3AA /* DraggableIcon.m in Sources */,
 				C84F5C871546F2C00024C6CB /* Control.m in Sources */,
+				CEE7A9C615475324001CDE14 /* PathView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

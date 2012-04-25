@@ -10,7 +10,7 @@
 
 @implementation DraggableIcon
 @synthesize myName, startPoint, x, y, ismovable, background, connectedTo, connectedFrom;
-@synthesize ishighlighted, inbounds, otherIcons, controls;
+@synthesize ishighlighted, inbounds, otherIcons, controls, isTouched, clearParentView;
 
 -(void)setImage:(NSString *)imagename{
     myName = imagename;
@@ -31,6 +31,7 @@
 }
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    self.isTouched = TRUE;
     if (!ismovable) {
         //If view is immovable, don't move it
         self.alpha = 0.5;
@@ -45,6 +46,12 @@
         }
     }
     [self highlighter:TRUE];
+    for(DraggableIcon *icon in otherIcons)
+    {
+        if (icon.isTouched == TRUE && icon != self) {
+            [self connectFrom:self toThis:icon];
+        }
+    }
 }
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
@@ -59,7 +66,7 @@
         self.x = movePoint.x;
         self.y = movePoint.y;
         [self setFrame:movFrame];  
-    }  
+    }
 }
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
@@ -69,6 +76,7 @@
         [self.otherIcons removeObject:self];
         self.inbounds = NO;
     }
+    self.isTouched = FALSE;
 }
 
 
@@ -77,8 +85,18 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        self.connectedTo = NULL;
+        self.connectedFrom = NULL;
+        self.isTouched = FALSE;
     }
     return self;
+}
+
+-(void)connectFrom:(DraggableIcon *)fromThis toThis:(DraggableIcon *)toThis
+{
+    self.connectedTo = toThis;
+    toThis.connectedFrom = self;
+    [self.clearParentView beginDrawFrom:fromThis To:toThis];
 }
 
 @end
