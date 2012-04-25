@@ -13,6 +13,8 @@
 #import "CoreMidi/CoreMidi.h"
 #import "PGMidi.h"
 #import "iOSVersionDetection.h"
+#import "Control.h"
+#import "DraggableIcon.h"
 
 @interface ViewController () <PGMidiDelegate, PGMidiSourceDelegate>
 //nothing here
@@ -20,7 +22,7 @@
 
 @implementation ViewController
 @synthesize paletteTable, optionView, currButton, keyboardScrollView, label1, label2, slider1, slider2, iconButton, midi;
-@synthesize currIcons, currPaths, workView, soundStart, soundEnd;
+@synthesize currIcons, currPaths, workView, soundStart, soundEnd, selectedIcon;
 int lastKeyPressed = 0;
 
 - (void)noteOn:(int)note {
@@ -38,6 +40,7 @@ int lastKeyPressed = 0;
     }
 }
 
+/*
 - (IBAction)setFilterCutoffFreq:(id)sender
 {
     [PdBase sendFloat:[(UISlider *) sender value] toReceiver:@"filtnum"];
@@ -48,6 +51,12 @@ int lastKeyPressed = 0;
     int tuneInt = (int) [(UISlider *) sender value];
     NSLog(@"%d",tuneInt);
     [PdBase sendFloat:[(UISlider *) sender value] toReceiver:@"detune"];
+}
+*/
+
+-(IBAction)sliderChanged:(id)sender
+{
+    
 }
 
 -(NSInteger) tableView: (UITableView *)tableView numberOfSectionsInTableView:(UITableView *)paletteView
@@ -206,14 +215,9 @@ int lastKeyPressed = 0;
     [keyboardScrollView setScrollEnabled:YES];
     
     //Code to make 2 static Icons
-<<<<<<< HEAD
-    CGRect bounds = CGRectMake(50.0, 250.0, 72.0, 72.0);
-    DraggableIcon *soundStart = [[DraggableIcon alloc] initWithFrame:bounds];
-=======
     self.workView.backgroundColor = [UIColor lightGrayColor];
     CGRect bounds = CGRectMake(50, 220, 72, 72);
     soundStart = [[DraggableIcon alloc] initWithFrame:bounds];
->>>>>>> fea7af368aa7c65334a793f7fcf1ea0a42a03932
     soundStart.ismovable = NO;
     soundStart.inbounds = YES;
     soundStart.ishighlighted = NO;
@@ -376,6 +380,37 @@ int lastKeyPressed = 0;
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     NSLog(@"LOL");
+    
+    if ([touches count] == 1)
+    {
+        BOOL found = FALSE;
+        selectedIcon = nil;
+        CGPoint locationpoint = [[[touches allObjects] objectAtIndex:0]locationInView:self.view];
+        for(DraggableIcon *check in currIcons)
+        {
+            if(locationpoint.x > check.x && locationpoint.x < (check.x +72))
+            {
+                if(locationpoint.y >check.y && locationpoint.y < (check.y +72))
+                {
+                    found = TRUE;
+                    selectedIcon = check;
+                    NSLog(@"found icon");
+                }
+            }
+        }
+        
+        if (found == FALSE)
+        {
+            for (DraggableIcon *eachIcon in currIcons)
+            {
+                [eachIcon highlighter:FALSE];
+            }
+        }
+        
+        [self loadIconToolbar:selectedIcon];
+        
+    }
+    
     if ([touches count] > 1) {
         BOOL first = FALSE;
         BOOL second = FALSE;
@@ -444,6 +479,36 @@ int lastKeyPressed = 0;
 -(void)twoFingersOneTap
 {
     NSLog(@"HELLO");
+}
+
+- (void) loadIconToolbar:(DraggableIcon*)touchedIcon
+{
+    NSLog(@"loading icon toolbar");
+    
+    if (selectedIcon == nil)
+    {
+        [label1 setHidden:TRUE];
+        [label2 setHidden:TRUE];
+        [slider1 setHidden:TRUE];
+        [slider2 setHidden:TRUE];
+        
+    }
+    else {
+        NSInteger numControls = [[touchedIcon controls] count];
+        for (NSInteger j = 0; j<numControls; j++)
+        {
+            Control *thisControl = [[touchedIcon controls] objectAtIndex:j];
+            if (thisControl.type == @"slider")
+            {
+                if(j == 0)
+                {
+                    [slider1 setHidden:FALSE];
+                    label1.text = thisControl.title;
+                    
+                }
+            }
+        }
+    }
 }
 
 @end

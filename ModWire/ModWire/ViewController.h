@@ -59,15 +59,23 @@
 
 @property (nonatomic) DraggableIcon *soundEnd;
 
+@property (nonatomic) DraggableIcon *selectedIcon;
+
 - (IBAction)buttonPressed:(id)sender;
 
 - (IBAction)iconPressed:(id)sender;
 
 -(IBAction)buildSound:(id)sender;
 
+-(IBAction)sliderChanged:(id)sender;
+
 - (void)noteOn:(int)note;
 - (void)noteOff:(int)note;
-- (IBAction)setFilterCutoffFreq:(id)sender;
-- (IBAction)setOscDetune:(id)sender;
+
+// - (IBAction)setFilterCutoffFreq:(id)sender;
+// - (IBAction)setOscDetune:(id)sender;
+
 - (void) defineIconDictionary;
+
+- (void) loadIconToolbar:(DraggableIcon*)touchedIcon;
 @end
