@@ -295,6 +295,9 @@ int lastKeyPressed = 0;
         [slider1 setHidden:FALSE];
         [slider2 setHidden:FALSE];
     }
+    if ([currButton.currentTitle isEqualToString:@"Build Patch"]) {
+        [self buildSound];
+    }
 }
 
 -(IBAction)iconPressed:(id)sender
@@ -375,15 +378,16 @@ int lastKeyPressed = 0;
 }
 
 
--(IBAction)buildSound:(id)sender
+-(void)buildSound
 {
+    NSLog(@"build button pressed");
     DraggableIcon *programTraverser = soundStart;
     BOOL didFindError = FALSE;
     while (programTraverser != soundEnd && !didFindError) {
         //This is where mike will take all the datas from the views
         
         //yup, right there
-        
+        NSLog(@"%@",programTraverser.myName);
         
         if (programTraverser.connectedTo == NULL) {
             //panic! those motherfuckers DONE GOOFED

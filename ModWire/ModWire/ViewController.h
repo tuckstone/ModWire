@@ -66,7 +66,7 @@
 
 - (IBAction)iconPressed:(id)sender;
 
--(IBAction)buildSound:(id)sender;
+-(void)buildSound;
 
 - (void)noteOn:(int)note;
 - (void)noteOff:(int)note;

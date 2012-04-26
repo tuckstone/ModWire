@@ -97,7 +97,7 @@ t1332771076
 s5425472
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/libpd/build/Debug-iphoneos/libpd-ios.a
-t1335402644
+t1335403939
 s2427128
 
 N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/libpd/build/Debug-iphoneos/usr/local/include/PdAudio.h
@@ -3114,7 +3114,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesf8e09122dd48b541^efae2f23dd48b541^---0#1#0#--18"Check dependencies36"281F433F-09CA-4130-A96C-BD991D00683C-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies3a08f63fe148b541^48faf83fe148b541^---0#1#0#--18"Check dependencies36"62BCD34D-6DB9-4258-BA2E-DA32F122F600-
 
 CCompileC build/libpd.build/Debug-iphoneos/libpd-ios.build/Objects-normal/armv7/AudioHelpers.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/libpd/objc/AudioHelpers.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
