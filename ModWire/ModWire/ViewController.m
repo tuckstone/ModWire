@@ -18,9 +18,9 @@
 //patch costants
 NSString *canvas_string = @"#N canvas 494 239 450 300 10;\r";
 NSString *audio_out_string = @"#N canvas 0 22 450 300 audio_out 0;\r#X obj 160 110 hip~ 1;\r#X obj 169 161 dac~;\r#X obj 165 53 inlet~;\r#X connect 0 0 1 0;\r#X connect 0 0 1 1;\r#X connect 2 0 0 0;\r#X restore 205 61 pd audio_out;\r";
-NSString *sine_wave_string = @"#N canvas 0 22 450 300 sine_wave 0;\r#X obj 95 120 expr $f1 * ($f2/127 + 0.5);\r#X obj 95 76 mtof;\r#X obj 98 168 osc~ 220;\r#X obj 95 36 r notein;\r#X obj 253 9 r detune;\r#X obj 102 226 outlet~;\r#X connect 0 0 2 0;\r#X connect 1 0 0 0;\r#X connect 2 0 5 0;\r#X connect 3 0 1 0;\r#X connect 4 0 0 1;\r#X restore 176 117 pd sine_wave;\r";
-NSString *saw_wave_string = @"#N canvas 773 203 450 300 saw_wave 0;\r#X obj 95 120 expr $f1 * ($f2/127 + 0.5);\r#X obj 93 209 expr~ ($v1 - 0.5) * 2;\r#X obj 97 164 phasor~ 220;\r#X obj 95 76 mtof;\r#X obj 250 17 r detune;\r#X obj 61 15 r notein;\r#X obj 84 255 outlet~;\r#X connect 0 0 2 0;\r#X connect 1 0 6 0;\r#X connect 2 0 1 0;\r#X connect 3 0 0 0;\r#X connect 4 0 0 1;\r#X connect 5 0 3 0;\r#X restore 200 129 pd saw_wave;\r";
-NSString *square_wave_string = @"#N canvas 0 22 450 300 square_wave 0;\r#X obj 95 120 expr $f1 * ($f2/127 + 0.5);\r#X obj 95 76 mtof;\r#X obj 97 228 expr~ (($v1 > $f2) - 0.5) * 2;\r#X obj 297 177 / 127;\r#X obj 97 164 phasor~ 220;\r#X obj 97 33 r notein;\r#X obj 236 34 r detune;\r#X obj 315 83 r pulsewidth;\r#X obj 101 275 outlet~;\r#X connect 0 0 4 0;\r#X connect 1 0 0 0;\r#X connect 2 0 8 0;\r#X connect 3 0 2 1;\r#X connect 4 0 2 0;\r#X connect 5 0 1 0;\r#X connect 6 0 0 1;\r#X connect 7 0 3 0;\r#X restore 164 188 pd square_wave;\r";
+NSString *sine_wave_string = @"#N canvas 631 239 450 300 sine_wave 0;\r#X obj 95 76 mtof;\r#X obj 98 168 osc~ 220;\r#X obj 95 36 r notein;\r#X obj 253 9 r detune;\r#X obj 102 226 outlet~;\r#X obj 298 66 / 127;\r#X obj 309 105 + 0.5;\r#X obj 179 140 *;\r#X connect 0 0 7 0;\r#X connect 1 0 4 0;\r#X connect 2 0 0 0;\r#X connect 3 0 5 0;\r#X connect 5 0 6 0;\r#X connect 6 0 7 1;\r#X connect 7 0 1 0;\r#X restore 176 117 pd sine_wave;\r";
+NSString *saw_wave_string = @"#N canvas 773 203 450 300 saw_wave 0;\r#X obj 97 164 phasor~ 220;\r#X obj 95 76 mtof;\r#X obj 256 15 r detune;\r#X obj 61 15 r notein;\r#X obj 84 255 outlet~;\r#X obj 183 124 *;\r#X obj 286 70 / 127;\r#X obj 305 105 + 0.5;\r#X obj 258 203 -~ 0.5;\r#X obj 278 246 *~ 2;\r#X connect 0 0 8 0;\r#X connect 1 0 5 0;\r#X connect 2 0 6 0;\r#X connect 3 0 1 0;\r#X connect 5 0 0 0;\r#X connect 6 0 7 0;\r#X connect 7 0 5 1;\r#X connect 8 0 9 0;\r#X connect 9 0 4 0;\r#X restore 200 129 pd saw_wave;\r";
+NSString *square_wave_string = @"#N canvas 773 203 450 300 saw_wave 0;\r#X obj 97 164 phasor~ 220;\r#X obj 95 76 mtof;\r#X obj 256 15 r detune;\r#X obj 61 15 r notein;\r#X obj 84 255 outlet~;\r#X obj 183 124 *;\r#X obj 286 70 / 127;\r#X obj 305 105 + 0.5;\r#X obj 258 203 -~ 0.5;\r#X obj 278 246 *~ 2;\r#X connect 0 0 8 0;\r#X connect 1 0 5 0;\r#X connect 2 0 6 0;\r#X connect 3 0 1 0;\r#X connect 5 0 0 0;\r#X connect 6 0 7 0;\r#X connect 7 0 5 1;\r#X connect 8 0 9 0;\r#X connect 9 0 4 0;\r#X restore 200 129 pd saw_wave;\r";
 NSString *low_pass_string = @"#N canvas 222 36 450 300 low_pass 1;\r#X obj 202 112 mtof;\r#X obj 126 182 lop~ 220;\r#X obj 178 30 r frequency;\r#X obj 117 122 inlet~;\r#X obj 129 240 outlet~;\r#X connect 0 0 1 1;\r#X connect 1 0 4 0;\r#X connect 2 0 0 0;\r#X connect 3 0 1 0;\r#X restore 140 139 pd low_pass;\r";
 NSString *high_pass_string = @"#N canvas 0 22 450 300 high_pass 0;\r#X obj 202 112 mtof;\r#X obj 126 182 hip~ 220;\r#X obj 199 71 r frequency;\r#X obj 116 69 inlet~;\r#X obj 133 238 outlet~;\r#X connect 0 0 1 1;\r#X connect 1 0 4 0;\r#X connect 2 0 0 0;\r#X connect 3 0 1 0;\r#X restore 167 144 pd high_pass;\r";
 NSString *band_pass_string = @"#N canvas 0 22 450 300 band_pass 1;\r#X obj 264 190 / 12.7;\r#X obj 175 246 bp~ 220 1;\r#X obj 311 97 r resonance;\r#X obj 166 101 r frequency;\r#X obj 138 195 inlet~;\r#X obj 165 278 outlet~;\r#X connect 0 0 1 2;\r#X connect 1 0 5 0;\r#X connect 2 0 0 0;\r#X connect 3 0 1 1;\r#X connect 4 0 1 0;\r#X restore 89 68 pd band_pass;\r";
@@ -42,6 +42,7 @@ int lastKeyPressed = 0;
     lastKeyPressed = note;
     [PdBase sendFloat:note toReceiver:@"notein"];
     [PdBase sendBangToReceiver:@"noteon"];
+    [PdBase sendFloat:63 toReceiver:@"detune"];
 }
 
 - (void)noteOff:(int)note {
@@ -530,48 +531,6 @@ int lastKeyPressed = 0;
         exit(0);
     }
 
-    for (DraggableIcon *curricon in self.currIcons) {
-        if (curricon.myName == @"audio-in.png")
-        {
-            soundStart = curricon;
-        }
-        if (curricon.myName == @"output.png")
-        {
-            soundEnd = curricon;
-        }
-    }    
-    
-    DraggableIcon *programTraverser = soundStart;
-    BOOL didFindError = FALSE;
-    NSString *connectionPath = [[NSString alloc]init];
-    while (programTraverser != soundEnd && !didFindError) {
-        //This is where mike will take all the datas from the views
-        
-        //yup, right there
-        NSLog(@"%@",programTraverser.myName);
-        connectionPath = [connectionPath stringByAppendingString: programTraverser.myName];
-        connectionPath = [connectionPath stringByAppendingString: @"\n\n\n"];
-        if (programTraverser.connectedTo == NULL) {
-            
-            //panic! those motherfuckers DONE GOOFED
-            UIAlertView *badView = [[UIAlertView alloc]initWithTitle:@"Error"
-                                                          message:@"You have a wiring error.  Please re-evaluate your program!"
-                                                         delegate:self
-                                                cancelButtonTitle:@"Sorry :("
-                                                otherButtonTitles:nil,
-                                 nil];
-            [badView show];
-            didFindError = TRUE;
-        }
-        if (!didFindError) {
-            programTraverser = programTraverser.connectedTo;
-        }
-    }
-    
-    //programTraverser should now be soundEnd.  If all went well.  I hope.
-    NSLog(@"program traverser success");
-    connectionLabel.text = connectionPath;
-    
 }
 
 @end
