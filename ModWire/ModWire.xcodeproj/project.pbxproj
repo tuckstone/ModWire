@@ -49,7 +49,7 @@
 		CE6309651528DC460056B744 /* KeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE63095E1528DC460056B744 /* KeyView.m */; };
 		CEA65A221528DD6500B1985E /* OctaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA65A1C1528DD6500B1985E /* OctaveView.m */; };
 		CEA65A231528DD6500B1985E /* options.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA65A1D1528DD6500B1985E /* options.png */; };
-		CEA65A2B1528DD7A00B1985E /* synth_engine.pd in Resources */ = {isa = PBXBuildFile; fileRef = CEA65A281528DD7A00B1985E /* synth_engine.pd */; };
+		CEA65A2B1528DD7A00B1985E /* patch.pd in Resources */ = {isa = PBXBuildFile; fileRef = CEA65A281528DD7A00B1985E /* patch.pd */; };
 		CEA65A2C1528DD7A00B1985E /* TouchForwardingUIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA65A2A1528DD7A00B1985E /* TouchForwardingUIScrollView.m */; };
 		CEA65A311528DD8300B1985E /* WhiteKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA65A2F1528DD8300B1985E /* WhiteKeyView.m */; };
 		CEE7A9C615475324001CDE14 /* PathView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE7A9C515475324001CDE14 /* PathView.m */; };
@@ -803,7 +803,7 @@
 		CEA65A1B1528DD6500B1985E /* OctaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OctaveView.h; sourceTree = "<group>"; };
 		CEA65A1C1528DD6500B1985E /* OctaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OctaveView.m; sourceTree = "<group>"; };
 		CEA65A1D1528DD6500B1985E /* options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = options.png; sourceTree = "<group>"; };
-		CEA65A281528DD7A00B1985E /* synth_engine.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = synth_engine.pd; sourceTree = "<group>"; };
+		CEA65A281528DD7A00B1985E /* patch.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = patch.pd; sourceTree = "<group>"; };
 		CEA65A291528DD7A00B1985E /* TouchForwardingUIScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchForwardingUIScrollView.h; sourceTree = "<group>"; };
 		CEA65A2A1528DD7A00B1985E /* TouchForwardingUIScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchForwardingUIScrollView.m; sourceTree = "<group>"; };
 		CEA65A2E1528DD8300B1985E /* WhiteKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteKeyView.h; sourceTree = "<group>"; };
@@ -1974,7 +1974,7 @@
 				274BE937152921AB00EC0E1F /* libpd */,
 				CEA65A2E1528DD8300B1985E /* WhiteKeyView.h */,
 				CEA65A2F1528DD8300B1985E /* WhiteKeyView.m */,
-				CEA65A281528DD7A00B1985E /* synth_engine.pd */,
+				CEA65A281528DD7A00B1985E /* patch.pd */,
 				CEA65A291528DD7A00B1985E /* TouchForwardingUIScrollView.h */,
 				CEA65A2A1528DD7A00B1985E /* TouchForwardingUIScrollView.m */,
 				CEA65A1B1528DD6500B1985E /* OctaveView.h */,
@@ -2127,7 +2127,7 @@
 				CE46F03F1528DB8300B15801 /* InfoPlist.strings in Resources */,
 				CE46F04B1528DB8300B15801 /* ViewController.xib in Resources */,
 				CEA65A231528DD6500B1985E /* options.png in Resources */,
-				CEA65A2B1528DD7A00B1985E /* synth_engine.pd in Resources */,
+				CEA65A2B1528DD7A00B1985E /* patch.pd in Resources */,
 				CE5A7D751528E130009CD2E1 /* keyboard.png in Resources */,
 				CE5A7D781528E137009CD2E1 /* ModWire logo.png in Resources */,
 				CE5A7D7A1528E13D009CD2E1 /* Default-Landscape~ipad.png in Resources */,

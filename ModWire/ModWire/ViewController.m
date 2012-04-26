@@ -150,12 +150,7 @@ int lastKeyPressed = 0;
     //setup synth engine
     dispatcher = [[PdDispatcher alloc] init];
     [PdBase setDelegate:dispatcher];
-    patch = [PdBase openFile:@"synth_engine.pd" path:[[NSBundle mainBundle] resourcePath]];
-    if (!patch) {
-        NSLog(@"failed to load synth engine, will quit now");
-        exit(0);
-    }
-    
+        
     currIcons = [[NSMutableSet alloc] init];
     
     //set up icon palette
@@ -318,9 +313,10 @@ int lastKeyPressed = 0;
     [super viewDidUnload];
     
     //unload synth engine
-    [PdBase closeFile:patch];
+    if (patch) {
+        [PdBase closeFile:patch];
+    }
     [PdBase setDelegate:nil];
-    
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
@@ -381,6 +377,49 @@ int lastKeyPressed = 0;
 -(void)buildSound
 {
     NSLog(@"build button pressed");
+    NSString *patchstring = [[NSString alloc] init];
+    if (patch) {
+        [PdBase closeFile:patch];
+        patch = nil;
+    }
+    
+    if (!patch) {
+        
+        //this massive string replaced by our dynamically built string
+        patchstring = @"#N canvas 631 120 634 585 10;\r#X obj 397 477 dac~;\r#X obj 322 133 mtof;\r#X obj 412 280 r filtnum;\r#X obj 399 329 mtof;\r#X obj 350 363 lop~ 1000;\r#X obj 348 280 +~;\r#X obj 296 239 -~ 0.5;\r#X obj 382 239 -~ 0.5;\r#X obj 295 211 phasor~ 220;\r#X obj 381 211 phasor~ 221;\r#X floatatom 330 109 5 0 0 0 - - -;\r#X floatatom 424 304 5 0 0 0 - - -;\r#X obj 347 305 *~ 0.2;\r#X text 126 283;\r#X obj 376 70 r startnote;\r#X obj 487 75 r stopnote;\r#X obj 360 176 + 1;\r#X obj 472 213 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1 -1;\r#X msg 474 258 1;\r#X obj 530 214 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1 -1;\r#X msg 532 259 0;\r#X obj 402 432 *~ 0;\r#X connect 1 0 8 0;\r#X connect 1 0 16 0;\r#X connect 2 0 11 0;\r#X connect 3 0 4 1;\r#X connect 4 0 21 0;\r#X connect 5 0 12 0;\r#X connect 6 0 5 0;\r#X connect 7 0 5 1;\r#X connect 8 0 6 0;\r#X connect 9 0 7 0;\r#X connect 10 0 1 0;\r#X connect 11 0 3 0;\r#X connect 12 0 4 0;\r#X connect 14 0 10 0;\r#X connect 14 0 17 0;\r#X connect 15 0 19 0;\r#X connect 16 0 9 0;\r#X connect 17 0 18 0;\r#X connect 18 0 21 1;\r#X connect 19 0 20 0;\r#X connect 20 0 21 1;\r#X connect 21 0 0 0;\r#X connect 21 0 0 1;";
+        
+        }
+    
+    //file manager stuff
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    NSString *myPathDocs =  [documentsDirectory stringByAppendingPathComponent:@"patch.pd"];
+    
+    if (![[NSFileManager defaultManager] fileExistsAtPath:myPathDocs])
+    {
+        NSString *myPathInfo = [[NSBundle mainBundle] pathForResource:@"patch" ofType:@"pd"];
+        NSFileManager *fileManager = [NSFileManager defaultManager];
+        [fileManager copyItemAtPath:myPathInfo toPath:myPathDocs error:NULL];
+    }
+    
+    BOOL sucess = [patchstring writeToFile:myPathDocs atomically:YES encoding:NSUTF8StringEncoding error:NULL];
+    if (sucess) {
+        NSLog(@"write sucess");
+    }
+    else {
+        NSLog(@"write failure");
+        exit(0);
+        
+    }
+    patch = [PdBase openFile:@"patch.pd" path:documentsDirectory];
+    if (!patch) {
+        NSLog(@"failed to open patch");
+        exit(0);
+    }
+
+
+    
     DraggableIcon *programTraverser = soundStart;
     BOOL didFindError = FALSE;
     while (programTraverser != soundEnd && !didFindError) {

@@ -94,6 +94,7 @@
 
 -(void)connectFrom:(DraggableIcon *)fromThis toThis:(DraggableIcon *)toThis
 {
+    NSLog(@"connectFrom");
     self.connectedTo = toThis;
     toThis.connectedFrom = self;
     [self.clearParentView beginDrawFrom:fromThis To:toThis];
