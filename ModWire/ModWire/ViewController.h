@@ -36,6 +36,8 @@
 
 @property (nonatomic, retain) IBOutlet UIView *optionView;
 
+@property (nonatomic) IBOutlet UILabel *connectionLabel;
+
 @property (nonatomic, retain) UIButton *currButton;
 
 @property (nonatomic, retain) UIButton *iconButton;
