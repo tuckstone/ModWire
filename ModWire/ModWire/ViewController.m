@@ -15,6 +15,18 @@
 #import "iOSVersionDetection.h"
 #import "PathView.h"
 
+//patch costants
+NSString *canvas_string = @"#N canvas 494 239 450 300 10;\r";
+NSString *audio_out_string = @"#N canvas 0 22 450 300 audio_out 0;\r#X obj 160 110 hip~ 1;\r#X obj 169 161 dac~;\r#X obj 165 53 inlet~;\r#X connect 0 0 1 0;\r#X connect 0 0 1 1;\r#X connect 2 0 0 0;\r#X restore 205 61 pd audio_out;\r";
+NSString *sine_wave_string = @"#N canvas 0 22 450 300 sine_wave 0;\r#X obj 95 120 expr $f1 * ($f2/127 + 0.5);\r#X obj 95 76 mtof;\r#X obj 98 168 osc~ 220;\r#X obj 95 36 r notein;\r#X obj 253 9 r detune;\r#X obj 102 226 outlet~;\r#X connect 0 0 2 0;\r#X connect 1 0 0 0;\r#X connect 2 0 5 0;\r#X connect 3 0 1 0;\r#X connect 4 0 0 1;\r#X restore 176 117 pd sine_wave;\r";
+NSString *saw_wave_string = @"#N canvas 773 203 450 300 saw_wave 0;\r#X obj 95 120 expr $f1 * ($f2/127 + 0.5);\r#X obj 93 209 expr~ ($v1 - 0.5) * 2;\r#X obj 97 164 phasor~ 220;\r#X obj 95 76 mtof;\r#X obj 250 17 r detune;\r#X obj 61 15 r notein;\r#X obj 84 255 outlet~;\r#X connect 0 0 2 0;\r#X connect 1 0 6 0;\r#X connect 2 0 1 0;\r#X connect 3 0 0 0;\r#X connect 4 0 0 1;\r#X connect 5 0 3 0;\r#X restore 200 129 pd saw_wave;\r";
+NSString *square_wave_string = @"#N canvas 0 22 450 300 square_wave 0;\r#X obj 95 120 expr $f1 * ($f2/127 + 0.5);\r#X obj 95 76 mtof;\r#X obj 97 228 expr~ (($v1 > $f2) - 0.5) * 2;\r#X obj 297 177 / 127;\r#X obj 97 164 phasor~ 220;\r#X obj 97 33 r notein;\r#X obj 236 34 r detune;\r#X obj 315 83 r pulsewidth;\r#X obj 101 275 outlet~;\r#X connect 0 0 4 0;\r#X connect 1 0 0 0;\r#X connect 2 0 8 0;\r#X connect 3 0 2 1;\r#X connect 4 0 2 0;\r#X connect 5 0 1 0;\r#X connect 6 0 0 1;\r#X connect 7 0 3 0;\r#X restore 164 188 pd square_wave;\r";
+NSString *low_pass_string = @"#N canvas 222 36 450 300 low_pass 1;\r#X obj 202 112 mtof;\r#X obj 126 182 lop~ 220;\r#X obj 178 30 r frequency;\r#X obj 117 122 inlet~;\r#X obj 129 240 outlet~;\r#X connect 0 0 1 1;\r#X connect 1 0 4 0;\r#X connect 2 0 0 0;\r#X connect 3 0 1 0;\r#X restore 140 139 pd low_pass;\r";
+NSString *high_pass_string = @"#N canvas 0 22 450 300 high_pass 0;\r#X obj 202 112 mtof;\r#X obj 126 182 hip~ 220;\r#X obj 199 71 r frequency;\r#X obj 116 69 inlet~;\r#X obj 133 238 outlet~;\r#X connect 0 0 1 1;\r#X connect 1 0 4 0;\r#X connect 2 0 0 0;\r#X connect 3 0 1 0;\r#X restore 167 144 pd high_pass;\r";
+NSString *band_pass_string = @"#N canvas 0 22 450 300 band_pass 1;\r#X obj 264 190 / 12.7;\r#X obj 175 246 bp~ 220 1;\r#X obj 311 97 r resonance;\r#X obj 166 101 r frequency;\r#X obj 138 195 inlet~;\r#X obj 165 278 outlet~;\r#X connect 0 0 1 2;\r#X connect 1 0 5 0;\r#X connect 2 0 0 0;\r#X connect 3 0 1 1;\r#X connect 4 0 1 0;\r#X restore 89 68 pd band_pass;\r";
+NSString *envelope_generator_string = @"#N canvas 0 22 450 300 envelope_generator 1;\r#X obj 208 159 vline~ 0 100;\r#X obj 154 206 *~;\r#X obj 345 45 r attack;\r#X obj 254 62 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1 -1;\r#X obj 274 118 pack 1 100;\r#X obj 142 120 pack 0 100;\r#X obj 123 71 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1 -1;\r#X obj 248 27 r noteon;\r#X obj 115 25 r noteoff;\r#X obj 189 31 r decay;\r#X obj 198 78 * 10;\r#X obj 333 80 * 10;\r#X obj 127 159 inlet~;\r#X obj 141 244 outlet~;\r#X connect 0 0 1 1;\r#X connect 1 0 13 0;\r#X connect 2 0 11 0;\r#X connect 3 0 4 0;\r#X connect 4 0 0 0;\r#X connect 5 0 0 0;\r#X connect 6 0 5 0;\r#X connect 7 0 3 0;\r#X connect 8 0 6 0;\r#X connect 9 0 10 0;\r#X connect 10 0 5 1;\r#X connect 11 0 4 1;\r#X connect 12 0 1 0;\r#X restore 183 113 pd envelope_generator;\r";
+NSString *final_patch_string;
+
 @interface ViewController () <PGMidiDelegate, PGMidiSourceDelegate>
 //nothing here
 @end
@@ -225,9 +237,10 @@ int lastKeyPressed = 0;
     clearView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:clearView];
     
-    soundStart.clearParentView = clearView;
-    soundEnd.clearParentView = clearView;
+    //soundStart.clearParentView = clearView;
+    //soundEnd.clearParentView = clearView;
     
+    final_patch_string = [[NSString alloc] init];
     
     // Forward touch events to the keyboard
     //[keyboardScrollView setTouchView:keyboardView];
@@ -385,6 +398,91 @@ int lastKeyPressed = 0;
 -(void)buildSound
 {
     NSLog(@"build button pressed");
+
+    for (DraggableIcon *curricon in self.currIcons) {
+        if (curricon.myName == @"audio-in.png")
+        {
+            soundStart = curricon;
+        }
+        if (curricon.myName == @"output.png")
+        {
+            soundEnd = curricon;
+        }
+    }    
+    
+    final_patch_string = @"";
+    
+    DraggableIcon *programTraverser = soundStart;
+    BOOL didFindError = FALSE;
+    int while_count = 0;
+    while (programTraverser != soundEnd && !didFindError) {
+        //This is where mike will take all the datas from the views
+        
+        //yup, right there
+        
+        NSLog(@"%@",programTraverser.myName);
+        [self pdPatcher:programTraverser.myName withCount:while_count];
+        
+        if (programTraverser.connectedTo == NULL) {
+            //panic! those motherfuckers DONE GOOFED
+            UIAlertView *badView = [[UIAlertView alloc]initWithTitle:@"Error"
+                                                          message:@"You have a wiring error.  Please re-evaluate your program!"
+                                                         delegate:self
+                                                cancelButtonTitle:@"Sorry :("
+                                                otherButtonTitles:nil,
+                                 nil];
+            [badView show];
+            didFindError = TRUE;
+        }
+        if (!didFindError) {
+            programTraverser = programTraverser.connectedTo;
+        }
+        while_count++;
+    }
+    
+    //programTraverser should now be soundEnd.  If all went well.  I hope.
+    NSLog(@"program traverser success");
+    [self writePatch:final_patch_string withFinalCount:while_count];
+    
+}
+
+-(void) pdPatcher:(NSString *) iconName withCount:(int)count
+{
+    if (iconName == @"audio-in.png") {
+        final_patch_string = [final_patch_string stringByAppendingString:canvas_string];
+    }
+    if (iconName == @"sine oscillator.png") {
+        final_patch_string = [final_patch_string stringByAppendingString:sine_wave_string];
+    }
+    if (iconName == @"saw oscillator.png") {
+        final_patch_string = [final_patch_string stringByAppendingString:saw_wave_string];
+    }
+    if (iconName == @"square oscillator.png") {
+        final_patch_string = [final_patch_string stringByAppendingString:square_wave_string];
+    }
+    if (iconName == @"low pass filter.png") {
+        final_patch_string = [final_patch_string stringByAppendingString:low_pass_string];
+        final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", count - 2, count - 1]];
+    }
+    if (iconName == @"high pass filter.png") {
+        final_patch_string = [final_patch_string stringByAppendingString:high_pass_string];
+        final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", count - 2, count - 1]];
+    }
+    if (iconName == @"band pass filter.png") {
+        final_patch_string = [final_patch_string stringByAppendingString:band_pass_string];
+        final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", count - 2, count - 1]];
+    }
+    if (iconName == @"amplitude envelope.png") {
+        final_patch_string = [final_patch_string stringByAppendingString:envelope_generator_string];
+        final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", count - 2, count - 1]];
+    }
+}
+
+-(void)writePatch:(NSString *) patch_string_to_write withFinalCount:(int)final_count{
+    
+    final_patch_string = [final_patch_string stringByAppendingString:audio_out_string];
+    final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", final_count - 2, final_count - 1]];
+    
     NSString *patchstring = [[NSString alloc] init];
     if (patch) {
         [PdBase closeFile:patch];
@@ -393,10 +491,15 @@ int lastKeyPressed = 0;
     
     if (!patch) {
         
+        patchstring = final_patch_string;
+        NSLog(@"%@",patchstring);
+        
+        /*
         //this massive string replaced by our dynamically built string
         patchstring = @"#N canvas 631 120 634 585 10;\r#X obj 397 477 dac~;\r#X obj 322 133 mtof;\r#X obj 412 280 r filtnum;\r#X obj 399 329 mtof;\r#X obj 350 363 lop~ 1000;\r#X obj 348 280 +~;\r#X obj 296 239 -~ 0.5;\r#X obj 382 239 -~ 0.5;\r#X obj 295 211 phasor~ 220;\r#X obj 381 211 phasor~ 221;\r#X floatatom 330 109 5 0 0 0 - - -;\r#X floatatom 424 304 5 0 0 0 - - -;\r#X obj 347 305 *~ 0.2;\r#X text 126 283;\r#X obj 376 70 r startnote;\r#X obj 487 75 r stopnote;\r#X obj 360 176 + 1;\r#X obj 472 213 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1 -1;\r#X msg 474 258 1;\r#X obj 530 214 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1 -1;\r#X msg 532 259 0;\r#X obj 402 432 *~ 0;\r#X connect 1 0 8 0;\r#X connect 1 0 16 0;\r#X connect 2 0 11 0;\r#X connect 3 0 4 1;\r#X connect 4 0 21 0;\r#X connect 5 0 12 0;\r#X connect 6 0 5 0;\r#X connect 7 0 5 1;\r#X connect 8 0 6 0;\r#X connect 9 0 7 0;\r#X connect 10 0 1 0;\r#X connect 11 0 3 0;\r#X connect 12 0 4 0;\r#X connect 14 0 10 0;\r#X connect 14 0 17 0;\r#X connect 15 0 19 0;\r#X connect 16 0 9 0;\r#X connect 17 0 18 0;\r#X connect 18 0 21 1;\r#X connect 19 0 20 0;\r#X connect 20 0 21 1;\r#X connect 21 0 0 0;\r#X connect 21 0 0 1;";
+         */
         
-        }
+    }
     
     //file manager stuff
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -425,46 +528,7 @@ int lastKeyPressed = 0;
         NSLog(@"failed to open patch");
         exit(0);
     }
-
-
-    for (DraggableIcon *curricon in self.currIcons) {
-        if (curricon.myName == @"audio-in.png")
-        {
-            soundStart = curricon;
-        }
-        if (curricon.myName == @"output.png")
-        {
-            soundEnd = curricon;
-        }
-    }    
     
-    DraggableIcon *programTraverser = soundStart;
-    BOOL didFindError = FALSE;
-    while (programTraverser != soundEnd && !didFindError) {
-        //This is where mike will take all the datas from the views
-        
-        //yup, right there
-        NSLog(@"%@",programTraverser.myName);
-        
-        if (programTraverser.connectedTo == NULL) {
-            //panic! those motherfuckers DONE GOOFED
-            UIAlertView *badView = [[UIAlertView alloc]initWithTitle:@"Error"
-                                                          message:@"You have a wiring error.  Please re-evaluate your program!"
-                                                         delegate:self
-                                                cancelButtonTitle:@"Sorry :("
-                                                otherButtonTitles:nil,
-                                 nil];
-            [badView show];
-            didFindError = TRUE;
-        }
-        if (!didFindError) {
-            programTraverser = programTraverser.connectedTo;
-        }
-    }
-    
-    //programTraverser should now be soundEnd.  If all went well.  I hope.
-    NSLog(@"program traverser success");
 }
-
 
 @end
