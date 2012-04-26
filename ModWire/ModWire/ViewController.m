@@ -40,14 +40,15 @@ int lastKeyPressed = 0;
     note = note - 4;
     NSLog(@"NOTE ON %d",note);
     lastKeyPressed = note;
-    [PdBase sendFloat:note toReceiver:@"startnote"];
+    [PdBase sendFloat:note toReceiver:@"notein"];
+    [PdBase sendBangToReceiver:@"noteon"];
 }
 
 - (void)noteOff:(int)note {
     note = note - 4;
     NSLog(@"NOTE OFF %d",note);
     if (note == lastKeyPressed) {
-        [PdBase sendFloat:note toReceiver:@"stopnote"];
+        [PdBase sendBangToReceiver:@"noteoff"];
     }
 }
 
