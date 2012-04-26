@@ -24,6 +24,8 @@
 @property (nonatomic) DraggableIcon *connectedFrom;
 @property (nonatomic) DraggableIcon *connectedTo;
 
+@property (nonatomic) DraggableIcon *selectedIcon;
+
 @property (nonatomic) NSMutableSet *otherIcons;
 
 @property(nonatomic) NSMutableArray *controls;

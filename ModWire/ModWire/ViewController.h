@@ -58,6 +58,8 @@
 
 @property (nonatomic) IBOutlet UIView * workView;
 
+@property (nonatomic) DraggableIcon * selectedicon;
+
 @property (nonatomic) DraggableIcon *soundStart;
 
 @property (nonatomic) DraggableIcon *soundEnd;
@@ -69,6 +71,7 @@
 - (IBAction)iconPressed:(id)sender;
 
 -(void)buildSound;
+-(IBAction) sliderChanged:(id)sender;
 
 - (void)noteOn:(int)note;
 - (void)noteOff:(int)note;

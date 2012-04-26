@@ -14,6 +14,7 @@
 #import "PGMidi.h"
 #import "iOSVersionDetection.h"
 #import "PathView.h"
+#import "Control.h"
 
 //patch costants
 NSString *canvas_string = @"#N canvas 494 239 450 300 10;\r";
@@ -33,7 +34,7 @@ NSString *final_patch_string;
 
 @implementation ViewController
 @synthesize paletteTable, optionView, currButton, keyboardScrollView, label1, label2, slider1, slider2, iconButton, midi;
-@synthesize currIcons, currPaths, workView, soundStart, soundEnd, clearView, connectionLabel;
+@synthesize currIcons, currPaths, workView, soundStart, soundEnd, clearView, connectionLabel, selectedicon;
 int lastKeyPressed = 0;
 
 - (void)noteOn:(int)note {
@@ -51,6 +52,7 @@ int lastKeyPressed = 0;
     }
 }
 
+/*
 - (IBAction)setFilterCutoffFreq:(id)sender
 {
     [PdBase sendFloat:[(UISlider *) sender value] toReceiver:@"filtnum"];
@@ -60,7 +62,13 @@ int lastKeyPressed = 0;
 {
     [PdBase sendFloat:[(UISlider *) sender value] toReceiver:@"detune"];
 }
+*/
 
+-(IBAction) sliderChanged:(id)sender
+{
+
+}
+ 
 -(NSInteger) tableView: (UITableView *)tableView numberOfSectionsInTableView:(UITableView *)paletteView
 {
     return paletteTable.numberOfSections;
@@ -164,6 +172,8 @@ int lastKeyPressed = 0;
     [PdBase setDelegate:dispatcher];
         
     currIcons = [[NSMutableSet alloc] init];
+    
+    
     
     //set up icon palette
     
@@ -284,7 +294,52 @@ int lastKeyPressed = 0;
     testDrag.clearParentView = clearView;
     [self.view addSubview:testDrag];
     [currIcons addObject:testDrag];
+    
+    if(testDrag.myName == @"sine oscillator.png")
+    {
+        Control *first = [[Control alloc]initWithName:@"detune" withType:@"slider"];
+        [[testDrag controls] addObject:first];
+    }
+    if(testDrag.myName == @"saw oscillator.png")
+    {
+        Control *first = [[Control alloc]initWithName:@"detune" withType:@"slider"];
+        [[testDrag controls] addObject:first];
+    }
+    if(testDrag.myName == @"square oscillator.png")
+    {
+        Control *first = [[Control alloc]initWithName:@"detune" withType:@"slider"];
+        [[testDrag controls] addObject:first];
+        Control *second = [[Control alloc]initWithName:@"pulse width" withType:@"slider"];
+        [[testDrag controls] addObject:second];
+    }
+    if(testDrag.myName == @"low pass filter.png")
+    {
+        Control *first = [[Control alloc]initWithName:@"frequency" withType:@"slider"];
+        [[testDrag controls] addObject:first];
+    }
+    if(testDrag.myName == @"high pass filter.png")
+    {
+        Control *first = [[Control alloc]initWithName:@"frequency" withType:@"slider"];
+        [[testDrag controls] addObject:first];
+    }
+    if(testDrag.myName == @"band pass filter.png")
+    {
+        Control *first = [[Control alloc]initWithName:@"frequency" withType:@"slider"];
+        [[testDrag controls] addObject:first];
+        Control *second = [[Control alloc]initWithName:@"resonance" withType:@"slider"];
+        [[testDrag controls] addObject:second];
+    }
+    if(testDrag.myName == @"amplitude envelope.png")
+    {
+        Control *first = [[Control alloc]initWithName:@"attack" withType:@"slider"];
+        [[testDrag controls] addObject:first];
+        Control *second = [[Control alloc]initWithName:@"decay" withType:@"slider"];
+        [[testDrag controls] addObject:second];
+    }
+    
     NSLog(@"cell clicked %d",indexPath.row);
+    selectedicon = testDrag.selectedIcon;
+    
 }
 
 -(IBAction)buttonPressed:(id)sender
@@ -302,10 +357,24 @@ int lastKeyPressed = 0;
     }
     if ([currButton.currentTitle isEqualToString: @"2"]){
         [keyboardScrollView setHidden:TRUE];
-        [label1 setHidden:FALSE];
-        [label2 setHidden:FALSE];
-        [slider1 setHidden:FALSE];
-        [slider2 setHidden:FALSE];
+        
+        if ([[selectedicon controls]objectAtIndex:0] != nil)
+        {
+            [label1 setHidden:FALSE];
+            label1.text = [[[selectedicon controls]objectAtIndex:0] title];
+            [slider1 setHidden:FALSE];
+            slider1.minimumValue = 0;
+            slider1.maximumValue = 127;
+        }
+        
+        if ([[selectedicon controls]objectAtIndex:1] != nil)
+        {
+            [label2 setHidden:FALSE];
+            label2.text = [[[selectedicon controls]objectAtIndex:0] title];
+            [slider2 setHidden:FALSE];
+            slider2.minimumValue = 0;
+            slider2.maximumValue = 127;
+        }
     }
     if ([currButton.currentTitle isEqualToString:@"Build Patch"]) {
         [self buildSound];

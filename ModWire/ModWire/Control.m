@@ -9,7 +9,7 @@
 #import "Control.h"
 
 @implementation Control
-@synthesize title, type, upperBounds, lowerBounds;
+@synthesize title, type;
 
 -(id)initWithName:(NSString*)name withType:(NSString*)thisType
 {

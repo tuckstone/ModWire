@@ -10,7 +10,7 @@
 
 @implementation DraggableIcon
 @synthesize myName, startPoint, x, y, ismovable, background, connectedTo, connectedFrom;
-@synthesize ishighlighted, inbounds, otherIcons, controls, isTouched, clearParentView;
+@synthesize ishighlighted, inbounds, otherIcons, controls, isTouched, clearParentView, selectedIcon;
 
 -(void)setImage:(NSString *)imagename{
     myName = imagename;
@@ -47,8 +47,10 @@
         }
     }
     [self highlighter:TRUE];
+    
     for(DraggableIcon *icon in otherIcons)
     {
+        icon.selectedIcon = self;
         if (icon.isTouched == TRUE && icon != self) {
             [self connectFrom:icon toThis:self];
         }

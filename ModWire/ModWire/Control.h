@@ -12,8 +12,6 @@
 
 @property (nonatomic, retain) NSString *title;
 @property (nonatomic, retain) NSString *type;
-@property (nonatomic) NSInteger *upperBounds;
-@property (nonatomic) NSInteger *lowerBounds;
 
 -(id)initWithName:(NSString*)name withType:(NSString*)type;
 
