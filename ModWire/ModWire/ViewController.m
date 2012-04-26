@@ -21,7 +21,7 @@
 
 @implementation ViewController
 @synthesize paletteTable, optionView, currButton, keyboardScrollView, label1, label2, slider1, slider2, iconButton, midi;
-@synthesize currIcons, currPaths, workView, soundStart, soundEnd, clearView;
+@synthesize currIcons, currPaths, workView, soundStart, soundEnd, clearView, connectionLabel;
 int lastKeyPressed = 0;
 
 - (void)noteOn:(int)note {
@@ -440,13 +440,16 @@ int lastKeyPressed = 0;
     
     DraggableIcon *programTraverser = soundStart;
     BOOL didFindError = FALSE;
+    NSString *connectionPath = [[NSString alloc]init];
     while (programTraverser != soundEnd && !didFindError) {
         //This is where mike will take all the datas from the views
         
         //yup, right there
         NSLog(@"%@",programTraverser.myName);
-        
+        connectionPath = [connectionPath stringByAppendingString: programTraverser.myName];
+        connectionPath = [connectionPath stringByAppendingString: @"\n\n\n"];
         if (programTraverser.connectedTo == NULL) {
+            
             //panic! those motherfuckers DONE GOOFED
             UIAlertView *badView = [[UIAlertView alloc]initWithTitle:@"Error"
                                                           message:@"You have a wiring error.  Please re-evaluate your program!"
@@ -464,6 +467,8 @@ int lastKeyPressed = 0;
     
     //programTraverser should now be soundEnd.  If all went well.  I hope.
     NSLog(@"program traverser success");
+    connectionLabel.text = connectionPath;
+    
 }
 
 
