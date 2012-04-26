@@ -192,28 +192,32 @@ int lastKeyPressed = 0;
     [keyboardScrollView setContentSize:keyboardView.frame.size];
     [keyboardScrollView setScrollEnabled:YES];
     
+   
     
+    /*
     //Makes 2 static icons
     CGRect bounds = CGRectMake(50.0, 220.0, 72.0, 72.0);
     soundStart = [[DraggableIcon alloc] initWithFrame:bounds];
-    soundStart.ismovable = NO;
+    soundStart.ismovable = YES;
     soundStart.inbounds = YES;
     soundStart.ishighlighted = NO;
     soundStart.otherIcons = currIcons;
+    soundStart.clearParentView = clearView;
     [soundStart setImage:@"audio-in.png"];
     [self.view addSubview:soundStart];
     
     CGRect bounds2 = CGRectMake(750, 220, 72, 72);
     soundEnd = [[DraggableIcon alloc] initWithFrame:bounds2];
-    soundEnd.ismovable = NO;
+    soundEnd.ismovable = YES;
     soundEnd.inbounds = YES;
     soundEnd.ishighlighted = NO;
     soundEnd.otherIcons = currIcons;
+    soundEnd.clearParentView = clearView;
     [soundEnd setImage:@"output.png"];
     [self.view addSubview:soundEnd];
     [currIcons addObject:soundStart];
     [currIcons addObject:soundEnd];
-    
+    */
     
     //Make Clear View for path drawing
     CGRect bounds3 = CGRectMake(0, 0, 934, 501);
@@ -356,6 +360,10 @@ int lastKeyPressed = 0;
 
 -(void)defineIconDictionary
 {
+    icon *start = [[icon alloc] initWithTitle:@"Start" andImage:@"audio-in.png"];
+    [icons addObject:start];
+    icon *end = [[icon alloc] initWithTitle:@"End" andImage:@"output.png"];
+    [icons addObject:end];
     icon *sine_wave = [[icon alloc] initWithTitle:@"Sine Wave" andImage:@"sine oscillator.png"];
     [icons addObject:sine_wave];
     icon *saw_wave = [[icon alloc] initWithTitle:@"Saw Wave" andImage:@"saw oscillator.png"];
@@ -419,6 +427,16 @@ int lastKeyPressed = 0;
     }
 
 
+    for (DraggableIcon *curricon in self.currIcons) {
+        if (curricon.myName == @"audio-in.png")
+        {
+            soundStart = curricon;
+        }
+        if (curricon.myName == @"output.png")
+        {
+            soundEnd = curricon;
+        }
+    }    
     
     DraggableIcon *programTraverser = soundStart;
     BOOL didFindError = FALSE;
@@ -445,6 +463,7 @@ int lastKeyPressed = 0;
     }
     
     //programTraverser should now be soundEnd.  If all went well.  I hope.
+    NSLog(@"program traverser success");
 }
 
 

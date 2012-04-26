@@ -32,6 +32,7 @@
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     self.isTouched = TRUE;
+    NSLog(@"I'm touched");
     if (!ismovable) {
         //If view is immovable, don't move it
         self.alpha = 0.5;
