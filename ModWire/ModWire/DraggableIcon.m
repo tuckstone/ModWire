@@ -49,7 +49,7 @@
     for(DraggableIcon *icon in otherIcons)
     {
         if (icon.isTouched == TRUE && icon != self) {
-            [self connectFrom:self toThis:icon];
+            [self connectFrom:icon toThis:self];
         }
     }
 }
@@ -95,8 +95,8 @@
 -(void)connectFrom:(DraggableIcon *)fromThis toThis:(DraggableIcon *)toThis
 {
     NSLog(@"connectFrom");
-    self.connectedTo = toThis;
-    toThis.connectedFrom = self;
+    fromThis.connectedTo = toThis;
+    toThis.connectedFrom = fromThis;
     [self.clearParentView beginDrawFrom:fromThis To:toThis];
 }
 
