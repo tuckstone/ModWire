@@ -46,8 +46,6 @@ int lastKeyPressed = 0;
 
 - (IBAction)setOscDetune:(id)sender
 {
-    int tuneInt = (int) [(UISlider *) sender value];
-    NSLog(@"%d",tuneInt);
     [PdBase sendFloat:[(UISlider *) sender value] toReceiver:@"detune"];
 }
 
@@ -359,18 +357,20 @@ int lastKeyPressed = 0;
 
 -(void)defineIconDictionary
 {
-    icon *LFO = [[icon alloc] initWithTitle:@"LFO" andImage:@"lfo.png"];
-    [icons addObject:LFO];
-    icon *delay = [[icon alloc] initWithTitle:@"Delay" andImage:@"delay.png.png"];
-    [icons addObject:delay];
-    icon *filter = [[icon alloc] initWithTitle:@"Filter" andImage:@"filter.png"];
-    [icons addObject:filter];
-    icon *modulator = [[icon alloc] initWithTitle:@"Modulator" andImage:@"modulator.png"];
-    [icons addObject:modulator];
-    icon *oscillator = [[icon alloc] initWithTitle:@"Oscillator" andImage:@"oscillator.png"];
-    [icons addObject:oscillator];
-    icon *waveshaper = [[icon alloc] initWithTitle:@"Waveshaper" andImage:@"waveshaper.png"];
-    [icons addObject:waveshaper];
+    icon *sine_wave = [[icon alloc] initWithTitle:@"Sine Wave" andImage:@"sine oscillator.png"];
+    [icons addObject:sine_wave];
+    icon *saw_wave = [[icon alloc] initWithTitle:@"Saw Wave" andImage:@"saw oscillator.png"];
+    [icons addObject:saw_wave];
+    icon *square_wave = [[icon alloc] initWithTitle:@"Square Wave" andImage:@"square oscillator.png"];
+    [icons addObject:square_wave];
+    icon *low_pass = [[icon alloc] initWithTitle:@"Low Pass" andImage:@"low pass filter.png"];
+    [icons addObject:low_pass];
+    icon *high_pass = [[icon alloc] initWithTitle:@"High Pass" andImage:@"high pass filter.png"];
+    [icons addObject:high_pass];
+    icon *band_pass = [[icon alloc] initWithTitle:@"Band Pass" andImage:@"band pass filter.png"];
+    [icons addObject:band_pass];
+    icon *amp_EG = [[icon alloc] initWithTitle:@"Envelope Generator" andImage:@"amplitude envelope.png"];
+    [icons addObject:amp_EG];
     
 }
 

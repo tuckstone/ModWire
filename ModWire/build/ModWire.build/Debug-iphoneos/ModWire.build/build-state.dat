@@ -1,0 +1,1035 @@
+TModWire
+v5
+r1
+cCheck dependencies
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist build/Debug-iphoneos/ModWire.app/ResourceRules.plist
+cProcessInfoPlistFile /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/Info.plist ModWire/ModWire-Info.plist
+cProcessPCH /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch.pth ModWire/ModWire-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH++ /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-gziwkcoghrihaufxssqiwqswtbig/ModWire-Prefix.pch.pth ModWire/ModWire-Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/IconControlView.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/IconControlView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/main.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/AppDelegate.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/ViewController.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/BlackKeyView.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/BlackKeyView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/EditorView.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/EditorView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/icon.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/icon.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/KeyboardView.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/KeyboardView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/KeyView.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/KeyView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/OctaveView.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/OctaveView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/TouchForwardingUIScrollView.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/TouchForwardingUIScrollView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/WhiteKeyView.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/WhiteKeyView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidi.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidi.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidiAllSources.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidiAllSources.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidiFind.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidiFind.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/DraggableIcon.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/DraggableIcon.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/Control.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/Control.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PathView.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PathView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/ModWire normal armv7
+cGenerateDSYMFile /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app.dSYM /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/ModWire
+cCopyStringsFile /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/en.lproj/InfoPlist.strings ModWire/en.lproj/InfoPlist.strings
+cCompileXIB /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/en.lproj/ViewController.xib
+cCopyPNGFile /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/options.png ModWire/options.png
+cCpResource ModWire/synth_engine.pd build/Debug-iphoneos/ModWire.app/synth_engine.pd
+cCopyPNGFile /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/keyboard.png ModWire/keyboard.png
+cCopyPNGFile "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/ModWire logo.png" "ModWire/ModWire logo.png"
+cCopyPNGFile /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/Default-Landscape~ipad.png ModWire/Default-Landscape~ipad.png
+cCopyPNGFile /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/editing_view_background.png ModWire/editing_view_background.png
+cCopyPNGFile "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/band pass filter.png" "ModWire/band pass filter.png"
+cCopyPNGFile "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/high pass filter.png" "ModWire/high pass filter.png"
+cCopyPNGFile "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/low pass filter.png" "ModWire/low pass filter.png"
+cCopyPNGFile "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/saw oscillator.png" "ModWire/saw oscillator.png"
+cCopyPNGFile "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/sine oscillator.png" "ModWire/sine oscillator.png"
+cCopyPNGFile "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/square oscillator.png" "ModWire/square oscillator.png"
+cCopyPNGFile "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/amplitude envelope.png" "ModWire/amplitude envelope.png"
+cCopyPNGFile /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/output.png ModWire/output.png
+cCopyPNGFile /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/audio-in.png ModWire/audio-in.png
+cProcessProductPackaging "/Users/mike/Library/MobileDevice/Provisioning Profiles/B5763145-FFC4-4202-A622-1A0802D7AC3F.mobileprovision" /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/embedded.mobileprovision
+cProcessProductPackaging "/Users/mike/Library/MobileDevice/Provisioning Profiles/B5763145-FFC4-4202-A622-1A0802D7AC3F.mobileprovision" /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/embedded.mobileprovision
+cTouch /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app
+cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire.xcent
+cCodeSign /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk
+c000000004F453DF20000000000000110
+t1329937906
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist
+c000000004F7078FF00000000000001A7
+t1332771071
+s423
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist
+c000000004F7078FF00000000000001E5
+t1332771071
+s485
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004F707901000000000015B230
+t1332771073
+s1421872
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004F70790200000000005C33D0
+t1332771074
+s6042576
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004F70790300000000003AE430
+t1332771075
+s3859504
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/CoreMIDI.framework/CoreMIDI
+c000000004F7079030000000000054780
+t1332771075
+s345984
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004F707904000000000052C940
+t1332771076
+s5425472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004F7079040000000000175AA0
+t1332771076
+s1530528
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004F7079060000000000798EA0
+t1332771078
+s7966368
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/AppDelegate.m
+c000000004F98A0940000000000000C54
+t1335402644
+s3156
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/BlackKeyView.m
+c000000004F98A0940000000000000B5E
+t1335402644
+s2910
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/Control.m
+c000000004F98A09400000000000001B7
+t1335402644
+s439
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/Default-Landscape~ipad.png
+c000000004F98A09400000000000269D2
+t1335402644
+s158162
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/DraggableIcon.m
+c000000004F98A0940000000000000A64
+t1335402644
+s2660
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/EditorView.m
+c000000004F98A09400000000000000C8
+t1335402644
+s200
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/IconControlView.m
+c000000004F98A094000000000000022E
+t1335402644
+s558
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/KeyView.m
+c000000004F98A09400000000000002BB
+t1335402644
+s699
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/KeyboardView.m
+c000000004F98A0940000000000001239
+t1335402644
+s4665
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ModWire logo.png
+c000000004F98A09400000000000014D8
+t1335402644
+s5336
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ModWire-Prefix.pch
+c000000004F98A094000000000000013D
+t1335402644
+s317
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/OctaveView.m
+c000000004F98A0940000000000000A94
+t1335402644
+s2708
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidi.mm
+c000000004F98A0940000000000002A63
+t1335402644
+s10851
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidiAllSources.mm
+c000000004F98A0940000000000000474
+t1335402644
+s1140
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidiFind.mm
+c000000004F98A094000000000000051F
+t1335402644
+s1311
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PathView.m
+c000000004F98A0940000000000000425
+t1335402644
+s1061
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/TouchForwardingUIScrollView.m
+c000000004F98A0940000000000000595
+t1335402644
+s1429
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ViewController.m
+c000000004F98A377000000000000309A
+t1335403383
+s12442
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/WhiteKeyView.m
+c000000004F98A0940000000000000BC6
+t1335402644
+s3014
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/amplitude envelope.png
+c000000004F98A44D00000000000004A9
+t1335403597
+s1193
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/audio-in.png
+c000000004F98A46A00000000000003AB
+t1335403626
+s939
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/band pass filter.png
+c000000004F989FF8000000000000051F
+t1335402488
+s1311
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/editing_view_background.png
+c000000004F98A1C6000000000001765D
+t1335402950
+s95837
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/en.lproj/InfoPlist.strings
+c000000004F98A094000000000000002D
+t1335402644
+s45
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/en.lproj/ViewController.xib
+c000000004F98A37C000000000005DF91
+t1335403388
+s384913
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/high pass filter.png
+c000000004F989FCD00000000000004C3
+t1335402445
+s1219
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/icon.m
+c000000004F98A0940000000000000192
+t1335402644
+s402
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/keyboard.png
+c000000004F98A09400000000000006D3
+t1335402644
+s1747
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/libpd/build/Debug-iphoneos/libpd-ios.a
+c000000004F98A5A300000000002508F8
+t1335403939
+s2427128
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/low pass filter.png
+c000000004F989FBC00000000000004C2
+t1335402428
+s1218
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/main.m
+c000000004F98A0940000000000000158
+t1335402644
+s344
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/options.png
+c000000004F98A0940000000000000CB3
+t1335402644
+s3251
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/output.png
+c000000004F98A47800000000000002BB
+t1335403640
+s699
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/saw oscillator.png
+c000000004F989F6300000000000005D8
+t1335402339
+s1496
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/sine oscillator.png
+c000000004F989F770000000000000596
+t1335402359
+s1430
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/square oscillator.png
+c000000004F989F8B0000000000000644
+t1335402379
+s1604
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/synth_engine.pd
+c000000004F98A0940000000000000474
+t1335402644
+s1140
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app.dSYM
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/Default-Landscape~ipad.png
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/Info.plist
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/ModWire
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/ModWire logo.png
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/PkgInfo
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/ResourceRules.plist
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/amplitude envelope.png
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/audio-in.png
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/band pass filter.png
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/editing_view_background.png
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/embedded.mobileprovision
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/en.lproj/ViewController.nib
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/high pass filter.png
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/keyboard.png
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/low pass filter.png
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/options.png
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/output.png
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/saw oscillator.png
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/sine oscillator.png
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/square oscillator.png
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/synth_engine.pd
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire.xcent
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/AppDelegate.o
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/BlackKeyView.o
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/Control.o
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/DraggableIcon.o
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/EditorView.o
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/IconControlView.o
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/KeyView.o
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/KeyboardView.o
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/ModWire.LinkFileList
+c000000004F98A5A30000000000000936
+t1335403939
+s2358
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/OctaveView.o
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidi.o
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidiAllSources.o
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidiFind.o
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PathView.o
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/TouchForwardingUIScrollView.o
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/ViewController.o
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/WhiteKeyView.o
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/icon.o
+t2
+s0
+
+N/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/main.o
+t2
+s0
+
+N/Users/mike/Library/MobileDevice/Provisioning Profiles/B5763145-FFC4-4202-A622-1A0802D7AC3F.mobileprovision
+c000000004F3D7BAD000000000000A039
+t1329429421
+s41017
+
+N/var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch.pth
+t2
+s0
+
+N/var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-gziwkcoghrihaufxssqiwqswtbig/ModWire-Prefix.pch.pth
+t2
+s0
+
+NModWire/ModWire-Info.plist
+c000000004F98A09400000000000005DC
+t1335402644
+s1500
+
+CBuild AST from /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/AppDelegate.m
+r0
+
+CBuild AST from /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/BlackKeyView.m
+r0
+
+CBuild AST from /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/Control.m
+r0
+
+CBuild AST from /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/DraggableIcon.m
+r0
+
+CBuild AST from /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/EditorView.m
+r0
+
+CBuild AST from /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/IconControlView.m
+r0
+
+CBuild AST from /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/KeyView.m
+r0
+
+CBuild AST from /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/KeyboardView.m
+r0
+
+CBuild AST from /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/OctaveView.m
+r0
+
+CBuild AST from /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidi.mm
+r0
+
+CBuild AST from /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidiAllSources.mm
+r0
+
+CBuild AST from /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidiFind.mm
+r0
+
+CBuild AST from /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PathView.m
+r0
+
+CBuild AST from /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/TouchForwardingUIScrollView.m
+r0
+
+CBuild AST from /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ViewController.m
+r0
+
+CBuild AST from /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/WhiteKeyView.m
+r0
+
+CBuild AST from /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/icon.m
+r0
+
+CBuild AST from /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesf9f39923dd48b541^313f9b23dd48b541^---0#1#0#--18"Check dependencies36"5B85F793-4FBD-4966-AB63-B316BB45D9D5-
+
+CCodeSign /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app
+s357096745.530868
+e357096745.830144
+r1
+xCodeSign
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"CodeSign build/Debug-iphoneos/ModWire.appebfc8729dd48b541^f38dd429dd48b541^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/0000000000000000^820"CodeSign build/Debug-iphoneos/ModWire.app    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign f63fb8847364b9e611e73902aa5dbefa6511e47c --resource-rules=/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/ResourceRules.plist --entitlements /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire.xcent /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app36"5483BCD3-0CC3-4EFE-AC2B-5C54DF51A45D-
+
+CCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/AppDelegate.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s357096741.056992
+e357096741.391717
+r1
+xCompileC
+xbuild/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/AppDelegate.o
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/AppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/AppDelegate.mb5c40e25dd48b541^44516425dd48b541^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/AppDelegate.m0000000000000000^4650"CompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/AppDelegate.o ModWire/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-generated-files.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-own-target-headers.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-all-target-headers.hmap -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-project-headers.hmap -iquoteModWire/libpd -iquoteModWire/libpd/java -iquoteModWire/libpd/javatests -iquoteModWire/libpd/libpd_wrapper -iquoteModWire/libpd/libs -iquoteModWire/libpd/objc -iquoteModWire/libpd/pure-data -iquoteModWire/libpd/python -iquoteModWire/libpd/samples -iquoteModWire/libpd/java/org -iquoteModWire/libpd/javatests/org -iquoteModWire/libpd/pure-data/extra -iquoteModWire/libpd/pure-data/src -iquoteModWire/libpd/samples/c_samples -iquoteModWire/libpd/samples/com -iquoteModWire/libpd/java/org/puredata -iquoteModWire/libpd/javatests/org/puredata "-iquoteModWire/libpd/pure-data/extra/bonk~" -iquoteModWire/libpd/pure-data/extra/choice "-iquoteModWire/libpd/pure-data/extra/expr~" "-iquoteModWire/libpd/pure-data/extra/fiddle~" "-iquoteModWire/libpd/pure-data/extra/loop~" "-iquoteModWire/libpd/pure-data/extra/lrshift~" "-iquoteModWire/libpd/pure-data/extra/pd~" -iquoteModWire/libpd/pure-data/extra/pique "-iquoteModWire/libpd/pure-data/extra/sigmund~" -iquoteModWire/libpd/pure-data/extra/stdout -iquoteModWire/libpd/samples/c_samples/c -iquoteModWire/libpd/samples/com/noisepages -iquoteModWire/libpd/java/org/puredata/core -iquoteModWire/libpd/java/org/puredata/processing -iquoteModWire/libpd/javatests/org/puredata/core -iquoteModWire/libpd/samples/com/noisepages/nettoyeur -iquoteModWire/libpd/java/org/puredata/core/utils -iquoteModWire/libpd/javatests/org/puredata/core/utils -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd/sample -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/include -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources/armv7 -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos -include /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/AppDelegate.d --serialize-diagnostics /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/AppDelegate.dia -c /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/AppDelegate.m -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/AppDelegate.o36"84FD953D-8EEF-4282-9F50-1FCFB9395878-
+
+CCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/BlackKeyView.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/BlackKeyView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s357096741.393186
+e357096741.506878
+r1
+xCompileC
+xbuild/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/BlackKeyView.o
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/BlackKeyView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/BlackKeyView.md0d36425dd48b541^aed68125dd48b541^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/BlackKeyView.m0000000000000000^4656"CompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/BlackKeyView.o ModWire/BlackKeyView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-generated-files.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-own-target-headers.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-all-target-headers.hmap -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-project-headers.hmap -iquoteModWire/libpd -iquoteModWire/libpd/java -iquoteModWire/libpd/javatests -iquoteModWire/libpd/libpd_wrapper -iquoteModWire/libpd/libs -iquoteModWire/libpd/objc -iquoteModWire/libpd/pure-data -iquoteModWire/libpd/python -iquoteModWire/libpd/samples -iquoteModWire/libpd/java/org -iquoteModWire/libpd/javatests/org -iquoteModWire/libpd/pure-data/extra -iquoteModWire/libpd/pure-data/src -iquoteModWire/libpd/samples/c_samples -iquoteModWire/libpd/samples/com -iquoteModWire/libpd/java/org/puredata -iquoteModWire/libpd/javatests/org/puredata "-iquoteModWire/libpd/pure-data/extra/bonk~" -iquoteModWire/libpd/pure-data/extra/choice "-iquoteModWire/libpd/pure-data/extra/expr~" "-iquoteModWire/libpd/pure-data/extra/fiddle~" "-iquoteModWire/libpd/pure-data/extra/loop~" "-iquoteModWire/libpd/pure-data/extra/lrshift~" "-iquoteModWire/libpd/pure-data/extra/pd~" -iquoteModWire/libpd/pure-data/extra/pique "-iquoteModWire/libpd/pure-data/extra/sigmund~" -iquoteModWire/libpd/pure-data/extra/stdout -iquoteModWire/libpd/samples/c_samples/c -iquoteModWire/libpd/samples/com/noisepages -iquoteModWire/libpd/java/org/puredata/core -iquoteModWire/libpd/java/org/puredata/processing -iquoteModWire/libpd/javatests/org/puredata/core -iquoteModWire/libpd/samples/com/noisepages/nettoyeur -iquoteModWire/libpd/java/org/puredata/core/utils -iquoteModWire/libpd/javatests/org/puredata/core/utils -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd/sample -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/include -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources/armv7 -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos -include /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/BlackKeyView.d --serialize-diagnostics /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/BlackKeyView.dia -c /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/BlackKeyView.m -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/BlackKeyView.o36"C3060758-8F0F-4248-B61A-720564E9C757-
+
+CCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/Control.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/Control.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s357096742.780078
+e357096742.834301
+r1
+xCompileC
+xbuild/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/Control.o
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/Control.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/Control.mcae1c726dd48b541^f99ed526dd48b541^---0#0#0#-19%DVTDocumentLocation2@80"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/Control.m0000000000000000^4626"CompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/Control.o ModWire/Control.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-generated-files.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-own-target-headers.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-all-target-headers.hmap -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-project-headers.hmap -iquoteModWire/libpd -iquoteModWire/libpd/java -iquoteModWire/libpd/javatests -iquoteModWire/libpd/libpd_wrapper -iquoteModWire/libpd/libs -iquoteModWire/libpd/objc -iquoteModWire/libpd/pure-data -iquoteModWire/libpd/python -iquoteModWire/libpd/samples -iquoteModWire/libpd/java/org -iquoteModWire/libpd/javatests/org -iquoteModWire/libpd/pure-data/extra -iquoteModWire/libpd/pure-data/src -iquoteModWire/libpd/samples/c_samples -iquoteModWire/libpd/samples/com -iquoteModWire/libpd/java/org/puredata -iquoteModWire/libpd/javatests/org/puredata "-iquoteModWire/libpd/pure-data/extra/bonk~" -iquoteModWire/libpd/pure-data/extra/choice "-iquoteModWire/libpd/pure-data/extra/expr~" "-iquoteModWire/libpd/pure-data/extra/fiddle~" "-iquoteModWire/libpd/pure-data/extra/loop~" "-iquoteModWire/libpd/pure-data/extra/lrshift~" "-iquoteModWire/libpd/pure-data/extra/pd~" -iquoteModWire/libpd/pure-data/extra/pique "-iquoteModWire/libpd/pure-data/extra/sigmund~" -iquoteModWire/libpd/pure-data/extra/stdout -iquoteModWire/libpd/samples/c_samples/c -iquoteModWire/libpd/samples/com/noisepages -iquoteModWire/libpd/java/org/puredata/core -iquoteModWire/libpd/java/org/puredata/processing -iquoteModWire/libpd/javatests/org/puredata/core -iquoteModWire/libpd/samples/com/noisepages/nettoyeur -iquoteModWire/libpd/java/org/puredata/core/utils -iquoteModWire/libpd/javatests/org/puredata/core/utils -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd/sample -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/include -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources/armv7 -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos -include /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/Control.d --serialize-diagnostics /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/Control.dia -c /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/Control.m -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/Control.o36"5D0F4C9C-B071-41F6-8848-26524DF499EC-
+
+CCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/DraggableIcon.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/DraggableIcon.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s357096742.764350
+e357096742.936645
+r1
+xCompileC
+xbuild/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/DraggableIcon.o
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/DraggableIcon.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/DraggableIcon.m4dd7c326dd48b541^90dbef26dd48b541^---0#0#0#-19%DVTDocumentLocation2@86"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/DraggableIcon.m0000000000000000^4662"CompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/DraggableIcon.o ModWire/DraggableIcon.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-generated-files.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-own-target-headers.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-all-target-headers.hmap -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-project-headers.hmap -iquoteModWire/libpd -iquoteModWire/libpd/java -iquoteModWire/libpd/javatests -iquoteModWire/libpd/libpd_wrapper -iquoteModWire/libpd/libs -iquoteModWire/libpd/objc -iquoteModWire/libpd/pure-data -iquoteModWire/libpd/python -iquoteModWire/libpd/samples -iquoteModWire/libpd/java/org -iquoteModWire/libpd/javatests/org -iquoteModWire/libpd/pure-data/extra -iquoteModWire/libpd/pure-data/src -iquoteModWire/libpd/samples/c_samples -iquoteModWire/libpd/samples/com -iquoteModWire/libpd/java/org/puredata -iquoteModWire/libpd/javatests/org/puredata "-iquoteModWire/libpd/pure-data/extra/bonk~" -iquoteModWire/libpd/pure-data/extra/choice "-iquoteModWire/libpd/pure-data/extra/expr~" "-iquoteModWire/libpd/pure-data/extra/fiddle~" "-iquoteModWire/libpd/pure-data/extra/loop~" "-iquoteModWire/libpd/pure-data/extra/lrshift~" "-iquoteModWire/libpd/pure-data/extra/pd~" -iquoteModWire/libpd/pure-data/extra/pique "-iquoteModWire/libpd/pure-data/extra/sigmund~" -iquoteModWire/libpd/pure-data/extra/stdout -iquoteModWire/libpd/samples/c_samples/c -iquoteModWire/libpd/samples/com/noisepages -iquoteModWire/libpd/java/org/puredata/core -iquoteModWire/libpd/java/org/puredata/processing -iquoteModWire/libpd/javatests/org/puredata/core -iquoteModWire/libpd/samples/com/noisepages/nettoyeur -iquoteModWire/libpd/java/org/puredata/core/utils -iquoteModWire/libpd/javatests/org/puredata/core/utils -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd/sample -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/include -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources/armv7 -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos -include /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/DraggableIcon.d --serialize-diagnostics /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/DraggableIcon.dia -c /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/DraggableIcon.m -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/DraggableIcon.o36"D50FF62D-AD47-407A-BB72-C858619B8EC1-
+
+CCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/EditorView.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/EditorView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s357096741.508335
+e357096741.558983
+r1
+xCompileC
+xbuild/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/EditorView.o
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/EditorView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/EditorView.m43538225dd48b541^53948f25dd48b541^---0#0#0#-19%DVTDocumentLocation2@83"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/EditorView.m0000000000000000^4644"CompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/EditorView.o ModWire/EditorView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-generated-files.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-own-target-headers.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-all-target-headers.hmap -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-project-headers.hmap -iquoteModWire/libpd -iquoteModWire/libpd/java -iquoteModWire/libpd/javatests -iquoteModWire/libpd/libpd_wrapper -iquoteModWire/libpd/libs -iquoteModWire/libpd/objc -iquoteModWire/libpd/pure-data -iquoteModWire/libpd/python -iquoteModWire/libpd/samples -iquoteModWire/libpd/java/org -iquoteModWire/libpd/javatests/org -iquoteModWire/libpd/pure-data/extra -iquoteModWire/libpd/pure-data/src -iquoteModWire/libpd/samples/c_samples -iquoteModWire/libpd/samples/com -iquoteModWire/libpd/java/org/puredata -iquoteModWire/libpd/javatests/org/puredata "-iquoteModWire/libpd/pure-data/extra/bonk~" -iquoteModWire/libpd/pure-data/extra/choice "-iquoteModWire/libpd/pure-data/extra/expr~" "-iquoteModWire/libpd/pure-data/extra/fiddle~" "-iquoteModWire/libpd/pure-data/extra/loop~" "-iquoteModWire/libpd/pure-data/extra/lrshift~" "-iquoteModWire/libpd/pure-data/extra/pd~" -iquoteModWire/libpd/pure-data/extra/pique "-iquoteModWire/libpd/pure-data/extra/sigmund~" -iquoteModWire/libpd/pure-data/extra/stdout -iquoteModWire/libpd/samples/c_samples/c -iquoteModWire/libpd/samples/com/noisepages -iquoteModWire/libpd/java/org/puredata/core -iquoteModWire/libpd/java/org/puredata/processing -iquoteModWire/libpd/javatests/org/puredata/core -iquoteModWire/libpd/samples/com/noisepages/nettoyeur -iquoteModWire/libpd/java/org/puredata/core/utils -iquoteModWire/libpd/javatests/org/puredata/core/utils -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd/sample -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/include -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources/armv7 -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos -include /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/EditorView.d --serialize-diagnostics /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/EditorView.dia -c /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/EditorView.m -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/EditorView.o36"F6AD407D-412E-4D6D-9078-3DAD35B3DF1D-
+
+CCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/IconControlView.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/IconControlView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s357096740.608341
+e357096740.784777
+r1
+xCompileC
+xbuild/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/IconControlView.o
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/IconControlView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/IconControlView.m9be89b24dd48b541^b6f8c824dd48b541^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/IconControlView.m0000000000000000^4674"CompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/IconControlView.o ModWire/IconControlView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-generated-files.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-own-target-headers.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-all-target-headers.hmap -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-project-headers.hmap -iquoteModWire/libpd -iquoteModWire/libpd/java -iquoteModWire/libpd/javatests -iquoteModWire/libpd/libpd_wrapper -iquoteModWire/libpd/libs -iquoteModWire/libpd/objc -iquoteModWire/libpd/pure-data -iquoteModWire/libpd/python -iquoteModWire/libpd/samples -iquoteModWire/libpd/java/org -iquoteModWire/libpd/javatests/org -iquoteModWire/libpd/pure-data/extra -iquoteModWire/libpd/pure-data/src -iquoteModWire/libpd/samples/c_samples -iquoteModWire/libpd/samples/com -iquoteModWire/libpd/java/org/puredata -iquoteModWire/libpd/javatests/org/puredata "-iquoteModWire/libpd/pure-data/extra/bonk~" -iquoteModWire/libpd/pure-data/extra/choice "-iquoteModWire/libpd/pure-data/extra/expr~" "-iquoteModWire/libpd/pure-data/extra/fiddle~" "-iquoteModWire/libpd/pure-data/extra/loop~" "-iquoteModWire/libpd/pure-data/extra/lrshift~" "-iquoteModWire/libpd/pure-data/extra/pd~" -iquoteModWire/libpd/pure-data/extra/pique "-iquoteModWire/libpd/pure-data/extra/sigmund~" -iquoteModWire/libpd/pure-data/extra/stdout -iquoteModWire/libpd/samples/c_samples/c -iquoteModWire/libpd/samples/com/noisepages -iquoteModWire/libpd/java/org/puredata/core -iquoteModWire/libpd/java/org/puredata/processing -iquoteModWire/libpd/javatests/org/puredata/core -iquoteModWire/libpd/samples/com/noisepages/nettoyeur -iquoteModWire/libpd/java/org/puredata/core/utils -iquoteModWire/libpd/javatests/org/puredata/core/utils -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd/sample -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/include -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources/armv7 -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos -include /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/IconControlView.d --serialize-diagnostics /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/IconControlView.dia -c /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/IconControlView.m -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/IconControlView.o36"26B8430F-4DB7-4306-B93C-25D872DE6773-
+
+CCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/KeyView.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/KeyView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s357096741.802086
+e357096742.013903
+r1
+xCompileC
+xbuild/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/KeyView.o
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/KeyView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/KeyView.m997ecd25dd48b541^34d71126dd48b541^---0#0#0#-19%DVTDocumentLocation2@80"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/KeyView.m0000000000000000^4626"CompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/KeyView.o ModWire/KeyView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-generated-files.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-own-target-headers.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-all-target-headers.hmap -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-project-headers.hmap -iquoteModWire/libpd -iquoteModWire/libpd/java -iquoteModWire/libpd/javatests -iquoteModWire/libpd/libpd_wrapper -iquoteModWire/libpd/libs -iquoteModWire/libpd/objc -iquoteModWire/libpd/pure-data -iquoteModWire/libpd/python -iquoteModWire/libpd/samples -iquoteModWire/libpd/java/org -iquoteModWire/libpd/javatests/org -iquoteModWire/libpd/pure-data/extra -iquoteModWire/libpd/pure-data/src -iquoteModWire/libpd/samples/c_samples -iquoteModWire/libpd/samples/com -iquoteModWire/libpd/java/org/puredata -iquoteModWire/libpd/javatests/org/puredata "-iquoteModWire/libpd/pure-data/extra/bonk~" -iquoteModWire/libpd/pure-data/extra/choice "-iquoteModWire/libpd/pure-data/extra/expr~" "-iquoteModWire/libpd/pure-data/extra/fiddle~" "-iquoteModWire/libpd/pure-data/extra/loop~" "-iquoteModWire/libpd/pure-data/extra/lrshift~" "-iquoteModWire/libpd/pure-data/extra/pd~" -iquoteModWire/libpd/pure-data/extra/pique "-iquoteModWire/libpd/pure-data/extra/sigmund~" -iquoteModWire/libpd/pure-data/extra/stdout -iquoteModWire/libpd/samples/c_samples/c -iquoteModWire/libpd/samples/com/noisepages -iquoteModWire/libpd/java/org/puredata/core -iquoteModWire/libpd/java/org/puredata/processing -iquoteModWire/libpd/javatests/org/puredata/core -iquoteModWire/libpd/samples/com/noisepages/nettoyeur -iquoteModWire/libpd/java/org/puredata/core/utils -iquoteModWire/libpd/javatests/org/puredata/core/utils -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd/sample -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/include -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources/armv7 -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos -include /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/KeyView.d --serialize-diagnostics /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/KeyView.dia -c /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/KeyView.m -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/KeyView.o36"10661CC6-0814-493C-ABA9-D87942FDAF14-
+
+CCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/KeyboardView.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/KeyboardView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s357096741.691064
+e357096741.868812
+r1
+xCompileC
+xbuild/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/KeyboardView.o
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/KeyboardView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/KeyboardView.mf015b125dd48b541^ff75de25dd48b541^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/KeyboardView.m0000000000000000^4656"CompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/KeyboardView.o ModWire/KeyboardView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-generated-files.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-own-target-headers.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-all-target-headers.hmap -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-project-headers.hmap -iquoteModWire/libpd -iquoteModWire/libpd/java -iquoteModWire/libpd/javatests -iquoteModWire/libpd/libpd_wrapper -iquoteModWire/libpd/libs -iquoteModWire/libpd/objc -iquoteModWire/libpd/pure-data -iquoteModWire/libpd/python -iquoteModWire/libpd/samples -iquoteModWire/libpd/java/org -iquoteModWire/libpd/javatests/org -iquoteModWire/libpd/pure-data/extra -iquoteModWire/libpd/pure-data/src -iquoteModWire/libpd/samples/c_samples -iquoteModWire/libpd/samples/com -iquoteModWire/libpd/java/org/puredata -iquoteModWire/libpd/javatests/org/puredata "-iquoteModWire/libpd/pure-data/extra/bonk~" -iquoteModWire/libpd/pure-data/extra/choice "-iquoteModWire/libpd/pure-data/extra/expr~" "-iquoteModWire/libpd/pure-data/extra/fiddle~" "-iquoteModWire/libpd/pure-data/extra/loop~" "-iquoteModWire/libpd/pure-data/extra/lrshift~" "-iquoteModWire/libpd/pure-data/extra/pd~" -iquoteModWire/libpd/pure-data/extra/pique "-iquoteModWire/libpd/pure-data/extra/sigmund~" -iquoteModWire/libpd/pure-data/extra/stdout -iquoteModWire/libpd/samples/c_samples/c -iquoteModWire/libpd/samples/com/noisepages -iquoteModWire/libpd/java/org/puredata/core -iquoteModWire/libpd/java/org/puredata/processing -iquoteModWire/libpd/javatests/org/puredata/core -iquoteModWire/libpd/samples/com/noisepages/nettoyeur -iquoteModWire/libpd/java/org/puredata/core/utils -iquoteModWire/libpd/javatests/org/puredata/core/utils -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd/sample -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/include -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources/armv7 -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos -include /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/KeyboardView.d --serialize-diagnostics /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/KeyboardView.dia -c /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/KeyboardView.m -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/KeyboardView.o36"11D7928C-84B5-48FC-AADA-BC1437AFB35F-
+
+CCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/OctaveView.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/OctaveView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s357096741.870284
+e357096742.120932
+r1
+xCompileC
+xbuild/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/OctaveView.o
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/OctaveView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/OctaveView.m66f5de25dd48b541^0bcf1f26dd48b541^---0#0#0#-19%DVTDocumentLocation2@83"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/OctaveView.m0000000000000000^4644"CompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/OctaveView.o ModWire/OctaveView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-generated-files.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-own-target-headers.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-all-target-headers.hmap -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-project-headers.hmap -iquoteModWire/libpd -iquoteModWire/libpd/java -iquoteModWire/libpd/javatests -iquoteModWire/libpd/libpd_wrapper -iquoteModWire/libpd/libs -iquoteModWire/libpd/objc -iquoteModWire/libpd/pure-data -iquoteModWire/libpd/python -iquoteModWire/libpd/samples -iquoteModWire/libpd/java/org -iquoteModWire/libpd/javatests/org -iquoteModWire/libpd/pure-data/extra -iquoteModWire/libpd/pure-data/src -iquoteModWire/libpd/samples/c_samples -iquoteModWire/libpd/samples/com -iquoteModWire/libpd/java/org/puredata -iquoteModWire/libpd/javatests/org/puredata "-iquoteModWire/libpd/pure-data/extra/bonk~" -iquoteModWire/libpd/pure-data/extra/choice "-iquoteModWire/libpd/pure-data/extra/expr~" "-iquoteModWire/libpd/pure-data/extra/fiddle~" "-iquoteModWire/libpd/pure-data/extra/loop~" "-iquoteModWire/libpd/pure-data/extra/lrshift~" "-iquoteModWire/libpd/pure-data/extra/pd~" -iquoteModWire/libpd/pure-data/extra/pique "-iquoteModWire/libpd/pure-data/extra/sigmund~" -iquoteModWire/libpd/pure-data/extra/stdout -iquoteModWire/libpd/samples/c_samples/c -iquoteModWire/libpd/samples/com/noisepages -iquoteModWire/libpd/java/org/puredata/core -iquoteModWire/libpd/java/org/puredata/processing -iquoteModWire/libpd/javatests/org/puredata/core -iquoteModWire/libpd/samples/com/noisepages/nettoyeur -iquoteModWire/libpd/java/org/puredata/core/utils -iquoteModWire/libpd/javatests/org/puredata/core/utils -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd/sample -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/include -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources/armv7 -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos -include /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/OctaveView.d --serialize-diagnostics /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/OctaveView.dia -c /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/OctaveView.m -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/OctaveView.o36"B5AEF58B-1664-4B35-8312-F3C36F3F8AF5-
+
+CCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidi.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidi.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s357096742.259943
+e357096742.639089
+r1
+xCompileC
+xbuild/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidi.o
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidi.mm
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidi.mm17ba4226dd48b541^d5b0a326dd48b541^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidi.mm0000000000000000^4766"CompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidi.o ModWire/PGMidi/PGMidi.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-arc-abi -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-generated-files.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-own-target-headers.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-all-target-headers.hmap -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-project-headers.hmap -iquoteModWire/libpd -iquoteModWire/libpd/java -iquoteModWire/libpd/javatests -iquoteModWire/libpd/libpd_wrapper -iquoteModWire/libpd/libs -iquoteModWire/libpd/objc -iquoteModWire/libpd/pure-data -iquoteModWire/libpd/python -iquoteModWire/libpd/samples -iquoteModWire/libpd/java/org -iquoteModWire/libpd/javatests/org -iquoteModWire/libpd/pure-data/extra -iquoteModWire/libpd/pure-data/src -iquoteModWire/libpd/samples/c_samples -iquoteModWire/libpd/samples/com -iquoteModWire/libpd/java/org/puredata -iquoteModWire/libpd/javatests/org/puredata "-iquoteModWire/libpd/pure-data/extra/bonk~" -iquoteModWire/libpd/pure-data/extra/choice "-iquoteModWire/libpd/pure-data/extra/expr~" "-iquoteModWire/libpd/pure-data/extra/fiddle~" "-iquoteModWire/libpd/pure-data/extra/loop~" "-iquoteModWire/libpd/pure-data/extra/lrshift~" "-iquoteModWire/libpd/pure-data/extra/pd~" -iquoteModWire/libpd/pure-data/extra/pique "-iquoteModWire/libpd/pure-data/extra/sigmund~" -iquoteModWire/libpd/pure-data/extra/stdout -iquoteModWire/libpd/samples/c_samples/c -iquoteModWire/libpd/samples/com/noisepages -iquoteModWire/libpd/java/org/puredata/core -iquoteModWire/libpd/java/org/puredata/processing -iquoteModWire/libpd/javatests/org/puredata/core -iquoteModWire/libpd/samples/com/noisepages/nettoyeur -iquoteModWire/libpd/java/org/puredata/core/utils -iquoteModWire/libpd/javatests/org/puredata/core/utils -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd/sample -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/include -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources/armv7 -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos -include /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-gziwkcoghrihaufxssqiwqswtbig/ModWire-Prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidi.d --serialize-diagnostics /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidi.dia -c /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidi.mm -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidi.o36"D3BAC503-8B16-4579-BBC7-54BB09018FA8-
+
+CCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidiAllSources.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidiAllSources.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s357096742.544303
+e357096742.762894
+r1
+xCompileC
+xbuild/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidiAllSources.o
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidiAllSources.mm
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidiAllSources.mm9c878b26dd48b541^e04dc326dd48b541^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidiAllSources.mm0000000000000000^4826"CompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidiAllSources.o ModWire/PGMidi/PGMidiAllSources.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-arc-abi -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-generated-files.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-own-target-headers.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-all-target-headers.hmap -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-project-headers.hmap -iquoteModWire/libpd -iquoteModWire/libpd/java -iquoteModWire/libpd/javatests -iquoteModWire/libpd/libpd_wrapper -iquoteModWire/libpd/libs -iquoteModWire/libpd/objc -iquoteModWire/libpd/pure-data -iquoteModWire/libpd/python -iquoteModWire/libpd/samples -iquoteModWire/libpd/java/org -iquoteModWire/libpd/javatests/org -iquoteModWire/libpd/pure-data/extra -iquoteModWire/libpd/pure-data/src -iquoteModWire/libpd/samples/c_samples -iquoteModWire/libpd/samples/com -iquoteModWire/libpd/java/org/puredata -iquoteModWire/libpd/javatests/org/puredata "-iquoteModWire/libpd/pure-data/extra/bonk~" -iquoteModWire/libpd/pure-data/extra/choice "-iquoteModWire/libpd/pure-data/extra/expr~" "-iquoteModWire/libpd/pure-data/extra/fiddle~" "-iquoteModWire/libpd/pure-data/extra/loop~" "-iquoteModWire/libpd/pure-data/extra/lrshift~" "-iquoteModWire/libpd/pure-data/extra/pd~" -iquoteModWire/libpd/pure-data/extra/pique "-iquoteModWire/libpd/pure-data/extra/sigmund~" -iquoteModWire/libpd/pure-data/extra/stdout -iquoteModWire/libpd/samples/c_samples/c -iquoteModWire/libpd/samples/com/noisepages -iquoteModWire/libpd/java/org/puredata/core -iquoteModWire/libpd/java/org/puredata/processing -iquoteModWire/libpd/javatests/org/puredata/core -iquoteModWire/libpd/samples/com/noisepages/nettoyeur -iquoteModWire/libpd/java/org/puredata/core/utils -iquoteModWire/libpd/javatests/org/puredata/core/utils -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd/sample -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/include -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources/armv7 -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos -include /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-gziwkcoghrihaufxssqiwqswtbig/ModWire-Prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidiAllSources.d --serialize-diagnostics /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidiAllSources.dia -c /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidiAllSources.mm -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidiAllSources.o36"63B4A812-2D63-4721-8750-8AAB464292D0-
+
+CCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidiFind.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidiFind.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s357096742.640341
+e357096742.778786
+r1
+xCompileC
+xbuild/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidiFind.o
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidiFind.mm
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidiFind.mmc119a426dd48b541^6669c726dd48b541^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidiFind.mm0000000000000000^4790"CompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidiFind.o ModWire/PGMidi/PGMidiFind.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-arc-abi -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-generated-files.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-own-target-headers.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-all-target-headers.hmap -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-project-headers.hmap -iquoteModWire/libpd -iquoteModWire/libpd/java -iquoteModWire/libpd/javatests -iquoteModWire/libpd/libpd_wrapper -iquoteModWire/libpd/libs -iquoteModWire/libpd/objc -iquoteModWire/libpd/pure-data -iquoteModWire/libpd/python -iquoteModWire/libpd/samples -iquoteModWire/libpd/java/org -iquoteModWire/libpd/javatests/org -iquoteModWire/libpd/pure-data/extra -iquoteModWire/libpd/pure-data/src -iquoteModWire/libpd/samples/c_samples -iquoteModWire/libpd/samples/com -iquoteModWire/libpd/java/org/puredata -iquoteModWire/libpd/javatests/org/puredata "-iquoteModWire/libpd/pure-data/extra/bonk~" -iquoteModWire/libpd/pure-data/extra/choice "-iquoteModWire/libpd/pure-data/extra/expr~" "-iquoteModWire/libpd/pure-data/extra/fiddle~" "-iquoteModWire/libpd/pure-data/extra/loop~" "-iquoteModWire/libpd/pure-data/extra/lrshift~" "-iquoteModWire/libpd/pure-data/extra/pd~" -iquoteModWire/libpd/pure-data/extra/pique "-iquoteModWire/libpd/pure-data/extra/sigmund~" -iquoteModWire/libpd/pure-data/extra/stdout -iquoteModWire/libpd/samples/c_samples/c -iquoteModWire/libpd/samples/com/noisepages -iquoteModWire/libpd/java/org/puredata/core -iquoteModWire/libpd/java/org/puredata/processing -iquoteModWire/libpd/javatests/org/puredata/core -iquoteModWire/libpd/samples/com/noisepages/nettoyeur -iquoteModWire/libpd/java/org/puredata/core/utils -iquoteModWire/libpd/javatests/org/puredata/core/utils -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd/sample -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/include -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources/armv7 -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos -include /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-gziwkcoghrihaufxssqiwqswtbig/ModWire-Prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidiFind.d --serialize-diagnostics /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidiFind.dia -c /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidiFind.mm -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PGMidiFind.o36"8BF10B29-5C91-4010-A4D3-F2A9B3BD2AAC-
+
+CCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PathView.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PathView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s357096742.835570
+e357096742.947130
+r1
+xCompileC
+xbuild/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PathView.o
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PathView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PathView.m3c13d626dd48b541^6c78f226dd48b541^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PathView.m0000000000000000^4632"CompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PathView.o ModWire/PathView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-generated-files.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-own-target-headers.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-all-target-headers.hmap -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-project-headers.hmap -iquoteModWire/libpd -iquoteModWire/libpd/java -iquoteModWire/libpd/javatests -iquoteModWire/libpd/libpd_wrapper -iquoteModWire/libpd/libs -iquoteModWire/libpd/objc -iquoteModWire/libpd/pure-data -iquoteModWire/libpd/python -iquoteModWire/libpd/samples -iquoteModWire/libpd/java/org -iquoteModWire/libpd/javatests/org -iquoteModWire/libpd/pure-data/extra -iquoteModWire/libpd/pure-data/src -iquoteModWire/libpd/samples/c_samples -iquoteModWire/libpd/samples/com -iquoteModWire/libpd/java/org/puredata -iquoteModWire/libpd/javatests/org/puredata "-iquoteModWire/libpd/pure-data/extra/bonk~" -iquoteModWire/libpd/pure-data/extra/choice "-iquoteModWire/libpd/pure-data/extra/expr~" "-iquoteModWire/libpd/pure-data/extra/fiddle~" "-iquoteModWire/libpd/pure-data/extra/loop~" "-iquoteModWire/libpd/pure-data/extra/lrshift~" "-iquoteModWire/libpd/pure-data/extra/pd~" -iquoteModWire/libpd/pure-data/extra/pique "-iquoteModWire/libpd/pure-data/extra/sigmund~" -iquoteModWire/libpd/pure-data/extra/stdout -iquoteModWire/libpd/samples/c_samples/c -iquoteModWire/libpd/samples/com/noisepages -iquoteModWire/libpd/java/org/puredata/core -iquoteModWire/libpd/java/org/puredata/processing -iquoteModWire/libpd/javatests/org/puredata/core -iquoteModWire/libpd/samples/com/noisepages/nettoyeur -iquoteModWire/libpd/java/org/puredata/core/utils -iquoteModWire/libpd/javatests/org/puredata/core/utils -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd/sample -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/include -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources/armv7 -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos -include /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PathView.d --serialize-diagnostics /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PathView.dia -c /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PathView.m -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/PathView.o36"C4DFE0CB-7DBD-4280-A5D3-5C97836ADEE0-
+
+CCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/TouchForwardingUIScrollView.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/TouchForwardingUIScrollView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s357096742.047483
+e357096742.254200
+r1
+xCompileC
+xbuild/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/TouchForwardingUIScrollView.o
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/TouchForwardingUIScrollView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/TouchForwardingUIScrollView.m715a0c26dd48b541^081c4126dd48b541^---0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/TouchForwardingUIScrollView.m0000000000000000^4746"CompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/TouchForwardingUIScrollView.o ModWire/TouchForwardingUIScrollView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-generated-files.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-own-target-headers.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-all-target-headers.hmap -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-project-headers.hmap -iquoteModWire/libpd -iquoteModWire/libpd/java -iquoteModWire/libpd/javatests -iquoteModWire/libpd/libpd_wrapper -iquoteModWire/libpd/libs -iquoteModWire/libpd/objc -iquoteModWire/libpd/pure-data -iquoteModWire/libpd/python -iquoteModWire/libpd/samples -iquoteModWire/libpd/java/org -iquoteModWire/libpd/javatests/org -iquoteModWire/libpd/pure-data/extra -iquoteModWire/libpd/pure-data/src -iquoteModWire/libpd/samples/c_samples -iquoteModWire/libpd/samples/com -iquoteModWire/libpd/java/org/puredata -iquoteModWire/libpd/javatests/org/puredata "-iquoteModWire/libpd/pure-data/extra/bonk~" -iquoteModWire/libpd/pure-data/extra/choice "-iquoteModWire/libpd/pure-data/extra/expr~" "-iquoteModWire/libpd/pure-data/extra/fiddle~" "-iquoteModWire/libpd/pure-data/extra/loop~" "-iquoteModWire/libpd/pure-data/extra/lrshift~" "-iquoteModWire/libpd/pure-data/extra/pd~" -iquoteModWire/libpd/pure-data/extra/pique "-iquoteModWire/libpd/pure-data/extra/sigmund~" -iquoteModWire/libpd/pure-data/extra/stdout -iquoteModWire/libpd/samples/c_samples/c -iquoteModWire/libpd/samples/com/noisepages -iquoteModWire/libpd/java/org/puredata/core -iquoteModWire/libpd/java/org/puredata/processing -iquoteModWire/libpd/javatests/org/puredata/core -iquoteModWire/libpd/samples/com/noisepages/nettoyeur -iquoteModWire/libpd/java/org/puredata/core/utils -iquoteModWire/libpd/javatests/org/puredata/core/utils -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd/sample -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/include -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources/armv7 -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos -include /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/TouchForwardingUIScrollView.d --serialize-diagnostics /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/TouchForwardingUIScrollView.dia -c /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/TouchForwardingUIScrollView.m -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/TouchForwardingUIScrollView.o36"97FE97A7-21F1-4880-AF0A-E4F63E4D4B3A-
+
+CCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/ViewController.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s357096741.287384
+e357096741.800462
+r1
+xCompileC
+xbuild/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/ViewController.o
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ViewController.m:197:39: warning: sending 'ViewController *const __strong' to parameter of incompatible type 'id<KeyboardDelegate>'
+o    [keyboardView setKeyboardDelegate:self];
+o                                      ^~~~
+o/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/KeyboardView.h:33:62: note: passing argument to parameter 'keyboardDelegate' here
+o@property (nonatomic, retain) IBOutlet id <KeyboardDelegate> keyboardDelegate;
+o                                                             ^
+o1 warning generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ViewController.mb2be4925dd48b541^11ffcc25dd48b541^-575"/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ViewController.m:197:39: warning: sending 'ViewController *const __strong' to parameter of incompatible type 'id<KeyboardDelegate>'    [keyboardView setKeyboardDelegate:self];                                      ^~~~/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/KeyboardView.h:33:62: note: passing argument to parameter 'keyboardDelegate' here@property (nonatomic, retain) IBOutlet id <KeyboardDelegate> keyboardDelegate;                                                             ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@97"Sending 'ViewController *const __strong' to parameter of incompatible type 'id<KeyboardDelegate>'-357096741#18446744073709551615#0#1(2@53"Passing argument to parameter 'keyboardDelegate' here-357096741#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@85"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/KeyboardView.h0000000000000000^32#61#32#61#627#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@87"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ViewController.m0000000000000000^196#38#196#38#5539#0#14"Semantic Issue1(3@87"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ViewController.m0000000000000000^196#38#196#42#5539#0#-0#0#0#-19%DVTDocumentLocation4@87"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ViewController.m0000000000000000^4668"CompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/ViewController.o ModWire/ViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-generated-files.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-own-target-headers.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-all-target-headers.hmap -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-project-headers.hmap -iquoteModWire/libpd -iquoteModWire/libpd/java -iquoteModWire/libpd/javatests -iquoteModWire/libpd/libpd_wrapper -iquoteModWire/libpd/libs -iquoteModWire/libpd/objc -iquoteModWire/libpd/pure-data -iquoteModWire/libpd/python -iquoteModWire/libpd/samples -iquoteModWire/libpd/java/org -iquoteModWire/libpd/javatests/org -iquoteModWire/libpd/pure-data/extra -iquoteModWire/libpd/pure-data/src -iquoteModWire/libpd/samples/c_samples -iquoteModWire/libpd/samples/com -iquoteModWire/libpd/java/org/puredata -iquoteModWire/libpd/javatests/org/puredata "-iquoteModWire/libpd/pure-data/extra/bonk~" -iquoteModWire/libpd/pure-data/extra/choice "-iquoteModWire/libpd/pure-data/extra/expr~" "-iquoteModWire/libpd/pure-data/extra/fiddle~" "-iquoteModWire/libpd/pure-data/extra/loop~" "-iquoteModWire/libpd/pure-data/extra/lrshift~" "-iquoteModWire/libpd/pure-data/extra/pd~" -iquoteModWire/libpd/pure-data/extra/pique "-iquoteModWire/libpd/pure-data/extra/sigmund~" -iquoteModWire/libpd/pure-data/extra/stdout -iquoteModWire/libpd/samples/c_samples/c -iquoteModWire/libpd/samples/com/noisepages -iquoteModWire/libpd/java/org/puredata/core -iquoteModWire/libpd/java/org/puredata/processing -iquoteModWire/libpd/javatests/org/puredata/core -iquoteModWire/libpd/samples/com/noisepages/nettoyeur -iquoteModWire/libpd/java/org/puredata/core/utils -iquoteModWire/libpd/javatests/org/puredata/core/utils -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd/sample -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/include -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources/armv7 -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos -include /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/ViewController.d --serialize-diagnostics /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/ViewController.dia -c /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ViewController.m -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/ViewController.o36"34E1296F-931C-4EAF-91A1-9469E069F875-
+
+CCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/WhiteKeyView.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/WhiteKeyView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s357096742.125414
+e357096742.471446
+r1
+xCompileC
+xbuild/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/WhiteKeyView.o
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/WhiteKeyView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/WhiteKeyView.m734a2026dd48b541^e2cb7826dd48b541^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/WhiteKeyView.m0000000000000000^4656"CompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/WhiteKeyView.o ModWire/WhiteKeyView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-generated-files.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-own-target-headers.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-all-target-headers.hmap -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-project-headers.hmap -iquoteModWire/libpd -iquoteModWire/libpd/java -iquoteModWire/libpd/javatests -iquoteModWire/libpd/libpd_wrapper -iquoteModWire/libpd/libs -iquoteModWire/libpd/objc -iquoteModWire/libpd/pure-data -iquoteModWire/libpd/python -iquoteModWire/libpd/samples -iquoteModWire/libpd/java/org -iquoteModWire/libpd/javatests/org -iquoteModWire/libpd/pure-data/extra -iquoteModWire/libpd/pure-data/src -iquoteModWire/libpd/samples/c_samples -iquoteModWire/libpd/samples/com -iquoteModWire/libpd/java/org/puredata -iquoteModWire/libpd/javatests/org/puredata "-iquoteModWire/libpd/pure-data/extra/bonk~" -iquoteModWire/libpd/pure-data/extra/choice "-iquoteModWire/libpd/pure-data/extra/expr~" "-iquoteModWire/libpd/pure-data/extra/fiddle~" "-iquoteModWire/libpd/pure-data/extra/loop~" "-iquoteModWire/libpd/pure-data/extra/lrshift~" "-iquoteModWire/libpd/pure-data/extra/pd~" -iquoteModWire/libpd/pure-data/extra/pique "-iquoteModWire/libpd/pure-data/extra/sigmund~" -iquoteModWire/libpd/pure-data/extra/stdout -iquoteModWire/libpd/samples/c_samples/c -iquoteModWire/libpd/samples/com/noisepages -iquoteModWire/libpd/java/org/puredata/core -iquoteModWire/libpd/java/org/puredata/processing -iquoteModWire/libpd/javatests/org/puredata/core -iquoteModWire/libpd/samples/com/noisepages/nettoyeur -iquoteModWire/libpd/java/org/puredata/core/utils -iquoteModWire/libpd/javatests/org/puredata/core/utils -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd/sample -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/include -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources/armv7 -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos -include /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/WhiteKeyView.d --serialize-diagnostics /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/WhiteKeyView.dia -c /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/WhiteKeyView.m -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/WhiteKeyView.o36"4DC7E919-FB83-49B1-B0A5-BAF1E7FC5845-
+
+CCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/icon.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/icon.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s357096741.561298
+e357096741.688217
+r1
+xCompileC
+xbuild/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/icon.o
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/icon.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/icon.m55dd8f25dd48b541^ec4db025dd48b541^---0#0#0#-19%DVTDocumentLocation2@77"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/icon.m0000000000000000^4608"CompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/icon.o ModWire/icon.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-generated-files.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-own-target-headers.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-all-target-headers.hmap -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-project-headers.hmap -iquoteModWire/libpd -iquoteModWire/libpd/java -iquoteModWire/libpd/javatests -iquoteModWire/libpd/libpd_wrapper -iquoteModWire/libpd/libs -iquoteModWire/libpd/objc -iquoteModWire/libpd/pure-data -iquoteModWire/libpd/python -iquoteModWire/libpd/samples -iquoteModWire/libpd/java/org -iquoteModWire/libpd/javatests/org -iquoteModWire/libpd/pure-data/extra -iquoteModWire/libpd/pure-data/src -iquoteModWire/libpd/samples/c_samples -iquoteModWire/libpd/samples/com -iquoteModWire/libpd/java/org/puredata -iquoteModWire/libpd/javatests/org/puredata "-iquoteModWire/libpd/pure-data/extra/bonk~" -iquoteModWire/libpd/pure-data/extra/choice "-iquoteModWire/libpd/pure-data/extra/expr~" "-iquoteModWire/libpd/pure-data/extra/fiddle~" "-iquoteModWire/libpd/pure-data/extra/loop~" "-iquoteModWire/libpd/pure-data/extra/lrshift~" "-iquoteModWire/libpd/pure-data/extra/pd~" -iquoteModWire/libpd/pure-data/extra/pique "-iquoteModWire/libpd/pure-data/extra/sigmund~" -iquoteModWire/libpd/pure-data/extra/stdout -iquoteModWire/libpd/samples/c_samples/c -iquoteModWire/libpd/samples/com/noisepages -iquoteModWire/libpd/java/org/puredata/core -iquoteModWire/libpd/java/org/puredata/processing -iquoteModWire/libpd/javatests/org/puredata/core -iquoteModWire/libpd/samples/com/noisepages/nettoyeur -iquoteModWire/libpd/java/org/puredata/core/utils -iquoteModWire/libpd/javatests/org/puredata/core/utils -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd/sample -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/include -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources/armv7 -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos -include /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/icon.d --serialize-diagnostics /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/icon.dia -c /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/icon.m -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/icon.o36"0AF54255-537C-4DF8-A9F4-CCDA5486664C-
+
+CCompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/main.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s357096740.786191
+e357096741.053861
+r1
+xCompileC
+xbuild/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/main.o
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/main.mb873c924dd48b541^ffcf0d25dd48b541^---0#0#0#-19%DVTDocumentLocation2@77"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/main.m0000000000000000^4608"CompileC build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/main.o ModWire/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-generated-files.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-own-target-headers.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-all-target-headers.hmap -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-project-headers.hmap -iquoteModWire/libpd -iquoteModWire/libpd/java -iquoteModWire/libpd/javatests -iquoteModWire/libpd/libpd_wrapper -iquoteModWire/libpd/libs -iquoteModWire/libpd/objc -iquoteModWire/libpd/pure-data -iquoteModWire/libpd/python -iquoteModWire/libpd/samples -iquoteModWire/libpd/java/org -iquoteModWire/libpd/javatests/org -iquoteModWire/libpd/pure-data/extra -iquoteModWire/libpd/pure-data/src -iquoteModWire/libpd/samples/c_samples -iquoteModWire/libpd/samples/com -iquoteModWire/libpd/java/org/puredata -iquoteModWire/libpd/javatests/org/puredata "-iquoteModWire/libpd/pure-data/extra/bonk~" -iquoteModWire/libpd/pure-data/extra/choice "-iquoteModWire/libpd/pure-data/extra/expr~" "-iquoteModWire/libpd/pure-data/extra/fiddle~" "-iquoteModWire/libpd/pure-data/extra/loop~" "-iquoteModWire/libpd/pure-data/extra/lrshift~" "-iquoteModWire/libpd/pure-data/extra/pd~" -iquoteModWire/libpd/pure-data/extra/pique "-iquoteModWire/libpd/pure-data/extra/sigmund~" -iquoteModWire/libpd/pure-data/extra/stdout -iquoteModWire/libpd/samples/c_samples/c -iquoteModWire/libpd/samples/com/noisepages -iquoteModWire/libpd/java/org/puredata/core -iquoteModWire/libpd/java/org/puredata/processing -iquoteModWire/libpd/javatests/org/puredata/core -iquoteModWire/libpd/samples/com/noisepages/nettoyeur -iquoteModWire/libpd/java/org/puredata/core/utils -iquoteModWire/libpd/javatests/org/puredata/core/utils -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd/sample -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/include -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources/armv7 -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos -include /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/main.d --serialize-diagnostics /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/main.dia -c /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/main.m -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/main.o36"3E6A3690-82DF-4B30-B287-A59785672259-
+
+CCompileXIB /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/en.lproj/ViewController.xib
+s357096743.413302
+e357096744.853135
+r1
+xCompileXIB
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/en.lproj/ViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compiling /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/en.lproj/ViewController.xib2ae16927dd48b541^4167da28dd48b541^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/en.lproj/ViewController.xib0000000000000000^865"CompileXIB ModWire/en.lproj/ViewController.xib    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/en.lproj/ViewController.nib /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/en.lproj/ViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk36"54122C16-98FB-45EC-99BC-0C7C0483EAAD-
+
+CCopyPNGFile "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/ModWire logo.png" "ModWire/ModWire logo.png"
+s357096743.962716
+e357096744.032784
+r1
+xCopyPNGFile
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/ModWire logo.png
+xModWire/ModWire logo.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"CopyPNGFile "build/Debug-iphoneos/ModWire.app/ModWire logo.png" "ModWire/ModWire logo.png"c592f627dd48b541^58730828dd48b541^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ModWire%20logo.png0000000000000000^701"CopyPNGFile "build/Debug-iphoneos/ModWire.app/ModWire logo.png" "ModWire/ModWire logo.png"    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ModWire logo.png" "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/ModWire logo.png"36"EE975DA4-488C-4241-9E8B-7AAE19E993A9-
+
+CCopyPNGFile "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/amplitude envelope.png" "ModWire/amplitude envelope.png"
+s357096745.374784
+e357096745.413185
+r1
+xCopyPNGFile
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/amplitude envelope.png
+xModWire/amplitude envelope.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"CopyPNGFile "build/Debug-iphoneos/ModWire.app/amplitude envelope.png" "ModWire/amplitude envelope.png"46076029dd48b541^61c56929dd48b541^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/amplitude%20envelope.png0000000000000000^725"CopyPNGFile "build/Debug-iphoneos/ModWire.app/amplitude envelope.png" "ModWire/amplitude envelope.png"    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/amplitude envelope.png" "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/amplitude envelope.png"36"773677C6-FCFD-4E2F-9F95-6E2D965A84DC-
+
+CCopyPNGFile "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/band pass filter.png" "ModWire/band pass filter.png"
+s357096745.206352
+e357096745.247975
+r1
+xCopyPNGFile
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/band pass filter.png
+xModWire/band pass filter.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"CopyPNGFile "build/Debug-iphoneos/ModWire.app/band pass filter.png" "ModWire/band pass filter.png"29ea3429dd48b541^2d7a3f29dd48b541^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/band%20pass%20filter.png0000000000000000^717"CopyPNGFile "build/Debug-iphoneos/ModWire.app/band pass filter.png" "ModWire/band pass filter.png"    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/band pass filter.png" "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/band pass filter.png"36"A1EA160E-EC44-4F9C-800D-9990C63AD033-
+
+CCopyPNGFile "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/high pass filter.png" "ModWire/high pass filter.png"
+s357096745.249249
+e357096745.287653
+r1
+xCopyPNGFile
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/high pass filter.png
+xModWire/high pass filter.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"CopyPNGFile "build/Debug-iphoneos/ModWire.app/high pass filter.png" "ModWire/high pass filter.png"dee43f29dd48b541^31b14929dd48b541^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/high%20pass%20filter.png0000000000000000^717"CopyPNGFile "build/Debug-iphoneos/ModWire.app/high pass filter.png" "ModWire/high pass filter.png"    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/high pass filter.png" "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/high pass filter.png"36"D451F544-366A-45F6-9735-208920434DB0-
+
+CCopyPNGFile "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/low pass filter.png" "ModWire/low pass filter.png"
+s357096745.288938
+e357096745.329427
+r1
+xCopyPNGFile
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/low pass filter.png
+xModWire/low pass filter.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"CopyPNGFile "build/Debug-iphoneos/ModWire.app/low pass filter.png" "ModWire/low pass filter.png"520e4a29dd48b541^bd545429dd48b541^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/low%20pass%20filter.png0000000000000000^713"CopyPNGFile "build/Debug-iphoneos/ModWire.app/low pass filter.png" "ModWire/low pass filter.png"    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/low pass filter.png" "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/low pass filter.png"36"F299C743-4B0F-459C-A490-D6DC25D91F62-
+
+CCopyPNGFile "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/saw oscillator.png" "ModWire/saw oscillator.png"
+s357096745.322444
+e357096745.367689
+r1
+xCopyPNGFile
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/saw oscillator.png
+xModWire/saw oscillator.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"CopyPNGFile "build/Debug-iphoneos/ModWire.app/saw oscillator.png" "ModWire/saw oscillator.png"1aa25229dd48b541^14205e29dd48b541^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/saw%20oscillator.png0000000000000000^709"CopyPNGFile "build/Debug-iphoneos/ModWire.app/saw oscillator.png" "ModWire/saw oscillator.png"    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/saw oscillator.png" "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/saw oscillator.png"36"891AE47F-D663-4581-B514-9059F9B08F15-
+
+CCopyPNGFile "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/sine oscillator.png" "ModWire/sine oscillator.png"
+s357096745.330735
+e357096745.373544
+r1
+xCopyPNGFile
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/sine oscillator.png
+xModWire/sine oscillator.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"CopyPNGFile "build/Debug-iphoneos/ModWire.app/sine oscillator.png" "ModWire/sine oscillator.png"6ac05429dd48b541^65ab5f29dd48b541^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/sine%20oscillator.png0000000000000000^713"CopyPNGFile "build/Debug-iphoneos/ModWire.app/sine oscillator.png" "ModWire/sine oscillator.png"    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/sine oscillator.png" "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/sine oscillator.png"36"3DC9DA02-B048-443F-8F46-5DEE88DD7969-
+
+CCopyPNGFile "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/square oscillator.png" "ModWire/square oscillator.png"
+s357096745.369015
+e357096745.415336
+r1
+xCopyPNGFile
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/square oscillator.png
+xModWire/square oscillator.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"CopyPNGFile "build/Debug-iphoneos/ModWire.app/square oscillator.png" "ModWire/square oscillator.png"0d8e5e29dd48b541^54536a29dd48b541^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/square%20oscillator.png0000000000000000^721"CopyPNGFile "build/Debug-iphoneos/ModWire.app/square oscillator.png" "ModWire/square oscillator.png"    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/square oscillator.png" "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/square oscillator.png"36"273B8CBB-AEEE-45D6-A3C5-5BA6F70CFDB1-
+
+CCopyPNGFile /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/Default-Landscape~ipad.png ModWire/Default-Landscape~ipad.png
+s357096744.034226
+e357096745.205092
+r1
+xCopyPNGFile
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/Default-Landscape~ipad.png
+xModWire/Default-Landscape~ipad.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"CopyPNGFile build/Debug-iphoneos/ModWire.app/Default-Landscape~ipad.png ModWire/Default-Landscape~ipad.png34d80828dd48b541^378e3429dd48b541^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/Default-Landscape~ipad.png0000000000000000^741"CopyPNGFile "build/Debug-iphoneos/ModWire.app/Default-Landscape~ipad.png" "ModWire/Default-Landscape~ipad.png"    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/Default-Landscape~ipad.png" "/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/Default-Landscape~ipad.png"36"65892737-4CF2-452C-9416-32B65324BA13-
+
+CCopyPNGFile /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/audio-in.png ModWire/audio-in.png
+s357096745.416885
+e357096745.456331
+r1
+xCopyPNGFile
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/audio-in.png
+xModWire/audio-in.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"CopyPNGFile build/Debug-iphoneos/ModWire.app/audio-in.png ModWire/audio-in.png10cb6a29dd48b541^70d27429dd48b541^---0#0#0#-19%DVTDocumentLocation2@83"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/audio-in.png0000000000000000^677"CopyPNGFile build/Debug-iphoneos/ModWire.app/audio-in.png ModWire/audio-in.png    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/audio-in.png /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/audio-in.png36"FBE8FED7-FFCC-4527-89E2-81A859BCA642-
+
+CCopyPNGFile /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/editing_view_background.png ModWire/editing_view_background.png
+s357096744.854469
+e357096745.321178
+r1
+xCopyPNGFile
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/editing_view_background.png
+xModWire/editing_view_background.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"CopyPNGFile build/Debug-iphoneos/ModWire.app/editing_view_background.png ModWire/editing_view_background.png74d3da28dd48b541^9d465229dd48b541^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/editing_view_background.png0000000000000000^737"CopyPNGFile build/Debug-iphoneos/ModWire.app/editing_view_background.png ModWire/editing_view_background.png    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/editing_view_background.png /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/editing_view_background.png36"C0AE7924-F95D-4F38-8FF9-6D4C8E8A5077-
+
+CCopyPNGFile /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/keyboard.png ModWire/keyboard.png
+s357096743.516760
+e357096743.961362
+r1
+xCopyPNGFile
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/keyboard.png
+xModWire/keyboard.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"CopyPNGFile build/Debug-iphoneos/ModWire.app/keyboard.png ModWire/keyboard.png965d8427dd48b541^9625f627dd48b541^---0#0#0#-19%DVTDocumentLocation2@83"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/keyboard.png0000000000000000^677"CopyPNGFile build/Debug-iphoneos/ModWire.app/keyboard.png ModWire/keyboard.png    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/keyboard.png /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/keyboard.png36"A08CFEF4-CB52-49C8-9CDA-E12592C50400-
+
+CCopyPNGFile /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/options.png ModWire/options.png
+s357096743.417155
+e357096743.511733
+r1
+xCopyPNGFile
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/options.png
+xModWire/options.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"CopyPNGFile build/Debug-iphoneos/ModWire.app/options.png ModWire/options.png6edc6a27dd48b541^00018327dd48b541^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/options.png0000000000000000^673"CopyPNGFile build/Debug-iphoneos/ModWire.app/options.png ModWire/options.png    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/options.png /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/options.png36"69E32607-EFE3-47D0-958A-589752BFC6B3-
+
+CCopyPNGFile /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/output.png ModWire/output.png
+s357096745.414532
+e357096745.451727
+r1
+xCopyPNGFile
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/output.png
+xModWire/output.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"CopyPNGFile build/Debug-iphoneos/ModWire.app/output.png ModWire/output.pngc2326a29dd48b541^d7a47329dd48b541^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/output.png0000000000000000^669"CopyPNGFile build/Debug-iphoneos/ModWire.app/output.png ModWire/output.png    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/output.png /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/output.png36"C3599D63-D990-42C9-AD6F-D8C80EFF1EEC-
+
+CCopyStringsFile /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/en.lproj/InfoPlist.strings ModWire/en.lproj/InfoPlist.strings
+s357096743.412608
+e357096743.416004
+r1
+xCopyStringsFile
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/en.lproj/InfoPlist.strings
+xModWire/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Copy ModWire/en.lproj/InfoPlist.strings56b86927dd48b541^90876a27dd48b541^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/en.lproj/InfoPlist.strings0000000000000000^570"CopyStringsFile build/Debug-iphoneos/ModWire.app/en.lproj/InfoPlist.strings ModWire/en.lproj/InfoPlist.strings    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/en.lproj -- ModWire/en.lproj/InfoPlist.strings36"13A7D5C7-D7DA-472C-AB5D-BD9961CBDD81-
+
+CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist build/Debug-iphoneos/ModWire.app/ResourceRules.plist
+s357096739.617921
+e357096739.625739
+r1
+xCpResource
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist
+xbuild/Debug-iphoneos/ModWire.app/ResourceRules.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Copy build/Debug-iphoneos/ModWire.app/ResourceRules.plist28659e23dd48b541^ad35a023dd48b541^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/ResourceRules.plist000000000080d041^847"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist build/Debug-iphoneos/ModWire.app/ResourceRules.plist    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app36"64380F61-384B-4783-A4EC-7FA6EB54A198-
+
+CCpResource ModWire/synth_engine.pd build/Debug-iphoneos/ModWire.app/synth_engine.pd
+s357096743.513012
+e357096743.515583
+r1
+xCpResource
+xModWire/synth_engine.pd
+xbuild/Debug-iphoneos/ModWire.app/synth_engine.pd
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy build/Debug-iphoneos/ModWire.app/synth_engine.pd0d6e8327dd48b541^fb048427dd48b541^---0#0#0#-19%DVTDocumentLocation2@111"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/synth_engine.pd000000000080d041^694"CpResource ModWire/synth_engine.pd build/Debug-iphoneos/ModWire.app/synth_engine.pd    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/synth_engine.pd /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app36"317A257B-0EAE-4937-887A-370B4FB67B04-
+
+CGenerateDSYMFile /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app.dSYM /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/ModWire
+s357096743.252384
+e357096743.404816
+r1
+xGenerateDSYMFile
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app.dSYM
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/ModWire
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Generating /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app.dSYM7db04027dd48b541^27a26727dd48b541^---0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app.dSYM000000000080d041^578"GenerateDSYMFile build/Debug-iphoneos/ModWire.app.dSYM build/Debug-iphoneos/ModWire.app/ModWire    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/usr/bin/dsymutil /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/ModWire -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app.dSYM36"4C4B6854-0BC1-40C7-B506-F4484EC7CB68-
+
+CLd /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/ModWire normal armv7
+s357096742.954831
+e357096743.244635
+r1
+xLd
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/ModWire
+xnormal
+xarmv7
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Link /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/ModWire338bf426dd48b541^3ca23e27dd48b541^---0#0#0#--1415"Ld build/Debug-iphoneos/ModWire.app/ModWire normal armv7    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv IPHONEOS_DEPLOYMENT_TARGET 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -L/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos -L/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/libpd/build/Debug-iphoneos -L/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/libpd/build/Debug-iphonesimulator -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos -filelist /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/Objects-normal/armv7/ModWire.LinkFileList -dead_strip -fobjc-arc -miphoneos-version-min=5.1 -framework QuartzCore /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/libpd/build/Debug-iphoneos/libpd-ios.a -framework CoreMIDI -framework AVFoundation -framework AudioToolbox -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/ModWire36"70521578-7A43-48C9-B58C-DB75533B27EA-
+
+CProcessInfoPlistFile /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/Info.plist ModWire/ModWire-Info.plist
+s357096739.618115
+e357096739.625066
+r1
+xProcessInfoPlistFile
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/Info.plist
+xModWire/ModWire-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection34"Process ModWire/ModWire-Info.plista4509e23dd48b541^7c0aa023dd48b541^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ModWire-Info.plist0000000000000000^758"ProcessInfoPlistFile build/Debug-iphoneos/ModWire.app/Info.plist ModWire/ModWire-Info.plist    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility ModWire/ModWire-Info.plist -genpkginfo /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/ResourceRules.plist -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/Info.plist36"24678D71-528C-4139-B0EB-57B72AF9FE16-
+
+CProcessPCH /Users/mike/Library/Developer/Xcode/DerivedData/ModWire-dmvqxdektrzgaqazwweapfidkzkg/Index/PrecompiledHeaders/ModWire-Prefix-alsfrkiojgyeuzfvldqaeotacihc_ast/ModWire-Prefix.pch.pth ModWire/ModWire-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch.pth ModWire/ModWire-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s357096739.633981
+e357096740.601261
+r1
+xProcessPCH
+x/var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch.pth
+xModWire/ModWire-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Precompile ModWire/ModWire-Prefix.pch467da223dd48b541^3eec9924dd48b541^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ModWire-Prefix.pch0000000000000000^4666"ProcessPCH /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch.pth ModWire/ModWire-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-generated-files.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-own-target-headers.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-all-target-headers.hmap -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-project-headers.hmap -iquoteModWire/libpd -iquoteModWire/libpd/java -iquoteModWire/libpd/javatests -iquoteModWire/libpd/libpd_wrapper -iquoteModWire/libpd/libs -iquoteModWire/libpd/objc -iquoteModWire/libpd/pure-data -iquoteModWire/libpd/python -iquoteModWire/libpd/samples -iquoteModWire/libpd/java/org -iquoteModWire/libpd/javatests/org -iquoteModWire/libpd/pure-data/extra -iquoteModWire/libpd/pure-data/src -iquoteModWire/libpd/samples/c_samples -iquoteModWire/libpd/samples/com -iquoteModWire/libpd/java/org/puredata -iquoteModWire/libpd/javatests/org/puredata "-iquoteModWire/libpd/pure-data/extra/bonk~" -iquoteModWire/libpd/pure-data/extra/choice "-iquoteModWire/libpd/pure-data/extra/expr~" "-iquoteModWire/libpd/pure-data/extra/fiddle~" "-iquoteModWire/libpd/pure-data/extra/loop~" "-iquoteModWire/libpd/pure-data/extra/lrshift~" "-iquoteModWire/libpd/pure-data/extra/pd~" -iquoteModWire/libpd/pure-data/extra/pique "-iquoteModWire/libpd/pure-data/extra/sigmund~" -iquoteModWire/libpd/pure-data/extra/stdout -iquoteModWire/libpd/samples/c_samples/c -iquoteModWire/libpd/samples/com/noisepages -iquoteModWire/libpd/java/org/puredata/core -iquoteModWire/libpd/java/org/puredata/processing -iquoteModWire/libpd/javatests/org/puredata/core -iquoteModWire/libpd/samples/com/noisepages/nettoyeur -iquoteModWire/libpd/java/org/puredata/core/utils -iquoteModWire/libpd/javatests/org/puredata/core/utils -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd/sample -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/include -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources/armv7 -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos --serialize-diagnostics /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch.dia -c /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ModWire-Prefix.pch -o /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-dodefbecwimdhuckpqpnbpegppmi/ModWire-Prefix.pch.d36"C3FACA7A-BC03-4922-B61F-34629F3A2FEE-
+
+CProcessPCH++ /Users/mike/Library/Developer/Xcode/DerivedData/ModWire-dmvqxdektrzgaqazwweapfidkzkg/Index/PrecompiledHeaders/ModWire-Prefix-dutpntdtotbjoveqqwyiauazjzxg_ast/ModWire-Prefix.pch.pth ModWire/ModWire-Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-gziwkcoghrihaufxssqiwqswtbig/ModWire-Prefix.pch.pth ModWire/ModWire-Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s357096739.634599
+e357096741.285585
+r1
+xProcessPCH++
+x/var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-gziwkcoghrihaufxssqiwqswtbig/ModWire-Prefix.pch.pth
+xModWire/ModWire-Prefix.pch
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Precompile ModWire/ModWire-Prefix.pchcf9fa223dd48b541^95494925dd48b541^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ModWire-Prefix.pch0000000000000000^4798"ProcessPCH++ /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-gziwkcoghrihaufxssqiwqswtbig/ModWire-Prefix.pch.pth ModWire/ModWire-Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++-header -arch armv7 -fmessage-length=0 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-arc-abi -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-generated-files.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-own-target-headers.hmap -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-all-target-headers.hmap -iquote /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire-project-headers.hmap -iquoteModWire/libpd -iquoteModWire/libpd/java -iquoteModWire/libpd/javatests -iquoteModWire/libpd/libpd_wrapper -iquoteModWire/libpd/libs -iquoteModWire/libpd/objc -iquoteModWire/libpd/pure-data -iquoteModWire/libpd/python -iquoteModWire/libpd/samples -iquoteModWire/libpd/java/org -iquoteModWire/libpd/javatests/org -iquoteModWire/libpd/pure-data/extra -iquoteModWire/libpd/pure-data/src -iquoteModWire/libpd/samples/c_samples -iquoteModWire/libpd/samples/com -iquoteModWire/libpd/java/org/puredata -iquoteModWire/libpd/javatests/org/puredata "-iquoteModWire/libpd/pure-data/extra/bonk~" -iquoteModWire/libpd/pure-data/extra/choice "-iquoteModWire/libpd/pure-data/extra/expr~" "-iquoteModWire/libpd/pure-data/extra/fiddle~" "-iquoteModWire/libpd/pure-data/extra/loop~" "-iquoteModWire/libpd/pure-data/extra/lrshift~" "-iquoteModWire/libpd/pure-data/extra/pd~" -iquoteModWire/libpd/pure-data/extra/pique "-iquoteModWire/libpd/pure-data/extra/sigmund~" -iquoteModWire/libpd/pure-data/extra/stdout -iquoteModWire/libpd/samples/c_samples/c -iquoteModWire/libpd/samples/com/noisepages -iquoteModWire/libpd/java/org/puredata/core -iquoteModWire/libpd/java/org/puredata/processing -iquoteModWire/libpd/javatests/org/puredata/core -iquoteModWire/libpd/samples/com/noisepages/nettoyeur -iquoteModWire/libpd/java/org/puredata/core/utils -iquoteModWire/libpd/javatests/org/puredata/core/utils -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd -iquoteModWire/libpd/samples/com/noisepages/nettoyeur/libpd/sample -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/include -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources/armv7 -I/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/DerivedSources -F/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos --serialize-diagnostics /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-gziwkcoghrihaufxssqiwqswtbig/ModWire-Prefix.pch.dia -c /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/ModWire-Prefix.pch -o /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-gziwkcoghrihaufxssqiwqswtbig/ModWire-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/h2/d9k63q1n0lbbczskk4w27qb00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/ModWire-Prefix-gziwkcoghrihaufxssqiwqswtbig/ModWire-Prefix.pch.d36"B7BAA941-09DC-43E2-B7F4-5062ABD6691B-
+
+CProcessProductPackaging "/Users/mike/Library/MobileDevice/Provisioning Profiles/B5763145-FFC4-4202-A622-1A0802D7AC3F.mobileprovision" /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/embedded.mobileprovision
+s357096745.481747
+e357096745.491386
+r1
+xProcessProductPackaging
+x/Users/mike/Library/MobileDevice/Provisioning Profiles/B5763145-FFC4-4202-A622-1A0802D7AC3F.mobileprovision
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/embedded.mobileprovision
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection191"ProcessProductPackaging "/Users/mike/Library/MobileDevice/Provisioning Profiles/B5763145-FFC4-4202-A622-1A0802D7AC3F.mobileprovision" build/Debug-iphoneos/ModWire.app/embedded.mobileprovision4c6b7b29dd48b541^d82d7e29dd48b541^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/embedded.mobileprovision0000000000000000^688"ProcessProductPackaging "/Users/mike/Library/MobileDevice/Provisioning Profiles/B5763145-FFC4-4202-A622-1A0802D7AC3F.mobileprovision" build/Debug-iphoneos/ModWire.app/embedded.mobileprovision    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility "/Users/mike/Library/MobileDevice/Provisioning Profiles/B5763145-FFC4-4202-A622-1A0802D7AC3F.mobileprovision" -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app/embedded.mobileprovision36"A8630E9E-2886-45FD-8F8F-9FFB8F4FEA2C-
+
+CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire.xcent
+s357096745.519000
+e357096745.522647
+r1
+xProcessProductPackaging
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire.xcent
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection207"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire.xcent23f38429dd48b541^64cc8529dd48b541^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire.xcent000000000080d041^746"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire.xcent    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/mike/Documents/COMP-150/ModWire/ModWire/build/ModWire.build/Debug-iphoneos/ModWire.build/ModWire.xcent36"FF080793-ABC5-4D6C-9F09-AA877A147B89-
+
+CTouch /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app
+s357096745.504775
+e357096745.510988
+r1
+xTouch
+x/Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Touch /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.appa14a8129dd48b541^91d08229dd48b541^---0#0#0#--383"Touch build/Debug-iphoneos/ModWire.app    cd /Users/mike/Documents/COMP-150/ModWire/ModWire    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/mike/Documents/COMP-150/ModWire/ModWire/build/Debug-iphoneos/ModWire.app36"08728EF9-FA88-4D84-8D45-AF0B4D6CF3B4-
+

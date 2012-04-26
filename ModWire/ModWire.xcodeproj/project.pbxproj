@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2717D5EB1548D95C00A970E0 /* editing_view_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2717D5EA1548D95C00A970E0 /* editing_view_background.png */; };
+		2717D5F41548D98300A970E0 /* band pass filter.png in Resources */ = {isa = PBXBuildFile; fileRef = 2717D5ED1548D98300A970E0 /* band pass filter.png */; };
+		2717D5F51548D98300A970E0 /* high pass filter.png in Resources */ = {isa = PBXBuildFile; fileRef = 2717D5EE1548D98300A970E0 /* high pass filter.png */; };
+		2717D5F61548D98300A970E0 /* low pass filter.png in Resources */ = {isa = PBXBuildFile; fileRef = 2717D5EF1548D98300A970E0 /* low pass filter.png */; };
+		2717D5F71548D98300A970E0 /* saw oscillator.png in Resources */ = {isa = PBXBuildFile; fileRef = 2717D5F01548D98300A970E0 /* saw oscillator.png */; };
+		2717D5F81548D98300A970E0 /* sine oscillator.png in Resources */ = {isa = PBXBuildFile; fileRef = 2717D5F11548D98300A970E0 /* sine oscillator.png */; };
+		2717D5F91548D98300A970E0 /* square oscillator.png in Resources */ = {isa = PBXBuildFile; fileRef = 2717D5F21548D98300A970E0 /* square oscillator.png */; };
+		2717D5FD1548DC1100A970E0 /* amplitude envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = 2717D5FA1548DC1100A970E0 /* amplitude envelope.png */; };
+		2717D5FE1548DC1100A970E0 /* output.png in Resources */ = {isa = PBXBuildFile; fileRef = 2717D5FB1548DC1100A970E0 /* output.png */; };
+		2717D5FF1548DC1100A970E0 /* audio-in.png in Resources */ = {isa = PBXBuildFile; fileRef = 2717D5FC1548DC1100A970E0 /* audio-in.png */; };
 		274BEE821529226300EC0E1F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274BEE811529226300EC0E1F /* AudioToolbox.framework */; };
 		274BEE841529226E00EC0E1F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274BEE831529226E00EC0E1F /* AVFoundation.framework */; };
 		274BEE8E1529237600EC0E1F /* PGMidi.mm in Sources */ = {isa = PBXBuildFile; fileRef = 274BEE891529237600EC0E1F /* PGMidi.mm */; };
@@ -31,27 +41,16 @@
 		CE5A7D751528E130009CD2E1 /* keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5A7D741528E130009CD2E1 /* keyboard.png */; };
 		CE5A7D781528E137009CD2E1 /* ModWire logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5A7D771528E137009CD2E1 /* ModWire logo.png */; };
 		CE5A7D7A1528E13D009CD2E1 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5A7D791528E13D009CD2E1 /* Default-Landscape~ipad.png */; };
-		CE6309511528DC2C0056B744 /* audio-in.png in Resources */ = {isa = PBXBuildFile; fileRef = CE63094B1528DC2C0056B744 /* audio-in.png */; };
 		CE6309521528DC2C0056B744 /* BlackKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE63094D1528DC2C0056B744 /* BlackKeyView.m */; };
-		CE6309531528DC2C0056B744 /* delay.png in Resources */ = {isa = PBXBuildFile; fileRef = CE63094E1528DC2C0056B744 /* delay.png */; };
 		CE6309541528DC2C0056B744 /* EditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6309501528DC2C0056B744 /* EditorView.m */; };
-		CE6309611528DC460056B744 /* filter.png in Resources */ = {isa = PBXBuildFile; fileRef = CE6309561528DC460056B744 /* filter.png */; };
 		CE6309621528DC460056B744 /* icon.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6309581528DC460056B744 /* icon.m */; };
 		CE6309631528DC460056B744 /* IconControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE63095A1528DC460056B744 /* IconControlView.m */; };
 		CE6309641528DC460056B744 /* KeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE63095C1528DC460056B744 /* KeyboardView.m */; };
 		CE6309651528DC460056B744 /* KeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE63095E1528DC460056B744 /* KeyView.m */; };
-		CE6309661528DC460056B744 /* lfo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE63095F1528DC460056B744 /* lfo.png */; };
-		CE6309671528DC460056B744 /* lowPassFilter.png in Resources */ = {isa = PBXBuildFile; fileRef = CE6309601528DC460056B744 /* lowPassFilter.png */; };
-		CEA65A191528DD5800B1985E /* modulator.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA65A181528DD5800B1985E /* modulator.png */; };
 		CEA65A221528DD6500B1985E /* OctaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA65A1C1528DD6500B1985E /* OctaveView.m */; };
 		CEA65A231528DD6500B1985E /* options.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA65A1D1528DD6500B1985E /* options.png */; };
-		CEA65A241528DD6500B1985E /* oscillator.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA65A1E1528DD6500B1985E /* oscillator.png */; };
-		CEA65A251528DD6500B1985E /* output.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA65A1F1528DD6500B1985E /* output.png */; };
-		CEA65A261528DD6500B1985E /* sampler.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA65A201528DD6500B1985E /* sampler.png */; };
-		CEA65A271528DD6500B1985E /* Synth_background_flat.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA65A211528DD6500B1985E /* Synth_background_flat.png */; };
 		CEA65A2B1528DD7A00B1985E /* synth_engine.pd in Resources */ = {isa = PBXBuildFile; fileRef = CEA65A281528DD7A00B1985E /* synth_engine.pd */; };
 		CEA65A2C1528DD7A00B1985E /* TouchForwardingUIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA65A2A1528DD7A00B1985E /* TouchForwardingUIScrollView.m */; };
-		CEA65A301528DD8300B1985E /* waveshaper.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA65A2D1528DD8300B1985E /* waveshaper.png */; };
 		CEA65A311528DD8300B1985E /* WhiteKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA65A2F1528DD8300B1985E /* WhiteKeyView.m */; };
 		CEE7A9C615475324001CDE14 /* PathView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE7A9C515475324001CDE14 /* PathView.m */; };
 		CEE96F3D152A79DF0060C3AA /* DraggableIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE96F3C152A79DF0060C3AA /* DraggableIcon.m */; };
@@ -83,6 +82,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2717D5EA1548D95C00A970E0 /* editing_view_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editing_view_background.png; sourceTree = "<group>"; };
+		2717D5ED1548D98300A970E0 /* band pass filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "band pass filter.png"; sourceTree = "<group>"; };
+		2717D5EE1548D98300A970E0 /* high pass filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "high pass filter.png"; sourceTree = "<group>"; };
+		2717D5EF1548D98300A970E0 /* low pass filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "low pass filter.png"; sourceTree = "<group>"; };
+		2717D5F01548D98300A970E0 /* saw oscillator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "saw oscillator.png"; sourceTree = "<group>"; };
+		2717D5F11548D98300A970E0 /* sine oscillator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sine oscillator.png"; sourceTree = "<group>"; };
+		2717D5F21548D98300A970E0 /* square oscillator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square oscillator.png"; sourceTree = "<group>"; };
+		2717D5FA1548DC1100A970E0 /* amplitude envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "amplitude envelope.png"; sourceTree = "<group>"; };
+		2717D5FB1548DC1100A970E0 /* output.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = output.png; sourceTree = "<group>"; };
+		2717D5FC1548DC1100A970E0 /* audio-in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "audio-in.png"; sourceTree = "<group>"; };
 		274BE938152921AB00EC0E1F /* Android.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
 		274BE93B152921AB00EC0E1F /* libpd-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpd-ios.a"; sourceTree = "<group>"; };
 		274BE93F152921AB00EC0E1F /* PdAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdAudio.h; sourceTree = "<group>"; };
@@ -779,13 +788,10 @@
 		CE5A7D741528E130009CD2E1 /* keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard.png; sourceTree = "<group>"; };
 		CE5A7D771528E137009CD2E1 /* ModWire logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ModWire logo.png"; sourceTree = "<group>"; };
 		CE5A7D791528E13D009CD2E1 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
-		CE63094B1528DC2C0056B744 /* audio-in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "audio-in.png"; sourceTree = "<group>"; };
 		CE63094C1528DC2C0056B744 /* BlackKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackKeyView.h; sourceTree = "<group>"; };
 		CE63094D1528DC2C0056B744 /* BlackKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlackKeyView.m; sourceTree = "<group>"; };
-		CE63094E1528DC2C0056B744 /* delay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delay.png; sourceTree = "<group>"; };
 		CE63094F1528DC2C0056B744 /* EditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorView.h; sourceTree = "<group>"; };
 		CE6309501528DC2C0056B744 /* EditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorView.m; sourceTree = "<group>"; };
-		CE6309561528DC460056B744 /* filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter.png; sourceTree = "<group>"; };
 		CE6309571528DC460056B744 /* icon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = icon.h; sourceTree = "<group>"; };
 		CE6309581528DC460056B744 /* icon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = icon.m; sourceTree = "<group>"; };
 		CE6309591528DC460056B744 /* IconControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconControlView.h; sourceTree = "<group>"; };
@@ -794,20 +800,12 @@
 		CE63095C1528DC460056B744 /* KeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardView.m; sourceTree = "<group>"; };
 		CE63095D1528DC460056B744 /* KeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyView.h; sourceTree = "<group>"; };
 		CE63095E1528DC460056B744 /* KeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyView.m; sourceTree = "<group>"; };
-		CE63095F1528DC460056B744 /* lfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lfo.png; sourceTree = "<group>"; };
-		CE6309601528DC460056B744 /* lowPassFilter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lowPassFilter.png; sourceTree = "<group>"; };
-		CEA65A181528DD5800B1985E /* modulator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = modulator.png; sourceTree = "<group>"; };
 		CEA65A1B1528DD6500B1985E /* OctaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OctaveView.h; sourceTree = "<group>"; };
 		CEA65A1C1528DD6500B1985E /* OctaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OctaveView.m; sourceTree = "<group>"; };
 		CEA65A1D1528DD6500B1985E /* options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = options.png; sourceTree = "<group>"; };
-		CEA65A1E1528DD6500B1985E /* oscillator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oscillator.png; sourceTree = "<group>"; };
-		CEA65A1F1528DD6500B1985E /* output.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = output.png; sourceTree = "<group>"; };
-		CEA65A201528DD6500B1985E /* sampler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampler.png; sourceTree = "<group>"; };
-		CEA65A211528DD6500B1985E /* Synth_background_flat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Synth_background_flat.png; sourceTree = "<group>"; };
 		CEA65A281528DD7A00B1985E /* synth_engine.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = synth_engine.pd; sourceTree = "<group>"; };
 		CEA65A291528DD7A00B1985E /* TouchForwardingUIScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchForwardingUIScrollView.h; sourceTree = "<group>"; };
 		CEA65A2A1528DD7A00B1985E /* TouchForwardingUIScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchForwardingUIScrollView.m; sourceTree = "<group>"; };
-		CEA65A2D1528DD8300B1985E /* waveshaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waveshaper.png; sourceTree = "<group>"; };
 		CEA65A2E1528DD8300B1985E /* WhiteKeyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteKeyView.h; sourceTree = "<group>"; };
 		CEA65A2F1528DD8300B1985E /* WhiteKeyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteKeyView.m; sourceTree = "<group>"; };
 		CEE7A9C415475324001CDE14 /* PathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathView.h; sourceTree = "<group>"; };
@@ -846,6 +844,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2717D5E91548D8AC00A970E0 /* graphics */ = {
+			isa = PBXGroup;
+			children = (
+				2717D5FA1548DC1100A970E0 /* amplitude envelope.png */,
+				2717D5FB1548DC1100A970E0 /* output.png */,
+				2717D5FC1548DC1100A970E0 /* audio-in.png */,
+				2717D5ED1548D98300A970E0 /* band pass filter.png */,
+				2717D5EE1548D98300A970E0 /* high pass filter.png */,
+				2717D5EF1548D98300A970E0 /* low pass filter.png */,
+				CE5A7D741528E130009CD2E1 /* keyboard.png */,
+				2717D5F01548D98300A970E0 /* saw oscillator.png */,
+				CEA65A1D1528DD6500B1985E /* options.png */,
+				CE5A7D771528E137009CD2E1 /* ModWire logo.png */,
+				CE5A7D791528E13D009CD2E1 /* Default-Landscape~ipad.png */,
+				2717D5F11548D98300A970E0 /* sine oscillator.png */,
+				2717D5F21548D98300A970E0 /* square oscillator.png */,
+				2717D5EA1548D95C00A970E0 /* editing_view_background.png */,
+			);
+			name = graphics;
+			sourceTree = "<group>";
+		};
 		274BE937152921AB00EC0E1F /* libpd */ = {
 			isa = PBXGroup;
 			children = (
@@ -1950,12 +1969,9 @@
 		CE46F03A1528DB8300B15801 /* ModWire */ = {
 			isa = PBXGroup;
 			children = (
+				2717D5E91548D8AC00A970E0 /* graphics */,
 				274BEE851529237600EC0E1F /* PGMidi */,
 				274BE937152921AB00EC0E1F /* libpd */,
-				CE5A7D791528E13D009CD2E1 /* Default-Landscape~ipad.png */,
-				CE5A7D771528E137009CD2E1 /* ModWire logo.png */,
-				CE5A7D741528E130009CD2E1 /* keyboard.png */,
-				CEA65A2D1528DD8300B1985E /* waveshaper.png */,
 				CEA65A2E1528DD8300B1985E /* WhiteKeyView.h */,
 				CEA65A2F1528DD8300B1985E /* WhiteKeyView.m */,
 				CEA65A281528DD7A00B1985E /* synth_engine.pd */,
@@ -1963,13 +1979,6 @@
 				CEA65A2A1528DD7A00B1985E /* TouchForwardingUIScrollView.m */,
 				CEA65A1B1528DD6500B1985E /* OctaveView.h */,
 				CEA65A1C1528DD6500B1985E /* OctaveView.m */,
-				CEA65A1D1528DD6500B1985E /* options.png */,
-				CEA65A1E1528DD6500B1985E /* oscillator.png */,
-				CEA65A1F1528DD6500B1985E /* output.png */,
-				CEA65A201528DD6500B1985E /* sampler.png */,
-				CEA65A211528DD6500B1985E /* Synth_background_flat.png */,
-				CEA65A181528DD5800B1985E /* modulator.png */,
-				CE6309561528DC460056B744 /* filter.png */,
 				CE6309571528DC460056B744 /* icon.h */,
 				CE6309581528DC460056B744 /* icon.m */,
 				CE6309591528DC460056B744 /* IconControlView.h */,
@@ -1978,12 +1987,8 @@
 				CE63095C1528DC460056B744 /* KeyboardView.m */,
 				CE63095D1528DC460056B744 /* KeyView.h */,
 				CE63095E1528DC460056B744 /* KeyView.m */,
-				CE63095F1528DC460056B744 /* lfo.png */,
-				CE6309601528DC460056B744 /* lowPassFilter.png */,
-				CE63094B1528DC2C0056B744 /* audio-in.png */,
 				CE63094C1528DC2C0056B744 /* BlackKeyView.h */,
 				CE63094D1528DC2C0056B744 /* BlackKeyView.m */,
-				CE63094E1528DC2C0056B744 /* delay.png */,
 				CE63094F1528DC2C0056B744 /* EditorView.h */,
 				CE6309501528DC2C0056B744 /* EditorView.m */,
 				CE46F0431528DB8300B15801 /* AppDelegate.h */,
@@ -2121,22 +2126,21 @@
 			files = (
 				CE46F03F1528DB8300B15801 /* InfoPlist.strings in Resources */,
 				CE46F04B1528DB8300B15801 /* ViewController.xib in Resources */,
-				CE6309511528DC2C0056B744 /* audio-in.png in Resources */,
-				CE6309531528DC2C0056B744 /* delay.png in Resources */,
-				CE6309611528DC460056B744 /* filter.png in Resources */,
-				CE6309661528DC460056B744 /* lfo.png in Resources */,
-				CE6309671528DC460056B744 /* lowPassFilter.png in Resources */,
-				CEA65A191528DD5800B1985E /* modulator.png in Resources */,
 				CEA65A231528DD6500B1985E /* options.png in Resources */,
-				CEA65A241528DD6500B1985E /* oscillator.png in Resources */,
-				CEA65A251528DD6500B1985E /* output.png in Resources */,
-				CEA65A261528DD6500B1985E /* sampler.png in Resources */,
-				CEA65A271528DD6500B1985E /* Synth_background_flat.png in Resources */,
 				CEA65A2B1528DD7A00B1985E /* synth_engine.pd in Resources */,
-				CEA65A301528DD8300B1985E /* waveshaper.png in Resources */,
 				CE5A7D751528E130009CD2E1 /* keyboard.png in Resources */,
 				CE5A7D781528E137009CD2E1 /* ModWire logo.png in Resources */,
 				CE5A7D7A1528E13D009CD2E1 /* Default-Landscape~ipad.png in Resources */,
+				2717D5EB1548D95C00A970E0 /* editing_view_background.png in Resources */,
+				2717D5F41548D98300A970E0 /* band pass filter.png in Resources */,
+				2717D5F51548D98300A970E0 /* high pass filter.png in Resources */,
+				2717D5F61548D98300A970E0 /* low pass filter.png in Resources */,
+				2717D5F71548D98300A970E0 /* saw oscillator.png in Resources */,
+				2717D5F81548D98300A970E0 /* sine oscillator.png in Resources */,
+				2717D5F91548D98300A970E0 /* square oscillator.png in Resources */,
+				2717D5FD1548DC1100A970E0 /* amplitude envelope.png in Resources */,
+				2717D5FE1548DC1100A970E0 /* output.png in Resources */,
+				2717D5FF1548DC1100A970E0 /* audio-in.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

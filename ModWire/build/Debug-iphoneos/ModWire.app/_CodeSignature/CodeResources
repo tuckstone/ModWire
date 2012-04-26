@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>files</key>
+	<dict>
+		<key>Default-Landscape~ipad.png</key>
+		<data>
+		gKGxvtut4KVBTK399g/b84rJ7Mg=
+		</data>
+		<key>ModWire logo.png</key>
+		<data>
+		EGIwXv1qw/1NA3IhmQwBF62cUIQ=
+		</data>
+		<key>PkgInfo</key>
+		<data>
+		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>amplitude envelope.png</key>
+		<data>
+		ai+4NCUxIRNsasF/grfUbsNVNy8=
+		</data>
+		<key>audio-in.png</key>
+		<data>
+		FVqlTNtRAJDpOORXL9NAMr7ptSs=
+		</data>
+		<key>band pass filter.png</key>
+		<data>
+		QEQSlj7FFBhl23gIbeRF8A4idJ4=
+		</data>
+		<key>editing_view_background.png</key>
+		<data>
+		ebAyhCvcgcTCOUuliIUf0dE801Q=
+		</data>
+		<key>embedded.mobileprovision</key>
+		<data>
+		BcLqeXn3kNBd8YwqXREUAaGiEMI=
+		</data>
+		<key>en.lproj/InfoPlist.strings</key>
+		<data>
+		zmV6UqBSo6r1NOz798vd5O4zTBA=
+		</data>
+		<key>en.lproj/ViewController.nib</key>
+		<data>
+		FYjRtJcJHWBPKDh+SboK5Fr9NJQ=
+		</data>
+		<key>high pass filter.png</key>
+		<data>
+		Oz2pu+3mcpn4WRGhBzd/cbDCMbk=
+		</data>
+		<key>keyboard.png</key>
+		<data>
+		559rSzABpkDuwjo+lxO64sMHfb4=
+		</data>
+		<key>low pass filter.png</key>
+		<data>
+		mv/M868ZMbTXmxyvNHlWjMso8bo=
+		</data>
+		<key>options.png</key>
+		<data>
+		1iQoYDDREPsWHuFjuPlQlf5qlng=
+		</data>
+		<key>output.png</key>
+		<data>
+		lte9S7t1TNIfcSrYWZkJaaeNVcQ=
+		</data>
+		<key>saw oscillator.png</key>
+		<data>
+		upVIWSJGOYuAHWnVHcrcX9tSDhk=
+		</data>
+		<key>sine oscillator.png</key>
+		<data>
+		3IpWSn2Y52xhlLEXzYr7UMUAjoU=
+		</data>
+		<key>square oscillator.png</key>
+		<data>
+		KJRgqDxpmELRLb63/S2XdknrpDo=
+		</data>
+		<key>synth_engine.pd</key>
+		<data>
+		WvHehMXgY33sbWxTcGBNAK83JL0=
+		</data>
+	</dict>
+	<key>rules</key>
+	<dict>
+		<key>.*</key>
+		<true/>
+		<key>Info.plist</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>ResourceRules.plist</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>100</real>
+		</dict>
+	</dict>
+</dict>
+</plist>
