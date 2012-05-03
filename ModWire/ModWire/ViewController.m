@@ -480,7 +480,7 @@ int lastKeyPressed = 0;
 -(void)buildSound
 {
     NSLog(@"build button pressed");
-
+    int totalcount = 0;
     for (DraggableIcon *curricon in self.currIcons) {
         if (curricon.myName == @"audio-in.png")
         {
@@ -490,6 +490,7 @@ int lastKeyPressed = 0;
         {
             soundEnd = curricon;
         }
+        totalcount ++;
     }    
     
     final_patch_string = @"";
@@ -514,6 +515,9 @@ int lastKeyPressed = 0;
                                                 otherButtonTitles:nil,
                                  nil];
             [badView show];
+            didFindError = TRUE;
+        }
+        if (while_count > totalcount) {
             didFindError = TRUE;
         }
         if (!didFindError) {
@@ -598,7 +602,7 @@ int lastKeyPressed = 0;
     
     BOOL sucess = [patchstring writeToFile:myPathDocs atomically:YES encoding:NSUTF8StringEncoding error:NULL];
     if (sucess) {
-        NSLog(@"write sucess");
+        NSLog(@"write success");
     }
     else {
         NSLog(@"write failure");
