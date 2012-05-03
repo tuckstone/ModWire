@@ -10,7 +10,7 @@
 
 @implementation DraggableIcon
 @synthesize myName, startPoint, x, y, ismovable, background, connectedTo, connectedFrom;
-@synthesize ishighlighted, inbounds, otherIcons, controls, isTouched, clearParentView, selectedIcon;
+@synthesize ishighlighted, inbounds, otherIcons, controls, isTouched, clearParentView, selectedIcon, pathNum;
 
 -(void)setImage:(NSString *)imagename{
     myName = imagename;
@@ -67,7 +67,10 @@
         movFrame.origin = movePoint;
         self.x = movePoint.x;
         self.y = movePoint.y;
-        [self setFrame:movFrame];  
+        [self setFrame:movFrame];
+        if (self.connectedFrom != NULL) {
+            [connectedFrom updateLine];
+        }
     }
 }
 
@@ -77,6 +80,9 @@
         [self removeFromSuperview];
         [self.otherIcons removeObject:self];
         self.inbounds = NO;
+        if (self.connectedFrom != NULL) {
+            self.connectedFrom.connectedTo = NULL;
+        }
     }
     self.isTouched = FALSE;
 }
@@ -91,6 +97,10 @@
         self.connectedFrom = NULL;
         self.isTouched = FALSE;
         controls = [[NSMutableArray alloc]init];
+        [connectedFrom deleteLine];
+        if (connectedTo != NULL) {
+            [self deleteLine];
+        }
     }
     return self;
 }
@@ -100,6 +110,23 @@
     fromThis.connectedTo = toThis;
     toThis.connectedFrom = fromThis;
     [self.clearParentView beginDrawFrom:fromThis To:toThis];
+}
+
+-(void)deleteLine
+{
+    [clearParentView deleteLineWithIndex:pathNum];
+    for (DraggableIcon *curricon in otherIcons) {
+        if (curricon != self) {
+            if (curricon.pathNum > self.pathNum) {
+                curricon.pathNum --;
+            }
+        }
+    }
+}
+
+-(void)updateLine
+{
+    [clearParentView updateLineWithIndex:pathNum startX:self.x startY:self.y endX:connectedTo.x endY:connectedTo.y];
 }
 
 @end

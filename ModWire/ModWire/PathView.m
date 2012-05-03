@@ -18,6 +18,7 @@
         // Initialization code
     }
     self.currentPaths = [[NSMutableArray alloc] init];
+    self.numPaths = 0;
     return self;
 }
 
@@ -30,11 +31,12 @@
     [newpath addLineToPoint:CGPointMake(self.currentTo.x + 36, self.currentTo.y + 36)];
     [self.currentPaths addObject:newpath];
     [self setNeedsDisplay];
+    self.currentFrom.pathNum = numPaths;
+    self.numPaths += 1;
 }
 
 - (void)drawRect:(CGRect)rect
 {
-    self.numPaths += 1;
     // Drawing code
     for (UIBezierPath *path in currentPaths) {
         path.lineWidth = 5;
@@ -45,5 +47,19 @@
     }
 }
 
+-(void)deleteLineWithIndex:(NSInteger)index
+{
+    [currentPaths removeObjectAtIndex:index];
+    numPaths --;
+    [self setNeedsDisplay];
+}
+
+-(void)updateLineWithIndex:(NSInteger)index startX:(NSInteger)sx startY:(NSInteger)sy endX:(NSInteger)ex endY:(NSInteger)ey
+{
+    [[currentPaths objectAtIndex:index] removeAllPoints];
+    [[currentPaths objectAtIndex:index] moveToPoint:CGPointMake(sx + 36, sy + 36)];
+    [[currentPaths objectAtIndex:index] addLineToPoint:CGPointMake(ex + 36, ey + 36)];
+    [self setNeedsDisplay];
+}
 
 @end
