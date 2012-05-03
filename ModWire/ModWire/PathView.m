@@ -37,7 +37,9 @@
     // Drawing code
     for (UIBezierPath *path in currentPaths) {
         path.lineWidth = 5;
+        [[UIColor blackColor] setFill];
         [[UIColor blackColor] setStroke];
+        [path fill];
         [path stroke];
     }
 }
