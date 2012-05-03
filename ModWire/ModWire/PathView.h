@@ -14,7 +14,7 @@
 @property (nonatomic) DraggableIcon *currentTo;
 @property (nonatomic) NSInteger *numPaths;
 
-@property (nonatomic) NSMutableArray *currentPaths;
+@property (nonatomic, retain) NSMutableArray *currentPaths;
 
 -(void)beginDrawFrom: (DraggableIcon *)from To:(DraggableIcon *)to;
 

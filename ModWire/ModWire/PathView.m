@@ -17,6 +17,7 @@
     if (self) {
         // Initialization code
     }
+    self.currentPaths = [[NSMutableArray alloc] init];
     return self;
 }
 
@@ -25,8 +26,8 @@
     self.currentFrom = from;
     self.currentTo = to;
     UIBezierPath *newpath = [UIBezierPath bezierPath];
-    [newpath moveToPoint:CGPointMake(self.currentFrom.x, self.currentFrom.y)];
-    [newpath addLineToPoint:CGPointMake(self.currentTo.x, self.currentTo.y)];
+    [newpath moveToPoint:CGPointMake(self.currentFrom.x + 36, self.currentFrom.y + 36)];
+    [newpath addLineToPoint:CGPointMake(self.currentTo.x + 36, self.currentTo.y + 36)];
     [self.currentPaths addObject:newpath];
     [self setNeedsDisplay];
 }

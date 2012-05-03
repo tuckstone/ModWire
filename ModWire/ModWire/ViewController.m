@@ -588,10 +588,10 @@ int lastKeyPressed = 0;
     }
     
     //file manager stuff
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    NSString *cacheDirectory = [paths objectAtIndex:0];
     
-    NSString *myPathDocs =  [documentsDirectory stringByAppendingPathComponent:@"patch.pd"];
+    NSString *myPathDocs =  [cacheDirectory stringByAppendingPathComponent:@"patch.pd"];
     
     if (![[NSFileManager defaultManager] fileExistsAtPath:myPathDocs])
     {
@@ -609,7 +609,7 @@ int lastKeyPressed = 0;
         exit(0);
         
     }
-    patch = [PdBase openFile:@"patch.pd" path:documentsDirectory];
+    patch = [PdBase openFile:@"patch.pd" path:cacheDirectory];
     if (!patch) {
         NSLog(@"failed to open patch");
         exit(0);

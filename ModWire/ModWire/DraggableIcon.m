@@ -32,7 +32,6 @@
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     self.isTouched = TRUE;
-    NSLog(@"I'm touched");
     if (!ismovable) {
         //If view is immovable, don't move it
         self.alpha = 0.5;
@@ -98,7 +97,6 @@
 
 -(void)connectFrom:(DraggableIcon *)fromThis toThis:(DraggableIcon *)toThis
 {
-    NSLog(@"connectFrom");
     fromThis.connectedTo = toThis;
     toThis.connectedFrom = fromThis;
     [self.clearParentView beginDrawFrom:fromThis To:toThis];
