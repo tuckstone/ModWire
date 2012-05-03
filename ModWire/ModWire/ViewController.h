@@ -25,10 +25,11 @@
 @private
     TouchForwardingUIScrollView* keyboardScrollView;
     KeyboardView* keyboardView;
-    NSMutableArray *icons;
     UITableView *paletteTable;
     NSUInteger i;
 }
+
+@property (strong, nonatomic) NSMutableArray *icons;
 
 @property (strong, nonatomic) IBOutlet UITableView *paletteTable;
 
@@ -75,7 +76,5 @@
 
 - (void)noteOn:(int)note;
 - (void)noteOff:(int)note;
-- (IBAction)setFilterCutoffFreq:(id)sender;
-- (IBAction)setOscDetune:(id)sender;
 - (void) defineIconDictionary;
 @end

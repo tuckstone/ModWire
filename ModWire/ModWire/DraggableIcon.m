@@ -91,6 +91,7 @@
         self.connectedTo = NULL;
         self.connectedFrom = NULL;
         self.isTouched = FALSE;
+        controls = [[NSMutableArray alloc]init];
     }
     return self;
 }

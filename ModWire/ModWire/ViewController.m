@@ -34,7 +34,7 @@ NSString *final_patch_string;
 
 @implementation ViewController
 @synthesize paletteTable, optionView, currButton, keyboardScrollView, label1, label2, slider1, slider2, iconButton, midi;
-@synthesize currIcons, currPaths, workView, soundStart, soundEnd, clearView, connectionLabel, selectedicon;
+@synthesize currIcons, currPaths, workView, soundStart, soundEnd, clearView, connectionLabel, selectedicon, icons;
 int lastKeyPressed = 0;
 
 - (void)noteOn:(int)note {
@@ -54,21 +54,21 @@ int lastKeyPressed = 0;
     }
 }
 
-/*
-- (IBAction)setFilterCutoffFreq:(id)sender
-{
-    [PdBase sendFloat:[(UISlider *) sender value] toReceiver:@"filtnum"];
-}
-
-- (IBAction)setOscDetune:(id)sender
-{
-    [PdBase sendFloat:[(UISlider *) sender value] toReceiver:@"detune"];
-}
-*/
 
 -(IBAction) sliderChanged:(id)sender
 {
-
+    
+    UISlider *tempSlider = (UISlider*)sender;
+    if (tempSlider == slider1)
+    {
+        float tempVal = slider1.value;
+        [PdBase sendFloat:tempVal toReceiver:[[[selectedicon controls] objectAtIndex:0] name]];        
+    }
+    if (tempSlider == slider2)
+    {
+        float tempVal = slider2.value;
+        [PdBase sendFloat:tempVal toReceiver:[[[selectedicon controls] objectAtIndex:1] name]];        
+    }
 }
  
 -(NSInteger) tableView: (UITableView *)tableView numberOfSectionsInTableView:(UITableView *)paletteView
@@ -360,20 +360,31 @@ int lastKeyPressed = 0;
     if ([currButton.currentTitle isEqualToString: @"2"]){
         [keyboardScrollView setHidden:TRUE];
         
-        if ([[selectedicon controls]objectAtIndex:0] != nil)
+        for(DraggableIcon *each in currIcons)
+        {
+            if(each.ishighlighted == TRUE)
+            {
+                selectedicon = each;
+            }
+        }
+        
+        NSLog(@"%@", selectedicon.myName);
+        if ([[selectedicon controls] count] == 1)
         {
             [label1 setHidden:FALSE];
-            label1.text = [[[selectedicon controls]objectAtIndex:0] title];
             [slider1 setHidden:FALSE];
+            NSLog(@"slider1");
+            label1.text = [[[selectedicon controls]objectAtIndex:0] title];
             slider1.minimumValue = 0;
             slider1.maximumValue = 127;
         }
         
-        if ([[selectedicon controls]objectAtIndex:1] != nil)
+        if ([[selectedicon controls] count] == 2)
         {
             [label2 setHidden:FALSE];
-            label2.text = [[[selectedicon controls]objectAtIndex:0] title];
             [slider2 setHidden:FALSE];
+            NSLog(@"slider2");
+            label2.text = [[[selectedicon controls]objectAtIndex:1] title];
             slider2.minimumValue = 0;
             slider2.maximumValue = 127;
         }
