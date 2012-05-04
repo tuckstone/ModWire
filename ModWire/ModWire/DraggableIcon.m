@@ -51,6 +51,9 @@
     {
         icon.selectedIcon = self;
         if (icon.isTouched == TRUE && icon != self) {
+            if (self.connectedFrom != NULL) {
+                [self.connectedFrom deleteLine];
+            }
             [self connectFrom:icon toThis:self];
         }
     }
@@ -70,6 +73,9 @@
         [self setFrame:movFrame];
         if (self.connectedFrom != NULL) {
             [connectedFrom updateLine];
+        }
+        if (self.connectedTo != NULL) {
+            [self updateLine];
         }
     }
 }

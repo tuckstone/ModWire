@@ -34,7 +34,7 @@ NSString *final_patch_string;
 
 @implementation ViewController
 @synthesize paletteTable, optionView, currButton, keyboardScrollView, label1, label2, slider1, slider2, iconButton, midi;
-@synthesize currIcons, currPaths, workView, soundStart, soundEnd, clearView, connectionLabel, selectedicon, icons;
+@synthesize currIcons, currPaths, workView, soundStart, soundEnd, clearView, connectionLabel, selectedicon, icons, editMode;
 int lastKeyPressed = 0;
 
 - (void)noteOn:(int)note {
@@ -389,7 +389,28 @@ int lastKeyPressed = 0;
             slider2.maximumValue = 127;
         }
     }
-    if ([currButton.currentTitle isEqualToString:@"Build Patch"]) {
+    if ([currButton.currentTitle isEqualToString:@"Play Mode!"]) {
+        if ([currIcons count] == 0) {
+            UIAlertView *badView = [[UIAlertView alloc]initWithTitle:@"Error!"
+                                                             message:@"You have no icons!"
+                                                            delegate:self
+                                                   cancelButtonTitle:@"D'oh"
+                                                   otherButtonTitles:nil,
+                                    nil];
+            [badView show];
+        }else {
+            [currButton setTitle:@"Edit Mode!" forState:UIControlStateNormal];
+            for (DraggableIcon *curricon in currIcons) {
+                curricon.ismovable = FALSE;
+            }
+            [self buildSound];
+        }
+    }
+    if ([currButton.currentTitle isEqualToString:@"Edit Mode!"]) {
+        [currButton setTitle:@"Play Mode!" forState:UIControlStateNormal];
+        for (DraggableIcon *curricon in currIcons) {
+            curricon.ismovable = TRUE;
+        }
         [self buildSound];
     }
 }
@@ -481,6 +502,7 @@ int lastKeyPressed = 0;
 {
     NSLog(@"build button pressed");
     int totalcount = 0;
+    BOOL canStart = FALSE;
     for (DraggableIcon *curricon in self.currIcons) {
         if (curricon.myName == @"audio-in.png")
         {
@@ -488,47 +510,55 @@ int lastKeyPressed = 0;
         }
         if (curricon.myName == @"output.png")
         {
+            canStart = TRUE;
             soundEnd = curricon;
         }
         totalcount ++;
     }    
+    if (!canStart) {
+        UIAlertView *sadView = [[UIAlertView alloc]initWithTitle:@"Error"
+                                                         message:@"You have a wiring error.  Please re-evaluate your program!"
+                                                        delegate:self
+                                               cancelButtonTitle:@"Go Back"
+                                               otherButtonTitles:nil,
+                                nil];
+        [sadView show];
+    }else {
+        final_patch_string = @"";
     
-    final_patch_string = @"";
-    
-    DraggableIcon *programTraverser = soundStart;
-    BOOL didFindError = FALSE;
-    int while_count = 0;
-    while (programTraverser != soundEnd && !didFindError) {
-        //This is where mike will take all the datas from the views
+        DraggableIcon *programTraverser = soundStart;
+        BOOL didFindError = FALSE;
+        int while_count = 0;
+        while (programTraverser != soundEnd && !didFindError) {
+            //This is where mike will take all the datas from the views
+            //yup, right there
         
-        //yup, right there
+            NSLog(@"%@",programTraverser.myName);
+            [self pdPatcher:programTraverser.myName withCount:while_count];
         
-        NSLog(@"%@",programTraverser.myName);
-        [self pdPatcher:programTraverser.myName withCount:while_count];
-        
-        if (programTraverser.connectedTo == NULL) {
-            //panic! those motherfuckers DONE GOOFED
-            UIAlertView *badView = [[UIAlertView alloc]initWithTitle:@"Error"
-                                                          message:@"You have a wiring error.  Please re-evaluate your program!"
+            if (programTraverser.connectedTo == NULL) {
+                //panic! those motherfuckers DONE GOOFED
+                UIAlertView *badView = [[UIAlertView alloc]initWithTitle:@"Error"
+                                                          message:@"You have a wiring error.    Please re-evaluate your program!"
                                                          delegate:self
                                                 cancelButtonTitle:@"Sorry :("
                                                 otherButtonTitles:nil,
                                  nil];
-            [badView show];
-            didFindError = TRUE;
+                [badView show];
+                didFindError = TRUE;
+            }
+            if (while_count > totalcount) {
+                didFindError = TRUE;
+            }
+            if (!didFindError) {
+                programTraverser = programTraverser.connectedTo;
+            }
+            while_count++;
         }
-        if (while_count > totalcount) {
-            didFindError = TRUE;
-        }
-        if (!didFindError) {
-            programTraverser = programTraverser.connectedTo;
-        }
-        while_count++;
+        //programTraverser should now be soundEnd.  If all went well.  I hope.
+        NSLog(@"program traverser success");
+        [self writePatch:final_patch_string withFinalCount:while_count];
     }
-    
-    //programTraverser should now be soundEnd.  If all went well.  I hope.
-    NSLog(@"program traverser success");
-    [self writePatch:final_patch_string withFinalCount:while_count];
     
 }
 
