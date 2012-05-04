@@ -82,6 +82,10 @@
         self.inbounds = NO;
         if (self.connectedFrom != NULL) {
             self.connectedFrom.connectedTo = NULL;
+            [connectedFrom deleteLine];
+        }
+        if (connectedTo != NULL) {
+            [self deleteLine];
         }
     }
     self.isTouched = FALSE;
@@ -97,10 +101,6 @@
         self.connectedFrom = NULL;
         self.isTouched = FALSE;
         controls = [[NSMutableArray alloc]init];
-        [connectedFrom deleteLine];
-        if (connectedTo != NULL) {
-            [self deleteLine];
-        }
     }
     return self;
 }
