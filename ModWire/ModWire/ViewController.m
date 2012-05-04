@@ -495,18 +495,15 @@ int lastKeyPressed = 0;
     
     final_patch_string = @"";
     
-    DraggableIcon *programTraverser = soundStart;
+    DraggableIcon *programTraverser = soundEnd;
     BOOL didFindError = FALSE;
     int while_count = 0;
-    while (programTraverser != soundEnd && !didFindError) {
-        //This is where mike will take all the datas from the views
-        
-        //yup, right there
+    while (programTraverser != soundStart && !didFindError) {
         
         NSLog(@"%@",programTraverser.myName);
         [self pdPatcher:programTraverser.myName withCount:while_count];
         
-        if (programTraverser.connectedTo == NULL) {
+        if (programTraverser.connectedFrom == NULL) {
             //panic! those motherfuckers DONE GOOFED
             UIAlertView *badView = [[UIAlertView alloc]initWithTitle:@"Error"
                                                           message:@"You have a wiring error.  Please re-evaluate your program!"
@@ -521,7 +518,7 @@ int lastKeyPressed = 0;
             didFindError = TRUE;
         }
         if (!didFindError) {
-            programTraverser = programTraverser.connectedTo;
+            programTraverser = programTraverser.connectedFrom;
         }
         while_count++;
     }
