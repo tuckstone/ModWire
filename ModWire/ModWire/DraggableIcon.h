@@ -17,6 +17,7 @@
 @property (nonatomic) UIColor *background;
 @property NSInteger x;
 @property NSInteger y;
+@property NSInteger pathNum;
 @property BOOL ismovable;
 @property BOOL inbounds;
 @property BOOL isTouched;
@@ -37,5 +38,9 @@
 -(void)highlighter:(BOOL) state;
 
 -(void)connectFrom:(DraggableIcon*)fromThis toThis:(DraggableIcon *)toThis;
+
+-(void)deleteLine;
+
+-(void)updateLine;
 
 @end

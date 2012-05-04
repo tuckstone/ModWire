@@ -67,6 +67,8 @@
 
 @property (nonatomic) PathView *clearView;
 
+@property (nonatomic) BOOL editMode;
+
 - (IBAction)buttonPressed:(id)sender;
 
 - (IBAction)iconPressed:(id)sender;

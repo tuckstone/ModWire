@@ -12,10 +12,11 @@
 
 @property (nonatomic) DraggableIcon *currentFrom;
 @property (nonatomic) DraggableIcon *currentTo;
-@property (nonatomic) NSInteger *numPaths;
+@property (nonatomic) NSInteger numPaths;
 
 @property (nonatomic, retain) NSMutableArray *currentPaths;
 
 -(void)beginDrawFrom: (DraggableIcon *)from To:(DraggableIcon *)to;
-
+-(void)deleteLineWithIndex: (NSInteger)index;
+-(void)updateLineWithIndex: (NSInteger)index startX: (NSInteger) sx startY: (NSInteger) sy endX: (NSInteger) ex endY: (NSInteger) ey;
 @end
