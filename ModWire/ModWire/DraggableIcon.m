@@ -52,7 +52,7 @@
         icon.selectedIcon = self;
         if (icon.isTouched == TRUE && icon != self) {
             if (self.connectedFrom != NULL) {
-                if (myName == @"add.png")
+                if ([myName isEqualToString: @"add.png"])
                 {
                     if (connectedFrom2 == NULL)
                     {
@@ -66,8 +66,8 @@
                 }
                 else
                 {
-                [self.connectedFrom deleteLine];
-                [self connectFrom:icon toThis:self];
+                    [self.connectedFrom deleteLine];
+                    [self connectFrom:icon toThis:self];
                 }
             }
             else
@@ -90,11 +90,23 @@
         self.x = movePoint.x;
         self.y = movePoint.y;
         [self setFrame:movFrame];
-        if (self.connectedFrom != NULL) {
-            [connectedFrom updateLine];
-        }
-        if (self.connectedTo != NULL) {
-            [self updateLine];
+        if ([myName isEqualToString: @"add.png"]) {
+            if (self.connectedFrom != NULL) {
+                [connectedFrom updateLine];
+            }
+            if (self.connectedFrom2 != NULL) {
+                [connectedFrom2 updateLine];
+            }
+            if (self.connectedTo != NULL) {
+                [self updateLine];
+            }
+        }else {
+            if (self.connectedFrom != NULL) {
+                [connectedFrom updateLine];
+            }
+            if (self.connectedTo != NULL) {
+                [self updateLine];
+            }
         }
     }
 }
@@ -108,6 +120,10 @@
         if (self.connectedFrom != NULL) {
             self.connectedFrom.connectedTo = NULL;
             [connectedFrom deleteLine];
+        }
+        if (self.connectedFrom2 != NULL) {
+            self.connectedFrom2.connectedTo = NULL;
+            [connectedFrom2 deleteLine];
         }
         if (connectedTo != NULL) {
             [self deleteLine];
