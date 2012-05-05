@@ -9,8 +9,8 @@
 #import "DraggableIcon.h"
 
 @implementation DraggableIcon
-@synthesize myName, startPoint, x, y, ismovable, background, connectedTo, connectedFrom;
-@synthesize ishighlighted, inbounds, otherIcons, controls, isTouched, clearParentView, selectedIcon, pathNum;
+@synthesize myName, startPoint, x, y, ismovable, background, connectedTo, connectedFrom, connectedFrom2;
+@synthesize ishighlighted, inbounds, otherIcons, controls, isTouched, clearParentView, selectedIcon, pathNum, objectNumber;
 
 -(void)setImage:(NSString *)imagename{
     myName = imagename;
@@ -52,9 +52,28 @@
         icon.selectedIcon = self;
         if (icon.isTouched == TRUE && icon != self) {
             if (self.connectedFrom != NULL) {
+                if (myName == @"add.png")
+                {
+                    if (connectedFrom2 == NULL)
+                    {
+                        [self connectFrom2:icon toThis:self];
+                    }
+                    else
+                    {
+                        [self.connectedFrom2 deleteLine];
+                        [self connectFrom2:icon toThis:self];
+                    }
+                }
+                else
+                {
                 [self.connectedFrom deleteLine];
+                [self connectFrom:icon toThis:self];
+                }
             }
-            [self connectFrom:icon toThis:self];
+            else
+            {
+                [self connectFrom:icon toThis:self];
+            }
         }
     }
 }
@@ -115,6 +134,13 @@
 {
     fromThis.connectedTo = toThis;
     toThis.connectedFrom = fromThis;
+    [self.clearParentView beginDrawFrom:fromThis To:toThis];
+}
+
+-(void)connectFrom2:(DraggableIcon *)fromThis toThis:(DraggableIcon *)toThis
+{
+    fromThis.connectedTo = toThis;
+    toThis.connectedFrom2 = fromThis;
     [self.clearParentView beginDrawFrom:fromThis To:toThis];
 }
 

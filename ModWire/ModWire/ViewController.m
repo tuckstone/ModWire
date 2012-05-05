@@ -480,6 +480,8 @@ int lastKeyPressed = 0;
     [icons addObject:start];
     icon *end = [[icon alloc] initWithTitle:@"End" andImage:@"output.png"];
     [icons addObject:end];
+    icon *add = [[icon alloc] initWithTitle:@"Add" andImage:@"add.png"];
+    [icons addObject:add];
     icon *sine_wave = [[icon alloc] initWithTitle:@"Sine Wave" andImage:@"sine oscillator.png"];
     [icons addObject:sine_wave];
     icon *saw_wave = [[icon alloc] initWithTitle:@"Saw Wave" andImage:@"saw oscillator.png"];
@@ -523,7 +525,8 @@ int lastKeyPressed = 0;
     while (programTraverser != soundStart && !didFindError) {
         
         NSLog(@"%@",programTraverser.myName);
-        [self pdPatcher:programTraverser.myName withCount:while_count];
+        programTraverser.objectNumber = while_count;
+        [self pdPatcher:programTraverser];
         
         if (programTraverser.connectedFrom == NULL) {
             //panic! those motherfuckers DONE GOOFED
@@ -550,42 +553,42 @@ int lastKeyPressed = 0;
     [self writePatch:final_patch_string withFinalCount:while_count];
 }
     
--(void) pdPatcher:(NSString *) iconName withCount:(int)count
+-(void) pdPatcher:(DraggableIcon*)icon
 {
-    if (iconName == @"audio-in.png") {
+    if (icon.myName == @"audio-in.png") {
         final_patch_string = [final_patch_string stringByAppendingString:canvas_string];
     }
-    if (iconName == @"sine oscillator.png") {
+    if (icon.myName == @"sine oscillator.png") {
         final_patch_string = [final_patch_string stringByAppendingString:sine_wave_string];
     }
-    if (iconName == @"saw oscillator.png") {
+    if (icon.myName == @"saw oscillator.png") {
         final_patch_string = [final_patch_string stringByAppendingString:saw_wave_string];
     }
-    if (iconName == @"square oscillator.png") {
+    if (icon.myName == @"square oscillator.png") {
         final_patch_string = [final_patch_string stringByAppendingString:square_wave_string];
     }
-    if (iconName == @"low pass filter.png") {
+    if (icon.myName == @"low pass filter.png") {
         final_patch_string = [final_patch_string stringByAppendingString:low_pass_string];
-        final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", count - 2, count - 1]];
+        final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", icon.objectNumber, icon.connectedTo.objectNumber]];
     }
-    if (iconName == @"high pass filter.png") {
+    if (icon.myName == @"high pass filter.png") {
         final_patch_string = [final_patch_string stringByAppendingString:high_pass_string];
-        final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", count - 2, count - 1]];
+        final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", icon.objectNumber, icon.connectedTo.objectNumber]];
     }
-    if (iconName == @"band pass filter.png") {
+    if (icon.myName == @"band pass filter.png") {
         final_patch_string = [final_patch_string stringByAppendingString:band_pass_string];
-        final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", count - 2, count - 1]];
+        final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", icon.objectNumber, icon.connectedTo.objectNumber]];
     }
-    if (iconName == @"amplitude envelope.png") {
+    if (icon.myName == @"amplitude envelope.png") {
         final_patch_string = [final_patch_string stringByAppendingString:envelope_generator_string];
-        final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", count - 2, count - 1]];
+        final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", icon.objectNumber, icon.connectedTo.objectNumber]];
     }
 }
 
 -(void)writePatch:(NSString *) patch_string_to_write withFinalCount:(int)final_count{
     
-    final_patch_string = [final_patch_string stringByAppendingString:audio_out_string];
-    final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", final_count - 2, final_count - 1]];
+    //final_patch_string = [final_patch_string stringByAppendingString:audio_in_string];
+    //final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", final_count - 1, final_count - 2]];
     
     NSString *patchstring = [[NSString alloc] init];
     if (patch) {

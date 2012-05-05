@@ -24,6 +24,7 @@
 		274BEE901529237600EC0E1F /* PGMidiFind.mm in Sources */ = {isa = PBXBuildFile; fileRef = 274BEE8D1529237600EC0E1F /* PGMidiFind.mm */; };
 		274BEE921529239400EC0E1F /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274BEE911529239400EC0E1F /* CoreMIDI.framework */; };
 		274BEE9D15292D3300EC0E1F /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 274BEE7E152921AD00EC0E1F /* libpd-ios.a */; };
+		C84CB5791554AC4C00051D47 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = C84CB5781554AC4C00051D47 /* add.png */; };
 		C84F5C871546F2C00024C6CB /* Control.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F5C861546F2C00024C6CB /* Control.m */; };
 		CE46F0351528DB8300B15801 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE46F0341528DB8300B15801 /* UIKit.framework */; };
 		CE46F0371528DB8300B15801 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE46F0361528DB8300B15801 /* Foundation.framework */; };
@@ -764,6 +765,7 @@
 		274BEE8C1529237600EC0E1F /* PGMidiFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiFind.h; sourceTree = "<group>"; };
 		274BEE8D1529237600EC0E1F /* PGMidiFind.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiFind.mm; sourceTree = "<group>"; };
 		274BEE911529239400EC0E1F /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		C84CB5781554AC4C00051D47 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		C84F5C851546F2C00024C6CB /* Control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Control.h; sourceTree = "<group>"; };
 		C84F5C861546F2C00024C6CB /* Control.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Control.m; sourceTree = "<group>"; };
 		CE46F0301528DB8300B15801 /* ModWire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModWire.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -848,6 +850,7 @@
 			isa = PBXGroup;
 			children = (
 				2717D5FA1548DC1100A970E0 /* amplitude envelope.png */,
+				C84CB5781554AC4C00051D47 /* add.png */,
 				2717D5FB1548DC1100A970E0 /* output.png */,
 				2717D5FC1548DC1100A970E0 /* audio-in.png */,
 				2717D5ED1548D98300A970E0 /* band pass filter.png */,
@@ -2141,6 +2144,7 @@
 				2717D5FD1548DC1100A970E0 /* amplitude envelope.png in Resources */,
 				2717D5FE1548DC1100A970E0 /* output.png in Resources */,
 				2717D5FF1548DC1100A970E0 /* audio-in.png in Resources */,
+				C84CB5791554AC4C00051D47 /* add.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

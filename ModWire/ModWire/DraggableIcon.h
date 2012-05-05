@@ -23,7 +23,9 @@
 @property BOOL isTouched;
 @property (nonatomic) BOOL ishighlighted;
 @property (nonatomic) DraggableIcon *connectedFrom;
+@property (nonatomic) DraggableIcon *connectedFrom2;
 @property (nonatomic) DraggableIcon *connectedTo;
+@property (nonatomic) NSInteger objectNumber;
 
 @property (nonatomic) DraggableIcon *selectedIcon;
 
@@ -38,6 +40,7 @@
 -(void)highlighter:(BOOL) state;
 
 -(void)connectFrom:(DraggableIcon*)fromThis toThis:(DraggableIcon *)toThis;
+-(void)connectFrom2:(DraggableIcon *)fromThis toThis:(DraggableIcon *)toThis;
 
 -(void)deleteLine;
 
