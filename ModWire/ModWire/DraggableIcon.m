@@ -118,11 +118,9 @@
         [self.otherIcons removeObject:self];
         self.inbounds = NO;
         if (self.connectedFrom != NULL) {
-            self.connectedFrom.connectedTo = NULL;
             [connectedFrom deleteLine];
         }
         if (self.connectedFrom2 != NULL) {
-            self.connectedFrom2.connectedTo = NULL;
             [connectedFrom2 deleteLine];
         }
         if (connectedTo != NULL) {
@@ -169,6 +167,19 @@
                 curricon.pathNum --;
             }
         }
+    }
+    if ([connectedTo.myName isEqualToString:@"add.png"]) 
+    {
+        if (connectedTo.connectedFrom2 == self) {
+            connectedTo.connectedFrom2 = NULL;
+            connectedTo = NULL;
+        }else {
+            connectedTo.connectedFrom = NULL;
+            connectedTo = NULL;
+        }
+    }else {
+        connectedTo.connectedFrom = NULL;
+        connectedTo = NULL;
     }
 }
 
