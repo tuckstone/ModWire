@@ -35,7 +35,7 @@ NSString *final_patch_string;
 
 @implementation ViewController
 @synthesize paletteTable, optionView, currButton, keyboardScrollView, label1, label2, slider1, slider2, iconButton, midi;
-@synthesize currIcons, currPaths, workView, soundStart, soundEnd, clearView, connectionLabel, selectedicon, icons, editMode;
+@synthesize currIcons, currPaths, workView, soundStart, soundEnd, clearView, connectionLabel, selectedicon, icons, editMode, traverserCount;
 int lastKeyPressed = 0;
 
 - (void)noteOn:(int)note {
@@ -407,12 +407,11 @@ int lastKeyPressed = 0;
             [self buildSound];
         }
     }
-    if ([currButton.currentTitle isEqualToString:@"Edit Mode!"]) {
+    else if ([currButton.currentTitle isEqualToString:@"Edit Mode!"]) {
         [currButton setTitle:@"Play Mode!" forState:UIControlStateNormal];
         for (DraggableIcon *curricon in currIcons) {
             curricon.ismovable = TRUE;
         }
-        [self buildSound];
     }
 }
 
@@ -505,7 +504,9 @@ int lastKeyPressed = 0;
 {
     NSLog(@"build button pressed");
     int totalcount = 0;
+    traverserCount = 0;
     BOOL canStart = FALSE;
+    NSInteger success = 0;
     for (DraggableIcon *curricon in self.currIcons) {
         if (curricon.myName == @"audio-in.png")
         {
@@ -517,43 +518,45 @@ int lastKeyPressed = 0;
             soundEnd = curricon;
         }
         totalcount ++;
-    }    
+    }
     final_patch_string = canvas_string;
     
-    DraggableIcon *programTraverser = soundEnd;
-    BOOL didFindError = FALSE;
-    int while_count = 0;
-    while (programTraverser != soundStart && !didFindError) {
-        
-        NSLog(@"%@",programTraverser.myName);
-        programTraverser.objectNumber = while_count;
-        [self pdPatcher:programTraverser];
-        
-        if (programTraverser.connectedFrom == NULL) {
-            //panic! those motherfuckers DONE GOOFED
-            UIAlertView *badView = [[UIAlertView alloc]initWithTitle:@"Error"
-                                                          message:@"You have a wiring error.  Please re-evaluate your program!"
-                                                         delegate:self
-                                                cancelButtonTitle:@"Sorry :("
-                                                otherButtonTitles:nil,
-                                 nil];
-
-            [badView show];
-            didFindError = TRUE;
-        }
-        if (while_count > totalcount) {
-            didFindError = TRUE;
-        }
-        if (!didFindError) {
-            programTraverser = programTraverser.connectedFrom;
-        }
-        while_count++;
+    [self pdPatcher:soundEnd];
+    traverserCount++;
+    success = [self buildAndTraverse:soundEnd];
+    
+    if (success == 0)
+    {
+        NSLog(@"program traverser success");
+        NSLog(@"%@",final_patch_string);
+        [self writePatch:final_patch_string];
     }
-    //programTraverser should now be soundEnd.  If all went well.  I hope.
-    NSLog(@"program traverser success");
-    //NSLog(@"%@",final_patch_string);
-    //[self writePatch:final_patch_string];
 }
+
+-(NSInteger) buildAndTraverse:(DraggableIcon*)icon
+{
+    NSInteger returnVal = 0;
+    icon.objectNumber = traverserCount;
+    traverserCount++;
+    if (icon.connectedFrom != NULL)
+    {
+        returnVal = [self buildAndTraverse:icon.connectedFrom];
+    }
+    if (icon.connectedFrom2 != NULL)
+    {
+        returnVal = [self buildAndTraverse:icon.connectedFrom2];
+    }
+    
+    [self pdPatcher:icon];
+    
+    if (traverserCount > [currIcons count])
+    {
+        returnVal = 1;
+    }
+    
+    return returnVal;
+}
+
     
 -(void) pdPatcher:(DraggableIcon*)icon
 {
@@ -642,7 +645,6 @@ int lastKeyPressed = 0;
         NSLog(@"failed to open patch");
         exit(0);
     }
-
 }
 
 @end

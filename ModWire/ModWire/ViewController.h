@@ -69,11 +69,16 @@
 
 @property (nonatomic) BOOL editMode;
 
+@property NSInteger traverserCount;
+
 - (IBAction)buttonPressed:(id)sender;
 
 - (IBAction)iconPressed:(id)sender;
 
 -(void)buildSound;
+
+-(NSInteger) buildAndTraverse:(DraggableIcon*)icon;
+
 -(IBAction) sliderChanged:(id)sender;
 
 - (void)noteOn:(int)note;

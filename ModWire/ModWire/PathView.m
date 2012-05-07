@@ -33,6 +33,7 @@
     [self setNeedsDisplay];
     self.currentFrom.pathNum = numPaths;
     self.numPaths += 1;
+    NSLog(@"%i", [currentPaths count]);
 }
 
 - (void)drawRect:(CGRect)rect
