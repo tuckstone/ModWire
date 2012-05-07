@@ -4,8 +4,8 @@ r1
 cCheck dependencies
 cCpHeader objc/PdAudio.h build/Debug-iphonesimulator/usr/local/include/PdAudio.h
 cCpHeader objc/PdBase.h build/Debug-iphonesimulator/usr/local/include/PdBase.h
-cCpHeader objc/PdDispatcher.h build/Debug-iphonesimulator/usr/local/include/PdDispatcher.h
 cCpHeader objc/PdFile.h build/Debug-iphonesimulator/usr/local/include/PdFile.h
+cCpHeader objc/PdDispatcher.h build/Debug-iphonesimulator/usr/local/include/PdDispatcher.h
 cCompileC build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/d_arithmetic.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/libpd/pure-data/src/d_arithmetic.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/d_array.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/libpd/pure-data/src/d_array.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/d_ctl.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/libpd/pure-data/src/d_ctl.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
@@ -3169,7 +3169,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesdd06a9c5dc48b541^4628aac5dc48b541^---0#1#0#--18"Check dependencies36"945950E8-A01A-42AD-8610-28C1CBCDC196-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies85072d4f3958b541^87a3a34f3958b541^---0#1#0#--18"Check dependencies36"A0851CE6-78EF-46EF-B3EE-4A0A9D2138AE-
 
 CCompileC build/libpd.build/Debug-iphonesimulator/libpd-ios.build/Objects-normal/i386/AudioHelpers.o "/Users/mike/Documents/COMP-150/ModWire/ModWire unbroken without libpd/ModWire/libpd/objc/AudioHelpers.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0

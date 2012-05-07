@@ -10,4 +10,5 @@ dependencies: \
   /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/TouchForwardingUIScrollView.h \
   /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGMidi.h \
   /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/PGArc.h \
-  /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/iOSVersionDetection.h
+  /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/PGMidi/iOSVersionDetection.h \
+  /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/Control.h
