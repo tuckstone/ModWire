@@ -62,13 +62,14 @@ int lastKeyPressed = 0;
     UISlider *tempSlider = (UISlider*)sender;
     if (tempSlider == slider1)
     {
+        NSLog(@"slider 1 changed to %f",slider1.value);
         float tempVal = slider1.value;
-        [PdBase sendFloat:tempVal toReceiver:[[[selectedicon controls] objectAtIndex:0] name]];        
+        [PdBase sendFloat:tempVal toReceiver:[[[selectedicon controls] objectAtIndex:0] title]];
     }
     if (tempSlider == slider2)
     {
         float tempVal = slider2.value;
-        [PdBase sendFloat:tempVal toReceiver:[[[selectedicon controls] objectAtIndex:1] name]];        
+        [PdBase sendFloat:tempVal toReceiver:[[[selectedicon controls] objectAtIndex:1] title]];
     }
 }
  
@@ -373,14 +374,24 @@ int lastKeyPressed = 0;
         {
             [label1 setHidden:FALSE];
             [slider1 setHidden:FALSE];
-            NSLog(@"slider1");
+            NSLog(@"slider1: %@", [[[selectedicon controls]objectAtIndex:0] title]);
             label1.text = [[[selectedicon controls]objectAtIndex:0] title];
             slider1.minimumValue = 0;
             slider1.maximumValue = 127;
+            
+            [label2 setHidden:TRUE];
+            [slider2 setHidden:TRUE];
         }
         
         if ([[selectedicon controls] count] == 2)
         {
+            [label1 setHidden:FALSE];
+            [slider1 setHidden:FALSE];
+            NSLog(@"slider1: %@", [[[selectedicon controls]objectAtIndex:0] title]);
+            label1.text = [[[selectedicon controls]objectAtIndex:0] title];
+            slider1.minimumValue = 0;
+            slider1.maximumValue = 127;
+            
             [label2 setHidden:FALSE];
             [slider2 setHidden:FALSE];
             NSLog(@"slider2");
@@ -521,7 +532,6 @@ int lastKeyPressed = 0;
         totalcount ++;
     }
     final_patch_string = canvas_string;
-    
     [self pdPatcher:soundEnd];
     traverserCount++;
     success = [self buildAndTraverse:soundEnd];
@@ -529,7 +539,6 @@ int lastKeyPressed = 0;
     if (success == 0)
     {
         NSLog(@"program traverser success");
-        NSLog(@"%@",final_patch_string);
         [self writePatch:final_patch_string];
     }
 }
