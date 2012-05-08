@@ -51,7 +51,8 @@
     {
         icon.selectedIcon = self;
         if (icon.isTouched == TRUE && icon != self) {
-            if (self.connectedFrom != NULL) {
+            if (self.connectedFrom != NULL)
+            {
                 if ([myName isEqualToString: @"add.png"])
                 {
                     if (connectedFrom2 == NULL)
@@ -114,8 +115,6 @@
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     if (self.y >= 429 || self.x >= 862) {
-        [self removeFromSuperview];
-        [self.otherIcons removeObject:self];
         self.inbounds = NO;
         if (self.connectedFrom != NULL) {
             [connectedFrom deleteLine];
@@ -126,6 +125,8 @@
         if (connectedTo != NULL) {
             [self deleteLine];
         }
+        [self removeFromSuperview];
+        [self.otherIcons removeObject:self];
     }
     self.isTouched = FALSE;
 }
@@ -177,7 +178,8 @@
             connectedTo.connectedFrom = NULL;
             connectedTo = NULL;
         }
-    }else {
+    }else 
+    {
         connectedTo.connectedFrom = NULL;
         connectedTo = NULL;
     }
