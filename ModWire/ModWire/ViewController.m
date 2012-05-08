@@ -39,7 +39,7 @@ NSString *final_patch_string;
 
 @implementation ViewController
 @synthesize paletteTable, optionView, currButton, keyboardScrollView, label1, label2, slider1, slider2, iconButton, midi;
-@synthesize currIcons, currPaths, workView, soundStart, soundEnd, clearView, connectionLabel, selectedicon, icons, editMode, traverserCount;
+@synthesize currIcons, currPaths, workView, soundStart, soundEnd, clearView, connectionLabel, selectedicon, icons, editMode, traverserCount, theButton;
 int lastKeyPressed = 0;
 
 - (void)noteOn:(int)note {
@@ -57,6 +57,12 @@ int lastKeyPressed = 0;
     }
 }
 
+-(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+
+    [selectedicon highlighter:FALSE];
+    [self showKeyboardView];
+
+}
 
 -(IBAction) sliderChanged:(id)sender
 {
@@ -341,56 +347,11 @@ int lastKeyPressed = 0;
     if ([currButton.currentTitle isEqualToString: @"1"]){
         if (keyboardScrollView.isHidden == TRUE)
         {
-            [keyboardScrollView setHidden:FALSE];
-            [label1 setHidden:TRUE];
-            [label2 setHidden:TRUE];
-            [slider1 setHidden:TRUE];
-            [slider2 setHidden:TRUE];
+            [self showKeyboardView];
         }
     }
     if ([currButton.currentTitle isEqualToString: @"2"]){
-        [keyboardScrollView setHidden:TRUE];
-        
-        for(DraggableIcon *each in currIcons)
-        {
-            if(each.ishighlighted == TRUE)
-            {
-                selectedicon = each;
-            }
-        }
-        
-        if ([[selectedicon controls] count] == 1)
-        {
-            [label1 setHidden:FALSE];
-            [slider1 setHidden:FALSE];
-            Control *thisControl = [[selectedicon controls] objectAtIndex:0];
-            slider1.value = [[thisControl controlValue] floatValue];
-            label1.text = [[[selectedicon controls]objectAtIndex:0] title];
-            slider1.minimumValue = 0;
-            slider1.maximumValue = 127;
-            
-            [label2 setHidden:TRUE];
-            [slider2 setHidden:TRUE];
-        }
-        
-        if ([[selectedicon controls] count] == 2)
-        {
-            [label1 setHidden:FALSE];
-            [slider1 setHidden:FALSE];
-            Control *thisControl = [[selectedicon controls] objectAtIndex:0];
-            slider1.value = [[thisControl controlValue] floatValue];
-            label1.text = [[[selectedicon controls]objectAtIndex:0] title];
-            slider1.minimumValue = 0;
-            slider1.maximumValue = 127;
-            
-            [label2 setHidden:FALSE];
-            [slider2 setHidden:FALSE];
-            thisControl = [[selectedicon controls] objectAtIndex:1];
-            slider2.value = [[thisControl controlValue] floatValue];
-            label2.text = [[[selectedicon controls]objectAtIndex:1] title];
-            slider2.minimumValue = 0;
-            slider2.maximumValue = 127;
-        }
+        [self showControlView];
     }
     if ([currButton.currentTitle isEqualToString:@"Play Mode!"]) {
         if ([currIcons count] == 0) {
@@ -419,17 +380,62 @@ int lastKeyPressed = 0;
     }
 }
 
--(IBAction)iconPressed:(id)sender
+-(void) showKeyboardView
 {
-    iconButton = (UIButton *)sender;
-    if(label1.isHidden == TRUE)
+    [keyboardScrollView setHidden:FALSE];
+    [label1 setHidden:TRUE];
+    [label2 setHidden:TRUE];
+    [slider1 setHidden:TRUE];
+    [slider2 setHidden:TRUE];
+    
+}
+
+-(void) showControlView
+{
+    [keyboardScrollView setHidden:TRUE];
+    
+    for(DraggableIcon *each in currIcons)
     {
-        [keyboardScrollView setHidden:TRUE];
-        [label1 setHidden:FALSE];
-        [label2 setHidden:FALSE];
-        [slider1 setHidden:FALSE];
-        [slider2 setHidden:FALSE];
+        if(each.ishighlighted == TRUE)
+        {
+            selectedicon = each;
+        }
     }
+    
+    if ([[selectedicon controls] count] == 1)
+    {
+        [label1 setHidden:FALSE];
+        [slider1 setHidden:FALSE];
+        Control *thisControl = [[selectedicon controls] objectAtIndex:0];
+        slider1.value = [[thisControl controlValue] floatValue];
+        label1.text = [[[selectedicon controls]objectAtIndex:0] title];
+        slider1.minimumValue = 0;
+        slider1.maximumValue = 127;
+        
+        [label2 setHidden:TRUE];
+        [slider2 setHidden:TRUE];
+    }
+    
+    if ([[selectedicon controls] count] == 2)
+    {
+        [label1 setHidden:FALSE];
+        [slider1 setHidden:FALSE];
+        Control *thisControl = [[selectedicon controls] objectAtIndex:0];
+        slider1.value = [[thisControl controlValue] floatValue];
+        label1.text = [[[selectedicon controls]objectAtIndex:0] title];
+        slider1.minimumValue = 0;
+        slider1.maximumValue = 127;
+        
+        [label2 setHidden:FALSE];
+        [slider2 setHidden:FALSE];
+        thisControl = [[selectedicon controls] objectAtIndex:1];
+        slider2.value = [[thisControl controlValue] floatValue];
+        label2.text = [[[selectedicon controls]objectAtIndex:1] title];
+        slider2.minimumValue = 0;
+        slider2.maximumValue = 127;
+    }
+
+    
 }
 
 - (void)viewDidUnload
@@ -506,7 +512,6 @@ int lastKeyPressed = 0;
     [icons addObject:band_pass];
     icon *amp_EG = [[icon alloc] initWithTitle:@"Envelope Generator" andImage:@"amplitude envelope.png"];
     [icons addObject:amp_EG];
-    
 }
 
 

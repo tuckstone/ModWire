@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 #import "PathView.h"
+#import "ViewController.h"
+
 
 @interface DraggableIcon : UIView
 

@@ -7,6 +7,7 @@
 //
 
 #import "DraggableIcon.h"
+#import "ViewController.h"
 
 @implementation DraggableIcon
 @synthesize myName, startPoint, x, y, ismovable, background, connectedTo, connectedFrom, connectedFrom2;

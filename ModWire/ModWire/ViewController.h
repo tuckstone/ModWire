@@ -71,11 +71,15 @@
 
 @property NSInteger traverserCount;
 
+@property (nonatomic, strong) NSString *theButton;
+
 - (IBAction)buttonPressed:(id)sender;
 
-- (IBAction)iconPressed:(id)sender;
-
 -(void)buildSound;
+
+-(void) showKeyboardView;
+
+-(void) showControlView;
 
 -(NSInteger) buildAndTraverse:(DraggableIcon*)icon;
 
