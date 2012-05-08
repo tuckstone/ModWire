@@ -62,12 +62,18 @@
                     else
                     {
                         [self.connectedFrom2 deleteLine];
+                        if (icon.connectedTo != NULL) {
+                            [icon deleteLine];
+                        }
                         [self connectFrom2:icon toThis:self];
                     }
                 }
                 else
                 {
                     [self.connectedFrom deleteLine];
+                    if (icon.connectedTo != NULL) {
+                        [icon deleteLine];
+                    }
                     [self connectFrom:icon toThis:self];
                 }
             }
