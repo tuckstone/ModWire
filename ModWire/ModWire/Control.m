@@ -9,13 +9,14 @@
 #import "Control.h"
 
 @implementation Control
-@synthesize title, type;
+@synthesize title, type, controlValue;
 
 -(id)initWithName:(NSString*)name withType:(NSString*)thisType
 {
     Control *newControl = [super init];
     newControl.title = name;
     newControl.type = thisType;
+    newControl.controlValue = [[NSNumber alloc]init];
     
     return newControl;
 }

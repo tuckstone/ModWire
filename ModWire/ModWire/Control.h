@@ -12,6 +12,7 @@
 
 @property (nonatomic, retain) NSString *title;
 @property (nonatomic, retain) NSString *type;
+@property (nonatomic, retain) NSNumber *controlValue;
 
 -(id)initWithName:(NSString*)name withType:(NSString*)type;
 

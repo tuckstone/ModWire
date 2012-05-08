@@ -40,7 +40,6 @@ int lastKeyPressed = 0;
 
 - (void)noteOn:(int)note {
     note = note - 4;
-    NSLog(@"NOTE ON %d",note);
     lastKeyPressed = note;
     [PdBase sendFloat:note toReceiver:@"notein"];
     [PdBase sendBangToReceiver:@"noteon"];
@@ -49,7 +48,6 @@ int lastKeyPressed = 0;
 
 - (void)noteOff:(int)note {
     note = note - 4;
-    NSLog(@"NOTE OFF %d",note);
     if (note == lastKeyPressed) {
         [PdBase sendBangToReceiver:@"noteoff"];
     }
@@ -62,13 +60,16 @@ int lastKeyPressed = 0;
     UISlider *tempSlider = (UISlider*)sender;
     if (tempSlider == slider1)
     {
-        NSLog(@"slider 1 changed to %f",slider1.value);
         float tempVal = slider1.value;
+        Control *thisControl = [[selectedicon controls] objectAtIndex:0];
+        thisControl.controlValue = [NSNumber numberWithFloat:tempVal];
         [PdBase sendFloat:tempVal toReceiver:[[[selectedicon controls] objectAtIndex:0] title]];
     }
     if (tempSlider == slider2)
     {
         float tempVal = slider2.value;
+        Control *thisControl = [[selectedicon controls] objectAtIndex:1];
+        thisControl.controlValue = [NSNumber numberWithFloat:tempVal];
         [PdBase sendFloat:tempVal toReceiver:[[[selectedicon controls] objectAtIndex:1] title]];
     }
 }
@@ -218,33 +219,6 @@ int lastKeyPressed = 0;
     [keyboardScrollView setContentSize:keyboardView.frame.size];
     [keyboardScrollView setScrollEnabled:YES];
     
-   
-    
-    /*
-    //Makes 2 static icons
-    CGRect bounds = CGRectMake(50.0, 220.0, 72.0, 72.0);
-    soundStart = [[DraggableIcon alloc] initWithFrame:bounds];
-    soundStart.ismovable = YES;
-    soundStart.inbounds = YES;
-    soundStart.ishighlighted = NO;
-    soundStart.otherIcons = currIcons;
-    soundStart.clearParentView = clearView;
-    [soundStart setImage:@"audio-in.png"];
-    [self.view addSubview:soundStart];
-    
-    CGRect bounds2 = CGRectMake(750, 220, 72, 72);
-    soundEnd = [[DraggableIcon alloc] initWithFrame:bounds2];
-    soundEnd.ismovable = YES;
-    soundEnd.inbounds = YES;
-    soundEnd.ishighlighted = NO;
-    soundEnd.otherIcons = currIcons;
-    soundEnd.clearParentView = clearView;
-    [soundEnd setImage:@"output.png"];
-    [self.view addSubview:soundEnd];
-    [currIcons addObject:soundStart];
-    [currIcons addObject:soundEnd];
-    */
-    
     //Make Clear View for path drawing
     CGRect bounds3 = CGRectMake(0, 0, 934, 501);
     clearView = [[PathView alloc] initWithFrame:bounds3];
@@ -255,9 +229,6 @@ int lastKeyPressed = 0;
     //soundEnd.clearParentView = clearView;
     
     final_patch_string = [[NSString alloc] init];
-    
-    // Forward touch events to the keyboard
-    //[keyboardScrollView setTouchView:keyboardView];
     
 }
 
@@ -272,7 +243,6 @@ int lastKeyPressed = 0;
         if (!cell) {
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
             cell.imageView.image = [UIImage imageNamed:[[icons objectAtIndex:indexPath.row] imageName]];
-            //cell.imageView.image = [UIImage imageNamed:@"lowPassFilter.png"];
         }
     }
     return cell;
@@ -339,7 +309,6 @@ int lastKeyPressed = 0;
             [[testDrag controls] addObject:second];
         }
         
-        NSLog(@"cell clicked %d",indexPath.row);
         selectedicon = testDrag.selectedIcon;
     }
     
@@ -369,12 +338,12 @@ int lastKeyPressed = 0;
             }
         }
         
-        NSLog(@"%@", selectedicon.myName);
         if ([[selectedicon controls] count] == 1)
         {
             [label1 setHidden:FALSE];
             [slider1 setHidden:FALSE];
-            NSLog(@"slider1: %@", [[[selectedicon controls]objectAtIndex:0] title]);
+            Control *thisControl = [[selectedicon controls] objectAtIndex:0];
+            slider1.value = [[thisControl controlValue] floatValue];
             label1.text = [[[selectedicon controls]objectAtIndex:0] title];
             slider1.minimumValue = 0;
             slider1.maximumValue = 127;
@@ -387,14 +356,16 @@ int lastKeyPressed = 0;
         {
             [label1 setHidden:FALSE];
             [slider1 setHidden:FALSE];
-            NSLog(@"slider1: %@", [[[selectedicon controls]objectAtIndex:0] title]);
+            Control *thisControl = [[selectedicon controls] objectAtIndex:0];
+            slider1.value = [[thisControl controlValue] floatValue];
             label1.text = [[[selectedicon controls]objectAtIndex:0] title];
             slider1.minimumValue = 0;
             slider1.maximumValue = 127;
             
             [label2 setHidden:FALSE];
             [slider2 setHidden:FALSE];
-            NSLog(@"slider2");
+            thisControl = [[selectedicon controls] objectAtIndex:1];
+            slider2.value = [[thisControl controlValue] floatValue];
             label2.text = [[[selectedicon controls]objectAtIndex:1] title];
             slider2.minimumValue = 0;
             slider2.maximumValue = 127;
@@ -514,7 +485,6 @@ int lastKeyPressed = 0;
 
 -(void)buildSound
 {
-    NSLog(@"build button pressed");
     int totalcount = 0;
     traverserCount = 0;
     BOOL canStart = FALSE;
@@ -535,17 +505,14 @@ int lastKeyPressed = 0;
     [self pdPatcher:soundEnd];
     traverserCount++;
     success = [self buildAndTraverse:soundEnd];
-    NSLog(@"success value: %i",success);
     if (success == 0)
     {
-        NSLog(@"program traverser success");
         [self writePatch:final_patch_string];
     }
 }
 
 -(NSInteger) buildAndTraverse:(DraggableIcon*)icon
 {
-    NSLog(@"building %@",icon.myName);
     NSInteger returnVal = 0;
     icon.objectNumber = traverserCount;
     traverserCount++;
@@ -600,7 +567,6 @@ int lastKeyPressed = 0;
         final_patch_string = [final_patch_string stringByAppendingString:add_waves_string];
         final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", icon.objectNumber, icon.connectedTo.objectNumber]];
     }
-    NSLog(@"name = %@, number = %d, connected to = %d",icon.myName, icon.objectNumber, icon.connectedTo.objectNumber);
 }
 
 -(void)writePatch:(NSString *) patch_string_to_write{
