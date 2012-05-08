@@ -3114,7 +3114,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies8a74ef998259b541^7159f1998259b541^---0#1#0#--18"Check dependencies36"6A55EE32-9771-45B7-ABF5-AB952A0980AE-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies4fe829ff9859b541^5051ddff9859b541^---0#1#0#--18"Check dependencies36"C873A3F0-ECCD-4BCC-AABA-8E2FDAE97F86-
 
 CCompileC build/libpd.build/Debug-iphoneos/libpd-ios.build/Objects-normal/armv7/AudioHelpers.o /Users/mike/Documents/COMP-150/ModWire/ModWire/ModWire/libpd/objc/AudioHelpers.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0

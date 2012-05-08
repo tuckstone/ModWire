@@ -20,8 +20,12 @@
 NSString *canvas_string = @"#N canvas 494 239 450 300 10;\r";
 NSString *audio_out_string = @"#N canvas 0 22 450 300 audio_out 0;\r#X obj 160 110 hip~ 1;\r#X obj 169 161 dac~;\r#X obj 165 53 inlet~;\r#X connect 0 0 1 0;\r#X connect 0 0 1 1;\r#X connect 2 0 0 0;\r#X restore 205 61 pd audio_out;\r";
 NSString *sine_wave_string = @"#N canvas 631 239 450 300 sine_wave 0;\r#X obj 95 76 mtof;\r#X obj 98 168 osc~ 220;\r#X obj 95 36 r notein;\r#X obj 253 9 r detune;\r#X obj 102 226 outlet~;\r#X obj 298 66 / 127;\r#X obj 309 105 + 0.5;\r#X obj 179 140 *;\r#X connect 0 0 7 0;\r#X connect 1 0 4 0;\r#X connect 2 0 0 0;\r#X connect 3 0 5 0;\r#X connect 5 0 6 0;\r#X connect 6 0 7 1;\r#X connect 7 0 1 0;\r#X restore 176 117 pd sine_wave;\r";
+NSString *sine_5_string = @"#N canvas 631 239 450 300 sine_wave5 0;\r#X obj 95 76 mtof;\r#X obj 98 168 osc~ 220;\r#X obj 120 16 r notein;\r#X obj 253 9 r detune;\r#X obj 102 226 outlet~;\r#X obj 298 66 / 127;\r#X obj 309 105 + 0.5;\r#X obj 179 140 *;\r#X obj 113 51 + 7;\r#X connect 0 0 7 0;\r#X connect 1 0 4 0;\r#X connect 2 0 8 0;\r#X connect 3 0 5 0;\r#X connect 5 0 6 0;\r#X connect 6 0 7 1;\r#X connect 7 0 1 0;\r#X connect 8 0 0 0;\r#X restore 176 117 pd sine_wave5;\r";
 NSString *saw_wave_string = @"#N canvas 773 203 450 300 saw_wave 0;\r#X obj 97 164 phasor~ 220;\r#X obj 95 76 mtof;\r#X obj 256 15 r detune;\r#X obj 61 15 r notein;\r#X obj 84 255 outlet~;\r#X obj 183 124 *;\r#X obj 286 70 / 127;\r#X obj 305 105 + 0.5;\r#X obj 258 203 -~ 0.5;\r#X obj 278 246 *~ 2;\r#X connect 0 0 8 0;\r#X connect 1 0 5 0;\r#X connect 2 0 6 0;\r#X connect 3 0 1 0;\r#X connect 5 0 0 0;\r#X connect 6 0 7 0;\r#X connect 7 0 5 1;\r#X connect 8 0 9 0;\r#X connect 9 0 4 0;\r#X restore 200 129 pd saw_wave;\r";
+NSString *saw_5_string = @"#N canvas 773 203 450 300 saw_wave5 0;\r#X obj 97 164 phasor~ 220;\r#X obj 95 76 mtof;\r#X obj 256 15 r detune;\r#X obj 61 15 r notein;\r#X obj 84 255 outlet~;\r#X obj 183 124 *;\r#X obj 286 70 / 127;\r#X obj 305 105 + 0.5;\r#X obj 258 203 -~ 0.5;\r#X obj 278 246 *~ 2;\r#X obj 102 44 + 7;\r#X connect 0 0 8 0;\r#X connect 1 0 5 0;\r#X connect 2 0 6 0;\r#X connect 3 0 10 0;\r#X connect 5 0 0 0;\r#X connect 6 0 7 0;\r#X connect 7 0 5 1;\r#X connect 8 0 9 0;\r#X connect 9 0 4 0;\r#X connect 10 0 1 0;\r#X restore 200 129 pd saw_wave5;\r";
 NSString *square_wave_string = @"#N canvas 169 99 458 480 square_wave 1;\r#X obj 95 76 mtof;\r#X obj 256 15 r detune;\r#X obj 61 15 r notein;\r#X obj 160 448 outlet~;\r#X obj 183 124 *;\r#X obj 286 70 / 127;\r#X obj 305 105 + 0.5;\r#X obj 192 341 -~;\r#X msg 273 200 0;\r#X obj 270 173 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1 -1;\r#X obj 303 261 + 0.5;\r#X obj 109 279 phasor~ 220;\r#X obj 229 287 phasor~ 220;\r#X connect 0 0 4 0;\r#X connect 1 0 5 0;\r#X connect 2 0 0 0;\r#X connect 4 0 11 0;\r#X connect 4 0 9 0;\r#X connect 4 0 12 0;\r#X connect 5 0 6 0;\r#X connect 6 0 4 1;\r#X connect 7 0 3 0;\r#X connect 8 0 10 0;\r#X connect 8 0 11 1;\r#X connect 9 0 8 0;\r#X connect 10 0 12 1;\r#X connect 11 0 7 0;\r#X connect 12 0 7 1;\r#X restore 163 63 pd square_wave;\r";
+NSString *square_5_string = @"#N canvas 169 99 458 480 square_wave5 0;\r#X obj 95 76 mtof;\r#X obj 256 15 r detune;\r#X obj 61 15 r notein;\r#X obj 160 448 outlet~;\r#X obj 183 124 *;\r#X obj 286 70 / 127;\r#X obj 305 105 + 0.5;\r#X obj 192 341 -~;\r#X msg 273 200 0;\r#X obj 270 173 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1 -1;\r#X obj 303 261 + 0.5;\r#X obj 109 279 phasor~ 220;\r#X obj 229 287 phasor~ 220;\r#X obj 164 52 + 7;\r#X connect 0 0 4 0;\r#X connect 1 0 5 0;\r#X connect 2 0 13 0;\r#X connect 4 0 11 0;\r#X connect 4 0 9 0;\r#X connect 4 0 12 0;\r#X connect 5 0 6 0;\r#X connect 6 0 4 1;\r#X connect 7 0 3 0;\r#X connect 8 0 10 0;\r#X connect 8 0 11 1;\r#X connect 9 0 8 0;\r#X connect 10 0 12 1;\r#X connect 11 0 7 0;\r#X connect 12 0 7 1;\r#X connect 13 0 0 0;\r#X restore 163 63 pd square_wave5;\r";
+NSString *noise_wave_string = @"#X obj 218 86 noise~;\r";
 NSString *low_pass_string = @"#N canvas 222 36 450 300 low_pass 1;\r#X obj 202 112 mtof;\r#X obj 126 182 lop~ 220;\r#X obj 178 30 r frequency;\r#X obj 117 122 inlet~;\r#X obj 129 240 outlet~;\r#X connect 0 0 1 1;\r#X connect 1 0 4 0;\r#X connect 2 0 0 0;\r#X connect 3 0 1 0;\r#X restore 140 139 pd low_pass;\r";
 NSString *high_pass_string = @"#N canvas 0 22 450 300 high_pass 0;\r#X obj 202 112 mtof;\r#X obj 126 182 hip~ 220;\r#X obj 199 71 r frequency;\r#X obj 116 69 inlet~;\r#X obj 133 238 outlet~;\r#X connect 0 0 1 1;\r#X connect 1 0 4 0;\r#X connect 2 0 0 0;\r#X connect 3 0 1 0;\r#X restore 167 144 pd high_pass;\r";
 NSString *band_pass_string = @"#N canvas 0 22 450 300 band_pass 1;\r#X obj 264 190 / 12.7;\r#X obj 175 246 bp~ 220 1;\r#X obj 311 97 r resonance;\r#X obj 166 101 r frequency;\r#X obj 138 195 inlet~;\r#X obj 165 278 outlet~;\r#X connect 0 0 1 2;\r#X connect 1 0 5 0;\r#X connect 2 0 0 0;\r#X connect 3 0 1 1;\r#X connect 4 0 1 0;\r#X restore 89 68 pd band_pass;\r";
@@ -302,12 +306,29 @@ int lastKeyPressed = 0;
             Control *first = [[Control alloc]initWithName:@"detune" withType:@"slider"];
             [[testDrag controls] addObject:first];
         }
+        if(testDrag.myName == @"sine5 oscillator.png")
+        {
+            Control *first = [[Control alloc]initWithName:@"detune" withType:@"slider"];
+            [[testDrag controls] addObject:first];
+        }
         if(testDrag.myName == @"saw oscillator.png")
         {
             Control *first = [[Control alloc]initWithName:@"detune" withType:@"slider"];
             [[testDrag controls] addObject:first];
         }
+        if(testDrag.myName == @"saw5 oscillator.png")
+        {
+            Control *first = [[Control alloc]initWithName:@"detune" withType:@"slider"];
+            [[testDrag controls] addObject:first];
+        }
         if(testDrag.myName == @"square oscillator.png")
+        {
+            Control *first = [[Control alloc]initWithName:@"detune" withType:@"slider"];
+            [[testDrag controls] addObject:first];
+            Control *second = [[Control alloc]initWithName:@"pulse width" withType:@"slider"];
+            [[testDrag controls] addObject:second];
+        }
+        if(testDrag.myName == @"square5 oscillator.png")
         {
             Control *first = [[Control alloc]initWithName:@"detune" withType:@"slider"];
             [[testDrag controls] addObject:first];
@@ -488,18 +509,24 @@ int lastKeyPressed = 0;
 
 -(void)defineIconDictionary
 {
-    icon *start = [[icon alloc] initWithTitle:@"Start" andImage:@"audio-in.png"];
-    [icons addObject:start];
     icon *end = [[icon alloc] initWithTitle:@"End" andImage:@"output.png"];
     [icons addObject:end];
     icon *add = [[icon alloc] initWithTitle:@"Add" andImage:@"add.png"];
     [icons addObject:add];
     icon *sine_wave = [[icon alloc] initWithTitle:@"Sine Wave" andImage:@"sine oscillator.png"];
     [icons addObject:sine_wave];
+    icon *sine_wave5 = [[icon alloc] initWithTitle:@"Sine Wave 5" andImage:@"sine5 oscillator.png"];
+    [icons addObject:sine_wave5];
     icon *saw_wave = [[icon alloc] initWithTitle:@"Saw Wave" andImage:@"saw oscillator.png"];
     [icons addObject:saw_wave];
+    icon *saw_wave5 = [[icon alloc] initWithTitle:@"Saw Wave 5" andImage:@"saw5 oscillator.png"];
+    [icons addObject:saw_wave5];
     icon *square_wave = [[icon alloc] initWithTitle:@"Square Wave" andImage:@"square oscillator.png"];
     [icons addObject:square_wave];
+    icon *square_wave5 = [[icon alloc] initWithTitle:@"Square Wave 5" andImage:@"square5 oscillator.png"];
+    [icons addObject:square_wave5];
+    icon *noise_wave = [[icon alloc] initWithTitle:@"Noise" andImage:@"noise oscillator.png"];
+    [icons addObject:noise_wave];
     icon *low_pass = [[icon alloc] initWithTitle:@"Low Pass" andImage:@"low pass filter.png"];
     [icons addObject:low_pass];
     icon *high_pass = [[icon alloc] initWithTitle:@"High Pass" andImage:@"high pass filter.png"];
@@ -520,10 +547,6 @@ int lastKeyPressed = 0;
     BOOL canStart = FALSE;
     NSInteger success = 0;
     for (DraggableIcon *curricon in self.currIcons) {
-        if (curricon.myName == @"audio-in.png")
-        {
-            soundStart = curricon;
-        }
         if (curricon.myName == @"output.png")
         {
             canStart = TRUE;
@@ -572,12 +595,28 @@ int lastKeyPressed = 0;
         final_patch_string = [final_patch_string stringByAppendingString:sine_wave_string];
         final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", icon.objectNumber, icon.connectedTo.objectNumber]];
     }
+    if (icon.myName == @"sine5 oscillator.png") {
+        final_patch_string = [final_patch_string stringByAppendingString:sine_5_string];
+        final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", icon.objectNumber, icon.connectedTo.objectNumber]];
+    }
     if (icon.myName == @"saw oscillator.png") {
         final_patch_string = [final_patch_string stringByAppendingString:saw_wave_string];
         final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", icon.objectNumber, icon.connectedTo.objectNumber]];
     }
+    if (icon.myName == @"saw5 oscillator.png") {
+        final_patch_string = [final_patch_string stringByAppendingString:saw_5_string];
+        final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", icon.objectNumber, icon.connectedTo.objectNumber]];
+    }
     if (icon.myName == @"square oscillator.png") {
         final_patch_string = [final_patch_string stringByAppendingString:square_wave_string];
+        final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", icon.objectNumber, icon.connectedTo.objectNumber]];
+    }
+    if (icon.myName == @"square5 oscillator.png") {
+        final_patch_string = [final_patch_string stringByAppendingString:square_5_string];
+        final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", icon.objectNumber, icon.connectedTo.objectNumber]];
+    }
+    if (icon.myName == @"noise oscillator.png") {
+        final_patch_string = [final_patch_string stringByAppendingString:noise_wave_string];
         final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", icon.objectNumber, icon.connectedTo.objectNumber]];
     }
     if (icon.myName == @"low pass filter.png") {

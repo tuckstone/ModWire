@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271382F815599730001F713A /* noise oscillator.png in Resources */ = {isa = PBXBuildFile; fileRef = 271382F415599730001F713A /* noise oscillator.png */; };
+		271382F915599730001F713A /* saw5 oscillator.png in Resources */ = {isa = PBXBuildFile; fileRef = 271382F515599730001F713A /* saw5 oscillator.png */; };
+		271382FA15599730001F713A /* sine5 oscillator.png in Resources */ = {isa = PBXBuildFile; fileRef = 271382F615599730001F713A /* sine5 oscillator.png */; };
+		271382FB15599730001F713A /* square5 oscillator.png in Resources */ = {isa = PBXBuildFile; fileRef = 271382F715599730001F713A /* square5 oscillator.png */; };
 		2717D5EB1548D95C00A970E0 /* editing_view_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2717D5EA1548D95C00A970E0 /* editing_view_background.png */; };
 		2717D5F41548D98300A970E0 /* band pass filter.png in Resources */ = {isa = PBXBuildFile; fileRef = 2717D5ED1548D98300A970E0 /* band pass filter.png */; };
 		2717D5F51548D98300A970E0 /* high pass filter.png in Resources */ = {isa = PBXBuildFile; fileRef = 2717D5EE1548D98300A970E0 /* high pass filter.png */; };
@@ -83,6 +87,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		271382F415599730001F713A /* noise oscillator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noise oscillator.png"; sourceTree = "<group>"; };
+		271382F515599730001F713A /* saw5 oscillator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "saw5 oscillator.png"; sourceTree = "<group>"; };
+		271382F615599730001F713A /* sine5 oscillator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sine5 oscillator.png"; sourceTree = "<group>"; };
+		271382F715599730001F713A /* square5 oscillator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square5 oscillator.png"; sourceTree = "<group>"; };
 		2717D5EA1548D95C00A970E0 /* editing_view_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editing_view_background.png; sourceTree = "<group>"; };
 		2717D5ED1548D98300A970E0 /* band pass filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "band pass filter.png"; sourceTree = "<group>"; };
 		2717D5EE1548D98300A970E0 /* high pass filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "high pass filter.png"; sourceTree = "<group>"; };
@@ -849,6 +857,10 @@
 		2717D5E91548D8AC00A970E0 /* graphics */ = {
 			isa = PBXGroup;
 			children = (
+				271382F415599730001F713A /* noise oscillator.png */,
+				271382F515599730001F713A /* saw5 oscillator.png */,
+				271382F615599730001F713A /* sine5 oscillator.png */,
+				271382F715599730001F713A /* square5 oscillator.png */,
 				2717D5FA1548DC1100A970E0 /* amplitude envelope.png */,
 				C84CB5781554AC4C00051D47 /* add.png */,
 				2717D5FB1548DC1100A970E0 /* output.png */,
@@ -2145,6 +2157,10 @@
 				2717D5FE1548DC1100A970E0 /* output.png in Resources */,
 				2717D5FF1548DC1100A970E0 /* audio-in.png in Resources */,
 				C84CB5791554AC4C00051D47 /* add.png in Resources */,
+				271382F815599730001F713A /* noise oscillator.png in Resources */,
+				271382F915599730001F713A /* saw5 oscillator.png in Resources */,
+				271382FA15599730001F713A /* sine5 oscillator.png in Resources */,
+				271382FB15599730001F713A /* square5 oscillator.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
