@@ -11,6 +11,7 @@
 		271382F915599730001F713A /* saw5 oscillator.png in Resources */ = {isa = PBXBuildFile; fileRef = 271382F515599730001F713A /* saw5 oscillator.png */; };
 		271382FA15599730001F713A /* sine5 oscillator.png in Resources */ = {isa = PBXBuildFile; fileRef = 271382F615599730001F713A /* sine5 oscillator.png */; };
 		271382FB15599730001F713A /* square5 oscillator.png in Resources */ = {isa = PBXBuildFile; fileRef = 271382F715599730001F713A /* square5 oscillator.png */; };
+		271383061559B6F0001F713A /* LFO filter.png in Resources */ = {isa = PBXBuildFile; fileRef = 271383051559B6F0001F713A /* LFO filter.png */; };
 		2717D5EB1548D95C00A970E0 /* editing_view_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2717D5EA1548D95C00A970E0 /* editing_view_background.png */; };
 		2717D5F41548D98300A970E0 /* band pass filter.png in Resources */ = {isa = PBXBuildFile; fileRef = 2717D5ED1548D98300A970E0 /* band pass filter.png */; };
 		2717D5F51548D98300A970E0 /* high pass filter.png in Resources */ = {isa = PBXBuildFile; fileRef = 2717D5EE1548D98300A970E0 /* high pass filter.png */; };
@@ -91,6 +92,7 @@
 		271382F515599730001F713A /* saw5 oscillator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "saw5 oscillator.png"; sourceTree = "<group>"; };
 		271382F615599730001F713A /* sine5 oscillator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sine5 oscillator.png"; sourceTree = "<group>"; };
 		271382F715599730001F713A /* square5 oscillator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square5 oscillator.png"; sourceTree = "<group>"; };
+		271383051559B6F0001F713A /* LFO filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LFO filter.png"; sourceTree = "<group>"; };
 		2717D5EA1548D95C00A970E0 /* editing_view_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editing_view_background.png; sourceTree = "<group>"; };
 		2717D5ED1548D98300A970E0 /* band pass filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "band pass filter.png"; sourceTree = "<group>"; };
 		2717D5EE1548D98300A970E0 /* high pass filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "high pass filter.png"; sourceTree = "<group>"; };
@@ -857,6 +859,7 @@
 		2717D5E91548D8AC00A970E0 /* graphics */ = {
 			isa = PBXGroup;
 			children = (
+				271383051559B6F0001F713A /* LFO filter.png */,
 				271382F415599730001F713A /* noise oscillator.png */,
 				271382F515599730001F713A /* saw5 oscillator.png */,
 				271382F615599730001F713A /* sine5 oscillator.png */,
@@ -2161,6 +2164,7 @@
 				271382F915599730001F713A /* saw5 oscillator.png in Resources */,
 				271382FA15599730001F713A /* sine5 oscillator.png in Resources */,
 				271382FB15599730001F713A /* square5 oscillator.png in Resources */,
+				271383061559B6F0001F713A /* LFO filter.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

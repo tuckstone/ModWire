@@ -29,6 +29,7 @@ NSString *noise_wave_string = @"#X obj 218 86 noise~;\r";
 NSString *low_pass_string = @"#N canvas 222 36 450 300 low_pass 1;\r#X obj 202 112 mtof;\r#X obj 126 182 lop~ 220;\r#X obj 178 30 r frequency;\r#X obj 117 122 inlet~;\r#X obj 129 240 outlet~;\r#X connect 0 0 1 1;\r#X connect 1 0 4 0;\r#X connect 2 0 0 0;\r#X connect 3 0 1 0;\r#X restore 140 139 pd low_pass;\r";
 NSString *high_pass_string = @"#N canvas 0 22 450 300 high_pass 0;\r#X obj 202 112 mtof;\r#X obj 126 182 hip~ 220;\r#X obj 199 71 r frequency;\r#X obj 116 69 inlet~;\r#X obj 133 238 outlet~;\r#X connect 0 0 1 1;\r#X connect 1 0 4 0;\r#X connect 2 0 0 0;\r#X connect 3 0 1 0;\r#X restore 167 144 pd high_pass;\r";
 NSString *band_pass_string = @"#N canvas 0 22 450 300 band_pass 1;\r#X obj 264 190 / 12.7;\r#X obj 175 246 bp~ 220 1;\r#X obj 311 97 r resonance;\r#X obj 166 101 r frequency;\r#X obj 138 195 inlet~;\r#X obj 165 278 outlet~;\r#X connect 0 0 1 2;\r#X connect 1 0 5 0;\r#X connect 2 0 0 0;\r#X connect 3 0 1 1;\r#X connect 4 0 1 0;\r#X restore 89 68 pd band_pass;\r";
+NSString *LFO_filter_string = @"#N canvas 325 175 562 567 LFO_filter 1;\r#X obj 97 355 inlet~;\r#X obj 109 473 outlet~;\r#X obj 106 415 vcf~ 220 6;\r#X obj 169 359 mtof~;\r#X obj 193 134 phasor~ 1;\r#X obj 228 212 *~ 50;\r#X obj 169 20 r rate;\r#X obj 187 291 clip~ 0 127;\r#X obj 307 25 r amount;\r#X obj 224 260 +~ 63;\r#X obj 351 147 / 2;\r#X msg 245 85 63;\r#X obj 251 58 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1 -1;\r#X obj 320 190 -;\r#X connect 0 0 2 0;\r#X connect 2 0 1 0;\r#X connect 3 0 2 1;\r#X connect 4 0 5 0;\r#X connect 5 0 9 0;\r#X connect 6 0 4 0;\r#X connect 7 0 3 0;\r#X connect 8 0 5 1;\r#X connect 8 0 10 0;\r#X connect 8 0 12 0;\r#X connect 9 0 7 0;\r#X connect 10 0 13 1;\r#X connect 11 0 13 0;\r#X connect 12 0 11 0;\r#X connect 13 0 9 1;\r#X restore 162 121 pd LFO_filter;\r";
 NSString *envelope_generator_string = @"#N canvas 0 22 450 300 envelope_generator 1;\r#X obj 208 159 vline~ 0 100;\r#X obj 154 206 *~;\r#X obj 345 45 r attack;\r#X obj 254 62 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1 -1;\r#X obj 274 118 pack 1 100;\r#X obj 142 120 pack 0 100;\r#X obj 123 71 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1 -1;\r#X obj 248 27 r noteon;\r#X obj 115 25 r noteoff;\r#X obj 189 31 r decay;\r#X obj 198 78 * 10;\r#X obj 333 80 * 10;\r#X obj 127 159 inlet~;\r#X obj 141 244 outlet~;\r#X connect 0 0 1 1;\r#X connect 1 0 13 0;\r#X connect 2 0 11 0;\r#X connect 3 0 4 0;\r#X connect 4 0 0 0;\r#X connect 5 0 0 0;\r#X connect 6 0 5 0;\r#X connect 7 0 3 0;\r#X connect 8 0 6 0;\r#X connect 9 0 10 0;\r#X connect 10 0 5 1;\r#X connect 11 0 4 1;\r#X connect 12 0 1 0;\r#X restore 183 113 pd envelope_generator;\r";
 NSString *add_waves_string = @"#N canvas 53 122 450 300 add 0;\r#X obj 120 55 inlet~;\r#X obj 179 150 /~ 2;\r#X obj 195 262 outlet~;\r#X connect 0 0 1 0;\r#X connect 1 0 2 0;\r#X restore 160 126 pd add;\r";
 NSString *final_patch_string;
@@ -328,6 +329,13 @@ int lastKeyPressed = 0;
             Control *second = [[Control alloc]initWithName:@"resonance" withType:@"slider"];
             [[testDrag controls] addObject:second];
         }
+        if(testDrag.myName == @"LFO filter.png")
+        {
+            Control *first = [[Control alloc]initWithName:@"rate" withType:@"slider"];
+            [[testDrag controls] addObject:first];
+            Control *second = [[Control alloc]initWithName:@"amount" withType:@"slider"];
+            [[testDrag controls] addObject:second];
+        }
         if(testDrag.myName == @"amplitude envelope.png")
         {
             Control *first = [[Control alloc]initWithName:@"attack" withType:@"slider"];
@@ -510,6 +518,8 @@ int lastKeyPressed = 0;
     [icons addObject:high_pass];
     icon *band_pass = [[icon alloc] initWithTitle:@"Band Pass" andImage:@"band pass filter.png"];
     [icons addObject:band_pass];
+    icon *LFO_filter = [[icon alloc] initWithTitle:@"LFO Filter" andImage:@"LFO filter.png"];
+    [icons addObject:LFO_filter];
     icon *amp_EG = [[icon alloc] initWithTitle:@"Envelope Generator" andImage:@"amplitude envelope.png"];
     [icons addObject:amp_EG];
 }
@@ -601,6 +611,10 @@ int lastKeyPressed = 0;
     }
     if (icon.myName == @"band pass filter.png") {
         final_patch_string = [final_patch_string stringByAppendingString:band_pass_string];
+        final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", icon.objectNumber, icon.connectedTo.objectNumber]];
+    }
+    if (icon.myName == @"LFO filter.png") {
+        final_patch_string = [final_patch_string stringByAppendingString:LFO_filter_string];
         final_patch_string = [final_patch_string stringByAppendingString:[NSString stringWithFormat:@"#X connect %d 0 %d 0;\r", icon.objectNumber, icon.connectedTo.objectNumber]];
     }
     if (icon.myName == @"amplitude envelope.png") {
