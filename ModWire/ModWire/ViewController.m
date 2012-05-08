@@ -263,7 +263,6 @@ int lastKeyPressed = 0;
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"cell number: %d ",indexPath.row);
     static NSString *cellIdentifier = @"Icon";
     UITableViewCell *cell = nil;
     if ([tableView isEqual:self.paletteTable]) {
@@ -271,12 +270,8 @@ int lastKeyPressed = 0;
         cell = [paletteTable cellForRowAtIndexPath:indexPath];
         if (!cell) {
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
-            NSLog(@"Created a cell");
             cell.imageView.image = [UIImage imageNamed:[[icons objectAtIndex:indexPath.row] imageName]];
             //cell.imageView.image = [UIImage imageNamed:@"lowPassFilter.png"];
-            NSLog(@"Added image to cell");
-            
-            
         }
     }
     return cell;
@@ -524,7 +519,7 @@ int lastKeyPressed = 0;
     [self pdPatcher:soundEnd];
     traverserCount++;
     success = [self buildAndTraverse:soundEnd];
-    
+    NSLog(@"success value: %i",success);
     if (success == 0)
     {
         NSLog(@"program traverser success");
@@ -535,9 +530,11 @@ int lastKeyPressed = 0;
 
 -(NSInteger) buildAndTraverse:(DraggableIcon*)icon
 {
+    NSLog(@"building %@",icon.myName);
     NSInteger returnVal = 0;
     icon.objectNumber = traverserCount;
     traverserCount++;
+    [self pdPatcher:icon];
     if (icon.connectedFrom != NULL)
     {
         returnVal = [self buildAndTraverse:icon.connectedFrom];
@@ -545,13 +542,6 @@ int lastKeyPressed = 0;
     if (icon.connectedFrom2 != NULL)
     {
         returnVal = [self buildAndTraverse:icon.connectedFrom2];
-    }
-    
-    [self pdPatcher:icon];
-    
-    if (traverserCount > [currIcons count])
-    {
-        returnVal = 1;
     }
     
     return returnVal;
