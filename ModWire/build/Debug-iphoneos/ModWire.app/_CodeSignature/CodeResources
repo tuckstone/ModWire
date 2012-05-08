@@ -46,7 +46,7 @@
 		</data>
 		<key>en.lproj/ViewController.nib</key>
 		<data>
-		0vo4aruI8i4SIDwKtX78iIHau1w=
+		7AAs/80e1bZHuVejW6mSzNuqa1s=
 		</data>
 		<key>high pass filter.png</key>
 		<data>
@@ -59,6 +59,10 @@
 		<key>low pass filter.png</key>
 		<data>
 		mv/M868ZMbTXmxyvNHlWjMso8bo=
+		</data>
+		<key>noise oscillator.png</key>
+		<data>
+		mznVjfcDznDvPdfcaP2gSuX2Md4=
 		</data>
 		<key>options.png</key>
 		<data>
@@ -76,13 +80,25 @@
 		<data>
 		upVIWSJGOYuAHWnVHcrcX9tSDhk=
 		</data>
+		<key>saw5 oscillator.png</key>
+		<data>
+		SPkL7A/ouvlMeu1jq9BjeYL86P8=
+		</data>
 		<key>sine oscillator.png</key>
 		<data>
 		3IpWSn2Y52xhlLEXzYr7UMUAjoU=
 		</data>
+		<key>sine5 oscillator.png</key>
+		<data>
+		e9TLv+qTC2C2mNLhdWqUgwZ50k8=
+		</data>
 		<key>square oscillator.png</key>
 		<data>
 		KJRgqDxpmELRLb63/S2XdknrpDo=
+		</data>
+		<key>square5 oscillator.png</key>
+		<data>
+		VKGUeLf+8fvaF/MZXrtcgPwXjWc=
 		</data>
 		<key>synth_engine.pd</key>
 		<data>
