@@ -169,7 +169,7 @@ int lastKeyPressed = 0;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    editMode = TRUE;
     //setup synth engine
     dispatcher = [[PdDispatcher alloc] init];
     [PdBase setDelegate:dispatcher];
@@ -285,63 +285,67 @@ int lastKeyPressed = 0;
 
 -(void)tableView:(UITableView *)paletteTable didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //make icon appear in editorView
-    CGRect bounds = CGRectMake(100, 100, 72, 72);
-    DraggableIcon *testDrag = [[DraggableIcon alloc] initWithFrame:bounds];
-    //TEMP NAME -> needs to access the cell's image name and find appropriate image
-    [testDrag setImage:[[icons objectAtIndex:indexPath.row] imageName]];
-    testDrag.ismovable = YES;
-    testDrag.inbounds = YES;
-    testDrag.ishighlighted = NO;
-    testDrag.otherIcons = currIcons;
-    testDrag.clearParentView = clearView;
-    [self.view addSubview:testDrag];
-    [currIcons addObject:testDrag];
+    if (!editMode) {
+        
+    }else{
+        //make icon appear in editorView
+        CGRect bounds = CGRectMake(100, 100, 72, 72);
+        DraggableIcon *testDrag = [[DraggableIcon alloc] initWithFrame:bounds];
+        //TEMP NAME -> needs to access the cell's image name and find appropriate image
+        [testDrag setImage:[[icons objectAtIndex:indexPath.row] imageName]];
+        testDrag.ismovable = YES;
+        testDrag.inbounds = YES;
+        testDrag.ishighlighted = NO;
+        testDrag.otherIcons = currIcons;
+        testDrag.clearParentView = clearView;
+        [self.view addSubview:testDrag];
+        [currIcons addObject:testDrag];
     
-    if(testDrag.myName == @"sine oscillator.png")
-    {
-        Control *first = [[Control alloc]initWithName:@"detune" withType:@"slider"];
-        [[testDrag controls] addObject:first];
+        if(testDrag.myName == @"sine oscillator.png")
+        {
+            Control *first = [[Control alloc]initWithName:@"detune" withType:@"slider"];
+            [[testDrag controls] addObject:first];
+        }
+        if(testDrag.myName == @"saw oscillator.png")
+        {
+            Control *first = [[Control alloc]initWithName:@"detune" withType:@"slider"];
+            [[testDrag controls] addObject:first];
+        }
+        if(testDrag.myName == @"square oscillator.png")
+        {
+            Control *first = [[Control alloc]initWithName:@"detune" withType:@"slider"];
+            [[testDrag controls] addObject:first];
+            Control *second = [[Control alloc]initWithName:@"pulse width" withType:@"slider"];
+            [[testDrag controls] addObject:second];
+        }
+        if(testDrag.myName == @"low pass filter.png")
+        {
+            Control *first = [[Control alloc]initWithName:@"frequency" withType:@"slider"];
+            [[testDrag controls] addObject:first];
+        }
+        if(testDrag.myName == @"high pass filter.png")
+        {
+            Control *first = [[Control alloc]initWithName:@"frequency" withType:@"slider"];
+            [[testDrag controls] addObject:first];
+        }
+        if(testDrag.myName == @"band pass filter.png")
+        {
+            Control *first = [[Control alloc]initWithName:@"frequency" withType:@"slider"];
+            [[testDrag controls] addObject:first];
+            Control *second = [[Control alloc]initWithName:@"resonance" withType:@"slider"];
+            [[testDrag controls] addObject:second];
+        }
+        if(testDrag.myName == @"amplitude envelope.png")
+        {
+            Control *first = [[Control alloc]initWithName:@"attack" withType:@"slider"];
+            [[testDrag controls] addObject:first];
+            Control *second = [[Control alloc]initWithName:@"decay" withType:@"slider"];
+            [[testDrag controls] addObject:second];
+        }
+        
+        NSLog(@"cell clicked %d",indexPath.row);
+        selectedicon = testDrag.selectedIcon;
     }
-    if(testDrag.myName == @"saw oscillator.png")
-    {
-        Control *first = [[Control alloc]initWithName:@"detune" withType:@"slider"];
-        [[testDrag controls] addObject:first];
-    }
-    if(testDrag.myName == @"square oscillator.png")
-    {
-        Control *first = [[Control alloc]initWithName:@"detune" withType:@"slider"];
-        [[testDrag controls] addObject:first];
-        Control *second = [[Control alloc]initWithName:@"pulse width" withType:@"slider"];
-        [[testDrag controls] addObject:second];
-    }
-    if(testDrag.myName == @"low pass filter.png")
-    {
-        Control *first = [[Control alloc]initWithName:@"frequency" withType:@"slider"];
-        [[testDrag controls] addObject:first];
-    }
-    if(testDrag.myName == @"high pass filter.png")
-    {
-        Control *first = [[Control alloc]initWithName:@"frequency" withType:@"slider"];
-        [[testDrag controls] addObject:first];
-    }
-    if(testDrag.myName == @"band pass filter.png")
-    {
-        Control *first = [[Control alloc]initWithName:@"frequency" withType:@"slider"];
-        [[testDrag controls] addObject:first];
-        Control *second = [[Control alloc]initWithName:@"resonance" withType:@"slider"];
-        [[testDrag controls] addObject:second];
-    }
-    if(testDrag.myName == @"amplitude envelope.png")
-    {
-        Control *first = [[Control alloc]initWithName:@"attack" withType:@"slider"];
-        [[testDrag controls] addObject:first];
-        Control *second = [[Control alloc]initWithName:@"decay" withType:@"slider"];
-        [[testDrag controls] addObject:second];
-    }
-    
-    NSLog(@"cell clicked %d",indexPath.row);
-    selectedicon = testDrag.selectedIcon;
     
 }
 
@@ -401,6 +405,7 @@ int lastKeyPressed = 0;
             [badView show];
         }else {
             [currButton setTitle:@"Edit Mode!" forState:UIControlStateNormal];
+            editMode = FALSE;
             for (DraggableIcon *curricon in currIcons) {
                 curricon.ismovable = FALSE;
             }
@@ -409,6 +414,7 @@ int lastKeyPressed = 0;
     }
     else if ([currButton.currentTitle isEqualToString:@"Edit Mode!"]) {
         [currButton setTitle:@"Play Mode!" forState:UIControlStateNormal];
+        editMode = TRUE;
         for (DraggableIcon *curricon in currIcons) {
             curricon.ismovable = TRUE;
         }

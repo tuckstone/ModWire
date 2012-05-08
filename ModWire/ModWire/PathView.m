@@ -33,11 +33,13 @@
     [self setNeedsDisplay];
     self.currentFrom.pathNum = numPaths;
     self.numPaths += 1;
-    NSLog(@"%i", [currentPaths count]);
 }
 
 - (void)drawRect:(CGRect)rect
 {
+    if (numPaths == 0) {
+        [currentPaths removeAllObjects];
+    }
     // Drawing code
     for (UIBezierPath *path in currentPaths) {
         path.lineWidth = 5;
