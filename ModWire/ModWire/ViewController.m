@@ -60,9 +60,12 @@ int lastKeyPressed = 0;
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
 
-    [selectedicon highlighter:FALSE];
-    [self showKeyboardView];
-
+    CGPoint startPoint;
+    startPoint = [[touches anyObject] locationInView:self.view];
+    if (startPoint.x < 934 && startPoint.y<501) {
+        [selectedicon highlighter:FALSE];
+        [self showKeyboardView];
+    }
 }
 
 -(IBAction) sliderChanged:(id)sender
