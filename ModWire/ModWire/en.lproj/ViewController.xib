@@ -188,7 +188,7 @@
 							<object class="IBUILabel" id="463973193">
 								<reference key="NSNextResponder" ref="28882050"/>
 								<int key="NSvFlags">-2147483356</int>
-								<string key="NSFrame">{{124, 60}, {343, 50}}</string>
+								<string key="NSFrame">{{133, 60}, {343, 50}}</string>
 								<reference key="NSSuperview" ref="28882050"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="658631353"/>
@@ -198,29 +198,28 @@
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<string key="IBUIText">I control filter cutoff freq, put me somewhere and hook me up to setFilterCutoffFreq:</string>
-								<object class="NSColor" key="IBUITextColor" id="893806610">
-									<int key="NSColorSpace">1</int>
-									<bytes key="NSRGB">MCAwIDAAA</bytes>
-								</object>
+								<string key="IBUIText">Slider1</string>
+								<reference key="IBUITextColor" ref="637227525"/>
 								<nil key="IBUIHighlightedColor"/>
 								<int key="IBUIBaselineAdjustment">0</int>
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUINumberOfLines">2</int>
-								<object class="IBUIFontDescription" key="IBUIFontDescription" id="225221758">
-									<int key="type">1</int>
-									<double key="pointSize">17</double>
+								<object class="IBUIFontDescription" key="IBUIFontDescription" id="981990459">
+									<string key="name">TrebuchetMS-Bold</string>
+									<string key="family">Trebuchet MS</string>
+									<int key="traits">2</int>
+									<double key="pointSize">26</double>
 								</object>
-								<object class="NSFont" key="IBUIFont" id="141860962">
-									<string key="NSName">Helvetica</string>
-									<double key="NSSize">17</double>
+								<object class="NSFont" key="IBUIFont" id="977693454">
+									<string key="NSName">TrebuchetMS-Bold</string>
+									<double key="NSSize">26</double>
 									<int key="NSfFlags">16</int>
 								</object>
 							</object>
 							<object class="IBUISlider" id="658631353">
 								<reference key="NSNextResponder" ref="28882050"/>
 								<int key="NSvFlags">-2147483356</int>
-								<string key="NSFrame">{{497, 64}, {300, 23}}</string>
+								<string key="NSFrame">{{545, 118}, {300, 23}}</string>
 								<reference key="NSSuperview" ref="28882050"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="830907366"/>
@@ -235,7 +234,7 @@
 							<object class="IBUILabel" id="212610604">
 								<reference key="NSNextResponder" ref="28882050"/>
 								<int key="NSvFlags">-2147483356</int>
-								<string key="NSFrame">{{490, 89}, {348, 51}}</string>
+								<string key="NSFrame">{{547, 60}, {348, 51}}</string>
 								<reference key="NSSuperview" ref="28882050"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="352432248"/>
@@ -245,14 +244,14 @@
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<string key="IBUIText">I control oscilator detune, put me somewhere and hook me up to setOscDetune:</string>
-								<reference key="IBUITextColor" ref="893806610"/>
+								<string key="IBUIText">Slider2</string>
+								<reference key="IBUITextColor" ref="637227525"/>
 								<nil key="IBUIHighlightedColor"/>
 								<int key="IBUIBaselineAdjustment">0</int>
 								<float key="IBUIMinimumFontSize">10</float>
 								<int key="IBUINumberOfLines">2</int>
-								<reference key="IBUIFontDescription" ref="225221758"/>
-								<reference key="IBUIFont" ref="141860962"/>
+								<reference key="IBUIFontDescription" ref="981990459"/>
+								<reference key="IBUIFont" ref="977693454"/>
 							</object>
 						</array>
 						<string key="NSFrame">{{0, 502}, {934, 253}}</string>
@@ -4677,26 +4676,6 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 									<string key="NSResourceName">editing_view_background.png</string>
 								</object>
 							</object>
-							<object class="IBUILabel" id="2538091">
-								<reference key="NSNextResponder" ref="210206952"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{391, 295}, {464, 158}}</string>
-								<reference key="NSSuperview" ref="210206952"/>
-								<reference key="NSWindow"/>
-								<string key="NSReuseIdentifierKey">_NS:9</string>
-								<bool key="IBUIOpaque">NO</bool>
-								<bool key="IBUIClipsSubviews">YES</bool>
-								<int key="IBUIContentMode">7</int>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<string key="IBUIText"/>
-								<reference key="IBUITextColor" ref="893806610"/>
-								<nil key="IBUIHighlightedColor"/>
-								<int key="IBUIBaselineAdjustment">0</int>
-								<float key="IBUIMinimumFontSize">10</float>
-								<reference key="IBUIFontDescription" ref="225221758"/>
-								<reference key="IBUIFont" ref="141860962"/>
-							</object>
 						</array>
 						<string key="NSFrameSize">{934, 501}</string>
 						<reference key="NSSuperview" ref="766721923"/>
@@ -4816,14 +4795,6 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 					<int key="connectionID">60</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">connectionLabel</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="2538091"/>
-					</object>
-					<int key="connectionID">69</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">buttonPressed:</string>
 						<reference key="source" ref="442242791"/>
@@ -4934,7 +4905,6 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 						<reference key="object" ref="210206952"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="61941560"/>
-							<reference ref="2538091"/>
 						</array>
 						<reference key="parent" ref="766721923"/>
 					</object>
@@ -4980,11 +4950,6 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 						<reference key="object" ref="547620778"/>
 						<reference key="parent" ref="0"/>
 					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">68</int>
-						<reference key="object" ref="2538091"/>
-						<reference key="parent" ref="210206952"/>
-					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -5006,7 +4971,6 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 				<string key="5.CustomClassName">IconControlView</string>
 				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="64.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="68.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="7.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<real value="0.0" key="7.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="8.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -5042,16 +5006,11 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 					<string key="superclassName">UIViewController</string>
 					<dictionary class="NSMutableDictionary" key="actions">
 						<string key="buttonPressed:">id</string>
-						<string key="iconPressed:">id</string>
 						<string key="sliderChanged:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
 						<object class="IBActionInfo" key="buttonPressed:">
 							<string key="name">buttonPressed:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="iconPressed:">
-							<string key="name">iconPressed:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="sliderChanged:">
