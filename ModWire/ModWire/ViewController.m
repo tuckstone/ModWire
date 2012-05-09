@@ -361,7 +361,7 @@ int lastKeyPressed = 0;
     if ([currButton.currentTitle isEqualToString: @"2"]){
         [self showControlView];
     }
-    if ([currButton.currentTitle isEqualToString:@"Play Mode!"]) {
+    if ([currButton.currentTitle isEqualToString:@"Play Sound"]) {
         if ([currIcons count] == 0) {
             UIAlertView *badView = [[UIAlertView alloc]initWithTitle:@"Error!"
                                                              message:@"You have no icons!"
@@ -371,7 +371,7 @@ int lastKeyPressed = 0;
                                     nil];
             [badView show];
         }else {
-            [currButton setTitle:@"Edit Mode!" forState:UIControlStateNormal];
+            [currButton setTitle:@"Edit Patch" forState:UIControlStateNormal];
             editMode = FALSE;
             for (DraggableIcon *curricon in currIcons) {
                 curricon.ismovable = FALSE;
@@ -379,8 +379,8 @@ int lastKeyPressed = 0;
             [self buildSound];
         }
     }
-    else if ([currButton.currentTitle isEqualToString:@"Edit Mode!"]) {
-        [currButton setTitle:@"Play Mode!" forState:UIControlStateNormal];
+    else if ([currButton.currentTitle isEqualToString:@"Edit Patch"]) {
+        [currButton setTitle:@"Play Sound" forState:UIControlStateNormal];
         editMode = TRUE;
         for (DraggableIcon *curricon in currIcons) {
             curricon.ismovable = TRUE;
