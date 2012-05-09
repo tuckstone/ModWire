@@ -58,6 +58,9 @@
                 {
                     if (connectedFrom2 == NULL)
                     {
+                        if (icon.connectedTo != NULL) {
+                            [icon deleteLine];
+                        }
                         [self connectFrom2:icon toThis:self];
                     }
                     else
