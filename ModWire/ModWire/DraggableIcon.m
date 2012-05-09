@@ -80,6 +80,9 @@
             }
             else
             {
+                if (icon.connectedTo != NULL) {
+                    [icon deleteLine];
+                }
                 [self connectFrom:icon toThis:self];
             }
         }
